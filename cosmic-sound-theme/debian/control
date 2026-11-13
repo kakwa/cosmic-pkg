@@ -1,16 +1,16 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-sound-theme
+Section: admin
+Priority: optional
+Maintainer: System76 <info@system76.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    meson,
+    ninja-build,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-sound-theme
 
-Package: @NAME@
+Package: cosmic-sound-theme
 Architecture: all
 Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Description: Sound theme for the COSMIC desktop
+ Sound theme for the COSMIC desktop environment.
