@@ -1,16 +1,18 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-randr
+Section: utils
+Priority: optional
+Maintainer: System76 <info@system76.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just,
+    libwayland-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-randr
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-randr
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Display and configure wayland display outputs
+ Command line utility to display and configure Wayland display outputs.
