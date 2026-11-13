@@ -1,16 +1,36 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-comp
+Section: x11
+Priority: optional
+Maintainer: System76 <info@system76.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just,
+    libdisplay-info-dev,
+    libegl-dev,
+    libfontconfig-dev,
+    libgbm-dev,
+    libinput-dev,
+    libpixman-1-dev,
+    libseat-dev,
+    libsystemd-dev,
+    libudev-dev,
+    libwayland-dev,
+    libxcb1-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-comp
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-comp
+Architecture: any
+Depends:
+    ${misc:Depends},
+    ${shlibs:Depends},
+    libegl1,
+    libwayland-server0,
+Recommends:
+    cosmic-session,
+    libgl1-mesa-dri
+Description: Wayland compositor of the COSMIC desktop
+ Wayland compositor for the COSMIC desktop environment.
