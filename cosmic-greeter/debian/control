@@ -1,16 +1,42 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-greeter
+Section: admin
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just (>= 1.13.0),
+    libclang-dev,
+    libdav1d-dev,
+    libinput-dev,
+    libpam0g-dev,
+    libwayland-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-greeter
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-greeter
+Architecture: any
+Pre-Depends: greetd,
+Depends:
+    adduser,
+    cosmic-comp,
+    cosmic-greeter-daemon,
+    cosmic-randr,
+    dbus,
+    ${misc:Depends},
+    ${shlibs:Depends}
+Recommends: xinit
+Suggests: libpam-fprintd
+Provides: x-display-manager
+Description: COSMIC greeter
+ Graphical login greeter for the COSMIC desktop environment.
+
+Package: cosmic-greeter-daemon
+Architecture: any
+Depends:
+    ${misc:Depends},
+    ${shlibs:Depends}
+Description: COSMIC greeter daemon
+ Privileged daemon used by the COSMIC greeter.

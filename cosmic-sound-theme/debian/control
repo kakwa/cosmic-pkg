@@ -1,7 +1,7 @@
 Source: cosmic-sound-theme
 Section: admin
 Priority: optional
-Maintainer: System76 <info@system76.com>
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
     meson,

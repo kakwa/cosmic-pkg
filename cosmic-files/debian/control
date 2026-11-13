@@ -1,16 +1,20 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-files
+Section: admin
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just (>= 1.13.0),
+    libclang-dev,
+    libglib2.0-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-files
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-files
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, xdg-utils
+Description: COSMIC file manager
+ File manager for the COSMIC desktop environment.

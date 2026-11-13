@@ -1,16 +1,31 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-applets
+Section: admin
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just,
+    libclang-dev,
+    libdbus-1-dev,
+    libegl-dev,
+    libinput-dev,
+    libpipewire-0.3-dev,
+    libpulse-dev,
+    libudev-dev,
+    libwayland-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-applets
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-applets
+Architecture: any
+Depends:
+    cosmic-icons,
+    ${misc:Depends},
+    ${shlibs:Depends}
+Recommends: pipewire-pulse
+Provides: system76-power-applet-virtual
+Description: COSMIC applets
+ Applets for the COSMIC desktop environment.

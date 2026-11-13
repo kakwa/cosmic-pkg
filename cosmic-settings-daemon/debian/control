@@ -1,16 +1,34 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-settings-daemon
+Section: admin
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just,
+    libclang-dev,
+    libinput-dev,
+    libpipewire-0.3-dev,
+    libspa-0.2-dev,
+    libssl-dev,
+    libudev-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-settings-daemon
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: cosmic-settings-daemon
+Architecture: any
+Depends:
+    acpid,
+    cosmic-sound-theme,
+    pulseaudio-utils,
+    ${misc:Depends},
+    ${shlibs:Depends}
+Recommends:
+    breeze-icon-theme,
+    playerctl,
+    qt5ct,
+    qt6ct
+Description: COSMIC settings daemon
+ Settings daemon for the COSMIC desktop environment.

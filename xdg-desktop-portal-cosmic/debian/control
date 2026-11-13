@@ -1,16 +1,24 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: xdg-desktop-portal-cosmic
+Section: admin
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+    just,
+    libclang-dev,
+    libegl-dev,
+    libgbm-dev,
+    libglib2.0-dev,
+    libpipewire-0.3-dev,
+    libwayland-dev,
+    libxkbcommon-dev,
+    pkg-config,
+    rust-all,
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/xdg-desktop-portal-cosmic
 
-Package: @NAME@
-Architecture: all
-Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Package: xdg-desktop-portal-cosmic
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: COSMIC backend for xdg-desktop-portal
+ XDG desktop portal backend for the COSMIC desktop environment.

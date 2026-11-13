@@ -1,16 +1,15 @@
-Source: @NAME@
-Section: misc
-Priority: extra
-Maintainer: @MAINTAINER@ <@MAINTAINER_EMAIL@>
+Source: cosmic-wallpapers
+Section: x11
+Priority: optional
+Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~),
- make
-Standards-Version: 3.8.4
-Homepage: @URL@ 
-X-Python-Version: >= 2.5
+    debhelper-compat (=13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/pop-os/cosmic-wallpapers
 
-Package: @NAME@
+Package: cosmic-wallpapers
 Architecture: all
 Depends: ${misc:Depends}
-Description: @SUMMARY@ 
- @DESCRIPTION@ 
+Provides: ubuntu-wallpapers
+Description: Wallpapers for the COSMIC desktop
+ Collection of wallpapers for the COSMIC desktop environment.

@@ -1,6 +1,5 @@
-cosmic-settings-daemon (0.0.1-1) unstable; urgency=low
+cosmic-settings-daemon (1.11.0-1) unstable; urgency=medium
 
-  * Another Release.
+  * Upstream release 1.11.0.
 
- -- @MAINTAINER@ <@MAINTAINER_EMAIL@>  Mon, 16 Nov 2015 12:00:00 +1000
-
+ -- kakwa <carpentier.pf@gmail.com>  Mon, 19 Oct 2026 17:00:00 +0000
