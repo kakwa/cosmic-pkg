@@ -35,11 +35,9 @@ LICENSE = GPL-3.0
 # Including common rules and targets
 include buildenv/Makefile.common
 
-# Recover the upstream sources, remove the upstream Debian packaging and
-# vendor the Rust dependencies so the build itself can run offline.
+# Recover the upstream sources and remove the upstream Debian packaging.
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@$(WGS) -u $(URL_SRC) -O $(NAME)-$(VERSION).tar.gz
 	@tar -xf $(CACHE_DIR)/$(NAME)-$(VERSION).tar.gz -C $(SOURCE_DIR) --strip-components=1
 	@rm -rf -- $(SOURCE_DIR)/debian
-	@cd $(SOURCE_DIR) && just vendor
 	@$(SOURCE_TAR_CMD)

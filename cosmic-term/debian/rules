@@ -8,13 +8,6 @@ export DESTDIR = debian/cosmic-term
 override_dh_auto_clean:
 	@true
 
-override_dh_auto_build:
-	if test -e vendor.tar; then \
-		just build-vendored; \
-	else \
-		just build-release; \
-	fi
-
 override_dh_auto_test:
 	@true
 
