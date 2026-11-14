@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_debug 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-debug:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_debug 0.14.0 --all-targets
+Features: test-name=librust-iced-debug-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_debug 0.14.0 --all-targets --no-default-features --features enable
+Features: test-name=librust-iced-debug-dev:enable
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_debug 0.14.0 --all-targets --no-default-features --features hot
+Features: test-name=librust-iced-debug-dev:hot
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_debug 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-debug-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --all-features
+Features: test-name=rust-synchrony:@
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features async_flag
+Features: test-name=librust-synchrony-dev:async_flag
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features bilock
+Features: test-name=librust-synchrony-dev:bilock
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets
+Features: test-name=librust-synchrony-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features event
+Features: test-name=librust-synchrony-dev:event
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features mutex
+Features: test-name=librust-synchrony-dev:mutex
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features waker_slot
+Features: test-name=librust-synchrony-dev:waker_slot
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features --features watch
+Features: test-name=librust-synchrony-dev:watch
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test synchrony 0.1.9 --all-targets --no-default-features
+Features: test-name=librust-synchrony-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.31), librust-futures-0.3+executor-dev (>= 0.3.31), @
+Restrictions: allow-stderr
+Architecture: !riscv64

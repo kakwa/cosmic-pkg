@@ -1,0 +1,34 @@
+Source: rust-pwd
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>,
+ librust-thiserror-1+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/pwd]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/pwd
+Homepage: https://gitlab.com/pwoolcoc/pwd.git
+X-Cargo-Crate: pwd
+X-Cargo-Crate-Version: 1.4.0
+
+Package: librust-pwd-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+default-dev,
+ librust-thiserror-1+default-dev
+Provides:
+ librust-pwd+default-dev (= ${binary:Version}),
+ librust-pwd-1-dev (= ${binary:Version}),
+ librust-pwd-1+default-dev (= ${binary:Version}),
+ librust-pwd-1.4-dev (= ${binary:Version}),
+ librust-pwd-1.4+default-dev (= ${binary:Version}),
+ librust-pwd-1.4.0-dev (= ${binary:Version}),
+ librust-pwd-1.4.0+default-dev (= ${binary:Version})
+Description: Safe interface to pwd.h - Rust source code
+ Source code for Debianized Rust crate "pwd"

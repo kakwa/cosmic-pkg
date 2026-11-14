@@ -1,0 +1,62 @@
+Source: rust-iced-futures
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-futures-0.3+async-await-dev <!nocheck>,
+ librust-futures-0.3+std-dev <!nocheck>,
+ librust-iced-core-0.14+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-rustc-hash-2+default-dev <!nocheck>,
+ librust-wasm-bindgen-futures-0.4+default-dev <!nocheck>,
+ librust-wasmtimer-0.4+default-dev (>= 0.4.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-futures]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-futures
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_futures
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-iced-futures-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-futures-0.3+async-await-dev,
+ librust-futures-0.3+std-dev,
+ librust-futures-0.3+thread-pool-dev,
+ librust-iced-core-0.14+default-dev,
+ librust-log-0.4+default-dev,
+ librust-rustc-hash-2+default-dev,
+ librust-smol-2+default-dev,
+ librust-tokio-1+default-dev,
+ librust-tokio-1+rt-dev,
+ librust-tokio-1+rt-multi-thread-dev,
+ librust-tokio-1+time-dev,
+ librust-wasm-bindgen-futures-0.4+default-dev,
+ librust-wasmtimer-0.4+default-dev (>= 0.4.2)
+Provides:
+ librust-iced-futures+default-dev (= ${binary:Version}),
+ librust-iced-futures+smol-dev (= ${binary:Version}),
+ librust-iced-futures+thread-pool-dev (= ${binary:Version}),
+ librust-iced-futures+tokio-dev (= ${binary:Version}),
+ librust-iced-futures-0-dev (= ${binary:Version}),
+ librust-iced-futures-0+default-dev (= ${binary:Version}),
+ librust-iced-futures-0+smol-dev (= ${binary:Version}),
+ librust-iced-futures-0+thread-pool-dev (= ${binary:Version}),
+ librust-iced-futures-0+tokio-dev (= ${binary:Version}),
+ librust-iced-futures-0.14-dev (= ${binary:Version}),
+ librust-iced-futures-0.14+default-dev (= ${binary:Version}),
+ librust-iced-futures-0.14+smol-dev (= ${binary:Version}),
+ librust-iced-futures-0.14+thread-pool-dev (= ${binary:Version}),
+ librust-iced-futures-0.14+tokio-dev (= ${binary:Version}),
+ librust-iced-futures-0.14.0-dev (= ${binary:Version}),
+ librust-iced-futures-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-futures-0.14.0+smol-dev (= ${binary:Version}),
+ librust-iced-futures-0.14.0+thread-pool-dev (= ${binary:Version}),
+ librust-iced-futures-0.14.0+tokio-dev (= ${binary:Version})
+Description: Commands, subscriptions, and future executors for iced - Rust source code
+ Source code for Debianized Rust crate "iced_futures"

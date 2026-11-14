@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets --all-features
+Features: test-name=rust-compio-fs:@
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets
+Features: test-name=librust-compio-fs-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets --no-default-features --features nightly
+Features: test-name=librust-compio-fs-dev:nightly
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets --no-default-features --features read_buf
+Features: test-name=librust-compio-fs-dev:read_buf
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets --no-default-features --features windows_by_handle
+Features: test-name=librust-compio-fs-dev:windows_by_handle
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-fs 0.11.0 --all-targets --no-default-features
+Features: test-name=librust-compio-fs-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-compio-macros-0.1+default-dev (>= 0.1.2), librust-compio-net-0.11+default-dev, librust-compio-runtime-0.11+default-dev, librust-compio-runtime-0.11+time-dev, librust-futures-util-0.3+default-dev (>= 0.3.29), librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), librust-tempfile-3+default-dev (>= 3.8.1), librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-security-authorization-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

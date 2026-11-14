@@ -1,0 +1,40 @@
+Source: rust-xdg-mime
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-dirs-next-2+default-dev <!nocheck>,
+ librust-glob-0.3+default-dev <!nocheck>,
+ librust-mime-0.3+default-dev <!nocheck>,
+ librust-nom-7+default-dev <!nocheck>,
+ librust-unicase-2+default-dev (>= 2.3.0) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/xdg-mime]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/xdg-mime
+Homepage: https://github.com/ebassi/xdg-mime-rs
+X-Cargo-Crate: xdg-mime
+X-Cargo-Crate-Version: 0.4.0
+
+Package: librust-xdg-mime-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-dirs-next-2+default-dev,
+ librust-glob-0.3+default-dev,
+ librust-mime-0.3+default-dev,
+ librust-nom-7+default-dev,
+ librust-unicase-2+default-dev (>= 2.3.0)
+Provides:
+ librust-xdg-mime+default-dev (= ${binary:Version}),
+ librust-xdg-mime-0-dev (= ${binary:Version}),
+ librust-xdg-mime-0+default-dev (= ${binary:Version}),
+ librust-xdg-mime-0.4-dev (= ${binary:Version}),
+ librust-xdg-mime-0.4+default-dev (= ${binary:Version}),
+ librust-xdg-mime-0.4.0-dev (= ${binary:Version}),
+ librust-xdg-mime-0.4.0+default-dev (= ${binary:Version})
+Description: Loading and querying the XDG shared MIME database - Rust source code
+ Source code for Debianized Rust crate "xdg-mime"

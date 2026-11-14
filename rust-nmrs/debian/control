@@ -1,0 +1,70 @@
+Source: rust-nmrs
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.90.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-base64-0.23+default-dev (>= 0.23.1) <!nocheck>,
+ librust-bitflags-2+default-dev (>= 2.13.2) <!nocheck>,
+ librust-futures-0.3+default-dev (>= 0.3.34) <!nocheck>,
+ librust-futures-timer-3+default-dev (>= 3.0.4) <!nocheck>,
+ librust-log-0.4+default-dev (>= 0.4.34) <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.229) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.229) <!nocheck>,
+ librust-thiserror-2+default-dev (>= 2.0.21) <!nocheck>,
+ librust-tokio-1+default-dev (>= 1.53.3) <!nocheck>,
+ librust-tokio-1+macros-dev (>= 1.53.3) <!nocheck>,
+ librust-tokio-1+process-dev (>= 1.53.3) <!nocheck>,
+ librust-tokio-1+rt-multi-thread-dev (>= 1.53.3) <!nocheck>,
+ librust-tokio-1+sync-dev (>= 1.53.3) <!nocheck>,
+ librust-tokio-1+time-dev (>= 1.53.3) <!nocheck>,
+ librust-uuid-1+default-dev (>= 1.28.0) <!nocheck>,
+ librust-uuid-1+v4-dev (>= 1.28.0) <!nocheck>,
+ librust-uuid-1+v5-dev (>= 1.28.0) <!nocheck>,
+ librust-zbus-5+default-dev (>= 5.16.0) <!nocheck>,
+ librust-zvariant-5+default-dev (>= 5.15.0) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/nmrs]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/nmrs
+Homepage: https://github.com/freedesktop-rs/nmrs
+X-Cargo-Crate: nmrs
+X-Cargo-Crate-Version: 3.5.7
+
+Package: librust-nmrs-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-base64-0.23+default-dev (>= 0.23.1),
+ librust-bitflags-2+default-dev (>= 2.13.2),
+ librust-futures-0.3+default-dev (>= 0.3.34),
+ librust-futures-timer-3+default-dev (>= 3.0.4),
+ librust-log-0.4+default-dev (>= 0.4.34),
+ librust-serde-1+default-dev (>= 1.0.229),
+ librust-serde-1+derive-dev (>= 1.0.229),
+ librust-thiserror-2+default-dev (>= 2.0.21),
+ librust-tokio-1+default-dev (>= 1.53.3),
+ librust-tokio-1+macros-dev (>= 1.53.3),
+ librust-tokio-1+process-dev (>= 1.53.3),
+ librust-tokio-1+rt-multi-thread-dev (>= 1.53.3),
+ librust-tokio-1+sync-dev (>= 1.53.3),
+ librust-tokio-1+time-dev (>= 1.53.3),
+ librust-uuid-1+default-dev (>= 1.28.0),
+ librust-uuid-1+v4-dev (>= 1.28.0),
+ librust-uuid-1+v5-dev (>= 1.28.0),
+ librust-zbus-5+default-dev (>= 5.16.0),
+ librust-zvariant-5+default-dev (>= 5.15.0)
+Provides:
+ librust-nmrs+default-dev (= ${binary:Version}),
+ librust-nmrs-3-dev (= ${binary:Version}),
+ librust-nmrs-3+default-dev (= ${binary:Version}),
+ librust-nmrs-3.5-dev (= ${binary:Version}),
+ librust-nmrs-3.5+default-dev (= ${binary:Version}),
+ librust-nmrs-3.5.7-dev (= ${binary:Version}),
+ librust-nmrs-3.5.7+default-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.90.0~)
+Description: NetworkManager over D-Bus - Rust source code
+ Source code for Debianized Rust crate "nmrs"

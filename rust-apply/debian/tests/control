@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test apply 0.3.0 --all-targets --all-features
+Features: test-name=rust-apply:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

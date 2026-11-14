@@ -1,0 +1,30 @@
+Source: rust-almost
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/almost]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/almost
+Homepage: https://github.com/thomcc/almost
+X-Cargo-Crate: almost
+X-Cargo-Crate-Version: 0.2.0
+
+Package: librust-almost-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-almost+default-dev (= ${binary:Version}),
+ librust-almost-0-dev (= ${binary:Version}),
+ librust-almost-0+default-dev (= ${binary:Version}),
+ librust-almost-0.2-dev (= ${binary:Version}),
+ librust-almost-0.2+default-dev (= ${binary:Version}),
+ librust-almost-0.2.0-dev (= ${binary:Version}),
+ librust-almost-0.2.0+default-dev (= ${binary:Version})
+Description: Comparing floating point numbers - Rust source code
+ Source code for Debianized Rust crate "almost"

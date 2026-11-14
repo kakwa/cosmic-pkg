@@ -1,0 +1,4 @@
+Archive: crates.io
+Repository-Browse: https://github.com/nagisa/rust_tracy_client
+Repository: https://github.com/nagisa/rust_tracy_client.git
+Documentation: https://docs.rs/tracy-client

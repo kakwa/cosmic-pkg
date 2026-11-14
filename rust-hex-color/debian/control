@@ -1,0 +1,49 @@
+Source: rust-hex-color
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-rand-0.8+std-dev <!nocheck>,
+ librust-rand-0.8+std-rng-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/hex-color]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/hex-color
+Homepage: https://github.com/seancroach/hex_color
+X-Cargo-Crate: hex_color
+X-Cargo-Crate-Version: 3.0.0
+
+Package: librust-hex-color-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arrayvec-0.7-dev,
+ librust-rand-0.8+std-dev,
+ librust-rand-0.8+std-rng-dev,
+ librust-rand-0.8-dev,
+ librust-serde-1-dev
+Provides:
+ librust-hex-color+default-dev (= ${binary:Version}),
+ librust-hex-color+rand-dev (= ${binary:Version}),
+ librust-hex-color+serde-dev (= ${binary:Version}),
+ librust-hex-color+std-dev (= ${binary:Version}),
+ librust-hex-color-3-dev (= ${binary:Version}),
+ librust-hex-color-3+default-dev (= ${binary:Version}),
+ librust-hex-color-3+rand-dev (= ${binary:Version}),
+ librust-hex-color-3+serde-dev (= ${binary:Version}),
+ librust-hex-color-3+std-dev (= ${binary:Version}),
+ librust-hex-color-3.0-dev (= ${binary:Version}),
+ librust-hex-color-3.0+default-dev (= ${binary:Version}),
+ librust-hex-color-3.0+rand-dev (= ${binary:Version}),
+ librust-hex-color-3.0+serde-dev (= ${binary:Version}),
+ librust-hex-color-3.0+std-dev (= ${binary:Version}),
+ librust-hex-color-3.0.0-dev (= ${binary:Version}),
+ librust-hex-color-3.0.0+default-dev (= ${binary:Version}),
+ librust-hex-color-3.0.0+rand-dev (= ${binary:Version}),
+ librust-hex-color-3.0.0+serde-dev (= ${binary:Version}),
+ librust-hex-color-3.0.0+std-dev (= ${binary:Version})
+Description: Simple, lightweight library for working with RGB(A) hexadecimal colors - Rust source code
+ Source code for Debianized Rust crate "hex_color"

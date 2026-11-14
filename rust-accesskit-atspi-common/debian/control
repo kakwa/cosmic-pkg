@@ -1,0 +1,46 @@
+Source: rust-accesskit-atspi-common
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-accesskit-0.22+default-dev <!nocheck>,
+ librust-accesskit-consumer-0.32+default-dev <!nocheck>,
+ librust-atspi-common-0.13-dev <!nocheck>,
+ librust-serde-1+default-dev <!nocheck>,
+ librust-zvariant-5-dev (>= 5.4) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/accesskit-atspi-common]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/accesskit-atspi-common
+Homepage: https://github.com/AccessKit/accesskit
+X-Cargo-Crate: accesskit_atspi_common
+X-Cargo-Crate-Version: 0.15.0
+
+Package: librust-accesskit-atspi-common-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-accesskit-0.22+default-dev,
+ librust-accesskit-consumer-0.32+default-dev,
+ librust-atspi-common-0.13-dev,
+ librust-serde-1+default-dev,
+ librust-zvariant-5-dev (>= 5.4)
+Provides:
+ librust-accesskit-atspi-common+default-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common+simplified-api-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0+default-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0+simplified-api-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15+default-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15+simplified-api-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15.0-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15.0+default-dev (= ${binary:Version}),
+ librust-accesskit-atspi-common-0.15.0+simplified-api-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: AccessKit UI accessibility infrastructure: core AT-SPI translation layer - Rust source code
+ Source code for Debianized Rust crate "accesskit_atspi_common"

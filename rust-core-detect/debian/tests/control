@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test core_detect 1.0.0 --all-targets --all-features
+Features: test-name=rust-core-detect:@
+Depends: dh-cargo (>= 33~), rustc, librust-cupid-0.6+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test core_detect 1.0.0 --all-targets --no-default-features --features assume_has_cpuid
+Features: test-name=librust-core-detect-dev:assume_has_cpuid
+Depends: dh-cargo (>= 33~), rustc, librust-cupid-0.6+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test core_detect 1.0.0 --all-targets
+Features: test-name=librust-core-detect-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-cupid-0.6+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test core_detect 1.0.0 --all-targets --no-default-features --features unstable_has_cpuid
+Features: test-name=librust-core-detect-dev:unstable_has_cpuid
+Depends: dh-cargo (>= 33~), rustc, librust-cupid-0.6+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test core_detect 1.0.0 --all-targets --no-default-features
+Features: test-name=librust-core-detect-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-cupid-0.6+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

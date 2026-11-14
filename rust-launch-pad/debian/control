@@ -1,0 +1,66 @@
+Source: rust-launch-pad
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-rand-0.9+default-dev <!nocheck>,
+ librust-rustix-1+default-dev <!nocheck>,
+ librust-rustix-1+fs-dev <!nocheck>,
+ librust-rustix-1+io-uring-dev <!nocheck>,
+ librust-rustix-1+process-dev <!nocheck>,
+ librust-slotmap-1+default-dev <!nocheck>,
+ librust-sync-wrapper-1+default-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>,
+ librust-tokio-1+default-dev <!nocheck>,
+ librust-tokio-1+io-util-dev <!nocheck>,
+ librust-tokio-1+macros-dev <!nocheck>,
+ librust-tokio-1+process-dev <!nocheck>,
+ librust-tokio-1+rt-dev <!nocheck>,
+ librust-tokio-1+sync-dev <!nocheck>,
+ librust-tokio-1+time-dev <!nocheck>,
+ librust-tokio-util-0.7+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/launch-pad]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/launch-pad
+Homepage: https://github.com/pop-os/launch-pad
+X-Cargo-Crate: launch-pad
+X-Cargo-Crate-Version: 1.0.1
+
+Package: librust-launch-pad-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+default-dev,
+ librust-log-0.4+default-dev,
+ librust-rand-0.9+default-dev,
+ librust-rustix-1+default-dev,
+ librust-rustix-1+fs-dev,
+ librust-rustix-1+io-uring-dev,
+ librust-rustix-1+process-dev,
+ librust-slotmap-1+default-dev,
+ librust-sync-wrapper-1+default-dev,
+ librust-thiserror-2+default-dev,
+ librust-tokio-1+default-dev,
+ librust-tokio-1+io-util-dev,
+ librust-tokio-1+macros-dev,
+ librust-tokio-1+process-dev,
+ librust-tokio-1+rt-dev,
+ librust-tokio-1+sync-dev,
+ librust-tokio-1+time-dev,
+ librust-tokio-util-0.7+default-dev
+Provides:
+ librust-launch-pad+default-dev (= ${binary:Version}),
+ librust-launch-pad-1-dev (= ${binary:Version}),
+ librust-launch-pad-1+default-dev (= ${binary:Version}),
+ librust-launch-pad-1.0-dev (= ${binary:Version}),
+ librust-launch-pad-1.0+default-dev (= ${binary:Version}),
+ librust-launch-pad-1.0.1-dev (= ${binary:Version}),
+ librust-launch-pad-1.0.1+default-dev (= ${binary:Version})
+Description: Async process manager/supervisor for *nix systems - Rust source code
+ Source code for Debianized Rust crate "launch-pad"

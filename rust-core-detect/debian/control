@@ -1,0 +1,38 @@
+Source: rust-core-detect
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/core-detect]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/core-detect
+Homepage: https://github.com/thomcc/core_detect
+X-Cargo-Crate: core_detect
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-core-detect-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-core-detect+assume-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect+default-dev (= ${binary:Version}),
+ librust-core-detect+unstable-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1-dev (= ${binary:Version}),
+ librust-core-detect-1+assume-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1+default-dev (= ${binary:Version}),
+ librust-core-detect-1+unstable-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1.0-dev (= ${binary:Version}),
+ librust-core-detect-1.0+assume-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1.0+default-dev (= ${binary:Version}),
+ librust-core-detect-1.0+unstable-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1.0.0-dev (= ${binary:Version}),
+ librust-core-detect-1.0.0+assume-has-cpuid-dev (= ${binary:Version}),
+ librust-core-detect-1.0.0+default-dev (= ${binary:Version}),
+ librust-core-detect-1.0.0+unstable-has-cpuid-dev (= ${binary:Version})
+Description: `no_std` version of the `std::is_x86_feature_detected!` macro - Rust source code
+ Source code for Debianized Rust crate "core_detect"

@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test pop-launcher 1.2.7 --all-targets --all-features
+Features: test-name=rust-pop-launcher:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test pop-launcher 1.2.7 --all-targets
+Features: test-name=librust-pop-launcher-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test pop-launcher 1.2.7 --all-targets --no-default-features
+Features: test-name=librust-pop-launcher-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

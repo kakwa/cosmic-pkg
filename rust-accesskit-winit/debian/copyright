@@ -1,0 +1,70 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: accesskit_winit
+Upstream-Contact: The AccessKit contributors
+Source: https://github.com/AccessKit/accesskit
+
+Files: *
+Copyright: FIXME (overlay) UNKNOWN-YEARS The AccessKit contributors
+License: Apache-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: src/lib.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/android.rs
+Copyright: 2025 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/macos.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/mod.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/null.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/unix.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/platform_impl/windows.rs
+Copyright: 2022 The AccessKit Authors. All rights reserved.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: debian/*
+Copyright: 2026 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+License: Apache-2.0
+
+License: Apache-2.0
+ Debian systems provide the Apache 2.0 license in
+ /usr/share/common-licenses/Apache-2.0

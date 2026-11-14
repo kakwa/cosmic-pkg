@@ -1,0 +1,70 @@
+Source: rust-zlink-macros
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.85) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-proc-macro2-1+default-dev <!nocheck>,
+ librust-quote-1+default-dev <!nocheck>,
+ librust-syn-2+clone-impls-dev <!nocheck>,
+ librust-syn-2+derive-dev <!nocheck>,
+ librust-syn-2+extra-traits-dev <!nocheck>,
+ librust-syn-2+full-dev <!nocheck>,
+ librust-syn-2+parsing-dev <!nocheck>,
+ librust-syn-2+printing-dev <!nocheck>,
+ librust-syn-2+proc-macro-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zlink-macros]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zlink-macros
+Homepage: https://github.com/z-galaxy/zlink/
+X-Cargo-Crate: zlink-macros
+X-Cargo-Crate-Version: 0.5.0
+
+Package: librust-zlink-macros-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-proc-macro2-1+default-dev,
+ librust-quote-1+default-dev,
+ librust-syn-2+clone-impls-dev,
+ librust-syn-2+derive-dev,
+ librust-syn-2+extra-traits-dev,
+ librust-syn-2+full-dev,
+ librust-syn-2+parsing-dev,
+ librust-syn-2+printing-dev,
+ librust-syn-2+proc-macro-dev
+Provides:
+ librust-zlink-macros+default-dev (= ${binary:Version}),
+ librust-zlink-macros+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-macros+introspection-dev (= ${binary:Version}),
+ librust-zlink-macros+proxy-dev (= ${binary:Version}),
+ librust-zlink-macros+service-dev (= ${binary:Version}),
+ librust-zlink-macros+std-dev (= ${binary:Version}),
+ librust-zlink-macros-0-dev (= ${binary:Version}),
+ librust-zlink-macros-0+default-dev (= ${binary:Version}),
+ librust-zlink-macros-0+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-macros-0+introspection-dev (= ${binary:Version}),
+ librust-zlink-macros-0+proxy-dev (= ${binary:Version}),
+ librust-zlink-macros-0+service-dev (= ${binary:Version}),
+ librust-zlink-macros-0+std-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+default-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+introspection-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+proxy-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+service-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5+std-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+default-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+introspection-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+proxy-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+service-dev (= ${binary:Version}),
+ librust-zlink-macros-0.5.0+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.85~)
+Description: Macros providing the high-level zlink API - Rust source code
+ Source code for Debianized Rust crate "zlink-macros"

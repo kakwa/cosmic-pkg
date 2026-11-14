@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test resize-slice 0.1.3 --all-targets --all-features
+Features: test-name=rust-resize-slice:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test resize-slice 0.1.3 --all-targets
+Features: test-name=librust-resize-slice-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test resize-slice 0.1.3 --all-targets --no-default-features --features smallvec
+Features: test-name=librust-resize-slice-dev:smallvec
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test resize-slice 0.1.3 --all-targets --no-default-features
+Features: test-name=librust-resize-slice-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

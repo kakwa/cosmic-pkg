@@ -1,0 +1,73 @@
+Source: rust-atspi
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-atspi-common-0.13+wrappers-dev <!nocheck>,
+ librust-atspi-common-0.13-dev <!nocheck>,
+ librust-atspi-connection-0.13+default-dev <!nocheck>,
+ librust-atspi-connection-0.13+p2p-dev <!nocheck>,
+ librust-atspi-proxies-0.13+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/atspi]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/atspi
+Homepage: https://github.com/odilia-app/atspi
+X-Cargo-Crate: atspi
+X-Cargo-Crate-Version: 0.29.0
+
+Package: librust-atspi-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-atspi-common-0.13+wrappers-dev,
+ librust-atspi-common-0.13-dev,
+ librust-atspi-connection-0.13+default-dev,
+ librust-atspi-connection-0.13+p2p-dev,
+ librust-atspi-connection-0.13+tracing-dev,
+ librust-atspi-proxies-0.13+default-dev,
+ librust-zbus-5+async-io-dev (>= 5.5),
+ librust-zbus-5+tokio-dev (>= 5.5)
+Provides:
+ librust-atspi+connection-dev (= ${binary:Version}),
+ librust-atspi+default-dev (= ${binary:Version}),
+ librust-atspi+p2p-dev (= ${binary:Version}),
+ librust-atspi+proxies-dev (= ${binary:Version}),
+ librust-atspi+tokio-dev (= ${binary:Version}),
+ librust-atspi+tracing-dev (= ${binary:Version}),
+ librust-atspi+wrappers-dev (= ${binary:Version}),
+ librust-atspi+zbus-dev (= ${binary:Version}),
+ librust-atspi-0-dev (= ${binary:Version}),
+ librust-atspi-0+connection-dev (= ${binary:Version}),
+ librust-atspi-0+default-dev (= ${binary:Version}),
+ librust-atspi-0+p2p-dev (= ${binary:Version}),
+ librust-atspi-0+proxies-dev (= ${binary:Version}),
+ librust-atspi-0+tokio-dev (= ${binary:Version}),
+ librust-atspi-0+tracing-dev (= ${binary:Version}),
+ librust-atspi-0+wrappers-dev (= ${binary:Version}),
+ librust-atspi-0+zbus-dev (= ${binary:Version}),
+ librust-atspi-0.29-dev (= ${binary:Version}),
+ librust-atspi-0.29+connection-dev (= ${binary:Version}),
+ librust-atspi-0.29+default-dev (= ${binary:Version}),
+ librust-atspi-0.29+p2p-dev (= ${binary:Version}),
+ librust-atspi-0.29+proxies-dev (= ${binary:Version}),
+ librust-atspi-0.29+tokio-dev (= ${binary:Version}),
+ librust-atspi-0.29+tracing-dev (= ${binary:Version}),
+ librust-atspi-0.29+wrappers-dev (= ${binary:Version}),
+ librust-atspi-0.29+zbus-dev (= ${binary:Version}),
+ librust-atspi-0.29.0-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+connection-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+default-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+p2p-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+proxies-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+tokio-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+tracing-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+wrappers-dev (= ${binary:Version}),
+ librust-atspi-0.29.0+zbus-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: Pure-Rust, zbus-based AT-SPI2 protocol implementation - Rust source code
+ Source code for Debianized Rust crate "atspi"

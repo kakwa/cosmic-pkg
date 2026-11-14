@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs 0.1.3 --all-targets --all-features
+Features: test-name=rust-mccs:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs 0.1.3 --all-targets
+Features: test-name=librust-mccs-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs 0.1.3 --all-targets --no-default-features --features void
+Features: test-name=librust-mccs-dev:void
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs 0.1.3 --all-targets --no-default-features
+Features: test-name=librust-mccs-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

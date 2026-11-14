@@ -1,0 +1,63 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --all-features
+Features: test-name=rust-bitcode:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features arrayvec
+Features: test-name=librust-bitcode-dev:arrayvec
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets
+Features: test-name=librust-bitcode-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features derive
+Features: test-name=librust-bitcode-dev:derive
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features glam
+Features: test-name=librust-bitcode-dev:glam
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features rust_decimal
+Features: test-name=librust-bitcode-dev:rust_decimal
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features serde
+Features: test-name=librust-bitcode-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features std
+Features: test-name=librust-bitcode-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features time
+Features: test-name=librust-bitcode-dev:time
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features --features uuid
+Features: test-name=librust-bitcode-dev:uuid
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitcode 0.6.9 --all-targets --no-default-features
+Features: test-name=librust-bitcode-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.70), librust-arrayvec-0.7+default-dev, librust-arrayvec-0.7+serde-dev, librust-bincode-1+default-dev (>= 1.3.3), librust-flate2-1+default-dev (>= 1.0.28), librust-glam-0.22+rand-dev, librust-lz4-flex-0.11-dev (<< 0.11.3), librust-lz4-flex-0.11-dev (>= 0.11.2), librust-paste-1+default-dev (>= 1.0.14), librust-rand-0.8+default-dev (>= 0.8.5), librust-rand-chacha-0.3+default-dev (>= 0.3.1), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-zstd-0.13+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

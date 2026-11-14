@@ -1,0 +1,39 @@
+Source: rust-zune-ppm
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-zune-core-0.5+default-dev (>= 0.5.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zune-ppm]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zune-ppm
+Homepage: https://github.com/etemesi254/zune-image/tree/dev/crates/zune-ppm
+X-Cargo-Crate: zune-ppm
+X-Cargo-Crate-Version: 0.5.1
+
+Package: librust-zune-ppm-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-zune-core-0.5+default-dev (>= 0.5.1),
+ librust-zune-core-0.5+log-dev (>= 0.5.1)
+Provides:
+ librust-zune-ppm+default-dev (= ${binary:Version}),
+ librust-zune-ppm+log-dev (= ${binary:Version}),
+ librust-zune-ppm-0-dev (= ${binary:Version}),
+ librust-zune-ppm-0+default-dev (= ${binary:Version}),
+ librust-zune-ppm-0+log-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5+default-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5+log-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5.1-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5.1+default-dev (= ${binary:Version}),
+ librust-zune-ppm-0.5.1+log-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.0~)
+Description: Portable Pixmap and Portable Floatmap Format Decoder and Encoder - Rust source code
+ Source code for Debianized Rust crate "zune-ppm"

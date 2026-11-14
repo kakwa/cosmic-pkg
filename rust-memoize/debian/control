@@ -1,0 +1,46 @@
+Source: rust-memoize
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-lazy-static-1+default-dev (>= 1.4) <!nocheck>,
+ librust-lru-0.7+default-dev <!nocheck>,
+ librust-memoize-inner-0.5+default-dev <!nocheck>,
+ librust-memoize-inner-0.5+full-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/memoize]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/memoize
+Homepage: https://github.com/dermesser/memoize
+X-Cargo-Crate: memoize
+X-Cargo-Crate-Version: 0.5.1
+
+Package: librust-memoize-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-lazy-static-1+default-dev (>= 1.4),
+ librust-lru-0.7+default-dev,
+ librust-memoize-inner-0.5+default-dev,
+ librust-memoize-inner-0.5+full-dev
+Provides:
+ librust-memoize+default-dev (= ${binary:Version}),
+ librust-memoize+full-dev (= ${binary:Version}),
+ librust-memoize+lru-dev (= ${binary:Version}),
+ librust-memoize-0-dev (= ${binary:Version}),
+ librust-memoize-0+default-dev (= ${binary:Version}),
+ librust-memoize-0+full-dev (= ${binary:Version}),
+ librust-memoize-0+lru-dev (= ${binary:Version}),
+ librust-memoize-0.5-dev (= ${binary:Version}),
+ librust-memoize-0.5+default-dev (= ${binary:Version}),
+ librust-memoize-0.5+full-dev (= ${binary:Version}),
+ librust-memoize-0.5+lru-dev (= ${binary:Version}),
+ librust-memoize-0.5.1-dev (= ${binary:Version}),
+ librust-memoize-0.5.1+default-dev (= ${binary:Version}),
+ librust-memoize-0.5.1+full-dev (= ${binary:Version}),
+ librust-memoize-0.5.1+lru-dev (= ${binary:Version})
+Description: Attribute macro for auto-memoizing functions with somewhat-simple signatures - Rust source code
+ Source code for Debianized Rust crate "memoize"

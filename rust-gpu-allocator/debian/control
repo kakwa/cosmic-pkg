@@ -1,0 +1,105 @@
+Source: rust-gpu-allocator
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-ash-0.38+debug-dev <!nocheck>,
+ librust-log-0.4-dev <!nocheck>,
+ librust-objc2-0.6-dev <!nocheck>,
+ librust-objc2-foundation-0.3-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlaccelerationstructure-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlallocation-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlbuffer-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtldevice-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlheap-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlresidencyset-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtlresource-dev <!nocheck>,
+ librust-objc2-metal-0.3+mtltexture-dev <!nocheck>,
+ librust-objc2-metal-0.3+std-dev <!nocheck>,
+ librust-presser-0.3+std-dev <!nocheck>,
+ librust-presser-0.3-dev <!nocheck>,
+ librust-thiserror-2-dev <!nocheck>,
+ librust-windows+default-dev (<< 0.63) <!nocheck>,
+ librust-windows+default-dev (>= 0.53) <!nocheck>,
+ librust-windows+win32-graphics-direct3d12-dev (<< 0.63) <!nocheck>,
+ librust-windows+win32-graphics-direct3d12-dev (>= 0.53) <!nocheck>,
+ librust-windows+win32-graphics-dxgi-common-dev (<< 0.63) <!nocheck>,
+ librust-windows+win32-graphics-dxgi-common-dev (>= 0.53) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/gpu-allocator]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/gpu-allocator
+Homepage: https://github.com/Traverse-Research/gpu-allocator
+X-Cargo-Crate: gpu-allocator
+X-Cargo-Crate-Version: 0.28.0
+
+Package: librust-gpu-allocator-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-ash-0.38+debug-dev,
+ librust-egui-dev (<< 0.28),
+ librust-egui-dev (>= 0.24),
+ librust-egui-extras-dev (<< 0.28),
+ librust-egui-extras-dev (>= 0.24),
+ librust-hashbrown-0.16+default-dev,
+ librust-log-0.4-dev,
+ librust-objc2-0.6-dev,
+ librust-objc2-foundation-0.3-dev,
+ librust-objc2-metal-0.3+mtlaccelerationstructure-dev,
+ librust-objc2-metal-0.3+mtlallocation-dev,
+ librust-objc2-metal-0.3+mtlbuffer-dev,
+ librust-objc2-metal-0.3+mtldevice-dev,
+ librust-objc2-metal-0.3+mtlheap-dev,
+ librust-objc2-metal-0.3+mtlresidencyset-dev,
+ librust-objc2-metal-0.3+mtlresource-dev,
+ librust-objc2-metal-0.3+mtltexture-dev,
+ librust-objc2-metal-0.3+std-dev,
+ librust-presser-0.3+std-dev,
+ librust-presser-0.3-dev,
+ librust-thiserror-2-dev,
+ librust-windows+default-dev (<< 0.63),
+ librust-windows+default-dev (>= 0.53),
+ librust-windows+win32-graphics-direct3d12-dev (<< 0.63),
+ librust-windows+win32-graphics-direct3d12-dev (>= 0.53),
+ librust-windows+win32-graphics-dxgi-common-dev (<< 0.63),
+ librust-windows+win32-graphics-dxgi-common-dev (>= 0.53)
+Provides:
+ librust-gpu-allocator+d3d12-dev (= ${binary:Version}),
+ librust-gpu-allocator+default-dev (= ${binary:Version}),
+ librust-gpu-allocator+hashbrown-dev (= ${binary:Version}),
+ librust-gpu-allocator+metal-dev (= ${binary:Version}),
+ librust-gpu-allocator+std-dev (= ${binary:Version}),
+ librust-gpu-allocator+visualizer-dev (= ${binary:Version}),
+ librust-gpu-allocator+vulkan-dev (= ${binary:Version}),
+ librust-gpu-allocator-0-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+d3d12-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+default-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+hashbrown-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+metal-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+std-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+visualizer-dev (= ${binary:Version}),
+ librust-gpu-allocator-0+vulkan-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+d3d12-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+default-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+hashbrown-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+metal-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+std-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+visualizer-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28+vulkan-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+d3d12-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+default-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+hashbrown-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+metal-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+std-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+visualizer-dev (= ${binary:Version}),
+ librust-gpu-allocator-0.28.0+vulkan-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Memory allocator for GPU memory in Vulkan and DirectX 12 - Rust source code
+ Source code for Debianized Rust crate "gpu-allocator"

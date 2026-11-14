@@ -1,0 +1,99 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-renderer:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets
+Features: test-name=librust-iced-renderer-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features fira-sans
+Features: test-name=librust-iced-renderer-dev:fira-sans
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features geometry
+Features: test-name=librust-iced-renderer-dev:geometry
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features iced_tiny_skia
+Features: test-name=librust-iced-renderer-dev:iced_tiny_skia
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features iced_wgpu
+Features: test-name=librust-iced-renderer-dev:iced_wgpu
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features image
+Features: test-name=librust-iced-renderer-dev:image
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features strict-assertions
+Features: test-name=librust-iced-renderer-dev:strict-assertions
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-iced-renderer-dev:svg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features tiny-skia
+Features: test-name=librust-iced-renderer-dev:tiny-skia
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features wayland
+Features: test-name=librust-iced-renderer-dev:wayland
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features web-colors
+Features: test-name=librust-iced-renderer-dev:web-colors
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features webgl
+Features: test-name=librust-iced-renderer-dev:webgl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features wgpu
+Features: test-name=librust-iced-renderer-dev:wgpu
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features wgpu-bare
+Features: test-name=librust-iced-renderer-dev:wgpu-bare
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features --features x11
+Features: test-name=librust-iced-renderer-dev:x11
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_renderer 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-renderer-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test yaml-rust 0.4.5 --all-targets --all-features
+Features: test-name=rust-yaml-rust:@
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.9+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test yaml-rust 0.4.5 --all-targets
+Features: test-name=librust-yaml-rust-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.9+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test yaml-rust 0.4.5 --all-targets --no-default-features
+Features: test-name=librust-yaml-rust-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.9+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

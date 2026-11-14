@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-client-toolkit 0.2.0 --all-targets --all-features
+Features: test-name=rust-cosmic-client-toolkit:@
+Depends: dh-cargo (>= 33~), rustc, librust-gbm-0.18+default-dev, librust-png-0.18+default-dev, librust-smithay-0.7+backend-drm-dev, librust-smithay-0.7+renderer-gl-dev, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-client-toolkit 0.2.0 --all-targets
+Features: test-name=librust-cosmic-client-toolkit-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-gbm-0.18+default-dev, librust-png-0.18+default-dev, librust-smithay-0.7+backend-drm-dev, librust-smithay-0.7+renderer-gl-dev, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-client-toolkit 0.2.0 --all-targets --no-default-features
+Features: test-name=librust-cosmic-client-toolkit-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-gbm-0.18+default-dev, librust-png-0.18+default-dev, librust-smithay-0.7+backend-drm-dev, librust-smithay-0.7+renderer-gl-dev, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,85 @@
+Source: rust-icu-locale-fallback
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.88) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-icu-locale-core-2+alloc-dev (>= 2.3.0) <!nocheck>,
+ librust-icu-locale-core-2+zerovec-dev (>= 2.3.0) <!nocheck>,
+ librust-icu-locale-fallback-data-2-dev (<< 2.4) <!nocheck>,
+ librust-icu-locale-fallback-data-2-dev (>= 2.3.0) <!nocheck>,
+ librust-icu-provider-2+alloc-dev (>= 2.3.0) <!nocheck>,
+ librust-icu-provider-2+baked-dev (>= 2.3.0) <!nocheck>,
+ librust-potential-utf-0.1+alloc-dev (>= 0.1.3) <!nocheck>,
+ librust-potential-utf-0.1+zerovec-dev (>= 0.1.3) <!nocheck>,
+ librust-tinystr-0.8+alloc-dev (>= 0.8.4) <!nocheck>,
+ librust-tinystr-0.8+zerovec-dev (>= 0.8.4) <!nocheck>,
+ librust-zerovec-0.11+alloc-dev (>= 0.11.7) <!nocheck>,
+ librust-zerovec-0.11+yoke-dev (>= 0.11.7) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locale-fallback]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/icu-locale-fallback
+Homepage: https://icu4x.unicode.org
+X-Cargo-Crate: icu_locale_fallback
+X-Cargo-Crate-Version: 2.3.0
+
+Package: librust-icu-locale-fallback-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-databake-0.2+derive-dev,
+ librust-icu-locale-core-2+alloc-dev (>= 2.3.0),
+ librust-icu-locale-core-2+databake-dev (>= 2.3.0),
+ librust-icu-locale-core-2+serde-dev (>= 2.3.0),
+ librust-icu-locale-core-2+zerovec-dev (>= 2.3.0),
+ librust-icu-locale-fallback-data-2-dev (<< 2.4),
+ librust-icu-locale-fallback-data-2-dev (>= 2.3.0),
+ librust-icu-provider-2+alloc-dev (>= 2.3.0),
+ librust-icu-provider-2+baked-dev (>= 2.3.0),
+ librust-icu-provider-2+export-dev (>= 2.3.0),
+ librust-icu-provider-2+serde-dev (>= 2.3.0),
+ librust-icu-provider-2+std-dev (>= 2.3.0),
+ librust-potential-utf-0.1+alloc-dev (>= 0.1.3),
+ librust-potential-utf-0.1+serde-dev (>= 0.1.3),
+ librust-potential-utf-0.1+zerovec-dev (>= 0.1.3),
+ librust-serde-1+alloc-dev (>= 1.0.220),
+ librust-serde-1+derive-dev (>= 1.0.220),
+ librust-tinystr-0.8+alloc-dev (>= 0.8.4),
+ librust-tinystr-0.8+databake-dev (>= 0.8.4),
+ librust-tinystr-0.8+serde-dev (>= 0.8.4),
+ librust-tinystr-0.8+zerovec-dev (>= 0.8.4),
+ librust-zerovec-0.11+alloc-dev (>= 0.11.7),
+ librust-zerovec-0.11+databake-dev (>= 0.11.7),
+ librust-zerovec-0.11+serde-dev (>= 0.11.7),
+ librust-zerovec-0.11+yoke-dev (>= 0.11.7)
+Provides:
+ librust-icu-locale-fallback+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locale-fallback+datagen-dev (= ${binary:Version}),
+ librust-icu-locale-fallback+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback+serde-dev (= ${binary:Version}),
+ librust-icu-locale-fallback+std-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2+datagen-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2+serde-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2+std-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3+datagen-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3+serde-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3+std-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0+datagen-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0+serde-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-2.3.0+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.88~)
+Description: API for Locale Fallback algorithms - Rust source code
+ Source code for Debianized Rust crate "icu_locale_fallback"

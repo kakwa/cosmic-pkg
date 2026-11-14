@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets --all-features
+Features: test-name=rust-zune-bmp:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets
+Features: test-name=librust-zune-bmp-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets --no-default-features --features log
+Features: test-name=librust-zune-bmp-dev:log
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets --no-default-features --features rgb_inverse
+Features: test-name=librust-zune-bmp-dev:rgb_inverse
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets --no-default-features --features std
+Features: test-name=librust-zune-bmp-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-bmp 0.5.2 --all-targets --no-default-features
+Features: test-name=librust-zune-bmp-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

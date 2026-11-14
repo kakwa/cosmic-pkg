@@ -1,0 +1,126 @@
+Source: rust-pelite
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native,
+ rustc:native,
+ libstd-rust-dev,
+ librust-dataview-1+derive-pod-dev,
+ librust-dataview-1-dev,
+ librust-libc-0.2+default-dev,
+ librust-no-std-compat-0.4+alloc-dev,
+ librust-no-std-compat-0.4+default-dev,
+ librust-no-std-compat-0.4+std-dev,
+ librust-pelite-macros-0.1+default-dev (>= 0.1.1),
+ librust-winapi-0.3+default-dev,
+ librust-winapi-0.3+fileapi-dev,
+ librust-winapi-0.3+handleapi-dev,
+ librust-winapi-0.3+memoryapi-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/pelite]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/pelite
+Homepage: https://github.com/CasualX/pelite
+X-Cargo-Crate: pelite
+X-Cargo-Crate-Version: 0.10.0
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-pelite-dev is very long, consider overriding
+
+Package: librust-pelite-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-data-encoding-2+default-dev (>= 2.3),
+ librust-dataview-1+derive-pod-dev,
+ librust-dataview-1-dev,
+ librust-hashbrown-0.8+default-dev,
+ librust-libc-0.2+default-dev,
+ librust-no-std-compat-0.4+alloc-dev,
+ librust-no-std-compat-0.4+default-dev,
+ librust-no-std-compat-0.4+std-dev,
+ librust-pelite-macros-0.1+default-dev (>= 0.1.1),
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev,
+ librust-winapi-0.3+default-dev,
+ librust-winapi-0.3+fileapi-dev,
+ librust-winapi-0.3+handleapi-dev,
+ librust-winapi-0.3+memoryapi-dev
+Provides:
+ librust-pelite+data-encoding-dev (= ${binary:Version}),
+ librust-pelite+default-dev (= ${binary:Version}),
+ librust-pelite+derive-pod-dev (= ${binary:Version}),
+ librust-pelite+hashbrown-dev (= ${binary:Version}),
+ librust-pelite+libc-dev (= ${binary:Version}),
+ librust-pelite+mmap-dev (= ${binary:Version}),
+ librust-pelite+resources-nostd-dev (= ${binary:Version}),
+ librust-pelite+serde-dev (= ${binary:Version}),
+ librust-pelite+std-dev (= ${binary:Version}),
+ librust-pelite+unsafe-alignment-dev (= ${binary:Version}),
+ librust-pelite+unstable-dev (= ${binary:Version}),
+ librust-pelite+winapi-dev (= ${binary:Version}),
+ librust-pelite-0-dev (= ${binary:Version}),
+ librust-pelite-0+data-encoding-dev (= ${binary:Version}),
+ librust-pelite-0+default-dev (= ${binary:Version}),
+ librust-pelite-0+derive-pod-dev (= ${binary:Version}),
+ librust-pelite-0+hashbrown-dev (= ${binary:Version}),
+ librust-pelite-0+libc-dev (= ${binary:Version}),
+ librust-pelite-0+mmap-dev (= ${binary:Version}),
+ librust-pelite-0+resources-nostd-dev (= ${binary:Version}),
+ librust-pelite-0+serde-dev (= ${binary:Version}),
+ librust-pelite-0+std-dev (= ${binary:Version}),
+ librust-pelite-0+unsafe-alignment-dev (= ${binary:Version}),
+ librust-pelite-0+unstable-dev (= ${binary:Version}),
+ librust-pelite-0+winapi-dev (= ${binary:Version}),
+ librust-pelite-0.10-dev (= ${binary:Version}),
+ librust-pelite-0.10+data-encoding-dev (= ${binary:Version}),
+ librust-pelite-0.10+default-dev (= ${binary:Version}),
+ librust-pelite-0.10+derive-pod-dev (= ${binary:Version}),
+ librust-pelite-0.10+hashbrown-dev (= ${binary:Version}),
+ librust-pelite-0.10+libc-dev (= ${binary:Version}),
+ librust-pelite-0.10+mmap-dev (= ${binary:Version}),
+ librust-pelite-0.10+resources-nostd-dev (= ${binary:Version}),
+ librust-pelite-0.10+serde-dev (= ${binary:Version}),
+ librust-pelite-0.10+std-dev (= ${binary:Version}),
+ librust-pelite-0.10+unsafe-alignment-dev (= ${binary:Version}),
+ librust-pelite-0.10+unstable-dev (= ${binary:Version}),
+ librust-pelite-0.10+winapi-dev (= ${binary:Version}),
+ librust-pelite-0.10.0-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+data-encoding-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+default-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+derive-pod-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+hashbrown-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+libc-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+mmap-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+resources-nostd-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+serde-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+std-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+unsafe-alignment-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+unstable-dev (= ${binary:Version}),
+ librust-pelite-0.10.0+winapi-dev (= ${binary:Version})
+Description: Lightweight, memory-safe, zero-allocation library for reading and navigating PE binaries - Rust source code
+ Source code for Debianized Rust crate "pelite"
+
+Package: pelite
+Architecture: any
+Section: FIXME-(packages."(name)".section)
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${cargo:Depends}
+Recommends:
+ ${cargo:Recommends}
+Suggests:
+ ${cargo:Suggests}
+Provides:
+ ${cargo:Provides}
+Built-Using: ${cargo:Built-Using}
+Static-Built-Using: ${cargo:Static-Built-Using}
+Description: Lightweight, memory-safe, zero-allocation library for reading and navigating PE binaries
+ This package contains the following binaries built from the Rust crate
+ "pelite":
+  - findsig
+  - module-def
+  - msrtti
+  - pedump
+  - strings

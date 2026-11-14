@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lilt 0.8.2 --all-targets --all-features
+Features: test-name=rust-lilt:@
+Depends: dh-cargo (>= 33~), rustc, librust-insta-1+default-dev (>= 1.42.1), librust-public-api-0.43+default-dev, librust-rustdoc-json-0.9+default-dev (>= 0.9.4), librust-rustup-toolchain-0.1+default-dev (>= 0.1.9), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lilt 0.8.2 --all-targets
+Features: test-name=librust-lilt-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-insta-1+default-dev (>= 1.42.1), librust-public-api-0.43+default-dev, librust-rustdoc-json-0.9+default-dev (>= 0.9.4), librust-rustup-toolchain-0.1+default-dev (>= 0.1.9), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lilt 0.8.2 --all-targets --no-default-features --features test-api
+Features: test-name=librust-lilt-dev:test-api
+Depends: dh-cargo (>= 33~), rustc, librust-insta-1+default-dev (>= 1.42.1), librust-public-api-0.43+default-dev, librust-rustdoc-json-0.9+default-dev (>= 0.9.4), librust-rustup-toolchain-0.1+default-dev (>= 0.1.9), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lilt 0.8.2 --all-targets --no-default-features
+Features: test-name=librust-lilt-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-insta-1+default-dev (>= 1.42.1), librust-public-api-0.43+default-dev, librust-rustdoc-json-0.9+default-dev (>= 0.9.4), librust-rustup-toolchain-0.1+default-dev (>= 0.1.9), @
+Restrictions: allow-stderr
+Architecture: !riscv64

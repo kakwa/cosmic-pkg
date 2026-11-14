@@ -1,0 +1,32 @@
+Source: rust-icu-locid-transform-data
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.67) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locid-transform-data]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/icu-locid-transform-data
+Homepage: https://icu4x.unicode.org
+X-Cargo-Crate: icu_locid_transform_data
+X-Cargo-Crate-Version: 1.5.1
+
+Package: librust-icu-locid-transform-data-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-icu-locid-transform-data+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1.5-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1.5+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1.5.1-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-1.5.1+default-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.67~)
+Description: Data for the icu_locid_transform crate - Rust source code
+ Source code for Debianized Rust crate "icu_locid_transform_data"

@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs-caps 0.1.3 --all-targets --all-features
+Features: test-name=rust-mccs-caps:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs-caps 0.1.3 --all-targets
+Features: test-name=librust-mccs-caps-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs-caps 0.1.3 --all-targets --no-default-features --features test-nom-errors
+Features: test-name=librust-mccs-caps-dev:test-nom-errors
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test mccs-caps 0.1.3 --all-targets --no-default-features
+Features: test-name=librust-mccs-caps-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

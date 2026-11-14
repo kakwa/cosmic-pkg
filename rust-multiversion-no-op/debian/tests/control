@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test multiversion_no_op 1.0.0 --all-targets --all-features
+Features: test-name=rust-multiversion-no-op:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.56), @
+Restrictions: allow-stderr

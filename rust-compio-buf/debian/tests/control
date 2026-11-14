@@ -1,0 +1,69 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --all-features
+Features: test-name=rust-compio-buf:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features allocator_api
+Features: test-name=librust-compio-buf-dev:allocator_api
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features arrayvec
+Features: test-name=librust-compio-buf-dev:arrayvec
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features bumpalo
+Features: test-name=librust-compio-buf-dev:bumpalo
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features bytes
+Features: test-name=librust-compio-buf-dev:bytes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets
+Features: test-name=librust-compio-buf-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features memmap2
+Features: test-name=librust-compio-buf-dev:memmap2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features nightly
+Features: test-name=librust-compio-buf-dev:nightly
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features read_buf
+Features: test-name=librust-compio-buf-dev:read_buf
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features smallvec
+Features: test-name=librust-compio-buf-dev:smallvec
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features --features try_trait_v2
+Features: test-name=librust-compio-buf-dev:try_trait_v2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-buf 0.8.3 --all-targets --no-default-features
+Features: test-name=librust-compio-buf-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

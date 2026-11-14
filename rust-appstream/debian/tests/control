@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --all-features
+Features: test-name=rust-appstream:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets
+Features: test-name=librust-appstream-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --no-default-features --features flate2
+Features: test-name=librust-appstream-dev:flate2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --no-default-features --features gzip
+Features: test-name=librust-appstream-dev:gzip
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --no-default-features --features serde_json
+Features: test-name=librust-appstream-dev:serde_json
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --no-default-features --features test_json
+Features: test-name=librust-appstream-dev:test_json
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test appstream 0.2.2 --all-targets --no-default-features
+Features: test-name=librust-appstream-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

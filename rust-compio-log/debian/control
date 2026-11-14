@@ -1,0 +1,36 @@
+Source: rust-compio-log
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-tracing-0.1-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compio-log]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/compio-log
+Homepage: https://github.com/compio-rs/compio
+X-Cargo-Crate: compio-log
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-compio-log-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-tracing-0.1-dev
+Provides:
+ librust-compio-log+default-dev (= ${binary:Version}),
+ librust-compio-log+enable-log-dev (= ${binary:Version}),
+ librust-compio-log-0-dev (= ${binary:Version}),
+ librust-compio-log-0+default-dev (= ${binary:Version}),
+ librust-compio-log-0+enable-log-dev (= ${binary:Version}),
+ librust-compio-log-0.1-dev (= ${binary:Version}),
+ librust-compio-log-0.1+default-dev (= ${binary:Version}),
+ librust-compio-log-0.1+enable-log-dev (= ${binary:Version}),
+ librust-compio-log-0.1.0-dev (= ${binary:Version}),
+ librust-compio-log-0.1.0+default-dev (= ${binary:Version}),
+ librust-compio-log-0.1.0+enable-log-dev (= ${binary:Version})
+Description: Log of compio - Rust source code
+ Source code for Debianized Rust crate "compio-log"

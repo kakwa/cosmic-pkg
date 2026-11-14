@@ -1,0 +1,39 @@
+Source: rust-zune-hdr
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-zune-core-0.5+std-dev (>= 0.5.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zune-hdr]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zune-hdr
+Homepage: https://github.com/etemesi254/zune-image/tree/dev/crates/zune-hdr
+X-Cargo-Crate: zune-hdr
+X-Cargo-Crate-Version: 0.5.2
+
+Package: librust-zune-hdr-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-zune-core-0.5+log-dev (>= 0.5.1),
+ librust-zune-core-0.5+std-dev (>= 0.5.1)
+Provides:
+ librust-zune-hdr+default-dev (= ${binary:Version}),
+ librust-zune-hdr+log-dev (= ${binary:Version}),
+ librust-zune-hdr-0-dev (= ${binary:Version}),
+ librust-zune-hdr-0+default-dev (= ${binary:Version}),
+ librust-zune-hdr-0+log-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5+default-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5+log-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5.2-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5.2+default-dev (= ${binary:Version}),
+ librust-zune-hdr-0.5.2+log-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.0~)
+Description: Radiance/HDR image decoder and encoder - Rust source code
+ Source code for Debianized Rust crate "zune-hdr"

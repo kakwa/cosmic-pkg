@@ -9,3 +9,7 @@ cache/
 .*.swp
 *.gpg
 _build/
+
+# These crate directories match the system-wide "*debug" ignore rule.
+!rust-custom-debug/
+!rust-iced-debug/

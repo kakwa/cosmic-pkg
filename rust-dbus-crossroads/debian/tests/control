@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-crossroads 0.5.3 --all-targets --all-features
+Features: test-name=rust-dbus-crossroads:@
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev (>= 1.14.0), librust-tokio-1+macros-dev (>= 1.14.0), librust-tokio-1+rt-dev (>= 1.14.0), librust-tokio-1+sync-dev (>= 1.14.0), librust-tokio-1+test-util-dev (>= 1.14.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-crossroads 0.5.3 --all-targets
+Features: test-name=librust-dbus-crossroads-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev (>= 1.14.0), librust-tokio-1+macros-dev (>= 1.14.0), librust-tokio-1+rt-dev (>= 1.14.0), librust-tokio-1+sync-dev (>= 1.14.0), librust-tokio-1+test-util-dev (>= 1.14.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-crossroads 0.5.3 --all-targets --no-default-features
+Features: test-name=librust-dbus-crossroads-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev (>= 1.14.0), librust-tokio-1+macros-dev (>= 1.14.0), librust-tokio-1+rt-dev (>= 1.14.0), librust-tokio-1+sync-dev (>= 1.14.0), librust-tokio-1+test-util-dev (>= 1.14.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,38 @@
+Source: rust-lilt
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-web-time-1+default-dev (>= 1.1.0) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/lilt]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/lilt
+Homepage: https://github.com/cyypherus/lilt
+X-Cargo-Crate: lilt
+X-Cargo-Crate-Version: 0.8.2
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-lilt-dev is very long, consider overriding
+
+Package: librust-lilt-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-web-time-1+default-dev (>= 1.1.0)
+Provides:
+ librust-lilt+default-dev (= ${binary:Version}),
+ librust-lilt+test-api-dev (= ${binary:Version}),
+ librust-lilt-0-dev (= ${binary:Version}),
+ librust-lilt-0+default-dev (= ${binary:Version}),
+ librust-lilt-0+test-api-dev (= ${binary:Version}),
+ librust-lilt-0.8-dev (= ${binary:Version}),
+ librust-lilt-0.8+default-dev (= ${binary:Version}),
+ librust-lilt-0.8+test-api-dev (= ${binary:Version}),
+ librust-lilt-0.8.2-dev (= ${binary:Version}),
+ librust-lilt-0.8.2+default-dev (= ${binary:Version}),
+ librust-lilt-0.8.2+test-api-dev (= ${binary:Version})
+Description: Simple library for running interruptable, transition based animations as a function of time - Rust source code
+ Source code for Debianized Rust crate "lilt"

@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test custom_debug 0.6.2 --all-targets --all-features
+Features: test-name=rust-custom-debug:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test custom_debug 0.6.2 --all-targets
+Features: test-name=librust-custom-debug-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test custom_debug 0.6.2 --all-targets --no-default-features
+Features: test-name=librust-custom-debug-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

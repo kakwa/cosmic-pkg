@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets --all-features
+Features: test-name=rust-hex-color:@
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets
+Features: test-name=librust-hex-color-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets --no-default-features --features rand
+Features: test-name=librust-hex-color-dev:rand
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets --no-default-features --features serde
+Features: test-name=librust-hex-color-dev:serde
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets --no-default-features --features std
+Features: test-name=librust-hex-color-dev:std
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hex_color 3.0.0 --all-targets --no-default-features
+Features: test-name=librust-hex-color-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-version-sync-0.9+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

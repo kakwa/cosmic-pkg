@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets --all-features
+Features: test-name=rust-color-backtrace:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets
+Features: test-name=librust-color-backtrace-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets --no-default-features --features resolve-modules
+Features: test-name=librust-color-backtrace-dev:resolve-modules
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets --no-default-features --features use-backtrace-crate
+Features: test-name=librust-color-backtrace-dev:use-backtrace-crate
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets --no-default-features --features use-btparse-crate
+Features: test-name=librust-color-backtrace-dev:use-btparse-crate
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test color-backtrace 0.7.4 --all-targets --no-default-features
+Features: test-name=librust-color-backtrace-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.81), @
+Restrictions: allow-stderr
+Architecture: !riscv64

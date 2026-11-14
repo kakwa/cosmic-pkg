@@ -1,0 +1,96 @@
+Source: rust-block2
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-objc2+std-dev (<< 0.8.0) <!nocheck>,
+ librust-objc2+std-dev (>= 0.6.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/block2]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/block2
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: block2
+X-Cargo-Crate-Version: 0.6.2
+
+Package: librust-block2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-objc2+gnustep-1-7-dev (<< 0.8.0),
+ librust-objc2+gnustep-1-7-dev (>= 0.6.2),
+ librust-objc2+gnustep-1-8-dev (<< 0.8.0),
+ librust-objc2+gnustep-1-8-dev (>= 0.6.2),
+ librust-objc2+gnustep-1-9-dev (<< 0.8.0),
+ librust-objc2+gnustep-1-9-dev (>= 0.6.2),
+ librust-objc2+gnustep-2-0-dev (<< 0.8.0),
+ librust-objc2+gnustep-2-0-dev (>= 0.6.2),
+ librust-objc2+gnustep-2-1-dev (<< 0.8.0),
+ librust-objc2+gnustep-2-1-dev (>= 0.6.2),
+ librust-objc2+std-dev (<< 0.8.0),
+ librust-objc2+std-dev (>= 0.6.2),
+ librust-objc2+unstable-compiler-rt-dev (<< 0.8.0),
+ librust-objc2+unstable-compiler-rt-dev (>= 0.6.2)
+Provides:
+ librust-block2+alloc-dev (= ${binary:Version}),
+ librust-block2+compiler-rt-dev (= ${binary:Version}),
+ librust-block2+default-dev (= ${binary:Version}),
+ librust-block2+gnustep-1-7-dev (= ${binary:Version}),
+ librust-block2+gnustep-1-8-dev (= ${binary:Version}),
+ librust-block2+gnustep-1-9-dev (= ${binary:Version}),
+ librust-block2+gnustep-2-0-dev (= ${binary:Version}),
+ librust-block2+gnustep-2-1-dev (= ${binary:Version}),
+ librust-block2+std-dev (= ${binary:Version}),
+ librust-block2+unstable-coerce-pointee-dev (= ${binary:Version}),
+ librust-block2+unstable-objfw-dev (= ${binary:Version}),
+ librust-block2+unstable-private-dev (= ${binary:Version}),
+ librust-block2+unstable-winobjc-dev (= ${binary:Version}),
+ librust-block2-0-dev (= ${binary:Version}),
+ librust-block2-0+alloc-dev (= ${binary:Version}),
+ librust-block2-0+compiler-rt-dev (= ${binary:Version}),
+ librust-block2-0+default-dev (= ${binary:Version}),
+ librust-block2-0+gnustep-1-7-dev (= ${binary:Version}),
+ librust-block2-0+gnustep-1-8-dev (= ${binary:Version}),
+ librust-block2-0+gnustep-1-9-dev (= ${binary:Version}),
+ librust-block2-0+gnustep-2-0-dev (= ${binary:Version}),
+ librust-block2-0+gnustep-2-1-dev (= ${binary:Version}),
+ librust-block2-0+std-dev (= ${binary:Version}),
+ librust-block2-0+unstable-coerce-pointee-dev (= ${binary:Version}),
+ librust-block2-0+unstable-objfw-dev (= ${binary:Version}),
+ librust-block2-0+unstable-private-dev (= ${binary:Version}),
+ librust-block2-0+unstable-winobjc-dev (= ${binary:Version}),
+ librust-block2-0.6-dev (= ${binary:Version}),
+ librust-block2-0.6+alloc-dev (= ${binary:Version}),
+ librust-block2-0.6+compiler-rt-dev (= ${binary:Version}),
+ librust-block2-0.6+default-dev (= ${binary:Version}),
+ librust-block2-0.6+gnustep-1-7-dev (= ${binary:Version}),
+ librust-block2-0.6+gnustep-1-8-dev (= ${binary:Version}),
+ librust-block2-0.6+gnustep-1-9-dev (= ${binary:Version}),
+ librust-block2-0.6+gnustep-2-0-dev (= ${binary:Version}),
+ librust-block2-0.6+gnustep-2-1-dev (= ${binary:Version}),
+ librust-block2-0.6+std-dev (= ${binary:Version}),
+ librust-block2-0.6+unstable-coerce-pointee-dev (= ${binary:Version}),
+ librust-block2-0.6+unstable-objfw-dev (= ${binary:Version}),
+ librust-block2-0.6+unstable-private-dev (= ${binary:Version}),
+ librust-block2-0.6+unstable-winobjc-dev (= ${binary:Version}),
+ librust-block2-0.6.2-dev (= ${binary:Version}),
+ librust-block2-0.6.2+alloc-dev (= ${binary:Version}),
+ librust-block2-0.6.2+compiler-rt-dev (= ${binary:Version}),
+ librust-block2-0.6.2+default-dev (= ${binary:Version}),
+ librust-block2-0.6.2+gnustep-1-7-dev (= ${binary:Version}),
+ librust-block2-0.6.2+gnustep-1-8-dev (= ${binary:Version}),
+ librust-block2-0.6.2+gnustep-1-9-dev (= ${binary:Version}),
+ librust-block2-0.6.2+gnustep-2-0-dev (= ${binary:Version}),
+ librust-block2-0.6.2+gnustep-2-1-dev (= ${binary:Version}),
+ librust-block2-0.6.2+std-dev (= ${binary:Version}),
+ librust-block2-0.6.2+unstable-coerce-pointee-dev (= ${binary:Version}),
+ librust-block2-0.6.2+unstable-objfw-dev (= ${binary:Version}),
+ librust-block2-0.6.2+unstable-private-dev (= ${binary:Version}),
+ librust-block2-0.6.2+unstable-winobjc-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Apple's C language extension of blocks - Rust source code
+ Source code for Debianized Rust crate "block2"

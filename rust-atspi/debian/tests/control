@@ -1,0 +1,57 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --all-features
+Features: test-name=rust-atspi:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features connection
+Features: test-name=librust-atspi-dev:connection
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets
+Features: test-name=librust-atspi-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features p2p
+Features: test-name=librust-atspi-dev:p2p
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features proxies
+Features: test-name=librust-atspi-dev:proxies
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-atspi-dev:tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features tracing
+Features: test-name=librust-atspi-dev:tracing
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features wrappers
+Features: test-name=librust-atspi-dev:wrappers
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features --features zbus
+Features: test-name=librust-atspi-dev:zbus
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi 0.29.0 --all-targets --no-default-features
+Features: test-name=librust-atspi-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-criterion-0.5+default-dev, librust-criterion-0.5+default-dev (<< 0.5.1), librust-fastrand-2+default-dev (>= 2.3), librust-futures-0.3+alloc-dev, librust-futures-lite-2-dev (>= 2.6.0), librust-half-2.4+default-dev, librust-half-2.4+default-dev (<< 2.4.1), librust-smol-macros-0.1+default-dev (>= 0.1.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-zbus-5+async-io-dev (>= 5.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,54 @@
+Source: rust-pop-launcher
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-const-format-0.2+default-dev (>= 0.2.34) <!nocheck>,
+ librust-dirs-6+default-dev <!nocheck>,
+ librust-futures-0.3+default-dev (>= 0.3.31) <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.226) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.226) <!nocheck>,
+ librust-serde-json-1+default-dev (>= 1.0.145) <!nocheck>,
+ librust-serde-with-3+default-dev (>= 3.14.1) <!nocheck>,
+ librust-tokio-1+default-dev (>= 1.47.1) <!nocheck>,
+ librust-tokio-1+io-std-dev (>= 1.47.1) <!nocheck>,
+ librust-tokio-1+io-util-dev (>= 1.47.1) <!nocheck>,
+ librust-tokio-stream-0.1+default-dev (>= 0.1.17) <!nocheck>,
+ librust-tokio-stream-0.1+io-util-dev (>= 0.1.17) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/pop-launcher]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/pop-launcher
+Homepage: https://github.com/pop-os/launcher
+X-Cargo-Crate: pop-launcher
+X-Cargo-Crate-Version: 1.2.7
+
+Package: librust-pop-launcher-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-const-format-0.2+default-dev (>= 0.2.34),
+ librust-dirs-6+default-dev,
+ librust-futures-0.3+default-dev (>= 0.3.31),
+ librust-serde-1+default-dev (>= 1.0.226),
+ librust-serde-1+derive-dev (>= 1.0.226),
+ librust-serde-json-1+default-dev (>= 1.0.145),
+ librust-serde-with-3+default-dev (>= 3.14.1),
+ librust-tokio-1+default-dev (>= 1.47.1),
+ librust-tokio-1+io-std-dev (>= 1.47.1),
+ librust-tokio-1+io-util-dev (>= 1.47.1),
+ librust-tokio-stream-0.1+default-dev (>= 0.1.17),
+ librust-tokio-stream-0.1+io-util-dev (>= 0.1.17)
+Provides:
+ librust-pop-launcher+default-dev (= ${binary:Version}),
+ librust-pop-launcher-1-dev (= ${binary:Version}),
+ librust-pop-launcher-1+default-dev (= ${binary:Version}),
+ librust-pop-launcher-1.2-dev (= ${binary:Version}),
+ librust-pop-launcher-1.2+default-dev (= ${binary:Version}),
+ librust-pop-launcher-1.2.7-dev (= ${binary:Version}),
+ librust-pop-launcher-1.2.7+default-dev (= ${binary:Version})
+Description: Writing plugins and frontends for pop-launcher - Rust source code
+ Source code for Debianized Rust crate "pop-launcher"

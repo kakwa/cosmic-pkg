@@ -1,0 +1,40 @@
+Source: rust-toml-write
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.66) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/toml-write]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/toml-write
+Homepage: https://github.com/toml-rs/toml
+X-Cargo-Crate: toml_write
+X-Cargo-Crate-Version: 0.1.2
+
+Package: librust-toml-write-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-toml-write+alloc-dev (= ${binary:Version}),
+ librust-toml-write+default-dev (= ${binary:Version}),
+ librust-toml-write+std-dev (= ${binary:Version}),
+ librust-toml-write-0-dev (= ${binary:Version}),
+ librust-toml-write-0+alloc-dev (= ${binary:Version}),
+ librust-toml-write-0+default-dev (= ${binary:Version}),
+ librust-toml-write-0+std-dev (= ${binary:Version}),
+ librust-toml-write-0.1-dev (= ${binary:Version}),
+ librust-toml-write-0.1+alloc-dev (= ${binary:Version}),
+ librust-toml-write-0.1+default-dev (= ${binary:Version}),
+ librust-toml-write-0.1+std-dev (= ${binary:Version}),
+ librust-toml-write-0.1.2-dev (= ${binary:Version}),
+ librust-toml-write-0.1.2+alloc-dev (= ${binary:Version}),
+ librust-toml-write-0.1.2+default-dev (= ${binary:Version}),
+ librust-toml-write-0.1.2+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.66~)
+Description: Low-level interface for writing out TOML - Rust source code
+ Source code for Debianized Rust crate "toml_write"

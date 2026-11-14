@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-common 0.13.0 --all-targets --all-features
+Features: test-name=rust-atspi-common:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-assert-matches-1+default-dev (>= 1.5.0), librust-rename-item-0.1+default-dev, librust-serde-plain-1+default-dev (>= 1.0.1), librust-static-assertions-1+default-dev (>= 1.1.0), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+time-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-xml-5+default-dev (>= 5.0.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-common 0.13.0 --all-targets
+Features: test-name=librust-atspi-common-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-assert-matches-1+default-dev (>= 1.5.0), librust-rename-item-0.1+default-dev, librust-serde-plain-1+default-dev (>= 1.0.1), librust-static-assertions-1+default-dev (>= 1.1.0), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+time-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-xml-5+default-dev (>= 5.0.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-common 0.13.0 --all-targets --no-default-features --features wrappers
+Features: test-name=librust-atspi-common-dev:wrappers
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-assert-matches-1+default-dev (>= 1.5.0), librust-rename-item-0.1+default-dev, librust-serde-plain-1+default-dev (>= 1.0.1), librust-static-assertions-1+default-dev (>= 1.1.0), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+time-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-xml-5+default-dev (>= 5.0.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-common 0.13.0 --all-targets --no-default-features --features zbus
+Features: test-name=librust-atspi-common-dev:zbus
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-assert-matches-1+default-dev (>= 1.5.0), librust-rename-item-0.1+default-dev, librust-serde-plain-1+default-dev (>= 1.0.1), librust-static-assertions-1+default-dev (>= 1.1.0), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+time-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-xml-5+default-dev (>= 5.0.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-common 0.13.0 --all-targets --no-default-features
+Features: test-name=librust-atspi-common-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-assert-matches-1+default-dev (>= 1.5.0), librust-rename-item-0.1+default-dev, librust-serde-plain-1+default-dev (>= 1.0.1), librust-static-assertions-1+default-dev (>= 1.1.0), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+time-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-xml-5+default-dev (>= 5.0.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64

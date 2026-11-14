@@ -1,0 +1,87 @@
+Source: rust-bitcode
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.70) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-arrayvec-0.7+std-dev <!nocheck>,
+ librust-bitcode-derive-0.6+default-dev (<< 0.6.10) <!nocheck>,
+ librust-bitcode-derive-0.6+default-dev (>= 0.6.9) <!nocheck>,
+ librust-bytemuck-1+default-dev (>= 1.14) <!nocheck>,
+ librust-bytemuck-1+min-const-generics-dev (>= 1.14) <!nocheck>,
+ librust-bytemuck-1+must-cast-dev (>= 1.14) <!nocheck>,
+ librust-glam+std-dev (>= 0.21) <!nocheck>,
+ librust-serde-1+alloc-dev <!nocheck>,
+ librust-serde-1+std-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitcode]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bitcode
+Homepage: https://github.com/SoftbearStudios/bitcode
+X-Cargo-Crate: bitcode
+X-Cargo-Crate-Version: 0.6.9
+
+Package: librust-bitcode-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arrayvec-0.7+std-dev,
+ librust-arrayvec-0.7-dev,
+ librust-bitcode-derive-0.6+default-dev (<< 0.6.10),
+ librust-bitcode-derive-0.6+default-dev (>= 0.6.9),
+ librust-bytemuck-1+default-dev (>= 1.14),
+ librust-bytemuck-1+min-const-generics-dev (>= 1.14),
+ librust-bytemuck-1+must-cast-dev (>= 1.14),
+ librust-glam+std-dev (>= 0.21),
+ librust-glam-dev (>= 0.21),
+ librust-rust-decimal-1-dev (>= 1.36),
+ librust-serde-1+alloc-dev,
+ librust-serde-1+std-dev,
+ librust-time-0.3-dev,
+ librust-uuid-1-dev (>= 1.10)
+Provides:
+ librust-bitcode+arrayvec-dev (= ${binary:Version}),
+ librust-bitcode+default-dev (= ${binary:Version}),
+ librust-bitcode+derive-dev (= ${binary:Version}),
+ librust-bitcode+glam-dev (= ${binary:Version}),
+ librust-bitcode+rust-decimal-dev (= ${binary:Version}),
+ librust-bitcode+serde-dev (= ${binary:Version}),
+ librust-bitcode+std-dev (= ${binary:Version}),
+ librust-bitcode+time-dev (= ${binary:Version}),
+ librust-bitcode+uuid-dev (= ${binary:Version}),
+ librust-bitcode-0-dev (= ${binary:Version}),
+ librust-bitcode-0+arrayvec-dev (= ${binary:Version}),
+ librust-bitcode-0+default-dev (= ${binary:Version}),
+ librust-bitcode-0+derive-dev (= ${binary:Version}),
+ librust-bitcode-0+glam-dev (= ${binary:Version}),
+ librust-bitcode-0+rust-decimal-dev (= ${binary:Version}),
+ librust-bitcode-0+serde-dev (= ${binary:Version}),
+ librust-bitcode-0+std-dev (= ${binary:Version}),
+ librust-bitcode-0+time-dev (= ${binary:Version}),
+ librust-bitcode-0+uuid-dev (= ${binary:Version}),
+ librust-bitcode-0.6-dev (= ${binary:Version}),
+ librust-bitcode-0.6+arrayvec-dev (= ${binary:Version}),
+ librust-bitcode-0.6+default-dev (= ${binary:Version}),
+ librust-bitcode-0.6+derive-dev (= ${binary:Version}),
+ librust-bitcode-0.6+glam-dev (= ${binary:Version}),
+ librust-bitcode-0.6+rust-decimal-dev (= ${binary:Version}),
+ librust-bitcode-0.6+serde-dev (= ${binary:Version}),
+ librust-bitcode-0.6+std-dev (= ${binary:Version}),
+ librust-bitcode-0.6+time-dev (= ${binary:Version}),
+ librust-bitcode-0.6+uuid-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+arrayvec-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+default-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+derive-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+glam-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+rust-decimal-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+serde-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+std-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+time-dev (= ${binary:Version}),
+ librust-bitcode-0.6.9+uuid-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.70~)
+Description: Bitwise binary serializer - Rust source code
+ Source code for Debianized Rust crate "bitcode"

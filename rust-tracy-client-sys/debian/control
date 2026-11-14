@@ -1,0 +1,114 @@
+Source: rust-tracy-client-sys
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.70.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cc-1-dev (>= 1.0.83) <!nocheck>,
+ librust-windows-targets+default-dev (<< 0.53) <!nocheck>,
+ librust-windows-targets+default-dev (>= 0.48) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracy-client-sys]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tracy-client-sys
+Homepage: https://github.com/nagisa/rust_tracy_client
+X-Cargo-Crate: tracy-client-sys
+X-Cargo-Crate-Version: 0.28.0
+
+Package: librust-tracy-client-sys-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cc-1-dev (>= 1.0.83),
+ librust-windows-targets+default-dev (<< 0.53),
+ librust-windows-targets+default-dev (>= 0.48)
+Provides:
+ librust-tracy-client-sys+broadcast-dev (= ${binary:Version}),
+ librust-tracy-client-sys+callstack-inlines-dev (= ${binary:Version}),
+ librust-tracy-client-sys+code-transfer-dev (= ${binary:Version}),
+ librust-tracy-client-sys+context-switch-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys+crash-handler-dev (= ${binary:Version}),
+ librust-tracy-client-sys+debuginfod-dev (= ${binary:Version}),
+ librust-tracy-client-sys+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys+delayed-init-dev (= ${binary:Version}),
+ librust-tracy-client-sys+demangle-dev (= ${binary:Version}),
+ librust-tracy-client-sys+enable-dev (= ${binary:Version}),
+ librust-tracy-client-sys+fibers-dev (= ${binary:Version}),
+ librust-tracy-client-sys+flush-on-exit-dev (= ${binary:Version}),
+ librust-tracy-client-sys+manual-lifetime-dev (= ${binary:Version}),
+ librust-tracy-client-sys+ondemand-dev (= ${binary:Version}),
+ librust-tracy-client-sys+only-ipv4-dev (= ${binary:Version}),
+ librust-tracy-client-sys+only-localhost-dev (= ${binary:Version}),
+ librust-tracy-client-sys+sampling-dev (= ${binary:Version}),
+ librust-tracy-client-sys+system-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys+timer-fallback-dev (= ${binary:Version}),
+ librust-tracy-client-sys+verify-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+broadcast-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+callstack-inlines-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+code-transfer-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+context-switch-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+crash-handler-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+debuginfod-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+delayed-init-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+demangle-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+enable-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+fibers-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+flush-on-exit-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+manual-lifetime-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+ondemand-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+only-ipv4-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+only-localhost-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+sampling-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+system-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+timer-fallback-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0+verify-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+broadcast-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+callstack-inlines-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+code-transfer-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+context-switch-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+crash-handler-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+debuginfod-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+delayed-init-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+demangle-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+enable-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+fibers-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+flush-on-exit-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+manual-lifetime-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+ondemand-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+only-ipv4-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+only-localhost-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+sampling-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+system-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+timer-fallback-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28+verify-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+broadcast-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+callstack-inlines-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+code-transfer-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+context-switch-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+crash-handler-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+debuginfod-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+delayed-init-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+demangle-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+enable-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+fibers-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+flush-on-exit-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+manual-lifetime-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+ondemand-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+only-ipv4-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+only-localhost-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+sampling-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+system-tracing-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+timer-fallback-dev (= ${binary:Version}),
+ librust-tracy-client-sys-0.28.0+verify-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.70.0~)
+Description: Low level bindings to the client libraries for the Tracy profiler - Rust source code
+ Source code for Debianized Rust crate "tracy-client-sys"

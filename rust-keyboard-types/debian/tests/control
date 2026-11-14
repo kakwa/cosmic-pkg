@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets --all-features
+Features: test-name=rust-keyboard-types:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets
+Features: test-name=librust-keyboard-types-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets --no-default-features --features serde
+Features: test-name=librust-keyboard-types-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets --no-default-features --features std
+Features: test-name=librust-keyboard-types-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets --no-default-features --features webdriver
+Features: test-name=librust-keyboard-types-dev:webdriver
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test keyboard-types 0.8.3 --all-targets --no-default-features
+Features: test-name=librust-keyboard-types-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.61), @
+Restrictions: allow-stderr
+Architecture: !riscv64

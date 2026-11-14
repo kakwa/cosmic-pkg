@@ -1,0 +1,65 @@
+Source: rust-icu-locid
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.67) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-displaydoc-0.2-dev (>= 0.2.3) <!nocheck>,
+ librust-litemap-0.7+alloc-dev (>= 0.7.3) <!nocheck>,
+ librust-tinystr-0.7+alloc-dev (>= 0.7.5) <!nocheck>,
+ librust-writeable-0.5-dev (>= 0.5.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locid]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/icu-locid
+Homepage: https://icu4x.unicode.org
+X-Cargo-Crate: icu_locid
+X-Cargo-Crate-Version: 1.5.0
+
+Package: librust-icu-locid-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-databake-0.1+derive-dev (>= 0.1.8),
+ librust-displaydoc-0.2-dev (>= 0.2.3),
+ librust-litemap-0.7+alloc-dev (>= 0.7.3),
+ librust-serde-1+alloc-dev (>= 1.0.110),
+ librust-serde-1+derive-dev (>= 1.0.110),
+ librust-tinystr-0.7+alloc-dev (>= 0.7.5),
+ librust-tinystr-0.7+serde-dev (>= 0.7.5),
+ librust-writeable-0.5-dev (>= 0.5.5),
+ librust-zerovec-0.10-dev (>= 0.10.2)
+Provides:
+ librust-icu-locid+bench-dev (= ${binary:Version}),
+ librust-icu-locid+databake-dev (= ${binary:Version}),
+ librust-icu-locid+default-dev (= ${binary:Version}),
+ librust-icu-locid+serde-dev (= ${binary:Version}),
+ librust-icu-locid+std-dev (= ${binary:Version}),
+ librust-icu-locid+zerovec-dev (= ${binary:Version}),
+ librust-icu-locid-1-dev (= ${binary:Version}),
+ librust-icu-locid-1+bench-dev (= ${binary:Version}),
+ librust-icu-locid-1+databake-dev (= ${binary:Version}),
+ librust-icu-locid-1+default-dev (= ${binary:Version}),
+ librust-icu-locid-1+serde-dev (= ${binary:Version}),
+ librust-icu-locid-1+std-dev (= ${binary:Version}),
+ librust-icu-locid-1+zerovec-dev (= ${binary:Version}),
+ librust-icu-locid-1.5-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+bench-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+databake-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+default-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+serde-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+std-dev (= ${binary:Version}),
+ librust-icu-locid-1.5+zerovec-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+bench-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+databake-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+default-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+serde-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+std-dev (= ${binary:Version}),
+ librust-icu-locid-1.5.0+zerovec-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.67~)
+Description: API for managing Unicode Language and Locale Identifiers - Rust source code
+ Source code for Debianized Rust crate "icu_locid"

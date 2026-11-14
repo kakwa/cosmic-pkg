@@ -1,0 +1,32 @@
+Source: rust-custom-debug
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-custom-debug-derive-0.6+default-dev (>= 0.6.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/custom-debug]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/custom-debug
+Homepage: https://github.com/panicbit/custom_debug
+X-Cargo-Crate: custom_debug
+X-Cargo-Crate-Version: 0.6.2
+
+Package: librust-custom-debug-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-custom-debug-derive-0.6+default-dev (>= 0.6.2)
+Provides:
+ librust-custom-debug+default-dev (= ${binary:Version}),
+ librust-custom-debug-0-dev (= ${binary:Version}),
+ librust-custom-debug-0+default-dev (= ${binary:Version}),
+ librust-custom-debug-0.6-dev (= ${binary:Version}),
+ librust-custom-debug-0.6+default-dev (= ${binary:Version}),
+ librust-custom-debug-0.6.2-dev (= ${binary:Version}),
+ librust-custom-debug-0.6.2+default-dev (= ${binary:Version})
+Description: Derive Debug with a custom format per field - Rust source code
+ Source code for Debianized Rust crate "custom_debug"

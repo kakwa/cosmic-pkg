@@ -1,0 +1,67 @@
+Source: rust-accesskit-unix
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-accesskit-0.22+default-dev <!nocheck>,
+ librust-accesskit-atspi-common-0.15+default-dev <!nocheck>,
+ librust-async-channel-2+default-dev (>= 2.1.1) <!nocheck>,
+ librust-async-executor-1+default-dev (>= 1.5.0) <!nocheck>,
+ librust-async-task-4+default-dev (>= 4.3.0) <!nocheck>,
+ librust-atspi-0.29+proxies-dev <!nocheck>,
+ librust-futures-lite-2+default-dev (>= 2.3) <!nocheck>,
+ librust-futures-util-0.3+default-dev (>= 0.3.27) <!nocheck>,
+ librust-serde-1+default-dev <!nocheck>,
+ librust-zbus-5+async-io-dev (>= 5.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/accesskit-unix]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/accesskit-unix
+Homepage: https://github.com/AccessKit/accesskit
+X-Cargo-Crate: accesskit_unix
+X-Cargo-Crate-Version: 0.18.0
+
+Package: librust-accesskit-unix-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-accesskit-0.22+default-dev,
+ librust-accesskit-atspi-common-0.15+default-dev,
+ librust-async-channel-2+default-dev (>= 2.1.1),
+ librust-async-executor-1+default-dev (>= 1.5.0),
+ librust-async-task-4+default-dev (>= 4.3.0),
+ librust-atspi-0.29+proxies-dev,
+ librust-futures-lite-2+default-dev (>= 2.3),
+ librust-futures-util-0.3+default-dev (>= 0.3.27),
+ librust-serde-1+default-dev,
+ librust-tokio-1+default-dev (>= 1.32.0),
+ librust-tokio-1+macros-dev (>= 1.32.0),
+ librust-tokio-1+net-dev (>= 1.32.0),
+ librust-tokio-1+rt-dev (>= 1.32.0),
+ librust-tokio-1+sync-dev (>= 1.32.0),
+ librust-tokio-1+time-dev (>= 1.32.0),
+ librust-tokio-stream-0.1+default-dev (>= 0.1.14),
+ librust-zbus-5+async-io-dev (>= 5.5)
+Provides:
+ librust-accesskit-unix+async-io-dev (= ${binary:Version}),
+ librust-accesskit-unix+default-dev (= ${binary:Version}),
+ librust-accesskit-unix+tokio-dev (= ${binary:Version}),
+ librust-accesskit-unix-0-dev (= ${binary:Version}),
+ librust-accesskit-unix-0+async-io-dev (= ${binary:Version}),
+ librust-accesskit-unix-0+default-dev (= ${binary:Version}),
+ librust-accesskit-unix-0+tokio-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18+async-io-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18+default-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18+tokio-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18.0-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18.0+async-io-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18.0+default-dev (= ${binary:Version}),
+ librust-accesskit-unix-0.18.0+tokio-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: AccessKit UI accessibility infrastructure: Linux adapter - Rust source code
+ Source code for Debianized Rust crate "accesskit_unix"

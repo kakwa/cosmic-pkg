@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets --all-features
+Features: test-name=rust-id-tree:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets
+Features: test-name=librust-id-tree-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets --no-default-features --features serde
+Features: test-name=librust-id-tree-dev:serde
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets --no-default-features --features serde_derive
+Features: test-name=librust-id-tree-dev:serde_derive
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets --no-default-features --features serde_support
+Features: test-name=librust-id-tree-dev:serde_support
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test id_tree 1.8.0 --all-targets --no-default-features
+Features: test-name=librust-id-tree-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

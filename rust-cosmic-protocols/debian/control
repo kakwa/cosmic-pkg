@@ -1,0 +1,70 @@
+Source: rust-cosmic-protocols
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev (>= 2.9) <!nocheck>,
+ librust-wayland-backend-0.3+default-dev (>= 0.3.11) <!nocheck>,
+ librust-wayland-client-0.31+default-dev (>= 0.31.11) <!nocheck>,
+ librust-wayland-protocols-0.32+client-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+server-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+staging-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-wlr-0.3+client-dev (>= 0.3.9) <!nocheck>,
+ librust-wayland-protocols-wlr-0.3+default-dev (>= 0.3.9) <!nocheck>,
+ librust-wayland-protocols-wlr-0.3+server-dev (>= 0.3.9) <!nocheck>,
+ librust-wayland-scanner-0.31+default-dev (>= 0.31.7) <!nocheck>,
+ librust-wayland-server-0.31+default-dev (>= 0.31.10) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/cosmic-protocols]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cosmic-protocols
+Homepage: https://github.com/pop-os/cosmic-protocols
+X-Cargo-Crate: cosmic-protocols
+X-Cargo-Crate-Version: 0.2.0
+
+Package: librust-cosmic-protocols-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev (>= 2.9),
+ librust-wayland-backend-0.3+default-dev (>= 0.3.11),
+ librust-wayland-client-0.31+default-dev (>= 0.31.11),
+ librust-wayland-protocols-0.32+client-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+server-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+staging-dev (>= 0.32.9),
+ librust-wayland-protocols-wlr-0.3+client-dev (>= 0.3.9),
+ librust-wayland-protocols-wlr-0.3+default-dev (>= 0.3.9),
+ librust-wayland-protocols-wlr-0.3+server-dev (>= 0.3.9),
+ librust-wayland-scanner-0.31+default-dev (>= 0.31.7),
+ librust-wayland-server-0.31+default-dev (>= 0.31.10)
+Provides:
+ librust-cosmic-protocols+client-dev (= ${binary:Version}),
+ librust-cosmic-protocols+default-dev (= ${binary:Version}),
+ librust-cosmic-protocols+server-dev (= ${binary:Version}),
+ librust-cosmic-protocols+wayland-client-dev (= ${binary:Version}),
+ librust-cosmic-protocols+wayland-server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0+client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0+default-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0+server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0+wayland-client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0+wayland-server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2+client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2+default-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2+server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2+wayland-client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2+wayland-server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0+client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0+default-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0+server-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0+wayland-client-dev (= ${binary:Version}),
+ librust-cosmic-protocols-0.2.0+wayland-server-dev (= ${binary:Version})
+Description: Generated API for the COSMIC wayland protocol extensions - Rust source code
+ Source code for Debianized Rust crate "cosmic-protocols"

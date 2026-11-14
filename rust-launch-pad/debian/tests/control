@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test launch-pad 1.0.1 --all-targets --all-features
+Features: test-name=rust-launch-pad:@
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test launch-pad 1.0.1 --all-targets
+Features: test-name=librust-launch-pad-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test launch-pad 1.0.1 --all-targets --no-default-features
+Features: test-name=librust-launch-pad-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

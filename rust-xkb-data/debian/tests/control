@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkb-data 0.2.2 --all-targets --all-features
+Features: test-name=rust-xkb-data:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkb-data 0.2.2 --all-targets
+Features: test-name=librust-xkb-data-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkb-data 0.2.2 --all-targets --no-default-features
+Features: test-name=librust-xkb-data-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

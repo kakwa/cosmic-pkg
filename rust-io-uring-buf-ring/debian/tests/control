@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test io_uring_buf_ring 0.2.3 --all-targets --all-features
+Features: test-name=rust-io-uring-buf-ring:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test io_uring_buf_ring 0.2.3 --all-targets --no-default-features --features bytes
+Features: test-name=librust-io-uring-buf-ring-dev:bytes
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test io_uring_buf_ring 0.2.3 --all-targets
+Features: test-name=librust-io-uring-buf-ring-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test io_uring_buf_ring 0.2.3 --all-targets --no-default-features
+Features: test-name=librust-io-uring-buf-ring-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

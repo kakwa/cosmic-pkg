@@ -1,0 +1,195 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --all-features
+Features: test-name=rust-wgpu-core:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features angle
+Features: test-name=librust-wgpu-core-dev:angle
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features api_log_info
+Features: test-name=librust-wgpu-core-dev:api_log_info
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features counters
+Features: test-name=librust-wgpu-core-dev:counters
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets
+Features: test-name=librust-wgpu-core-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features dx12
+Features: test-name=librust-wgpu-core-dev:dx12
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features fragile-send-sync-non-atomic-wasm
+Features: test-name=librust-wgpu-core-dev:fragile-send-sync-non-atomic-wasm
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features gles
+Features: test-name=librust-wgpu-core-dev:gles
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features glsl
+Features: test-name=librust-wgpu-core-dev:glsl
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features macro_rules_attribute
+Features: test-name=librust-wgpu-core-dev:macro_rules_attribute
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features metal
+Features: test-name=librust-wgpu-core-dev:metal
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features noop
+Features: test-name=librust-wgpu-core-dev:noop
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features observe_locks
+Features: test-name=librust-wgpu-core-dev:observe_locks
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features portable-atomic
+Features: test-name=librust-wgpu-core-dev:portable-atomic
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features raw-window-handle
+Features: test-name=librust-wgpu-core-dev:raw-window-handle
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features renderdoc
+Features: test-name=librust-wgpu-core-dev:renderdoc
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features replay
+Features: test-name=librust-wgpu-core-dev:replay
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features resource_log_info
+Features: test-name=librust-wgpu-core-dev:resource_log_info
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features serde
+Features: test-name=librust-wgpu-core-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features spirv
+Features: test-name=librust-wgpu-core-dev:spirv
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features static-dxc
+Features: test-name=librust-wgpu-core-dev:static-dxc
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features std
+Features: test-name=librust-wgpu-core-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features strict_asserts
+Features: test-name=librust-wgpu-core-dev:strict_asserts
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features trace
+Features: test-name=librust-wgpu-core-dev:trace
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features vulkan
+Features: test-name=librust-wgpu-core-dev:vulkan
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features vulkan-portability
+Features: test-name=librust-wgpu-core-dev:vulkan-portability
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features webgl
+Features: test-name=librust-wgpu-core-dev:webgl
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features wgpu-core-deps-apple
+Features: test-name=librust-wgpu-core-dev:wgpu-core-deps-apple
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features wgpu-core-deps-emscripten
+Features: test-name=librust-wgpu-core-dev:wgpu-core-deps-emscripten
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features wgpu-core-deps-wasm
+Features: test-name=librust-wgpu-core-dev:wgpu-core-deps-wasm
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features wgpu-core-deps-windows-linux-android
+Features: test-name=librust-wgpu-core-dev:wgpu-core-deps-windows-linux-android
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features --features wgsl
+Features: test-name=librust-wgpu-core-dev:wgsl
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core 28.0.1 --all-targets --no-default-features
+Features: test-name=librust-wgpu-core-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

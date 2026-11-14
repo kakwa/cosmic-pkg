@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite-macros 0.1.1 --all-targets --all-features
+Features: test-name=rust-pelite-macros:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

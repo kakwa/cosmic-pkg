@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets --all-features
+Features: test-name=rust-wallpaper:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets
+Features: test-name=librust-wallpaper-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets --no-default-features --features dirs
+Features: test-name=librust-wallpaper-dev:dirs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets --no-default-features --features from_url
+Features: test-name=librust-wallpaper-dev:from_url
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets --no-default-features --features reqwest
+Features: test-name=librust-wallpaper-dev:reqwest
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wallpaper 3.2.0 --all-targets --no-default-features
+Features: test-name=librust-wallpaper-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,73 @@
+Source: rust-compio-buf
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.175) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compio-buf]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/compio-buf
+Homepage: https://github.com/compio-rs/compio
+X-Cargo-Crate: compio-buf
+X-Cargo-Crate-Version: 0.8.3
+
+Package: librust-compio-buf-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arrayvec-0.7+default-dev (>= 0.7.4),
+ librust-bumpalo-3+default-dev (>= 3.14.0),
+ librust-bytes-1+default-dev (>= 1.7.1),
+ librust-libc-0.2+default-dev (>= 0.2.175),
+ librust-memmap2-0.9+default-dev (>= 0.9.9),
+ librust-smallvec-1+default-dev (>= 1.13.2)
+Provides:
+ librust-compio-buf+allocator-api-dev (= ${binary:Version}),
+ librust-compio-buf+arrayvec-dev (= ${binary:Version}),
+ librust-compio-buf+bumpalo-dev (= ${binary:Version}),
+ librust-compio-buf+bytes-dev (= ${binary:Version}),
+ librust-compio-buf+default-dev (= ${binary:Version}),
+ librust-compio-buf+memmap2-dev (= ${binary:Version}),
+ librust-compio-buf+nightly-dev (= ${binary:Version}),
+ librust-compio-buf+read-buf-dev (= ${binary:Version}),
+ librust-compio-buf+smallvec-dev (= ${binary:Version}),
+ librust-compio-buf+try-trait-v2-dev (= ${binary:Version}),
+ librust-compio-buf-0-dev (= ${binary:Version}),
+ librust-compio-buf-0+allocator-api-dev (= ${binary:Version}),
+ librust-compio-buf-0+arrayvec-dev (= ${binary:Version}),
+ librust-compio-buf-0+bumpalo-dev (= ${binary:Version}),
+ librust-compio-buf-0+bytes-dev (= ${binary:Version}),
+ librust-compio-buf-0+default-dev (= ${binary:Version}),
+ librust-compio-buf-0+memmap2-dev (= ${binary:Version}),
+ librust-compio-buf-0+nightly-dev (= ${binary:Version}),
+ librust-compio-buf-0+read-buf-dev (= ${binary:Version}),
+ librust-compio-buf-0+smallvec-dev (= ${binary:Version}),
+ librust-compio-buf-0+try-trait-v2-dev (= ${binary:Version}),
+ librust-compio-buf-0.8-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+allocator-api-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+arrayvec-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+bumpalo-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+bytes-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+default-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+memmap2-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+nightly-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+read-buf-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+smallvec-dev (= ${binary:Version}),
+ librust-compio-buf-0.8+try-trait-v2-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+allocator-api-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+arrayvec-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+bumpalo-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+bytes-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+default-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+memmap2-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+nightly-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+read-buf-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+smallvec-dev (= ${binary:Version}),
+ librust-compio-buf-0.8.3+try-trait-v2-dev (= ${binary:Version})
+Description: Buffer trait for completion based async IO - Rust source code
+ Source code for Debianized Rust crate "compio-buf"

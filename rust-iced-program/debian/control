@@ -1,0 +1,44 @@
+Source: rust-iced-program
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.88) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-iced-graphics-0.14+default-dev <!nocheck>,
+ librust-iced-runtime-0.14+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-program]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-program
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_program
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-iced-program-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-iced-graphics-0.14+default-dev,
+ librust-iced-runtime-0.14+default-dev
+Provides:
+ librust-iced-program+debug-dev (= ${binary:Version}),
+ librust-iced-program+default-dev (= ${binary:Version}),
+ librust-iced-program+time-travel-dev (= ${binary:Version}),
+ librust-iced-program-0-dev (= ${binary:Version}),
+ librust-iced-program-0+debug-dev (= ${binary:Version}),
+ librust-iced-program-0+default-dev (= ${binary:Version}),
+ librust-iced-program-0+time-travel-dev (= ${binary:Version}),
+ librust-iced-program-0.14-dev (= ${binary:Version}),
+ librust-iced-program-0.14+debug-dev (= ${binary:Version}),
+ librust-iced-program-0.14+default-dev (= ${binary:Version}),
+ librust-iced-program-0.14+time-travel-dev (= ${binary:Version}),
+ librust-iced-program-0.14.0-dev (= ${binary:Version}),
+ librust-iced-program-0.14.0+debug-dev (= ${binary:Version}),
+ librust-iced-program-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-program-0.14.0+time-travel-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.88~)
+Description: Definition of an iced program - Rust source code
+ Source code for Debianized Rust crate "iced_program"

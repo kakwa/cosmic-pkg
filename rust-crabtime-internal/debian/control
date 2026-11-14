@@ -1,0 +1,44 @@
+Source: rust-crabtime-internal
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-proc-macro2-1+default-dev (>= 1.0.101) <!nocheck>,
+ librust-proc-macro2-1+span-locations-dev (>= 1.0.101) <!nocheck>,
+ librust-quote-1+default-dev <!nocheck>,
+ librust-rustc-version-0.4+default-dev <!nocheck>,
+ librust-syn-2+default-dev <!nocheck>,
+ librust-syn-2+full-dev <!nocheck>,
+ librust-toml-0.8+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/crabtime-internal]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/crabtime-internal
+Homepage: https://crates.io/crates/crabtime-internal/1.1.4
+X-Cargo-Crate: crabtime-internal
+X-Cargo-Crate-Version: 1.1.4
+
+Package: librust-crabtime-internal-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-proc-macro2-1+default-dev (>= 1.0.101),
+ librust-proc-macro2-1+span-locations-dev (>= 1.0.101),
+ librust-quote-1+default-dev,
+ librust-rustc-version-0.4+default-dev,
+ librust-syn-2+default-dev,
+ librust-syn-2+full-dev,
+ librust-toml-0.8+default-dev
+Provides:
+ librust-crabtime-internal+default-dev (= ${binary:Version}),
+ librust-crabtime-internal-1-dev (= ${binary:Version}),
+ librust-crabtime-internal-1+default-dev (= ${binary:Version}),
+ librust-crabtime-internal-1.1-dev (= ${binary:Version}),
+ librust-crabtime-internal-1.1+default-dev (= ${binary:Version}),
+ librust-crabtime-internal-1.1.4-dev (= ${binary:Version}),
+ librust-crabtime-internal-1.1.4+default-dev (= ${binary:Version})
+Description: Helper for the crabtime crate - Rust source code
+ Source code for Debianized Rust crate "crabtime-internal"

@@ -1,0 +1,38 @@
+Source: rust-tonic-prost
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.88) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bytes-1+default-dev <!nocheck>,
+ librust-prost-0.14+default-dev <!nocheck>,
+ librust-tonic-0.14-dev (>= 0.14.6) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/tonic-prost]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tonic-prost
+Homepage: https://github.com/hyperium/tonic
+X-Cargo-Crate: tonic-prost
+X-Cargo-Crate-Version: 0.14.6
+
+Package: librust-tonic-prost-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bytes-1+default-dev,
+ librust-prost-0.14+default-dev,
+ librust-tonic-0.14-dev (>= 0.14.6)
+Provides:
+ librust-tonic-prost+default-dev (= ${binary:Version}),
+ librust-tonic-prost-0-dev (= ${binary:Version}),
+ librust-tonic-prost-0+default-dev (= ${binary:Version}),
+ librust-tonic-prost-0.14-dev (= ${binary:Version}),
+ librust-tonic-prost-0.14+default-dev (= ${binary:Version}),
+ librust-tonic-prost-0.14.6-dev (= ${binary:Version}),
+ librust-tonic-prost-0.14.6+default-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.88~)
+Description: Prost codec implementation for tonic - Rust source code
+ Source code for Debianized Rust crate "tonic-prost"

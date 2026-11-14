@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init_macro 1.0.4 --all-targets --all-features
+Features: test-name=rust-static-init-macro:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init_macro 1.0.4 --all-targets --no-default-features --features debug_order
+Features: test-name=librust-static-init-macro-dev:debug_order
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init_macro 1.0.4 --all-targets
+Features: test-name=librust-static-init-macro-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init_macro 1.0.4 --all-targets --no-default-features
+Features: test-name=librust-static-init-macro-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

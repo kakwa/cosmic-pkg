@@ -1,0 +1,225 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --all-features
+Features: test-name=rust-zune-image:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features all
+Features: test-name=librust-zune-image-dev:all
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features avx2
+Features: test-name=librust-zune-image-dev:avx2
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features benchmarks
+Features: test-name=librust-zune-image-dev:benchmarks
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features bmp
+Features: test-name=librust-zune-image-dev:bmp
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets
+Features: test-name=librust-zune-image-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features docs
+Features: test-name=librust-zune-image-dev:docs
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features farbfeld
+Features: test-name=librust-zune-image-dev:farbfeld
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features hdr
+Features: test-name=librust-zune-image-dev:hdr
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features image-webp
+Features: test-name=librust-zune-image-dev:image-webp
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features image_formats
+Features: test-name=librust-zune-image-dev:image_formats
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features jpeg
+Features: test-name=librust-zune-image-dev:jpeg
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features jpeg-encoder
+Features: test-name=librust-zune-image-dev:jpeg-encoder
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features jpeg-xl
+Features: test-name=librust-zune-image-dev:jpeg-xl
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features jxl-oxide
+Features: test-name=librust-zune-image-dev:jxl-oxide
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features kamadak-exif
+Features: test-name=librust-zune-image-dev:kamadak-exif
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features log
+Features: test-name=librust-zune-image-dev:log
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features metadata
+Features: test-name=librust-zune-image-dev:metadata
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features png
+Features: test-name=librust-zune-image-dev:png
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features ppm
+Features: test-name=librust-zune-image-dev:ppm
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features psd
+Features: test-name=librust-zune-image-dev:psd
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features qoi
+Features: test-name=librust-zune-image-dev:qoi
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features serde
+Features: test-name=librust-zune-image-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features serde-support
+Features: test-name=librust-zune-image-dev:serde-support
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features simd
+Features: test-name=librust-zune-image-dev:simd
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features sse41
+Features: test-name=librust-zune-image-dev:sse41
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features threads
+Features: test-name=librust-zune-image-dev:threads
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features webp
+Features: test-name=librust-zune-image-dev:webp
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-bmp
+Features: test-name=librust-zune-image-dev:zune-bmp
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-farbfeld
+Features: test-name=librust-zune-image-dev:zune-farbfeld
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-hdr
+Features: test-name=librust-zune-image-dev:zune-hdr
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-jpeg
+Features: test-name=librust-zune-image-dev:zune-jpeg
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-jpegxl
+Features: test-name=librust-zune-image-dev:zune-jpegxl
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-png
+Features: test-name=librust-zune-image-dev:zune-png
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-ppm
+Features: test-name=librust-zune-image-dev:zune-ppm
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-psd
+Features: test-name=librust-zune-image-dev:zune-psd
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features --features zune-qoi
+Features: test-name=librust-zune-image-dev:zune-qoi
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zune-image 0.5.0 --all-targets --no-default-features
+Features: test-name=librust-zune-image-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-nanorand-0.7+wyrand-dev, librust-num-complex-0.4+default-dev (>= 0.4.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64

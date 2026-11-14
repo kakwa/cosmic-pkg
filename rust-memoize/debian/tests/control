@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize 0.5.1 --all-targets --all-features
+Features: test-name=rust-memoize:@
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev (>= 0.8.2), librust-rustc-hash-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize 0.5.1 --all-targets
+Features: test-name=librust-memoize-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev (>= 0.8.2), librust-rustc-hash-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize 0.5.1 --all-targets --no-default-features --features full
+Features: test-name=librust-memoize-dev:full
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev (>= 0.8.2), librust-rustc-hash-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize 0.5.1 --all-targets --no-default-features --features lru
+Features: test-name=librust-memoize-dev:lru
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev (>= 0.8.2), librust-rustc-hash-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize 0.5.1 --all-targets --no-default-features
+Features: test-name=librust-memoize-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev (>= 0.8.2), librust-rustc-hash-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

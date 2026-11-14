@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --all-features
+Features: test-name=rust-gilrs:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets
+Features: test-name=librust-gilrs-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --no-default-features --features serde
+Features: test-name=librust-gilrs-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --no-default-features --features serde-serialize
+Features: test-name=librust-gilrs-dev:serde-serialize
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --no-default-features --features wgi
+Features: test-name=librust-gilrs-dev:wgi
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --no-default-features --features xinput
+Features: test-name=librust-gilrs-dev:xinput
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs 0.11.2 --all-targets --no-default-features
+Features: test-name=librust-gilrs-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.84.0), librust-console-error-panic-hook-0.1+default-dev (>= 0.1.7), librust-console-log-1+default-dev, librust-eframe-0.30+default-dev, librust-egui-plot-0.30+default-dev, librust-env-logger-0.11+default-dev (>= 0.11.5), librust-home-0.5+default-dev (<< 0.5.10), librust-home-0.5+default-dev (>= 0.5.9), librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.49), librust-web-sys-0.3+default-dev (>= 0.3.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64

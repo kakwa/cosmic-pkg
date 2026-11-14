@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdgen 0.1.0 --all-targets --all-features
+Features: test-name=rust-xdgen:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdgen 0.1.0 --all-targets
+Features: test-name=librust-xdgen-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdgen 0.1.0 --all-targets --no-default-features
+Features: test-name=librust-xdgen-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

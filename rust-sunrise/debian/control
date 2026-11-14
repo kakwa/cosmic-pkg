@@ -1,0 +1,41 @@
+Source: rust-sunrise
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-chrono-0.4-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/sunrise]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/sunrise
+Homepage: https://github.com/nathan-osman/rust-sunrise
+X-Cargo-Crate: sunrise
+X-Cargo-Crate-Version: 3.0.0
+
+Package: librust-sunrise-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-chrono-0.4-dev,
+ librust-libm-0.2+default-dev
+Provides:
+ librust-sunrise+default-dev (= ${binary:Version}),
+ librust-sunrise+libm-dev (= ${binary:Version}),
+ librust-sunrise+std-dev (= ${binary:Version}),
+ librust-sunrise-3-dev (= ${binary:Version}),
+ librust-sunrise-3+default-dev (= ${binary:Version}),
+ librust-sunrise-3+libm-dev (= ${binary:Version}),
+ librust-sunrise-3+std-dev (= ${binary:Version}),
+ librust-sunrise-3.0-dev (= ${binary:Version}),
+ librust-sunrise-3.0+default-dev (= ${binary:Version}),
+ librust-sunrise-3.0+libm-dev (= ${binary:Version}),
+ librust-sunrise-3.0+std-dev (= ${binary:Version}),
+ librust-sunrise-3.0.0-dev (= ${binary:Version}),
+ librust-sunrise-3.0.0+default-dev (= ${binary:Version}),
+ librust-sunrise-3.0.0+libm-dev (= ${binary:Version}),
+ librust-sunrise-3.0.0+std-dev (= ${binary:Version})
+Description: Sunrise and sunset calculator - Rust source code
+ Source code for Debianized Rust crate "sunrise"

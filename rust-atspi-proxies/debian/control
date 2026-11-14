@@ -1,0 +1,42 @@
+Source: rust-atspi-proxies
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-atspi-common-0.13+default-dev <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.200) <!nocheck>,
+ librust-zbus-5+async-io-dev (>= 5.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/atspi-proxies]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/atspi-proxies
+Homepage: https://github.com/odilia-app/atspi
+X-Cargo-Crate: atspi-proxies
+X-Cargo-Crate-Version: 0.13.0
+
+Package: librust-atspi-proxies-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-atspi-common-0.13+default-dev,
+ librust-serde-1+derive-dev (>= 1.0.200),
+ librust-zbus-5+async-io-dev (>= 5.5)
+Provides:
+ librust-atspi-proxies+default-dev (= ${binary:Version}),
+ librust-atspi-proxies+wrappers-dev (= ${binary:Version}),
+ librust-atspi-proxies-0-dev (= ${binary:Version}),
+ librust-atspi-proxies-0+default-dev (= ${binary:Version}),
+ librust-atspi-proxies-0+wrappers-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13+default-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13+wrappers-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13.0-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13.0+default-dev (= ${binary:Version}),
+ librust-atspi-proxies-0.13.0+wrappers-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: AT-SPI2 proxies to query or manipulate UI objects - Rust source code
+ Source code for Debianized Rust crate "atspi-proxies"

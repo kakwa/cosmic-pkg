@@ -1,0 +1,45 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --all-features
+Features: test-name=rust-lyon:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features --features debugger
+Features: test-name=librust-lyon-dev:debugger
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets
+Features: test-name=librust-lyon-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features --features extra
+Features: test-name=librust-lyon-dev:extra
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features --features lyon_extra
+Features: test-name=librust-lyon-dev:lyon_extra
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features --features profiling
+Features: test-name=librust-lyon-dev:profiling
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features --features serialization
+Features: test-name=librust-lyon-dev:serialization
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon 1.0.19 --all-targets --no-default-features
+Features: test-name=librust-lyon-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

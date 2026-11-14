@@ -1,0 +1,36 @@
+Source: rust-i2c-linux-sys
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-1+default-dev (>= 1.0.1) <!nocheck>,
+ librust-byteorder-1+default-dev (>= 1.2.1) <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.36) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/i2c-linux-sys]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/i2c-linux-sys
+Homepage: https://github.com/arcnmx/i2c-linux-sys-rs
+X-Cargo-Crate: i2c-linux-sys
+X-Cargo-Crate-Version: 0.2.1
+
+Package: librust-i2c-linux-sys-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-1+default-dev (>= 1.0.1),
+ librust-byteorder-1+default-dev (>= 1.2.1),
+ librust-libc-0.2+default-dev (>= 0.2.36)
+Provides:
+ librust-i2c-linux-sys+default-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0+default-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0.2-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0.2+default-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0.2.1-dev (= ${binary:Version}),
+ librust-i2c-linux-sys-0.2.1+default-dev (= ${binary:Version})
+Description: Linux i2c-dev ioctls - Rust source code
+ Source code for Debianized Rust crate "i2c-linux-sys"

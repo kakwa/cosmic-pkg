@@ -1,0 +1,48 @@
+Source: rust-no-std-io2
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.81) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-memchr-2-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/no-std-io2]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/no-std-io2
+Homepage: https://github.com/wcampbell0x2a/no-std-io2
+X-Cargo-Crate: no_std_io2
+X-Cargo-Crate-Version: 0.9.4
+
+Package: librust-no-std-io2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-memchr-2-dev
+Provides:
+ librust-no-std-io2+alloc-dev (= ${binary:Version}),
+ librust-no-std-io2+default-dev (= ${binary:Version}),
+ librust-no-std-io2+nightly-dev (= ${binary:Version}),
+ librust-no-std-io2+std-dev (= ${binary:Version}),
+ librust-no-std-io2-0-dev (= ${binary:Version}),
+ librust-no-std-io2-0+alloc-dev (= ${binary:Version}),
+ librust-no-std-io2-0+default-dev (= ${binary:Version}),
+ librust-no-std-io2-0+nightly-dev (= ${binary:Version}),
+ librust-no-std-io2-0+std-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9+alloc-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9+default-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9+nightly-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9+std-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9.4-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9.4+alloc-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9.4+default-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9.4+nightly-dev (= ${binary:Version}),
+ librust-no-std-io2-0.9.4+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.81~)
+Description: Bare essentials of std::io for use in no_std - Rust source code
+ Alloc support is optional.
+ .
+ Source code for Debianized Rust crate "no_std_io2"

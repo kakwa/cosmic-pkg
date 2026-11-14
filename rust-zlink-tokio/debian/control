@@ -1,0 +1,110 @@
+Source: rust-zlink-tokio
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.85) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-futures-util-0.3+alloc-dev (>= 0.3.31) <!nocheck>,
+ librust-futures-util-0.3+async-await-dev (>= 0.3.31) <!nocheck>,
+ librust-pin-project-lite-0.2+default-dev <!nocheck>,
+ librust-tokio-1+default-dev (>= 1.44.0) <!nocheck>,
+ librust-tokio-1+io-util-dev (>= 1.44.0) <!nocheck>,
+ librust-tokio-1+net-dev (>= 1.44.0) <!nocheck>,
+ librust-tokio-1+tracing-dev (>= 1.44.0) <!nocheck>,
+ librust-tokio-stream-0.1+sync-dev (>= 0.1.17) <!nocheck>,
+ librust-zlink-core-0.5+introspection-dev <!nocheck>,
+ librust-zlink-core-0.5+introspection-dev (<< 0.5.1) <!nocheck>,
+ librust-zlink-core-0.5+proxy-dev <!nocheck>,
+ librust-zlink-core-0.5+proxy-dev (<< 0.5.1) <!nocheck>,
+ librust-zlink-core-0.5+server-dev <!nocheck>,
+ librust-zlink-core-0.5+server-dev (<< 0.5.1) <!nocheck>,
+ librust-zlink-core-0.5+service-dev <!nocheck>,
+ librust-zlink-core-0.5+service-dev (<< 0.5.1) <!nocheck>,
+ librust-zlink-core-0.5+std-dev <!nocheck>,
+ librust-zlink-core-0.5+std-dev (<< 0.5.1) <!nocheck>,
+ librust-zlink-core-0.5+tracing-dev <!nocheck>,
+ librust-zlink-core-0.5+tracing-dev (<< 0.5.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zlink-tokio]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zlink-tokio
+Homepage: https://github.com/z-galaxy/zlink/
+X-Cargo-Crate: zlink-tokio
+X-Cargo-Crate-Version: 0.5.0
+
+Package: librust-zlink-tokio-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-futures-util-0.3+alloc-dev (>= 0.3.31),
+ librust-futures-util-0.3+async-await-dev (>= 0.3.31),
+ librust-pin-project-lite-0.2+default-dev,
+ librust-tokio-1+default-dev (>= 1.44.0),
+ librust-tokio-1+io-util-dev (>= 1.44.0),
+ librust-tokio-1+net-dev (>= 1.44.0),
+ librust-tokio-1+tracing-dev (>= 1.44.0),
+ librust-tokio-stream-0.1+sync-dev (>= 0.1.17),
+ librust-zlink-core-0.5+defmt-dev,
+ librust-zlink-core-0.5+defmt-dev (<< 0.5.1),
+ librust-zlink-core-0.5+idl-dev,
+ librust-zlink-core-0.5+idl-dev (<< 0.5.1),
+ librust-zlink-core-0.5+idl-parse-dev,
+ librust-zlink-core-0.5+idl-parse-dev (<< 0.5.1),
+ librust-zlink-core-0.5+introspection-dev,
+ librust-zlink-core-0.5+introspection-dev (<< 0.5.1),
+ librust-zlink-core-0.5+proxy-dev,
+ librust-zlink-core-0.5+proxy-dev (<< 0.5.1),
+ librust-zlink-core-0.5+server-dev,
+ librust-zlink-core-0.5+server-dev (<< 0.5.1),
+ librust-zlink-core-0.5+service-dev,
+ librust-zlink-core-0.5+service-dev (<< 0.5.1),
+ librust-zlink-core-0.5+std-dev,
+ librust-zlink-core-0.5+std-dev (<< 0.5.1),
+ librust-zlink-core-0.5+tracing-dev,
+ librust-zlink-core-0.5+tracing-dev (<< 0.5.1)
+Provides:
+ librust-zlink-tokio+default-dev (= ${binary:Version}),
+ librust-zlink-tokio+defmt-dev (= ${binary:Version}),
+ librust-zlink-tokio+idl-dev (= ${binary:Version}),
+ librust-zlink-tokio+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-tokio+introspection-dev (= ${binary:Version}),
+ librust-zlink-tokio+proxy-dev (= ${binary:Version}),
+ librust-zlink-tokio+server-dev (= ${binary:Version}),
+ librust-zlink-tokio+service-dev (= ${binary:Version}),
+ librust-zlink-tokio+tracing-dev (= ${binary:Version}),
+ librust-zlink-tokio-0-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+default-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+defmt-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+idl-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+introspection-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+proxy-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+server-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+service-dev (= ${binary:Version}),
+ librust-zlink-tokio-0+tracing-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+default-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+defmt-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+idl-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+introspection-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+proxy-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+server-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+service-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5+tracing-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+default-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+defmt-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+idl-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+idl-parse-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+introspection-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+proxy-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+server-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+service-dev (= ${binary:Version}),
+ librust-zlink-tokio-0.5.0+tracing-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.85~)
+Description: Zlink library for the Tokio runtime - Rust source code
+ Source code for Debianized Rust crate "zlink-tokio"

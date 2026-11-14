@@ -1,0 +1,38 @@
+Source: rust-dataview
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.85) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-derive-pod-0.1+default-dev (>= 0.1.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dataview]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dataview
+Homepage: https://github.com/CasualX/dataview
+X-Cargo-Crate: dataview
+X-Cargo-Crate-Version: 1.1.0
+
+Package: librust-dataview-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-derive-pod-0.1+default-dev (>= 0.1.3)
+Provides:
+ librust-dataview+default-dev (= ${binary:Version}),
+ librust-dataview+derive-pod-dev (= ${binary:Version}),
+ librust-dataview-1-dev (= ${binary:Version}),
+ librust-dataview-1+default-dev (= ${binary:Version}),
+ librust-dataview-1+derive-pod-dev (= ${binary:Version}),
+ librust-dataview-1.1-dev (= ${binary:Version}),
+ librust-dataview-1.1+default-dev (= ${binary:Version}),
+ librust-dataview-1.1+derive-pod-dev (= ${binary:Version}),
+ librust-dataview-1.1.0-dev (= ${binary:Version}),
+ librust-dataview-1.1.0+default-dev (= ${binary:Version}),
+ librust-dataview-1.1.0+derive-pod-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.85~)
+Description: Safe transmute between types and byte arrays of the same size - Rust source code
+ Source code for Debianized Rust crate "dataview"

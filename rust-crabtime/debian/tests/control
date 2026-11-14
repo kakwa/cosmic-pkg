@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crabtime 1.1.4 --all-targets --all-features
+Features: test-name=rust-crabtime:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crabtime 1.1.4 --all-targets
+Features: test-name=librust-crabtime-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crabtime 1.1.4 --all-targets --no-default-features --features std
+Features: test-name=librust-crabtime-dev:std
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crabtime 1.1.4 --all-targets --no-default-features
+Features: test-name=librust-crabtime-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

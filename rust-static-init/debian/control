@@ -1,0 +1,93 @@
+Source: rust-static-init
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-1+default-dev <!nocheck>,
+ librust-cfg-aliases-0.2+default-dev <!nocheck>,
+ librust-libc-0.2-dev <!nocheck>,
+ librust-parking-lot-0.12+default-dev <!nocheck>,
+ librust-parking-lot-core-0.9+default-dev <!nocheck>,
+ librust-static-init-macro-1+default-dev (>= 1.0.4) <!nocheck>,
+ librust-winapi-0.3+default-dev <!nocheck>,
+ librust-winapi-0.3+minwindef-dev <!nocheck>,
+ librust-winapi-0.3+synchapi-dev <!nocheck>,
+ librust-winapi-0.3+winbase-dev <!nocheck>,
+ librust-winapi-0.3+winnt-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/static-init]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/static-init
+Homepage: https://gitlab.com/okannen/static_init
+X-Cargo-Crate: static_init
+X-Cargo-Crate-Version: 1.0.4
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-static-init-dev is very long, consider overriding
+
+Package: librust-static-init-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-1+default-dev,
+ librust-cfg-aliases-0.2+default-dev,
+ librust-libc-0.2-dev,
+ librust-parking-lot-0.12+default-dev,
+ librust-parking-lot-core-0.9+default-dev,
+ librust-static-init-macro-1+debug-order-dev (>= 1.0.4),
+ librust-static-init-macro-1+default-dev (>= 1.0.4),
+ librust-winapi-0.3+default-dev,
+ librust-winapi-0.3+minwindef-dev,
+ librust-winapi-0.3+synchapi-dev,
+ librust-winapi-0.3+winbase-dev,
+ librust-winapi-0.3+winnt-dev
+Provides:
+ librust-static-init+bench-nightly-dev (= ${binary:Version}),
+ librust-static-init+debug-order-dev (= ${binary:Version}),
+ librust-static-init+default-dev (= ${binary:Version}),
+ librust-static-init+lock-statistics-dev (= ${binary:Version}),
+ librust-static-init+parking-lot-dev (= ${binary:Version}),
+ librust-static-init+parking-lot-core-dev (= ${binary:Version}),
+ librust-static-init+spin-loop-dev (= ${binary:Version}),
+ librust-static-init+test-no-global-lazy-hint-dev (= ${binary:Version}),
+ librust-static-init+test-pthread-support-dev (= ${binary:Version}),
+ librust-static-init+thread-local-dev (= ${binary:Version}),
+ librust-static-init-1-dev (= ${binary:Version}),
+ librust-static-init-1+bench-nightly-dev (= ${binary:Version}),
+ librust-static-init-1+debug-order-dev (= ${binary:Version}),
+ librust-static-init-1+default-dev (= ${binary:Version}),
+ librust-static-init-1+lock-statistics-dev (= ${binary:Version}),
+ librust-static-init-1+parking-lot-dev (= ${binary:Version}),
+ librust-static-init-1+parking-lot-core-dev (= ${binary:Version}),
+ librust-static-init-1+spin-loop-dev (= ${binary:Version}),
+ librust-static-init-1+test-no-global-lazy-hint-dev (= ${binary:Version}),
+ librust-static-init-1+test-pthread-support-dev (= ${binary:Version}),
+ librust-static-init-1+thread-local-dev (= ${binary:Version}),
+ librust-static-init-1.0-dev (= ${binary:Version}),
+ librust-static-init-1.0+bench-nightly-dev (= ${binary:Version}),
+ librust-static-init-1.0+debug-order-dev (= ${binary:Version}),
+ librust-static-init-1.0+default-dev (= ${binary:Version}),
+ librust-static-init-1.0+lock-statistics-dev (= ${binary:Version}),
+ librust-static-init-1.0+parking-lot-dev (= ${binary:Version}),
+ librust-static-init-1.0+parking-lot-core-dev (= ${binary:Version}),
+ librust-static-init-1.0+spin-loop-dev (= ${binary:Version}),
+ librust-static-init-1.0+test-no-global-lazy-hint-dev (= ${binary:Version}),
+ librust-static-init-1.0+test-pthread-support-dev (= ${binary:Version}),
+ librust-static-init-1.0+thread-local-dev (= ${binary:Version}),
+ librust-static-init-1.0.4-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+bench-nightly-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+debug-order-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+default-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+lock-statistics-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+parking-lot-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+parking-lot-core-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+spin-loop-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+test-no-global-lazy-hint-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+test-pthread-support-dev (= ${binary:Version}),
+ librust-static-init-1.0.4+thread-local-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.82~)
+Description: Safe mutable static and non const static initialization, and code execution at program startup/exit - Rust source code
+ Source code for Debianized Rust crate "static_init"

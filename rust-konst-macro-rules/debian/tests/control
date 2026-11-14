@@ -1,0 +1,63 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --all-features
+Features: test-name=rust-konst-macro-rules:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets
+Features: test-name=librust-konst-macro-rules-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features deref_raw_in_fn
+Features: test-name=librust-konst-macro-rules-dev:deref_raw_in_fn
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features mut_refs
+Features: test-name=librust-konst-macro-rules-dev:mut_refs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features nightly_mut_refs
+Features: test-name=librust-konst-macro-rules-dev:nightly_mut_refs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features rust_1_51
+Features: test-name=librust-konst-macro-rules-dev:rust_1_51
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features rust_1_55
+Features: test-name=librust-konst-macro-rules-dev:rust_1_55
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features rust_1_56
+Features: test-name=librust-konst-macro-rules-dev:rust_1_56
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features rust_1_57
+Features: test-name=librust-konst-macro-rules-dev:rust_1_57
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features --features rust_1_61
+Features: test-name=librust-konst-macro-rules-dev:rust_1_61
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test konst_macro_rules 0.2.19 --all-targets --no-default-features
+Features: test-name=librust-konst-macro-rules-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

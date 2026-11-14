@@ -1,0 +1,85 @@
+Source: rust-icu-locid-transform
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.67) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-displaydoc-0.2-dev (>= 0.2.3) <!nocheck>,
+ librust-icu-locid-1+zerovec-dev (<< 1.6) <!nocheck>,
+ librust-icu-locid-1+zerovec-dev (>= 1.5.0) <!nocheck>,
+ librust-icu-locid-transform-data-1-dev (<< 1.6) <!nocheck>,
+ librust-icu-locid-transform-data-1-dev (>= 1.5.0) <!nocheck>,
+ librust-icu-provider-1+macros-dev (<< 1.6) <!nocheck>,
+ librust-icu-provider-1+macros-dev (>= 1.5.0) <!nocheck>,
+ librust-tinystr-0.7+alloc-dev (>= 0.7.5) <!nocheck>,
+ librust-tinystr-0.7+zerovec-dev (>= 0.7.5) <!nocheck>,
+ librust-zerovec-0.10+yoke-dev (>= 0.10.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locid-transform]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/icu-locid-transform
+Homepage: https://icu4x.unicode.org
+X-Cargo-Crate: icu_locid_transform
+X-Cargo-Crate-Version: 1.5.0
+
+Package: librust-icu-locid-transform-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-databake-0.1+derive-dev (>= 0.1.8),
+ librust-displaydoc-0.2-dev (>= 0.2.3),
+ librust-icu-locid-1+databake-dev (<< 1.6),
+ librust-icu-locid-1+databake-dev (>= 1.5.0),
+ librust-icu-locid-1+serde-dev (<< 1.6),
+ librust-icu-locid-1+serde-dev (>= 1.5.0),
+ librust-icu-locid-1+zerovec-dev (<< 1.6),
+ librust-icu-locid-1+zerovec-dev (>= 1.5.0),
+ librust-icu-locid-transform-data-1-dev (<< 1.6),
+ librust-icu-locid-transform-data-1-dev (>= 1.5.0),
+ librust-icu-provider-1+macros-dev (<< 1.6),
+ librust-icu-provider-1+macros-dev (>= 1.5.0),
+ librust-icu-provider-1+serde-dev (<< 1.6),
+ librust-icu-provider-1+serde-dev (>= 1.5.0),
+ librust-serde-1+alloc-dev (>= 1.0.110),
+ librust-serde-1+derive-dev (>= 1.0.110),
+ librust-tinystr-0.7+alloc-dev (>= 0.7.5),
+ librust-tinystr-0.7+databake-dev (>= 0.7.5),
+ librust-tinystr-0.7+serde-dev (>= 0.7.5),
+ librust-tinystr-0.7+zerovec-dev (>= 0.7.5),
+ librust-zerovec-0.10+databake-dev (>= 0.10.2),
+ librust-zerovec-0.10+serde-dev (>= 0.10.2),
+ librust-zerovec-0.10+yoke-dev (>= 0.10.2)
+Provides:
+ librust-icu-locid-transform+bench-dev (= ${binary:Version}),
+ librust-icu-locid-transform+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locid-transform+datagen-dev (= ${binary:Version}),
+ librust-icu-locid-transform+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform+serde-dev (= ${binary:Version}),
+ librust-icu-locid-transform+std-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+bench-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+datagen-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+serde-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1+std-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+bench-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+datagen-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+serde-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5+std-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+bench-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+compiled-data-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+datagen-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+serde-dev (= ${binary:Version}),
+ librust-icu-locid-transform-1.5.0+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.67~)
+Description: API for Unicode Language and Locale Identifiers canonicalization - Rust source code
+ Source code for Debianized Rust crate "icu_locid_transform"

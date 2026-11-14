@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --all-features
+Features: test-name=rust-cosmic-protocols:@
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --no-default-features --features client
+Features: test-name=librust-cosmic-protocols-dev:client
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets
+Features: test-name=librust-cosmic-protocols-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --no-default-features --features server
+Features: test-name=librust-cosmic-protocols-dev:server
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --no-default-features --features wayland-client
+Features: test-name=librust-cosmic-protocols-dev:wayland-client
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --no-default-features --features wayland-server
+Features: test-name=librust-cosmic-protocols-dev:wayland-server
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-protocols 0.2.0 --all-targets --no-default-features
+Features: test-name=librust-cosmic-protocols-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-wayland-backend-0.3+client-system-dev (>= 0.3.11), librust-wayland-backend-0.3+default-dev (>= 0.3.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64

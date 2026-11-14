@@ -1,0 +1,42 @@
+Source: rust-dnd
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.219) <!nocheck>,
+ librust-serde-1+std-dev (>= 1.0.219) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dnd]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dnd
+Homepage: http://crates.lurey.io/dnd
+X-Cargo-Crate: dnd
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-dnd-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1+derive-dev (>= 1.0.219),
+ librust-serde-1+std-dev (>= 1.0.219)
+Provides:
+ librust-dnd+default-dev (= ${binary:Version}),
+ librust-dnd+serde-dev (= ${binary:Version}),
+ librust-dnd+std-dev (= ${binary:Version}),
+ librust-dnd-0-dev (= ${binary:Version}),
+ librust-dnd-0+default-dev (= ${binary:Version}),
+ librust-dnd-0+serde-dev (= ${binary:Version}),
+ librust-dnd-0+std-dev (= ${binary:Version}),
+ librust-dnd-0.1-dev (= ${binary:Version}),
+ librust-dnd-0.1+default-dev (= ${binary:Version}),
+ librust-dnd-0.1+serde-dev (= ${binary:Version}),
+ librust-dnd-0.1+std-dev (= ${binary:Version}),
+ librust-dnd-0.1.0-dev (= ${binary:Version}),
+ librust-dnd-0.1.0+default-dev (= ${binary:Version}),
+ librust-dnd-0.1.0+serde-dev (= ${binary:Version}),
+ librust-dnd-0.1.0+std-dev (= ${binary:Version})
+Description: D&D 5e types and common mechanics - Rust source code
+ Source code for Debianized Rust crate "dnd"

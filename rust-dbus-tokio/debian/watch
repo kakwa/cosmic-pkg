@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/dbus-tokio
+Matching-Pattern:  .*/crates/dbus-tokio/@ANY_VERSION@/download
+Filenamemangle: s/.*\/(.*)\/download/dbus-tokio-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

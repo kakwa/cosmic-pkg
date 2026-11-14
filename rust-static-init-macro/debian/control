@@ -1,0 +1,46 @@
+Source: rust-static-init-macro
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cfg-aliases-0.1+default-dev <!nocheck>,
+ librust-memchr-2+default-dev <!nocheck>,
+ librust-proc-macro2-1+default-dev <!nocheck>,
+ librust-quote-1+default-dev <!nocheck>,
+ librust-syn-1+default-dev <!nocheck>,
+ librust-syn-1+full-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/static-init-macro]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/static-init-macro
+Homepage: https://gitlab.com/okannen/static_init
+X-Cargo-Crate: static_init_macro
+X-Cargo-Crate-Version: 1.0.4
+
+Package: librust-static-init-macro-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cfg-aliases-0.1+default-dev,
+ librust-memchr-2+default-dev,
+ librust-proc-macro2-1+default-dev,
+ librust-quote-1+default-dev,
+ librust-syn-1+default-dev,
+ librust-syn-1+full-dev
+Provides:
+ librust-static-init-macro+debug-order-dev (= ${binary:Version}),
+ librust-static-init-macro+default-dev (= ${binary:Version}),
+ librust-static-init-macro-1-dev (= ${binary:Version}),
+ librust-static-init-macro-1+debug-order-dev (= ${binary:Version}),
+ librust-static-init-macro-1+default-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0+debug-order-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0+default-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0.4-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0.4+debug-order-dev (= ${binary:Version}),
+ librust-static-init-macro-1.0.4+default-dev (= ${binary:Version})
+Description: Attribute macros for static_init crate - Rust source code
+ Source code for Debianized Rust crate "static_init_macro"

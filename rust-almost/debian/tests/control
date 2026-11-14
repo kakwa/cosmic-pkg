@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test almost 0.2.0 --all-targets --all-features
+Features: test-name=rust-almost:@
+Depends: dh-cargo (>= 33~), rustc, librust-ieee754-0.2+default-dev (>= 0.2.6), librust-rand-0.6-dev (>= 0.6.5), @
+Restrictions: allow-stderr

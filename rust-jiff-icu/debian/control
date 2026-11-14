@@ -1,0 +1,64 @@
+Source: rust-jiff-icu
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-icu-calendar-2+alloc-dev <!nocheck>,
+ librust-icu-calendar-2-dev <!nocheck>,
+ librust-icu-time-2+alloc-dev <!nocheck>,
+ librust-icu-time-2+compiled-data-dev <!nocheck>,
+ librust-icu-time-2-dev <!nocheck>,
+ librust-jiff-0.2+alloc-dev (>= 0.2.11) <!nocheck>,
+ librust-jiff-0.2+std-dev (>= 0.2.11) <!nocheck>,
+ librust-jiff-0.2-dev (>= 0.2.11) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/jiff-icu]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/jiff-icu
+Homepage: https://github.com/BurntSushi/jiff/tree/master/crates/jiff-icu
+X-Cargo-Crate: jiff-icu
+X-Cargo-Crate-Version: 0.2.2
+
+Package: librust-jiff-icu-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-icu-calendar-2+alloc-dev,
+ librust-icu-calendar-2-dev,
+ librust-icu-time-2+alloc-dev,
+ librust-icu-time-2+compiled-data-dev,
+ librust-icu-time-2-dev,
+ librust-jiff-0.2+alloc-dev (>= 0.2.11),
+ librust-jiff-0.2+std-dev (>= 0.2.11),
+ librust-jiff-0.2-dev (>= 0.2.11)
+Provides:
+ librust-jiff-icu+alloc-dev (= ${binary:Version}),
+ librust-jiff-icu+default-dev (= ${binary:Version}),
+ librust-jiff-icu+std-dev (= ${binary:Version}),
+ librust-jiff-icu+time-dev (= ${binary:Version}),
+ librust-jiff-icu+zoned-dev (= ${binary:Version}),
+ librust-jiff-icu-0-dev (= ${binary:Version}),
+ librust-jiff-icu-0+alloc-dev (= ${binary:Version}),
+ librust-jiff-icu-0+default-dev (= ${binary:Version}),
+ librust-jiff-icu-0+std-dev (= ${binary:Version}),
+ librust-jiff-icu-0+time-dev (= ${binary:Version}),
+ librust-jiff-icu-0+zoned-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2+alloc-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2+default-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2+std-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2+time-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2+zoned-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2+alloc-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2+default-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2+std-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2+time-dev (= ${binary:Version}),
+ librust-jiff-icu-0.2.2+zoned-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.82~)
+Description: Conversion routines between Jiff and ICU4X - Rust source code
+ Source code for Debianized Rust crate "jiff-icu"

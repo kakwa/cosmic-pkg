@@ -1,0 +1,63 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-wgpu:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets
+Features: test-name=librust-iced-wgpu-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features geometry
+Features: test-name=librust-iced-wgpu-dev:geometry
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features image
+Features: test-name=librust-iced-wgpu-dev:image
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features lyon
+Features: test-name=librust-iced-wgpu-dev:lyon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features resvg
+Features: test-name=librust-iced-wgpu-dev:resvg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features strict-assertions
+Features: test-name=librust-iced-wgpu-dev:strict-assertions
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-iced-wgpu-dev:svg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features web-colors
+Features: test-name=librust-iced-wgpu-dev:web-colors
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features webgl
+Features: test-name=librust-iced-wgpu-dev:webgl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-wgpu-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

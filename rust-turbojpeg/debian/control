@@ -1,0 +1,67 @@
+Source: rust-turbojpeg
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-gcd-2+default-dev (>= 2.3.0) <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>,
+ librust-thiserror-1+default-dev <!nocheck>,
+ librust-turbojpeg-sys-1+cmake-dev (>= 1.1.1) <!nocheck>,
+ librust-turbojpeg-sys-1+pkg-config-dev (>= 1.1.1) <!nocheck>,
+ librust-turbojpeg-sys-1+require-simd-dev (>= 1.1.1) <!nocheck>,
+ librust-turbojpeg-sys-1-dev (>= 1.1.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/turbojpeg]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/turbojpeg
+Homepage: https://github.com/honzasp/rust-turbojpeg
+X-Cargo-Crate: turbojpeg
+X-Cargo-Crate-Version: 1.5.1
+
+Package: librust-turbojpeg-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-gcd-2+default-dev (>= 2.3.0),
+ librust-image-dev (<< 0.26),
+ librust-image-dev (>= 0.24),
+ librust-libc-0.2+default-dev,
+ librust-thiserror-1+default-dev,
+ librust-turbojpeg-sys-1+bindgen-dev (>= 1.1.1),
+ librust-turbojpeg-sys-1+cmake-dev (>= 1.1.1),
+ librust-turbojpeg-sys-1+pkg-config-dev (>= 1.1.1),
+ librust-turbojpeg-sys-1+require-simd-dev (>= 1.1.1),
+ librust-turbojpeg-sys-1-dev (>= 1.1.1)
+Provides:
+ librust-turbojpeg+bindgen-dev (= ${binary:Version}),
+ librust-turbojpeg+cmake-dev (= ${binary:Version}),
+ librust-turbojpeg+default-dev (= ${binary:Version}),
+ librust-turbojpeg+image-dev (= ${binary:Version}),
+ librust-turbojpeg+pkg-config-dev (= ${binary:Version}),
+ librust-turbojpeg+require-simd-dev (= ${binary:Version}),
+ librust-turbojpeg-1-dev (= ${binary:Version}),
+ librust-turbojpeg-1+bindgen-dev (= ${binary:Version}),
+ librust-turbojpeg-1+cmake-dev (= ${binary:Version}),
+ librust-turbojpeg-1+default-dev (= ${binary:Version}),
+ librust-turbojpeg-1+image-dev (= ${binary:Version}),
+ librust-turbojpeg-1+pkg-config-dev (= ${binary:Version}),
+ librust-turbojpeg-1+require-simd-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+bindgen-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+cmake-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+default-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+image-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+pkg-config-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5+require-simd-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+bindgen-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+cmake-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+default-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+image-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+pkg-config-dev (= ${binary:Version}),
+ librust-turbojpeg-1.5.1+require-simd-dev (= ${binary:Version})
+Description: Fast and easy JPEG encoding, decoding and lossless transforms with TurboJPEG - Rust source code
+ Source code for Debianized Rust crate "turbojpeg"

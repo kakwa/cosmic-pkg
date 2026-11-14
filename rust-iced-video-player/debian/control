@@ -1,0 +1,56 @@
+Source: rust-iced-video-player
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-glib-0.20+default-dev <!nocheck>,
+ librust-gstreamer-0.23+default-dev <!nocheck>,
+ librust-gstreamer-app-0.23+default-dev <!nocheck>,
+ librust-gstreamer-base-0.23+default-dev <!nocheck>,
+ librust-gstreamer-video-0.23+default-dev <!nocheck>,
+ librust-iced-0.14+advanced-dev <!nocheck>,
+ librust-iced-0.14+default-dev <!nocheck>,
+ librust-iced-0.14+image-dev <!nocheck>,
+ librust-iced-0.14+wgpu-dev <!nocheck>,
+ librust-iced-wgpu-0.14+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-thiserror-1+default-dev <!nocheck>,
+ librust-url-2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-video-player]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-video-player
+Homepage: https://github.com/jazzfool/iced_video_player
+X-Cargo-Crate: iced_video_player
+X-Cargo-Crate-Version: 0.6.0
+
+Package: librust-iced-video-player-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-glib-0.20+default-dev,
+ librust-gstreamer-0.23+default-dev,
+ librust-gstreamer-app-0.23+default-dev,
+ librust-gstreamer-base-0.23+default-dev,
+ librust-gstreamer-video-0.23+default-dev,
+ librust-iced-0.14+advanced-dev,
+ librust-iced-0.14+default-dev,
+ librust-iced-0.14+image-dev,
+ librust-iced-0.14+wgpu-dev,
+ librust-iced-wgpu-0.14+default-dev,
+ librust-log-0.4+default-dev,
+ librust-thiserror-1+default-dev,
+ librust-url-2+default-dev
+Provides:
+ librust-iced-video-player+default-dev (= ${binary:Version}),
+ librust-iced-video-player-0-dev (= ${binary:Version}),
+ librust-iced-video-player-0+default-dev (= ${binary:Version}),
+ librust-iced-video-player-0.6-dev (= ${binary:Version}),
+ librust-iced-video-player-0.6+default-dev (= ${binary:Version}),
+ librust-iced-video-player-0.6.0-dev (= ${binary:Version}),
+ librust-iced-video-player-0.6.0+default-dev (= ${binary:Version})
+Description: Convenient video player widget for Iced - Rust source code
+ Source code for Debianized Rust crate "iced_video_player"

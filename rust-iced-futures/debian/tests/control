@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-futures:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets
+Features: test-name=librust-iced-futures-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets --no-default-features --features smol
+Features: test-name=librust-iced-futures-dev:smol
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets --no-default-features --features thread-pool
+Features: test-name=librust-iced-futures-dev:thread-pool
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-iced-futures-dev:tokio
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_futures 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-futures-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

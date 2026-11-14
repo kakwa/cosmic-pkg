@@ -1,0 +1,201 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --all-features
+Features: test-name=rust-libflatpak-sys:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets
+Features: test-name=librust-libflatpak-sys-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_10
+Features: test-name=librust-libflatpak-sys-dev:v0_10
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_11_8
+Features: test-name=librust-libflatpak-sys-dev:v0_11_8
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_6_10
+Features: test-name=librust-libflatpak-sys-dev:v0_6_10
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_6_12
+Features: test-name=librust-libflatpak-sys-dev:v0_6_12
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_6_13
+Features: test-name=librust-libflatpak-sys-dev:v0_6_13
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_6_15
+Features: test-name=librust-libflatpak-sys-dev:v0_6_15
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_6_7
+Features: test-name=librust-libflatpak-sys-dev:v0_6_7
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_8
+Features: test-name=librust-libflatpak-sys-dev:v0_8
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v0_9_8
+Features: test-name=librust-libflatpak-sys-dev:v0_9_8
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_0_3
+Features: test-name=librust-libflatpak-sys-dev:v1_0_3
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_1
+Features: test-name=librust-libflatpak-sys-dev:v1_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_11_1
+Features: test-name=librust-libflatpak-sys-dev:v1_11_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_13
+Features: test-name=librust-libflatpak-sys-dev:v1_13
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_13_3
+Features: test-name=librust-libflatpak-sys-dev:v1_13_3
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_15_4
+Features: test-name=librust-libflatpak-sys-dev:v1_15_4
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_1_1
+Features: test-name=librust-libflatpak-sys-dev:v1_1_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_1_2
+Features: test-name=librust-libflatpak-sys-dev:v1_1_2
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_3_2
+Features: test-name=librust-libflatpak-sys-dev:v1_3_2
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_3_3
+Features: test-name=librust-libflatpak-sys-dev:v1_3_3
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_3_4
+Features: test-name=librust-libflatpak-sys-dev:v1_3_4
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_4
+Features: test-name=librust-libflatpak-sys-dev:v1_4
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_4_2
+Features: test-name=librust-libflatpak-sys-dev:v1_4_2
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_5
+Features: test-name=librust-libflatpak-sys-dev:v1_5
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_5_1
+Features: test-name=librust-libflatpak-sys-dev:v1_5_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_5_2
+Features: test-name=librust-libflatpak-sys-dev:v1_5_2
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_7
+Features: test-name=librust-libflatpak-sys-dev:v1_7
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_7_1
+Features: test-name=librust-libflatpak-sys-dev:v1_7_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_7_3
+Features: test-name=librust-libflatpak-sys-dev:v1_7_3
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_7_4
+Features: test-name=librust-libflatpak-sys-dev:v1_7_4
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_8
+Features: test-name=librust-libflatpak-sys-dev:v1_8
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features --features v1_9_1
+Features: test-name=librust-libflatpak-sys-dev:v1_9_1
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test libflatpak-sys 0.7.0 --all-targets --no-default-features
+Features: test-name=librust-libflatpak-sys-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

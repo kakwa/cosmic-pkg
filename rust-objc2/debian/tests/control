@@ -1,0 +1,183 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --all-features
+Features: test-name=rust-objc2:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features alloc
+Features: test-name=librust-objc2-dev:alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features catch-all
+Features: test-name=librust-objc2-dev:catch-all
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets
+Features: test-name=librust-objc2-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features disable-encoding-assertions
+Features: test-name=librust-objc2-dev:disable-encoding-assertions
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features exception
+Features: test-name=librust-objc2-dev:exception
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features gnustep-1-7
+Features: test-name=librust-objc2-dev:gnustep-1-7
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features gnustep-1-8
+Features: test-name=librust-objc2-dev:gnustep-1-8
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features gnustep-1-9
+Features: test-name=librust-objc2-dev:gnustep-1-9
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features gnustep-2-0
+Features: test-name=librust-objc2-dev:gnustep-2-0
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features gnustep-2-1
+Features: test-name=librust-objc2-dev:gnustep-2-1
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features objc2-proc-macros
+Features: test-name=librust-objc2-dev:objc2-proc-macros
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features relax-sign-encoding
+Features: test-name=librust-objc2-dev:relax-sign-encoding
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features relax-void-encoding
+Features: test-name=librust-objc2-dev:relax-void-encoding
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features std
+Features: test-name=librust-objc2-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-apple-new
+Features: test-name=librust-objc2-dev:unstable-apple-new
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-arbitrary-self-types
+Features: test-name=librust-objc2-dev:unstable-arbitrary-self-types
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-autoreleasesafe
+Features: test-name=librust-objc2-dev:unstable-autoreleasesafe
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-coerce-pointee
+Features: test-name=librust-objc2-dev:unstable-coerce-pointee
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-compiler-rt
+Features: test-name=librust-objc2-dev:unstable-compiler-rt
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-darwin-objc
+Features: test-name=librust-objc2-dev:unstable-darwin-objc
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-gnustep-strict-apple-compat
+Features: test-name=librust-objc2-dev:unstable-gnustep-strict-apple-compat
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-objfw
+Features: test-name=librust-objc2-dev:unstable-objfw
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-requires-macos
+Features: test-name=librust-objc2-dev:unstable-requires-macos
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-static-class
+Features: test-name=librust-objc2-dev:unstable-static-class
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-static-class-inlined
+Features: test-name=librust-objc2-dev:unstable-static-class-inlined
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-static-sel
+Features: test-name=librust-objc2-dev:unstable-static-sel
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-static-sel-inlined
+Features: test-name=librust-objc2-dev:unstable-static-sel-inlined
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features unstable-winobjc
+Features: test-name=librust-objc2-dev:unstable-winobjc
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features --features verify
+Features: test-name=librust-objc2-dev:verify
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2 0.6.5 --all-targets --no-default-features
+Features: test-name=librust-objc2-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-backtrace-0.3+default-dev (>= 0.3.74), librust-core-foundation-0.10+default-dev, librust-iai-0.1+default-dev, librust-libc-0.2+default-dev (>= 0.2.158), librust-memoffset-0.9+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

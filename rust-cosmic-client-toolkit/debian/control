@@ -1,0 +1,46 @@
+Source: rust-cosmic-client-toolkit
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev (>= 2.9.3) <!nocheck>,
+ librust-cosmic-protocols-0.2+default-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.175) <!nocheck>,
+ librust-smithay-client-toolkit-0.20+default-dev <!nocheck>,
+ librust-wayland-client-0.31+default-dev (>= 0.31.11) <!nocheck>,
+ librust-wayland-protocols-0.32+client-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+staging-dev (>= 0.32.9) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/cosmic-client-toolkit]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cosmic-client-toolkit
+Homepage: https://github.com/pop-os/cosmic-protocols
+X-Cargo-Crate: cosmic-client-toolkit
+X-Cargo-Crate-Version: 0.2.0
+
+Package: librust-cosmic-client-toolkit-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev (>= 2.9.3),
+ librust-cosmic-protocols-0.2+default-dev,
+ librust-libc-0.2+default-dev (>= 0.2.175),
+ librust-smithay-client-toolkit-0.20+default-dev,
+ librust-wayland-client-0.31+default-dev (>= 0.31.11),
+ librust-wayland-protocols-0.32+client-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+staging-dev (>= 0.32.9)
+Provides:
+ librust-cosmic-client-toolkit+default-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0+default-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0.2-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0.2+default-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0.2.0-dev (= ${binary:Version}),
+ librust-cosmic-client-toolkit-0.2.0+default-dev (= ${binary:Version})
+Description: Helpers for implement clients with COSMIC Wayland protocols - Rust source code
+ Source code for Debianized Rust crate "cosmic-client-toolkit"

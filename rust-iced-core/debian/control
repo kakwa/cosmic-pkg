@@ -1,0 +1,72 @@
+Source: rust-iced-core
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev <!nocheck>,
+ librust-bytes-1+default-dev (>= 1.6) <!nocheck>,
+ librust-glam-0.25+default-dev <!nocheck>,
+ librust-lilt-0.8+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-num-traits-0.2+default-dev <!nocheck>,
+ librust-rustc-hash-2+default-dev <!nocheck>,
+ librust-smol-str-0.2+default-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>,
+ librust-web-time-1+default-dev (>= 1.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-core]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-core
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_core
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-iced-core-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev,
+ librust-bytes-1+default-dev (>= 1.6),
+ librust-glam-0.25+default-dev,
+ librust-lilt-0.8+default-dev,
+ librust-log-0.4+default-dev,
+ librust-num-traits-0.2+default-dev,
+ librust-rustc-hash-2+default-dev,
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev,
+ librust-smol-str-0.2+default-dev,
+ librust-thiserror-2+default-dev,
+ librust-web-time-1+default-dev (>= 1.1)
+Provides:
+ librust-iced-core+advanced-dev (= ${binary:Version}),
+ librust-iced-core+advanced-shaping-dev (= ${binary:Version}),
+ librust-iced-core+basic-shaping-dev (= ${binary:Version}),
+ librust-iced-core+crisp-dev (= ${binary:Version}),
+ librust-iced-core+default-dev (= ${binary:Version}),
+ librust-iced-core+serde-dev (= ${binary:Version}),
+ librust-iced-core-0-dev (= ${binary:Version}),
+ librust-iced-core-0+advanced-dev (= ${binary:Version}),
+ librust-iced-core-0+advanced-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0+basic-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0+crisp-dev (= ${binary:Version}),
+ librust-iced-core-0+default-dev (= ${binary:Version}),
+ librust-iced-core-0+serde-dev (= ${binary:Version}),
+ librust-iced-core-0.14-dev (= ${binary:Version}),
+ librust-iced-core-0.14+advanced-dev (= ${binary:Version}),
+ librust-iced-core-0.14+advanced-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0.14+basic-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0.14+crisp-dev (= ${binary:Version}),
+ librust-iced-core-0.14+default-dev (= ${binary:Version}),
+ librust-iced-core-0.14+serde-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+advanced-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+advanced-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+basic-shaping-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+crisp-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-core-0.14.0+serde-dev (= ${binary:Version})
+Description: Essential ideas of iced - Rust source code
+ Source code for Debianized Rust crate "iced_core"

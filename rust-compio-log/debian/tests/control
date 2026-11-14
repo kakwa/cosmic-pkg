@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-log 0.1.0 --all-targets --all-features
+Features: test-name=rust-compio-log:@
+Depends: dh-cargo (>= 33~), rustc, librust-tracing-subscriber-0.3+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-log 0.1.0 --all-targets
+Features: test-name=librust-compio-log-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-tracing-subscriber-0.3+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-log 0.1.0 --all-targets --no-default-features --features enable_log
+Features: test-name=librust-compio-log-dev:enable_log
+Depends: dh-cargo (>= 33~), rustc, librust-tracing-subscriber-0.3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-log 0.1.0 --all-targets --no-default-features
+Features: test-name=librust-compio-log-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-tracing-subscriber-0.3+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

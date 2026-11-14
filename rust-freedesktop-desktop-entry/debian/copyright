@@ -1,0 +1,62 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: freedesktop-desktop-entry
+Upstream-Contact: Michael Aaron Murphy <mmstick@pm.me>
+Source: https://github.com/pop-os/freedesktop-desktop-entry
+
+Files: *
+Copyright: FIXME (overlay) UNKNOWN-YEARS Michael Aaron Murphy <mmstick@pm.me>
+License: MPL-2.0
+Comment:
+ FIXME (overlay): Since upstream copyright years are not available in
+ Cargo.toml, they were extracted from the upstream Git repository. This may not
+ be correct information so you should review and fix this before uploading to
+ the archive.
+
+Files: examples/all_files.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: examples/bench.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/decoder.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/exec.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/iter.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: src/lib.rs
+Copyright: 2021 System76 <info@system76.com>
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: debian/*
+Copyright: 2026 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+License: MPL-2.0
+
+License: MPL-2.0
+ Debian systems provide the MPL 2.0 in /usr/share/common-licenses/MPL-2.0

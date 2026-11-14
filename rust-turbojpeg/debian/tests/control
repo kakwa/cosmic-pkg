@@ -1,0 +1,45 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --all-features
+Features: test-name=rust-turbojpeg:@
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features --features bindgen
+Features: test-name=librust-turbojpeg-dev:bindgen
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features --features cmake
+Features: test-name=librust-turbojpeg-dev:cmake
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets
+Features: test-name=librust-turbojpeg-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features --features image
+Features: test-name=librust-turbojpeg-dev:image
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features --features pkg-config
+Features: test-name=librust-turbojpeg-dev:pkg-config
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features --features require-simd
+Features: test-name=librust-turbojpeg-dev:require-simd
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg 1.5.1 --all-targets --no-default-features
+Features: test-name=librust-turbojpeg-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-anyhow-1+default-dev, librust-clap-2+default-dev (>= 2.33), librust-image-0.25+bmp-dev, librust-image-0.25+default-dev, librust-image-0.25+jpeg-dev, librust-image-0.25+png-dev, librust-image-0.25+pnm-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

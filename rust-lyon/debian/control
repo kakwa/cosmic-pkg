@@ -1,0 +1,58 @@
+Source: rust-lyon
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-lyon-algorithms-1+default-dev (>= 1.0.19) <!nocheck>,
+ librust-lyon-tessellation-1+default-dev (>= 1.0.19) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/lyon]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/lyon
+Homepage: https://github.com/nical/lyon
+X-Cargo-Crate: lyon
+X-Cargo-Crate-Version: 1.0.19
+
+Package: librust-lyon-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-lyon-algorithms-1+default-dev (>= 1.0.19),
+ librust-lyon-extra-1+default-dev (>= 1.1.0),
+ librust-lyon-tessellation-1+debugger-dev (>= 1.0.19),
+ librust-lyon-tessellation-1+default-dev (>= 1.0.19),
+ librust-lyon-tessellation-1+profiling-dev (>= 1.0.19),
+ librust-lyon-tessellation-1+serialization-dev (>= 1.0.19)
+Provides:
+ librust-lyon+debugger-dev (= ${binary:Version}),
+ librust-lyon+default-dev (= ${binary:Version}),
+ librust-lyon+extra-dev (= ${binary:Version}),
+ librust-lyon+lyon-extra-dev (= ${binary:Version}),
+ librust-lyon+profiling-dev (= ${binary:Version}),
+ librust-lyon+serialization-dev (= ${binary:Version}),
+ librust-lyon-1-dev (= ${binary:Version}),
+ librust-lyon-1+debugger-dev (= ${binary:Version}),
+ librust-lyon-1+default-dev (= ${binary:Version}),
+ librust-lyon-1+extra-dev (= ${binary:Version}),
+ librust-lyon-1+lyon-extra-dev (= ${binary:Version}),
+ librust-lyon-1+profiling-dev (= ${binary:Version}),
+ librust-lyon-1+serialization-dev (= ${binary:Version}),
+ librust-lyon-1.0-dev (= ${binary:Version}),
+ librust-lyon-1.0+debugger-dev (= ${binary:Version}),
+ librust-lyon-1.0+default-dev (= ${binary:Version}),
+ librust-lyon-1.0+extra-dev (= ${binary:Version}),
+ librust-lyon-1.0+lyon-extra-dev (= ${binary:Version}),
+ librust-lyon-1.0+profiling-dev (= ${binary:Version}),
+ librust-lyon-1.0+serialization-dev (= ${binary:Version}),
+ librust-lyon-1.0.19-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+debugger-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+default-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+extra-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+lyon-extra-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+profiling-dev (= ${binary:Version}),
+ librust-lyon-1.0.19+serialization-dev (= ${binary:Version})
+Description: 2D Graphics rendering on the GPU using tessellation - Rust source code
+ Source code for Debianized Rust crate "lyon"

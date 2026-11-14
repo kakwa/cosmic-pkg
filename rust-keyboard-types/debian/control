@@ -1,0 +1,52 @@
+Source: rust-keyboard-types
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.61) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev <!nocheck>,
+ librust-serde-1+derive-dev <!nocheck>,
+ librust-serde-1+std-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/keyboard-types]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/keyboard-types
+Homepage: https://github.com/rust-windowing/keyboard-types
+X-Cargo-Crate: keyboard-types
+X-Cargo-Crate-Version: 0.8.3
+
+Package: librust-keyboard-types-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev,
+ librust-bitflags-2+serde-dev,
+ librust-serde-1+derive-dev,
+ librust-serde-1+std-dev,
+ librust-unicode-segmentation-1+default-dev (>= 1.2.0)
+Provides:
+ librust-keyboard-types+default-dev (= ${binary:Version}),
+ librust-keyboard-types+serde-dev (= ${binary:Version}),
+ librust-keyboard-types+std-dev (= ${binary:Version}),
+ librust-keyboard-types+webdriver-dev (= ${binary:Version}),
+ librust-keyboard-types-0-dev (= ${binary:Version}),
+ librust-keyboard-types-0+default-dev (= ${binary:Version}),
+ librust-keyboard-types-0+serde-dev (= ${binary:Version}),
+ librust-keyboard-types-0+std-dev (= ${binary:Version}),
+ librust-keyboard-types-0+webdriver-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8+default-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8+serde-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8+std-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8+webdriver-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8.3-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8.3+default-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8.3+serde-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8.3+std-dev (= ${binary:Version}),
+ librust-keyboard-types-0.8.3+webdriver-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.61~)
+Description: Contains types to define keyboard related events - Rust source code
+ Source code for Debianized Rust crate "keyboard-types"

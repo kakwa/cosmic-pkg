@@ -1,0 +1,32 @@
+Source: rust-icu-locale-fallback-data
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.88) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locale-fallback-data]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/icu-locale-fallback-data
+Homepage: https://icu4x.unicode.org
+X-Cargo-Crate: icu_locale_fallback_data
+X-Cargo-Crate-Version: 2.3.0
+
+Package: librust-icu-locale-fallback-data-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-icu-locale-fallback-data+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2.3-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2.3+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2.3.0-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-2.3.0+default-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.88~)
+Description: Data for the icu_locale_fallback crate - Rust source code
+ Source code for Debianized Rust crate "icu_locale_fallback_data"

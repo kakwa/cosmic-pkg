@@ -1,0 +1,30 @@
+Source: rust-whitespace-conf
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/whitespace-conf]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/whitespace-conf
+Homepage: https://github.com/pop-os/whitespace-conf
+X-Cargo-Crate: whitespace-conf
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-whitespace-conf-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-whitespace-conf+default-dev (= ${binary:Version}),
+ librust-whitespace-conf-1-dev (= ${binary:Version}),
+ librust-whitespace-conf-1+default-dev (= ${binary:Version}),
+ librust-whitespace-conf-1.0-dev (= ${binary:Version}),
+ librust-whitespace-conf-1.0+default-dev (= ${binary:Version}),
+ librust-whitespace-conf-1.0.0-dev (= ${binary:Version}),
+ librust-whitespace-conf-1.0.0+default-dev (= ${binary:Version})
+Description: Key-value configuration file delimited with whitespaces - Rust source code
+ Source code for Debianized Rust crate "whitespace-conf"

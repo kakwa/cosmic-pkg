@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --all-features
+Features: test-name=rust-ddc-hi:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --no-default-features --features ddc-i2c
+Features: test-name=librust-ddc-hi-dev:ddc-i2c
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --no-default-features --features ddc-macos
+Features: test-name=librust-ddc-hi-dev:ddc-macos
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --no-default-features --features ddc-winapi
+Features: test-name=librust-ddc-hi-dev:ddc-winapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets
+Features: test-name=librust-ddc-hi-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --no-default-features --features nvapi
+Features: test-name=librust-ddc-hi-dev:nvapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-hi 0.4.1 --all-targets --no-default-features
+Features: test-name=librust-ddc-hi-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

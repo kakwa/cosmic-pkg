@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_atspi_common 0.15.0 --all-targets --all-features
+Features: test-name=rust-accesskit-atspi-common:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_atspi_common 0.15.0 --all-targets
+Features: test-name=librust-accesskit-atspi-common-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_atspi_common 0.15.0 --all-targets --no-default-features --features simplified-api
+Features: test-name=librust-accesskit-atspi-common-dev:simplified-api
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_atspi_common 0.15.0 --all-targets --no-default-features
+Features: test-name=librust-accesskit-atspi-common-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64

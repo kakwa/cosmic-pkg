@@ -1,0 +1,70 @@
+Source: rust-appstream
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-chrono-0.4+default-dev <!nocheck>,
+ librust-chrono-0.4+serde-dev <!nocheck>,
+ librust-serde-1+default-dev <!nocheck>,
+ librust-serde-1+derive-dev <!nocheck>,
+ librust-serde-derive-1+default-dev <!nocheck>,
+ librust-strum-0.23+default-dev <!nocheck>,
+ librust-strum-macros-0.23+default-dev <!nocheck>,
+ librust-thiserror-1+default-dev <!nocheck>,
+ librust-url-2+default-dev (>= 2.1) <!nocheck>,
+ librust-url-2+serde-dev (>= 2.1) <!nocheck>,
+ librust-xmltree-0.10+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/appstream]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/appstream
+Homepage: https://github.com/bilelmoussaoui/appstream
+X-Cargo-Crate: appstream
+X-Cargo-Crate-Version: 0.2.2
+
+Package: librust-appstream-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-chrono-0.4+default-dev,
+ librust-chrono-0.4+serde-dev,
+ librust-flate2-1+default-dev,
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev,
+ librust-serde-derive-1+default-dev,
+ librust-serde-json-1+default-dev,
+ librust-strum-0.23+default-dev,
+ librust-strum-macros-0.23+default-dev,
+ librust-thiserror-1+default-dev,
+ librust-url-2+default-dev (>= 2.1),
+ librust-url-2+serde-dev (>= 2.1),
+ librust-xmltree-0.10+default-dev
+Provides:
+ librust-appstream+default-dev (= ${binary:Version}),
+ librust-appstream+flate2-dev (= ${binary:Version}),
+ librust-appstream+gzip-dev (= ${binary:Version}),
+ librust-appstream+serde-json-dev (= ${binary:Version}),
+ librust-appstream+test-json-dev (= ${binary:Version}),
+ librust-appstream-0-dev (= ${binary:Version}),
+ librust-appstream-0+default-dev (= ${binary:Version}),
+ librust-appstream-0+flate2-dev (= ${binary:Version}),
+ librust-appstream-0+gzip-dev (= ${binary:Version}),
+ librust-appstream-0+serde-json-dev (= ${binary:Version}),
+ librust-appstream-0+test-json-dev (= ${binary:Version}),
+ librust-appstream-0.2-dev (= ${binary:Version}),
+ librust-appstream-0.2+default-dev (= ${binary:Version}),
+ librust-appstream-0.2+flate2-dev (= ${binary:Version}),
+ librust-appstream-0.2+gzip-dev (= ${binary:Version}),
+ librust-appstream-0.2+serde-json-dev (= ${binary:Version}),
+ librust-appstream-0.2+test-json-dev (= ${binary:Version}),
+ librust-appstream-0.2.2-dev (= ${binary:Version}),
+ librust-appstream-0.2.2+default-dev (= ${binary:Version}),
+ librust-appstream-0.2.2+flate2-dev (= ${binary:Version}),
+ librust-appstream-0.2.2+gzip-dev (= ${binary:Version}),
+ librust-appstream-0.2.2+serde-json-dev (= ${binary:Version}),
+ librust-appstream-0.2.2+test-json-dev (= ${binary:Version})
+Description: Appstream files parser - Rust source code
+ Source code for Debianized Rust crate "appstream"

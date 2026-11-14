@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dataview 1.1.0 --all-targets --all-features
+Features: test-name=rust-dataview:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dataview 1.1.0 --all-targets
+Features: test-name=librust-dataview-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dataview 1.1.0 --all-targets --no-default-features --features derive_pod
+Features: test-name=librust-dataview-dev:derive_pod
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dataview 1.1.0 --all-targets --no-default-features
+Features: test-name=librust-dataview-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), @
+Restrictions: allow-stderr
+Architecture: !riscv64

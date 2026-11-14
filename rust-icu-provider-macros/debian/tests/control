@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_provider_macros 1.5.0 --all-targets --all-features
+Features: test-name=rust-icu-provider-macros:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_provider_macros 1.5.0 --all-targets
+Features: test-name=librust-icu-provider-macros-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_provider_macros 1.5.0 --all-targets --no-default-features
+Features: test-name=librust-icu-provider-macros-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), @
+Restrictions: allow-stderr
+Architecture: !riscv64

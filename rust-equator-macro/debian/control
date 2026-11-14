@@ -1,0 +1,38 @@
+Source: rust-equator-macro
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-proc-macro2-1+default-dev (>= 1.0.86) <!nocheck>,
+ librust-quote-1+default-dev (>= 1.0.36) <!nocheck>,
+ librust-syn-2+default-dev (>= 2.0.72) <!nocheck>,
+ librust-syn-2+full-dev (>= 2.0.72) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/equator-macro]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/equator-macro
+Homepage: https://github.com/sarah-ek/equator/
+X-Cargo-Crate: equator-macro
+X-Cargo-Crate-Version: 0.4.2
+
+Package: librust-equator-macro-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-proc-macro2-1+default-dev (>= 1.0.86),
+ librust-quote-1+default-dev (>= 1.0.36),
+ librust-syn-2+default-dev (>= 2.0.72),
+ librust-syn-2+full-dev (>= 2.0.72)
+Provides:
+ librust-equator-macro+default-dev (= ${binary:Version}),
+ librust-equator-macro-0-dev (= ${binary:Version}),
+ librust-equator-macro-0+default-dev (= ${binary:Version}),
+ librust-equator-macro-0.4-dev (= ${binary:Version}),
+ librust-equator-macro-0.4+default-dev (= ${binary:Version}),
+ librust-equator-macro-0.4.2-dev (= ${binary:Version}),
+ librust-equator-macro-0.4.2+default-dev (= ${binary:Version})
+Description: Composable assertion library - Rust source code
+ Source code for Debianized Rust crate "equator-macro"

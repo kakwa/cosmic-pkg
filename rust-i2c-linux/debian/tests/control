@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test i2c-linux 0.1.2 --all-targets --all-features
+Features: test-name=rust-i2c-linux:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test i2c-linux 0.1.2 --all-targets
+Features: test-name=librust-i2c-linux-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test i2c-linux 0.1.2 --all-targets --no-default-features --features i2c
+Features: test-name=librust-i2c-linux-dev:i2c
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test i2c-linux 0.1.2 --all-targets --no-default-features --features udev
+Features: test-name=librust-i2c-linux-dev:udev
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test i2c-linux 0.1.2 --all-targets --no-default-features
+Features: test-name=librust-i2c-linux-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

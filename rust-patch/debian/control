@@ -1,0 +1,36 @@
+Source: rust-patch
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-chrono-0.4+default-dev (>= 0.4.19) <!nocheck>,
+ librust-nom-7+default-dev (>= 7.1.0) <!nocheck>,
+ librust-nom-locate-4+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/patch]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/patch
+Homepage: https://github.com/uniphil/patch-rs
+X-Cargo-Crate: patch
+X-Cargo-Crate-Version: 0.7.0
+
+Package: librust-patch-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-chrono-0.4+default-dev (>= 0.4.19),
+ librust-nom-7+default-dev (>= 7.1.0),
+ librust-nom-locate-4+default-dev
+Provides:
+ librust-patch+default-dev (= ${binary:Version}),
+ librust-patch-0-dev (= ${binary:Version}),
+ librust-patch-0+default-dev (= ${binary:Version}),
+ librust-patch-0.7-dev (= ${binary:Version}),
+ librust-patch-0.7+default-dev (= ${binary:Version}),
+ librust-patch-0.7.0-dev (= ${binary:Version}),
+ librust-patch-0.7.0+default-dev (= ${binary:Version})
+Description: Parse patches in the unified diff format - Rust source code
+ Source code for Debianized Rust crate "patch"

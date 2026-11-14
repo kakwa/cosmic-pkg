@@ -1,0 +1,219 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features advanced
+Features: test-name=librust-iced-dev:advanced
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features advanced-shaping
+Features: test-name=librust-iced-dev:advanced-shaping
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features basic-shaping
+Features: test-name=librust-iced-dev:basic-shaping
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features canvas
+Features: test-name=librust-iced-dev:canvas
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features crisp
+Features: test-name=librust-iced-dev:crisp
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features debug
+Features: test-name=librust-iced-dev:debug
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets
+Features: test-name=librust-iced-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features fira-sans
+Features: test-name=librust-iced-dev:fira-sans
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features highlighter
+Features: test-name=librust-iced-dev:highlighter
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features hot
+Features: test-name=librust-iced-dev:hot
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features iced_highlighter
+Features: test-name=librust-iced-dev:iced_highlighter
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features image
+Features: test-name=librust-iced-dev:image
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features image-without-codecs
+Features: test-name=librust-iced-dev:image-without-codecs
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features lazy
+Features: test-name=librust-iced-dev:lazy
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features linux-theme-detection
+Features: test-name=librust-iced-dev:linux-theme-detection
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features markdown
+Features: test-name=librust-iced-dev:markdown
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features qr_code
+Features: test-name=librust-iced-dev:qr_code
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features selector
+Features: test-name=librust-iced-dev:selector
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features sipper
+Features: test-name=librust-iced-dev:sipper
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features smol
+Features: test-name=librust-iced-dev:smol
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features strict-assertions
+Features: test-name=librust-iced-dev:strict-assertions
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-iced-dev:svg
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features sysinfo
+Features: test-name=librust-iced-dev:sysinfo
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features tester
+Features: test-name=librust-iced-dev:tester
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features thread-pool
+Features: test-name=librust-iced-dev:thread-pool
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features time-travel
+Features: test-name=librust-iced-dev:time-travel
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features tiny-skia
+Features: test-name=librust-iced-dev:tiny-skia
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-iced-dev:tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features unconditional-rendering
+Features: test-name=librust-iced-dev:unconditional-rendering
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features wayland
+Features: test-name=librust-iced-dev:wayland
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features web-colors
+Features: test-name=librust-iced-dev:web-colors
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features webgl
+Features: test-name=librust-iced-dev:webgl
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features wgpu
+Features: test-name=librust-iced-dev:wgpu
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features wgpu-bare
+Features: test-name=librust-iced-dev:wgpu-bare
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features --features x11
+Features: test-name=librust-iced-dev:x11
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-criterion-0.5+default-dev, librust-iced-wgpu-0.14-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

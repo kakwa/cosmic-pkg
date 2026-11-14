@@ -1,0 +1,32 @@
+Source: rust-async-oneshot
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-futures-micro-0.5+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-oneshot]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/async-oneshot
+Homepage: https://github.com/irrustible/async-oneshot
+X-Cargo-Crate: async-oneshot
+X-Cargo-Crate-Version: 0.5.9
+
+Package: librust-async-oneshot-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-futures-micro-0.5+default-dev
+Provides:
+ librust-async-oneshot+default-dev (= ${binary:Version}),
+ librust-async-oneshot-0-dev (= ${binary:Version}),
+ librust-async-oneshot-0+default-dev (= ${binary:Version}),
+ librust-async-oneshot-0.5-dev (= ${binary:Version}),
+ librust-async-oneshot-0.5+default-dev (= ${binary:Version}),
+ librust-async-oneshot-0.5.9-dev (= ${binary:Version}),
+ librust-async-oneshot-0.5.9+default-dev (= ${binary:Version})
+Description: Fast, small, full-featured, async-aware oneshot channel - Rust source code
+ Source code for Debianized Rust crate "async-oneshot"

@@ -1,0 +1,63 @@
+Source: rust-lyon-tessellation
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-float-next-after-1+default-dev <!nocheck>,
+ librust-lyon-path-1+std-dev (>= 1.0.19) <!nocheck>,
+ librust-lyon-path-1-dev (>= 1.0.19) <!nocheck>,
+ librust-num-traits-0.2+libm-dev (>= 0.2.15) <!nocheck>,
+ librust-num-traits-0.2+std-dev (>= 0.2.15) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/lyon-tessellation]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/lyon-tessellation
+Homepage: https://github.com/nical/lyon
+X-Cargo-Crate: lyon_tessellation
+X-Cargo-Crate-Version: 1.0.23
+
+Package: librust-lyon-tessellation-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-float-next-after-1+default-dev,
+ librust-lyon-path-1+serialization-dev (>= 1.0.19),
+ librust-lyon-path-1+std-dev (>= 1.0.19),
+ librust-lyon-path-1-dev (>= 1.0.19),
+ librust-num-traits-0.2+libm-dev (>= 0.2.15),
+ librust-num-traits-0.2+std-dev (>= 0.2.15),
+ librust-serde-1+default-dev,
+ librust-serde-1+serde-derive-dev
+Provides:
+ librust-lyon-tessellation+debugger-dev (= ${binary:Version}),
+ librust-lyon-tessellation+default-dev (= ${binary:Version}),
+ librust-lyon-tessellation+profiling-dev (= ${binary:Version}),
+ librust-lyon-tessellation+serde-dev (= ${binary:Version}),
+ librust-lyon-tessellation+serialization-dev (= ${binary:Version}),
+ librust-lyon-tessellation+std-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+debugger-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+default-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+profiling-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+serde-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+serialization-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1+std-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+debugger-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+default-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+profiling-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+serde-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+serialization-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0+std-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+debugger-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+default-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+profiling-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+serde-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+serialization-dev (= ${binary:Version}),
+ librust-lyon-tessellation-1.0.23+std-dev (= ${binary:Version})
+Description: Low level path tessellation library - Rust source code
+ Source code for Debianized Rust crate "lyon_tessellation"

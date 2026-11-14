@@ -1,0 +1,32 @@
+Source: rust-yaml-rust
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-linked-hash-map-0.5+default-dev (>= 0.5.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/yaml-rust]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/yaml-rust
+Homepage: http://chyh1990.github.io/yaml-rust/
+X-Cargo-Crate: yaml-rust
+X-Cargo-Crate-Version: 0.4.5
+
+Package: librust-yaml-rust-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-linked-hash-map-0.5+default-dev (>= 0.5.3)
+Provides:
+ librust-yaml-rust+default-dev (= ${binary:Version}),
+ librust-yaml-rust-0-dev (= ${binary:Version}),
+ librust-yaml-rust-0+default-dev (= ${binary:Version}),
+ librust-yaml-rust-0.4-dev (= ${binary:Version}),
+ librust-yaml-rust-0.4+default-dev (= ${binary:Version}),
+ librust-yaml-rust-0.4.5-dev (= ${binary:Version}),
+ librust-yaml-rust-0.4.5+default-dev (= ${binary:Version})
+Description: Missing YAML 1.2 parser for rust - Rust source code
+ Source code for Debianized Rust crate "yaml-rust"

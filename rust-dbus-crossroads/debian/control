@@ -1,0 +1,32 @@
+Source: rust-dbus-crossroads
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-dbus-0.9+default-dev (>= 0.9.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dbus-crossroads]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dbus-crossroads
+Homepage: https://github.com/diwic/dbus-rs/
+X-Cargo-Crate: dbus-crossroads
+X-Cargo-Crate-Version: 0.5.3
+
+Package: librust-dbus-crossroads-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-dbus-0.9+default-dev (>= 0.9.3)
+Provides:
+ librust-dbus-crossroads+default-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0+default-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0.5-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0.5+default-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0.5.3-dev (= ${binary:Version}),
+ librust-dbus-crossroads-0.5.3+default-dev (= ${binary:Version})
+Description: Framework for writing D-Bus method handlers - Rust source code
+ Source code for Debianized Rust crate "dbus-crossroads"

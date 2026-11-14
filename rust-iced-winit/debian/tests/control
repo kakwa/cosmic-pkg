@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-winit:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features debug
+Features: test-name=librust-iced-winit-dev:debug
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets
+Features: test-name=librust-iced-winit-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features linux-theme-detection
+Features: test-name=librust-iced-winit-dev:linux-theme-detection
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features sysinfo
+Features: test-name=librust-iced-winit-dev:sysinfo
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features unconditional-rendering
+Features: test-name=librust-iced-winit-dev:unconditional-rendering
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features wayland
+Features: test-name=librust-iced-winit-dev:wayland
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features --features x11
+Features: test-name=librust-iced-winit-dev:x11
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_winit 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-winit-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --all-features
+Features: test-name=rust-two-face:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets
+Features: test-name=librust-two-face-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --no-default-features --features syntect-default-fancy
+Features: test-name=librust-two-face-dev:syntect-default-fancy
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --no-default-features --features syntect-default-onig
+Features: test-name=librust-two-face-dev:syntect-default-onig
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --no-default-features --features syntect-fancy
+Features: test-name=librust-two-face-dev:syntect-fancy
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --no-default-features --features syntect-onig
+Features: test-name=librust-two-face-dev:syntect-onig
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test two-face 0.4.5 --all-targets --no-default-features
+Features: test-name=librust-two-face-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.79.0), librust-cargo-lock-10+default-dev (>= 10.1.0), librust-insta-1+default-dev (>= 1.43.2), librust-object-0.36+read-dev (>= 0.36.7), librust-similar-2+default-dev (>= 2.7.0), librust-strum-0.26+default-dev (>= 0.26.3), librust-strum-0.26+derive-dev (>= 0.26.3), librust-syntect-5+html-dev (>= 5.3.0), librust-toml-0.8+default-dev (>= 0.8.23), librust-twox-hash-2+std-dev (>= 2.1.1), librust-twox-hash-2+xxhash64-dev (>= 2.1.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64

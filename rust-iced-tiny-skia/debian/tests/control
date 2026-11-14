@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-tiny-skia:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets
+Features: test-name=librust-iced-tiny-skia-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features geometry
+Features: test-name=librust-iced-tiny-skia-dev:geometry
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features image
+Features: test-name=librust-iced-tiny-skia-dev:image
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features resvg
+Features: test-name=librust-iced-tiny-skia-dev:resvg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-iced-tiny-skia-dev:svg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features wayland
+Features: test-name=librust-iced-tiny-skia-dev:wayland
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features --features x11
+Features: test-name=librust-iced-tiny-skia-dev:x11
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_tiny_skia 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-tiny-skia-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

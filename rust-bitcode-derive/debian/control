@@ -1,0 +1,40 @@
+Source: rust-bitcode-derive
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-proc-macro2-1+default-dev <!nocheck>,
+ librust-quote-1+default-dev <!nocheck>,
+ librust-syn-2+default-dev (>= 2.0.3) <!nocheck>,
+ librust-syn-2+extra-traits-dev (>= 2.0.3) <!nocheck>,
+ librust-syn-2+visit-mut-dev (>= 2.0.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitcode-derive]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bitcode-derive
+Homepage: https://github.com/SoftbearStudios/bitcode/
+X-Cargo-Crate: bitcode_derive
+X-Cargo-Crate-Version: 0.6.9
+
+Package: librust-bitcode-derive-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-proc-macro2-1+default-dev,
+ librust-quote-1+default-dev,
+ librust-syn-2+default-dev (>= 2.0.3),
+ librust-syn-2+extra-traits-dev (>= 2.0.3),
+ librust-syn-2+visit-mut-dev (>= 2.0.3)
+Provides:
+ librust-bitcode-derive+default-dev (= ${binary:Version}),
+ librust-bitcode-derive-0-dev (= ${binary:Version}),
+ librust-bitcode-derive-0+default-dev (= ${binary:Version}),
+ librust-bitcode-derive-0.6-dev (= ${binary:Version}),
+ librust-bitcode-derive-0.6+default-dev (= ${binary:Version}),
+ librust-bitcode-derive-0.6.9-dev (= ${binary:Version}),
+ librust-bitcode-derive-0.6.9+default-dev (= ${binary:Version})
+Description: #[derive(Encode, Decode)] for bitcode - Rust source code
+ Source code for Debianized Rust crate "bitcode_derive"

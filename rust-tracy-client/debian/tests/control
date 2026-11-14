@@ -1,0 +1,129 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --all-features
+Features: test-name=rust-tracy-client:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features broadcast
+Features: test-name=librust-tracy-client-dev:broadcast
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features callstack-inlines
+Features: test-name=librust-tracy-client-dev:callstack-inlines
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features code-transfer
+Features: test-name=librust-tracy-client-dev:code-transfer
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features context-switch-tracing
+Features: test-name=librust-tracy-client-dev:context-switch-tracing
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features crash-handler
+Features: test-name=librust-tracy-client-dev:crash-handler
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features debuginfod
+Features: test-name=librust-tracy-client-dev:debuginfod
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets
+Features: test-name=librust-tracy-client-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features delayed-init
+Features: test-name=librust-tracy-client-dev:delayed-init
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features demangle
+Features: test-name=librust-tracy-client-dev:demangle
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features enable
+Features: test-name=librust-tracy-client-dev:enable
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features fibers
+Features: test-name=librust-tracy-client-dev:fibers
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features flush-on-exit
+Features: test-name=librust-tracy-client-dev:flush-on-exit
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features manual-lifetime
+Features: test-name=librust-tracy-client-dev:manual-lifetime
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features ondemand
+Features: test-name=librust-tracy-client-dev:ondemand
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features only-ipv4
+Features: test-name=librust-tracy-client-dev:only-ipv4
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features only-localhost
+Features: test-name=librust-tracy-client-dev:only-localhost
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features sampling
+Features: test-name=librust-tracy-client-dev:sampling
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features system-tracing
+Features: test-name=librust-tracy-client-dev:system-tracing
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features timer-fallback
+Features: test-name=librust-tracy-client-dev:timer-fallback
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features --features verify
+Features: test-name=librust-tracy-client-dev:verify
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test tracy-client 0.18.4 --all-targets --no-default-features
+Features: test-name=librust-tracy-client-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.70.0), librust-criterion-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

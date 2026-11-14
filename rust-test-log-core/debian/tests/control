@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets --all-features
+Features: test-name=rust-test-log-core:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets
+Features: test-name=librust-test-log-core-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets --no-default-features --features log
+Features: test-name=librust-test-log-core-dev:log
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets --no-default-features --features trace
+Features: test-name=librust-test-log-core-dev:trace
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets --no-default-features --features unstable
+Features: test-name=librust-test-log-core-dev:unstable
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test test-log-core 0.2.21 --all-targets --no-default-features
+Features: test-name=librust-test-log-core-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-insta-1-dev (>= 1.47), librust-prettyplease-0.2+default-dev, librust-proc-macro2-1+default-dev, librust-proc-macro2-1+span-locations-dev, librust-quote-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-syn-2+parsing-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

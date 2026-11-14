@@ -1,0 +1,75 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --all-features
+Features: test-name=rust-zlink:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets
+Features: test-name=librust-zlink-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features defmt
+Features: test-name=librust-zlink-dev:defmt
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features idl
+Features: test-name=librust-zlink-dev:idl
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features idl-parse
+Features: test-name=librust-zlink-dev:idl-parse
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features introspection
+Features: test-name=librust-zlink-dev:introspection
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features proxy
+Features: test-name=librust-zlink-dev:proxy
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features server
+Features: test-name=librust-zlink-dev:server
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features service
+Features: test-name=librust-zlink-dev:service
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features smol
+Features: test-name=librust-zlink-dev:smol
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-zlink-dev:tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features --features tracing
+Features: test-name=librust-zlink-dev:tracing
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink 0.5.0 --all-targets --no-default-features
+Features: test-name=librust-zlink-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-colored-3+default-dev, librust-futures-util-0.3+async-await-dev (>= 0.3.31), librust-rustix-1+default-dev (>= 1.1.2), librust-rustix-1+process-dev (>= 1.1.2), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-json-1+default-dev, librust-serde-prefix-all-0.1+default-dev, librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.8), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+net-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), librust-tracing-subscriber-0.3+default-dev (>= 0.3.19), @
+Restrictions: allow-stderr
+Architecture: !riscv64

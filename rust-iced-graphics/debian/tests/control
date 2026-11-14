@@ -1,0 +1,57 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-graphics:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets
+Features: test-name=librust-iced-graphics-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features fira-sans
+Features: test-name=librust-iced-graphics-dev:fira-sans
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features geometry
+Features: test-name=librust-iced-graphics-dev:geometry
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features image
+Features: test-name=librust-iced-graphics-dev:image
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features kamadak-exif
+Features: test-name=librust-iced-graphics-dev:kamadak-exif
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features lyon_path
+Features: test-name=librust-iced-graphics-dev:lyon_path
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-iced-graphics-dev:svg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features --features web-colors
+Features: test-name=librust-iced-graphics-dev:web-colors
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_graphics 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-graphics-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

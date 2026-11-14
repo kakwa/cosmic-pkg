@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test window_clipboard 0.4.1 --all-targets --all-features
+Features: test-name=rust-window-clipboard:@
+Depends: dh-cargo (>= 33~), rustc, librust-rand-0.8+default-dev, librust-winit-0.29+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test window_clipboard 0.4.1 --all-targets
+Features: test-name=librust-window-clipboard-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-rand-0.8+default-dev, librust-winit-0.29+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test window_clipboard 0.4.1 --all-targets --no-default-features
+Features: test-name=librust-window-clipboard-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-rand-0.8+default-dev, librust-winit-0.29+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

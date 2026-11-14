@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test enum-repr 0.2.6 --all-targets --all-features
+Features: test-name=rust-enum-repr:@
+Depends: dh-cargo (>= 33~), rustc, librust-libc-0.2+default-dev (>= 0.2.42), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test enum-repr 0.2.6 --all-targets
+Features: test-name=librust-enum-repr-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-libc-0.2+default-dev (>= 0.2.42), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test enum-repr 0.2.6 --all-targets --no-default-features
+Features: test-name=librust-enum-repr-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-libc-0.2+default-dev (>= 0.2.42), @
+Restrictions: allow-stderr
+Architecture: !riscv64

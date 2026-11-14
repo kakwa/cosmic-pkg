@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_unix 0.18.0 --all-targets --all-features
+Features: test-name=rust-accesskit-unix:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_unix 0.18.0 --all-targets --no-default-features --features async-io
+Features: test-name=librust-accesskit-unix-dev:async-io
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_unix 0.18.0 --all-targets
+Features: test-name=librust-accesskit-unix-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_unix 0.18.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-accesskit-unix-dev:tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_unix 0.18.0 --all-targets --no-default-features
+Features: test-name=librust-accesskit-unix-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), @
+Restrictions: allow-stderr
+Architecture: !riscv64

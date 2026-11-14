@@ -1,0 +1,76 @@
+Source: rust-compio-io
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-compio-buf-0.8+arrayvec-dev <!nocheck>,
+ librust-compio-buf-0.8+bytes-dev <!nocheck>,
+ librust-compio-buf-0.8+default-dev <!nocheck>,
+ librust-futures-util-0.3+default-dev (>= 0.3.29) <!nocheck>,
+ librust-futures-util-0.3+sink-dev (>= 0.3.29) <!nocheck>,
+ librust-paste-1+default-dev (>= 1.0.14) <!nocheck>,
+ librust-synchrony-0.1+bilock-dev (>= 0.1.1) <!nocheck>,
+ librust-synchrony-0.1+default-dev (>= 0.1.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compio-io]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/compio-io
+Homepage: https://github.com/compio-rs/compio
+X-Cargo-Crate: compio-io
+X-Cargo-Crate-Version: 0.9.1
+
+Package: librust-compio-io-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-compio-buf-0.8+allocator-api-dev,
+ librust-compio-buf-0.8+arrayvec-dev,
+ librust-compio-buf-0.8+bytes-dev,
+ librust-compio-buf-0.8+default-dev,
+ librust-compio-buf-0.8+read-buf-dev,
+ librust-futures-util-0.3+default-dev (>= 0.3.29),
+ librust-futures-util-0.3+io-dev (>= 0.3.29),
+ librust-futures-util-0.3+sink-dev (>= 0.3.29),
+ librust-paste-1+default-dev (>= 1.0.14),
+ librust-serde-1+default-dev (>= 1.0.219),
+ librust-serde-json-1+default-dev (>= 1.0.140),
+ librust-synchrony-0.1+bilock-dev (>= 0.1.1),
+ librust-synchrony-0.1+default-dev (>= 0.1.1),
+ librust-thiserror-2+default-dev (>= 2.0.3)
+Provides:
+ librust-compio-io+allocator-api-dev (= ${binary:Version}),
+ librust-compio-io+codec-serde-json-dev (= ${binary:Version}),
+ librust-compio-io+compat-dev (= ${binary:Version}),
+ librust-compio-io+default-dev (= ${binary:Version}),
+ librust-compio-io+nightly-dev (= ${binary:Version}),
+ librust-compio-io+read-buf-dev (= ${binary:Version}),
+ librust-compio-io+sync-dev (= ${binary:Version}),
+ librust-compio-io-0-dev (= ${binary:Version}),
+ librust-compio-io-0+allocator-api-dev (= ${binary:Version}),
+ librust-compio-io-0+codec-serde-json-dev (= ${binary:Version}),
+ librust-compio-io-0+compat-dev (= ${binary:Version}),
+ librust-compio-io-0+default-dev (= ${binary:Version}),
+ librust-compio-io-0+nightly-dev (= ${binary:Version}),
+ librust-compio-io-0+read-buf-dev (= ${binary:Version}),
+ librust-compio-io-0+sync-dev (= ${binary:Version}),
+ librust-compio-io-0.9-dev (= ${binary:Version}),
+ librust-compio-io-0.9+allocator-api-dev (= ${binary:Version}),
+ librust-compio-io-0.9+codec-serde-json-dev (= ${binary:Version}),
+ librust-compio-io-0.9+compat-dev (= ${binary:Version}),
+ librust-compio-io-0.9+default-dev (= ${binary:Version}),
+ librust-compio-io-0.9+nightly-dev (= ${binary:Version}),
+ librust-compio-io-0.9+read-buf-dev (= ${binary:Version}),
+ librust-compio-io-0.9+sync-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+allocator-api-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+codec-serde-json-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+compat-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+default-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+nightly-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+read-buf-dev (= ${binary:Version}),
+ librust-compio-io-0.9.1+sync-dev (= ${binary:Version})
+Description: IO traits for completion based async IO - Rust source code
+ Source code for Debianized Rust crate "compio-io"

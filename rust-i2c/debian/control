@@ -1,0 +1,32 @@
+Source: rust-i2c
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-1+default-dev (>= 1.0.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/i2c]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/i2c
+Homepage: https://github.com/arcnmx/i2c-rs
+X-Cargo-Crate: i2c
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-i2c-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-1+default-dev (>= 1.0.1)
+Provides:
+ librust-i2c+default-dev (= ${binary:Version}),
+ librust-i2c-0-dev (= ${binary:Version}),
+ librust-i2c-0+default-dev (= ${binary:Version}),
+ librust-i2c-0.1-dev (= ${binary:Version}),
+ librust-i2c-0.1+default-dev (= ${binary:Version}),
+ librust-i2c-0.1.0-dev (= ${binary:Version}),
+ librust-i2c-0.1.0+default-dev (= ${binary:Version})
+Description: Generic I2C traits - Rust source code
+ Source code for Debianized Rust crate "i2c"

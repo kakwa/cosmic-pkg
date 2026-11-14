@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bluez-zbus 0.1.0 --all-targets --all-features
+Features: test-name=rust-bluez-zbus:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-tokio 0.7.6 --all-targets --all-features
+Features: test-name=rust-dbus-tokio:@
+Depends: dh-cargo (>= 33~), rustc, librust-dbus-tree-0.9+default-dev, librust-futures-0.3+default-dev (>= 0.3.1), librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-tokio 0.7.6 --all-targets --no-default-features --features dbus-crossroads
+Features: test-name=librust-dbus-tokio-dev:dbus-crossroads
+Depends: dh-cargo (>= 33~), rustc, librust-dbus-tree-0.9+default-dev, librust-futures-0.3+default-dev (>= 0.3.1), librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-tokio 0.7.6 --all-targets
+Features: test-name=librust-dbus-tokio-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-dbus-tree-0.9+default-dev, librust-futures-0.3+default-dev (>= 0.3.1), librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dbus-tokio 0.7.6 --all-targets --no-default-features
+Features: test-name=librust-dbus-tokio-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-dbus-tree-0.9+default-dev, librust-futures-0.3+default-dev (>= 0.3.1), librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

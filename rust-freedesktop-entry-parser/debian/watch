@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/freedesktop_entry_parser
+Matching-Pattern:  .*/crates/freedesktop_entry_parser/@ANY_VERSION@/download
+Filenamemangle: s/.*\/(.*)\/download/freedesktop_entry_parser-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

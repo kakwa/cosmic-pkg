@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --all-features
+Features: test-name=rust-jiff-icu:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --no-default-features --features alloc
+Features: test-name=librust-jiff-icu-dev:alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets
+Features: test-name=librust-jiff-icu-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --no-default-features --features std
+Features: test-name=librust-jiff-icu-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --no-default-features --features time
+Features: test-name=librust-jiff-icu-dev:time
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --no-default-features --features zoned
+Features: test-name=librust-jiff-icu-dev:zoned
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test jiff-icu 0.2.2 --all-targets --no-default-features
+Features: test-name=librust-jiff-icu-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-icu-2+default-dev, librust-jiff-0.2+default-dev (>= 0.2.11), @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test thin-cell 0.1.2 --all-targets --all-features
+Features: test-name=rust-thin-cell:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

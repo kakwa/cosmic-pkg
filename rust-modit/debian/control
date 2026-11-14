@@ -1,0 +1,32 @@
+Source: rust-modit
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/modit]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/modit
+Homepage: https://github.com/pop-os/modit
+X-Cargo-Crate: modit
+X-Cargo-Crate-Version: 0.1.5
+
+Package: librust-modit-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-log-0.4+default-dev
+Provides:
+ librust-modit+default-dev (= ${binary:Version}),
+ librust-modit-0-dev (= ${binary:Version}),
+ librust-modit-0+default-dev (= ${binary:Version}),
+ librust-modit-0.1-dev (= ${binary:Version}),
+ librust-modit-0.1+default-dev (= ${binary:Version}),
+ librust-modit-0.1.5-dev (= ${binary:Version}),
+ librust-modit-0.1.5+default-dev (= ${binary:Version})
+Description: Modal editor parser - Rust source code
+ Source code for Debianized Rust crate "modit"

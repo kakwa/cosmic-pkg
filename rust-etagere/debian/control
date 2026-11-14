@@ -1,0 +1,52 @@
+Source: rust-etagere
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-euclid-0.22+default-dev <!nocheck>,
+ librust-svg-fmt-0.4+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/etagere]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/etagere
+Homepage: https://github.com/nical/etagere
+X-Cargo-Crate: etagere
+X-Cargo-Crate-Version: 0.2.15
+
+Package: librust-etagere-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-euclid-0.22+default-dev,
+ librust-euclid-0.22+serde-dev,
+ librust-serde-1+default-dev,
+ librust-svg-fmt-0.4+default-dev
+Provides:
+ librust-etagere+checks-dev (= ${binary:Version}),
+ librust-etagere+default-dev (= ${binary:Version}),
+ librust-etagere+ffi-dev (= ${binary:Version}),
+ librust-etagere+serde-dev (= ${binary:Version}),
+ librust-etagere+serialization-dev (= ${binary:Version}),
+ librust-etagere-0-dev (= ${binary:Version}),
+ librust-etagere-0+checks-dev (= ${binary:Version}),
+ librust-etagere-0+default-dev (= ${binary:Version}),
+ librust-etagere-0+ffi-dev (= ${binary:Version}),
+ librust-etagere-0+serde-dev (= ${binary:Version}),
+ librust-etagere-0+serialization-dev (= ${binary:Version}),
+ librust-etagere-0.2-dev (= ${binary:Version}),
+ librust-etagere-0.2+checks-dev (= ${binary:Version}),
+ librust-etagere-0.2+default-dev (= ${binary:Version}),
+ librust-etagere-0.2+ffi-dev (= ${binary:Version}),
+ librust-etagere-0.2+serde-dev (= ${binary:Version}),
+ librust-etagere-0.2+serialization-dev (= ${binary:Version}),
+ librust-etagere-0.2.15-dev (= ${binary:Version}),
+ librust-etagere-0.2.15+checks-dev (= ${binary:Version}),
+ librust-etagere-0.2.15+default-dev (= ${binary:Version}),
+ librust-etagere-0.2.15+ffi-dev (= ${binary:Version}),
+ librust-etagere-0.2.15+serde-dev (= ${binary:Version}),
+ librust-etagere-0.2.15+serialization-dev (= ${binary:Version})
+Description: Dynamic 2D texture atlas allocation using the shelf packing algorithm - Rust source code
+ Source code for Debianized Rust crate "etagere"

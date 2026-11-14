@@ -1,0 +1,50 @@
+Source: rust-zune-bmp
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.87.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-zune-core-0.5+default-dev (>= 0.5.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zune-bmp]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zune-bmp
+Homepage: https://github.com/etemesi254/zune-image/tree/dev/crates/zune-bmp
+X-Cargo-Crate: zune-bmp
+X-Cargo-Crate-Version: 0.5.2
+
+Package: librust-zune-bmp-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-log-0.4+default-dev,
+ librust-zune-core-0.5+default-dev (>= 0.5.1),
+ librust-zune-core-0.5+log-dev (>= 0.5.1),
+ librust-zune-core-0.5+std-dev (>= 0.5.1)
+Provides:
+ librust-zune-bmp+default-dev (= ${binary:Version}),
+ librust-zune-bmp+log-dev (= ${binary:Version}),
+ librust-zune-bmp+rgb-inverse-dev (= ${binary:Version}),
+ librust-zune-bmp+std-dev (= ${binary:Version}),
+ librust-zune-bmp-0-dev (= ${binary:Version}),
+ librust-zune-bmp-0+default-dev (= ${binary:Version}),
+ librust-zune-bmp-0+log-dev (= ${binary:Version}),
+ librust-zune-bmp-0+rgb-inverse-dev (= ${binary:Version}),
+ librust-zune-bmp-0+std-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5+default-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5+log-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5+rgb-inverse-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5+std-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5.2-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5.2+default-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5.2+log-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5.2+rgb-inverse-dev (= ${binary:Version}),
+ librust-zune-bmp-0.5.2+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.87.0~)
+Description: Fast BMP decoder - Rust source code
+ Source code for Debianized Rust crate "zune-bmp"

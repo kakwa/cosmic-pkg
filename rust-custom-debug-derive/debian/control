@@ -1,0 +1,40 @@
+Source: rust-custom-debug-derive
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-darling-0.20+default-dev (>= 0.20.3) <!nocheck>,
+ librust-proc-macro2-1+default-dev (>= 1.0.76) <!nocheck>,
+ librust-quote-1+default-dev (>= 1.0.35) <!nocheck>,
+ librust-syn-2+default-dev (>= 2.0.48) <!nocheck>,
+ librust-synstructure-0.13+default-dev (>= 0.13.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/custom-debug-derive]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/custom-debug-derive
+Homepage: https://github.com/panicbit/custom_debug
+X-Cargo-Crate: custom_debug_derive
+X-Cargo-Crate-Version: 0.6.2
+
+Package: librust-custom-debug-derive-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-darling-0.20+default-dev (>= 0.20.3),
+ librust-proc-macro2-1+default-dev (>= 1.0.76),
+ librust-quote-1+default-dev (>= 1.0.35),
+ librust-syn-2+default-dev (>= 2.0.48),
+ librust-synstructure-0.13+default-dev (>= 0.13.1)
+Provides:
+ librust-custom-debug-derive+default-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0+default-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0.6-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0.6+default-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0.6.2-dev (= ${binary:Version}),
+ librust-custom-debug-derive-0.6.2+default-dev (= ${binary:Version})
+Description: Derive Debug with a custom format per field - Rust source code
+ Source code for Debianized Rust crate "custom_debug_derive"

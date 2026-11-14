@@ -1,0 +1,42 @@
+Source: rust-cryoglyph
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cosmic-text-0.15+default-dev <!nocheck>,
+ librust-etagere-0.2+default-dev <!nocheck>,
+ librust-lru-0.16-dev <!nocheck>,
+ librust-rustc-hash-2+default-dev <!nocheck>,
+ librust-wgpu-27+wgsl-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/cryoglyph]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cryoglyph
+Homepage: https://github.com/iced-rs/cryoglyph
+X-Cargo-Crate: cryoglyph
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-cryoglyph-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cosmic-text-0.15+default-dev,
+ librust-etagere-0.2+default-dev,
+ librust-lru-0.16-dev,
+ librust-rustc-hash-2+default-dev,
+ librust-wgpu-27+wgsl-dev
+Provides:
+ librust-cryoglyph+default-dev (= ${binary:Version}),
+ librust-cryoglyph-0-dev (= ${binary:Version}),
+ librust-cryoglyph-0+default-dev (= ${binary:Version}),
+ librust-cryoglyph-0.1-dev (= ${binary:Version}),
+ librust-cryoglyph-0.1+default-dev (= ${binary:Version}),
+ librust-cryoglyph-0.1.0-dev (= ${binary:Version}),
+ librust-cryoglyph-0.1.0+default-dev (= ${binary:Version})
+Description: Fast, simple 2D text rendering for wgpu - Rust source code
+ A fork of glyphon for iced.
+ .
+ Source code for Debianized Rust crate "cryoglyph"

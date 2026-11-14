@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test upower_dbus 0.3.2 --all-targets --all-features
+Features: test-name=rust-upower-dbus:@
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.25), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test upower_dbus 0.3.2 --all-targets
+Features: test-name=librust-upower-dbus-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.25), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test upower_dbus 0.3.2 --all-targets --no-default-features
+Features: test-name=librust-upower-dbus-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-futures-0.3+default-dev (>= 0.3.25), @
+Restrictions: allow-stderr
+Architecture: !riscv64

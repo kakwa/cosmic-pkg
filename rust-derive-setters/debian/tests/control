@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets --all-features
+Features: test-name=rust-derive-setters:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets --no-default-features --features __NOT_PUBLIC__nightly_testing
+Features: test-name=librust-derive-setters-dev:__NOT_PUBLIC__nightly_testing
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets
+Features: test-name=librust-derive-setters-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets --no-default-features --features nightly
+Features: test-name=librust-derive-setters-dev:nightly
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets --no-default-features --features trybuild
+Features: test-name=librust-derive-setters-dev:trybuild
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_setters 0.1.9 --all-targets --no-default-features
+Features: test-name=librust-derive-setters-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.68.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

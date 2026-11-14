@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test whitespace-conf 1.0.0 --all-targets --all-features
+Features: test-name=rust-whitespace-conf:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

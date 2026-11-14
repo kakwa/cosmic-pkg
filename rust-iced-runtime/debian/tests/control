@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_runtime 0.14.0 --all-targets --all-features
+Features: test-name=rust-iced-runtime:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_runtime 0.14.0 --all-targets
+Features: test-name=librust-iced-runtime-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_runtime 0.14.0 --all-targets --no-default-features --features selector
+Features: test-name=librust-iced-runtime-dev:selector
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_runtime 0.14.0 --all-targets --no-default-features --features sipper
+Features: test-name=librust-iced-runtime-dev:sipper
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_runtime 0.14.0 --all-targets --no-default-features
+Features: test-name=librust-iced-runtime-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,94 @@
+Source: rust-iced-widget
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-iced-renderer-0.14+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-num-traits-0.2+default-dev <!nocheck>,
+ librust-rustc-hash-2+default-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>,
+ librust-unicode-segmentation-1+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-widget]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-widget
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_widget
+X-Cargo-Crate-Version: 0.14.2
+
+Package: librust-iced-widget-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-iced-highlighter-0.14+default-dev,
+ librust-iced-renderer-0.14+default-dev,
+ librust-iced-renderer-0.14+geometry-dev,
+ librust-iced-renderer-0.14+image-dev,
+ librust-iced-renderer-0.14+svg-dev,
+ librust-iced-renderer-0.14+wgpu-bare-dev,
+ librust-log-0.4+default-dev,
+ librust-num-traits-0.2+default-dev,
+ librust-ouroboros-0.18+default-dev,
+ librust-pulldown-cmark-0.12+default-dev,
+ librust-qrcode-0.13-dev,
+ librust-rustc-hash-2+default-dev,
+ librust-thiserror-2+default-dev,
+ librust-unicode-segmentation-1+default-dev
+Provides:
+ librust-iced-widget+advanced-dev (= ${binary:Version}),
+ librust-iced-widget+canvas-dev (= ${binary:Version}),
+ librust-iced-widget+crisp-dev (= ${binary:Version}),
+ librust-iced-widget+default-dev (= ${binary:Version}),
+ librust-iced-widget+highlighter-dev (= ${binary:Version}),
+ librust-iced-widget+image-dev (= ${binary:Version}),
+ librust-iced-widget+lazy-dev (= ${binary:Version}),
+ librust-iced-widget+markdown-dev (= ${binary:Version}),
+ librust-iced-widget+ouroboros-dev (= ${binary:Version}),
+ librust-iced-widget+qr-code-dev (= ${binary:Version}),
+ librust-iced-widget+svg-dev (= ${binary:Version}),
+ librust-iced-widget+wgpu-dev (= ${binary:Version}),
+ librust-iced-widget-0-dev (= ${binary:Version}),
+ librust-iced-widget-0+advanced-dev (= ${binary:Version}),
+ librust-iced-widget-0+canvas-dev (= ${binary:Version}),
+ librust-iced-widget-0+crisp-dev (= ${binary:Version}),
+ librust-iced-widget-0+default-dev (= ${binary:Version}),
+ librust-iced-widget-0+highlighter-dev (= ${binary:Version}),
+ librust-iced-widget-0+image-dev (= ${binary:Version}),
+ librust-iced-widget-0+lazy-dev (= ${binary:Version}),
+ librust-iced-widget-0+markdown-dev (= ${binary:Version}),
+ librust-iced-widget-0+ouroboros-dev (= ${binary:Version}),
+ librust-iced-widget-0+qr-code-dev (= ${binary:Version}),
+ librust-iced-widget-0+svg-dev (= ${binary:Version}),
+ librust-iced-widget-0+wgpu-dev (= ${binary:Version}),
+ librust-iced-widget-0.14-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+advanced-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+canvas-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+crisp-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+default-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+highlighter-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+image-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+lazy-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+markdown-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+ouroboros-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+qr-code-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+svg-dev (= ${binary:Version}),
+ librust-iced-widget-0.14+wgpu-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+advanced-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+canvas-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+crisp-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+default-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+highlighter-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+image-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+lazy-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+markdown-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+ouroboros-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+qr-code-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+svg-dev (= ${binary:Version}),
+ librust-iced-widget-0.14.2+wgpu-dev (= ${binary:Version})
+Description: Built-in widgets for iced - Rust source code
+ Source code for Debianized Rust crate "iced_widget"

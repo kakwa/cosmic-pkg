@@ -1,0 +1,36 @@
+Source: rust-xkb-data
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.197) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.197) <!nocheck>,
+ librust-serde-xml-rs-0.6+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/xkb-data]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/xkb-data
+Homepage: https://github.com/pop-os/xkb-data
+X-Cargo-Crate: xkb-data
+X-Cargo-Crate-Version: 0.2.2
+
+Package: librust-xkb-data-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1+default-dev (>= 1.0.197),
+ librust-serde-1+derive-dev (>= 1.0.197),
+ librust-serde-xml-rs-0.6+default-dev
+Provides:
+ librust-xkb-data+default-dev (= ${binary:Version}),
+ librust-xkb-data-0-dev (= ${binary:Version}),
+ librust-xkb-data-0+default-dev (= ${binary:Version}),
+ librust-xkb-data-0.2-dev (= ${binary:Version}),
+ librust-xkb-data-0.2+default-dev (= ${binary:Version}),
+ librust-xkb-data-0.2.2-dev (= ${binary:Version}),
+ librust-xkb-data-0.2.2+default-dev (= ${binary:Version})
+Description: Keyboard layout data from xkb-data - Rust source code
+ Source code for Debianized Rust crate "xkb-data"

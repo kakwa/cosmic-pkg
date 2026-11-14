@@ -1,0 +1,64 @@
+Source: rust-dispatch2
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+std-dev (>= 2.5.0) <!nocheck>,
+ librust-block2+alloc-dev (<< 0.8.0) <!nocheck>,
+ librust-block2+alloc-dev (>= 0.6.1) <!nocheck>,
+ librust-libc-0.2-dev (>= 0.2.80) <!nocheck>,
+ librust-objc2+std-dev (<< 0.8.0) <!nocheck>,
+ librust-objc2+std-dev (>= 0.6.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dispatch2]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dispatch2
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: dispatch2
+X-Cargo-Crate-Version: 0.3.1
+
+Package: librust-dispatch2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+std-dev (>= 2.5.0),
+ librust-block2+alloc-dev (<< 0.8.0),
+ librust-block2+alloc-dev (>= 0.6.1),
+ librust-libc-0.2-dev (>= 0.2.80),
+ librust-objc2+std-dev (<< 0.8.0),
+ librust-objc2+std-dev (>= 0.6.2)
+Provides:
+ librust-dispatch2+alloc-dev (= ${binary:Version}),
+ librust-dispatch2+block2-dev (= ${binary:Version}),
+ librust-dispatch2+default-dev (= ${binary:Version}),
+ librust-dispatch2+libc-dev (= ${binary:Version}),
+ librust-dispatch2+objc2-dev (= ${binary:Version}),
+ librust-dispatch2+std-dev (= ${binary:Version}),
+ librust-dispatch2-0-dev (= ${binary:Version}),
+ librust-dispatch2-0+alloc-dev (= ${binary:Version}),
+ librust-dispatch2-0+block2-dev (= ${binary:Version}),
+ librust-dispatch2-0+default-dev (= ${binary:Version}),
+ librust-dispatch2-0+libc-dev (= ${binary:Version}),
+ librust-dispatch2-0+objc2-dev (= ${binary:Version}),
+ librust-dispatch2-0+std-dev (= ${binary:Version}),
+ librust-dispatch2-0.3-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+alloc-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+block2-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+default-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+libc-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+objc2-dev (= ${binary:Version}),
+ librust-dispatch2-0.3+std-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+alloc-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+block2-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+default-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+libc-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+objc2-dev (= ${binary:Version}),
+ librust-dispatch2-0.3.1+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Bindings and wrappers for Apple's Grand Central Dispatch (GCD) - Rust source code
+ Source code for Debianized Rust crate "dispatch2"

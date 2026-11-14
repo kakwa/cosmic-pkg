@@ -1,0 +1,61 @@
+Source: rust-two-face
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.79.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.228) <!nocheck>,
+ librust-serde-derive-1+default-dev (>= 1.0.228) <!nocheck>,
+ librust-syntect-5+dump-load-dev (>= 5.3.0) <!nocheck>,
+ librust-syntect-5+parsing-dev (>= 5.3.0) <!nocheck>,
+ librust-syntect-5+regex-onig-dev (>= 5.3.0) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/two-face]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/two-face
+Homepage: https://github.com/CosmicHorrorDev/two-face
+X-Cargo-Crate: two-face
+X-Cargo-Crate-Version: 0.4.5
+
+Package: librust-two-face-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1+default-dev (>= 1.0.228),
+ librust-serde-derive-1+default-dev (>= 1.0.228),
+ librust-syntect-5+default-fancy-dev (>= 5.3.0),
+ librust-syntect-5+default-onig-dev (>= 5.3.0),
+ librust-syntect-5+dump-load-dev (>= 5.3.0),
+ librust-syntect-5+parsing-dev (>= 5.3.0),
+ librust-syntect-5+regex-fancy-dev (>= 5.3.0),
+ librust-syntect-5+regex-onig-dev (>= 5.3.0)
+Provides:
+ librust-two-face+default-dev (= ${binary:Version}),
+ librust-two-face+syntect-default-fancy-dev (= ${binary:Version}),
+ librust-two-face+syntect-default-onig-dev (= ${binary:Version}),
+ librust-two-face+syntect-fancy-dev (= ${binary:Version}),
+ librust-two-face+syntect-onig-dev (= ${binary:Version}),
+ librust-two-face-0-dev (= ${binary:Version}),
+ librust-two-face-0+default-dev (= ${binary:Version}),
+ librust-two-face-0+syntect-default-fancy-dev (= ${binary:Version}),
+ librust-two-face-0+syntect-default-onig-dev (= ${binary:Version}),
+ librust-two-face-0+syntect-fancy-dev (= ${binary:Version}),
+ librust-two-face-0+syntect-onig-dev (= ${binary:Version}),
+ librust-two-face-0.4-dev (= ${binary:Version}),
+ librust-two-face-0.4+default-dev (= ${binary:Version}),
+ librust-two-face-0.4+syntect-default-fancy-dev (= ${binary:Version}),
+ librust-two-face-0.4+syntect-default-onig-dev (= ${binary:Version}),
+ librust-two-face-0.4+syntect-fancy-dev (= ${binary:Version}),
+ librust-two-face-0.4+syntect-onig-dev (= ${binary:Version}),
+ librust-two-face-0.4.5-dev (= ${binary:Version}),
+ librust-two-face-0.4.5+default-dev (= ${binary:Version}),
+ librust-two-face-0.4.5+syntect-default-fancy-dev (= ${binary:Version}),
+ librust-two-face-0.4.5+syntect-default-onig-dev (= ${binary:Version}),
+ librust-two-face-0.4.5+syntect-fancy-dev (= ${binary:Version}),
+ librust-two-face-0.4.5+syntect-onig-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.79.0~)
+Description: Extra syntax and theme definitions for syntect - Rust source code
+ Source code for Debianized Rust crate "two-face"

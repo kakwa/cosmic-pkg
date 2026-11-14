@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --all-features
+Features: test-name=rust-accesskit-winit:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features accesskit_android
+Features: test-name=librust-accesskit-winit-dev:accesskit_android
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features accesskit_unix
+Features: test-name=librust-accesskit-winit-dev:accesskit_unix
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features async-io
+Features: test-name=librust-accesskit-winit-dev:async-io
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets
+Features: test-name=librust-accesskit-winit-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features rwh_05
+Features: test-name=librust-accesskit-winit-dev:rwh_05
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features rwh_06
+Features: test-name=librust-accesskit-winit-dev:rwh_06
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features --features tokio
+Features: test-name=librust-accesskit-winit-dev:tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test accesskit_winit 0.30.0 --all-targets --no-default-features
+Features: test-name=librust-accesskit-winit-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-softbuffer-0.4+wayland-dev, librust-softbuffer-0.4+wayland-dlopen-dev, librust-softbuffer-0.4+x11-dev, librust-softbuffer-0.4+x11-dlopen-dev, librust-winit-0.30+wayland-csd-adwaita-dev (>= 0.30.5), librust-winit-0.30+wayland-dev (>= 0.30.5), librust-winit-0.30+wayland-dlopen-dev (>= 0.30.5), librust-winit-0.30+x11-dev (>= 0.30.5), @
+Restrictions: allow-stderr
+Architecture: !riscv64

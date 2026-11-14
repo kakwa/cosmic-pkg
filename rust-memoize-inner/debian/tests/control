@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize-inner 0.5.1 --all-targets --all-features
+Features: test-name=rust-memoize-inner:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize-inner 0.5.1 --all-targets
+Features: test-name=librust-memoize-inner-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize-inner 0.5.1 --all-targets --no-default-features --features full
+Features: test-name=librust-memoize-inner-dev:full
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memoize-inner 0.5.1 --all-targets --no-default-features
+Features: test-name=librust-memoize-inner-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -1,0 +1,97 @@
+Source: rust-iced-winit
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-iced-debug-0.14+default-dev <!nocheck>,
+ librust-iced-program-0.14+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-rustc-hash-2+default-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>,
+ librust-tracing-0.1+default-dev <!nocheck>,
+ librust-wasm-bindgen-futures-0.4+default-dev <!nocheck>,
+ librust-web-sys-0.3+default-dev (>= 0.3.69) <!nocheck>,
+ librust-web-sys-0.3+document-dev (>= 0.3.69) <!nocheck>,
+ librust-web-sys-0.3+htmlcanvaselement-dev (>= 0.3.69) <!nocheck>,
+ librust-web-sys-0.3+window-dev (>= 0.3.69) <!nocheck>,
+ librust-window-clipboard-0.5+wayland-dev <!nocheck>,
+ librust-window-clipboard-0.5+x11-dev <!nocheck>,
+ librust-window-clipboard-0.5-dev <!nocheck>,
+ librust-winit-0.30+rwh-06-dev <!nocheck>,
+ librust-winit-0.30+wayland-csd-adwaita-dev <!nocheck>,
+ librust-winit-0.30+wayland-dev <!nocheck>,
+ librust-winit-0.30+wayland-dlopen-dev <!nocheck>,
+ librust-winit-0.30+x11-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-winit]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-winit
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_winit
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-iced-winit-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-iced-debug-0.14+default-dev,
+ librust-iced-debug-0.14+enable-dev,
+ librust-iced-program-0.14+default-dev,
+ librust-log-0.4+default-dev,
+ librust-mundy-0.2+async-io-dev,
+ librust-mundy-0.2+color-scheme-dev,
+ librust-mundy-0.2-dev,
+ librust-rustc-hash-2+default-dev,
+ librust-sysinfo-0.33+default-dev,
+ librust-thiserror-2+default-dev,
+ librust-tracing-0.1+default-dev,
+ librust-wasm-bindgen-futures-0.4+default-dev,
+ librust-web-sys-0.3+default-dev (>= 0.3.69),
+ librust-web-sys-0.3+document-dev (>= 0.3.69),
+ librust-web-sys-0.3+htmlcanvaselement-dev (>= 0.3.69),
+ librust-web-sys-0.3+window-dev (>= 0.3.69),
+ librust-window-clipboard-0.5+wayland-dev,
+ librust-window-clipboard-0.5+x11-dev,
+ librust-window-clipboard-0.5-dev,
+ librust-winit-0.30+rwh-06-dev,
+ librust-winit-0.30+wayland-csd-adwaita-dev,
+ librust-winit-0.30+wayland-dev,
+ librust-winit-0.30+wayland-dlopen-dev,
+ librust-winit-0.30+x11-dev
+Provides:
+ librust-iced-winit+debug-dev (= ${binary:Version}),
+ librust-iced-winit+default-dev (= ${binary:Version}),
+ librust-iced-winit+linux-theme-detection-dev (= ${binary:Version}),
+ librust-iced-winit+sysinfo-dev (= ${binary:Version}),
+ librust-iced-winit+unconditional-rendering-dev (= ${binary:Version}),
+ librust-iced-winit+wayland-dev (= ${binary:Version}),
+ librust-iced-winit+x11-dev (= ${binary:Version}),
+ librust-iced-winit-0-dev (= ${binary:Version}),
+ librust-iced-winit-0+debug-dev (= ${binary:Version}),
+ librust-iced-winit-0+default-dev (= ${binary:Version}),
+ librust-iced-winit-0+linux-theme-detection-dev (= ${binary:Version}),
+ librust-iced-winit-0+sysinfo-dev (= ${binary:Version}),
+ librust-iced-winit-0+unconditional-rendering-dev (= ${binary:Version}),
+ librust-iced-winit-0+wayland-dev (= ${binary:Version}),
+ librust-iced-winit-0+x11-dev (= ${binary:Version}),
+ librust-iced-winit-0.14-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+debug-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+default-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+linux-theme-detection-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+sysinfo-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+unconditional-rendering-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+wayland-dev (= ${binary:Version}),
+ librust-iced-winit-0.14+x11-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+debug-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+linux-theme-detection-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+sysinfo-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+unconditional-rendering-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+wayland-dev (= ${binary:Version}),
+ librust-iced-winit-0.14.0+x11-dev (= ${binary:Version})
+Description: Runtime for iced on top of winit - Rust source code
+ Source code for Debianized Rust crate "iced_winit"

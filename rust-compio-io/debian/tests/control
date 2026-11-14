@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --all-features
+Features: test-name=rust-compio-io:@
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features allocator_api
+Features: test-name=librust-compio-io-dev:allocator_api
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features codec-serde-json
+Features: test-name=librust-compio-io-dev:codec-serde-json
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features compat
+Features: test-name=librust-compio-io-dev:compat
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets
+Features: test-name=librust-compio-io-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features nightly
+Features: test-name=librust-compio-io-dev:nightly
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features read_buf
+Features: test-name=librust-compio-io-dev:read_buf
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features --features sync
+Features: test-name=librust-compio-io-dev:sync
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-io 0.9.1 --all-targets --no-default-features
+Features: test-name=librust-compio-io-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-futures-executor-0.3+default-dev (>= 0.3.30), librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-tokio-1+default-dev (>= 1.33.0), librust-tokio-1+macros-dev (>= 1.33.0), librust-tokio-1+rt-dev (>= 1.33.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

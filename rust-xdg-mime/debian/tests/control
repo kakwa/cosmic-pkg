@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdg-mime 0.4.0 --all-targets --all-features
+Features: test-name=rust-xdg-mime:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdg-mime 0.4.0 --all-targets
+Features: test-name=librust-xdg-mime-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xdg-mime 0.4.0 --all-targets --no-default-features
+Features: test-name=librust-xdg-mime-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

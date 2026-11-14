@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test async-oneshot 0.5.9 --all-targets --all-features
+Features: test-name=rust-async-oneshot:@
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.3+default-dev, librust-criterion-0.3+real-blackbox-dev, librust-futures-lite-1+default-dev, librust-waker-fn-1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test async-oneshot 0.5.9 --all-targets
+Features: test-name=librust-async-oneshot-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.3+default-dev, librust-criterion-0.3+real-blackbox-dev, librust-futures-lite-1+default-dev, librust-waker-fn-1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test async-oneshot 0.5.9 --all-targets --no-default-features
+Features: test-name=librust-async-oneshot-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.3+default-dev, librust-criterion-0.3+real-blackbox-dev, librust-futures-lite-1+default-dev, librust-waker-fn-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

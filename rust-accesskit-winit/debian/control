@@ -1,0 +1,84 @@
+Source: rust-accesskit-winit
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-accesskit-0.22+default-dev <!nocheck>,
+ librust-accesskit-macos-0.23+default-dev <!nocheck>,
+ librust-accesskit-unix-0.18+async-io-dev <!nocheck>,
+ librust-accesskit-unix-0.18-dev <!nocheck>,
+ librust-accesskit-windows-0.30+default-dev <!nocheck>,
+ librust-raw-window-handle-0.6+default-dev (>= 0.6.2) <!nocheck>,
+ librust-raw-window-handle-0.6+std-dev (>= 0.6.2) <!nocheck>,
+ librust-winit-0.30+rwh-06-dev (>= 0.30.5) <!nocheck>,
+ librust-winit-0.30+wayland-dev (>= 0.30.5) <!nocheck>,
+ librust-winit-0.30+x11-dev (>= 0.30.5) <!nocheck>,
+ librust-winit-0.30-dev (>= 0.30.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/accesskit-winit]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/accesskit-winit
+Homepage: https://github.com/AccessKit/accesskit
+X-Cargo-Crate: accesskit_winit
+X-Cargo-Crate-Version: 0.30.0
+
+Package: librust-accesskit-winit-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-accesskit-0.22+default-dev,
+ librust-accesskit-android-0.5+default-dev,
+ librust-accesskit-android-0.5+embedded-dex-dev,
+ librust-accesskit-macos-0.23+default-dev,
+ librust-accesskit-unix-0.18+async-io-dev,
+ librust-accesskit-unix-0.18+tokio-dev,
+ librust-accesskit-unix-0.18-dev,
+ librust-accesskit-windows-0.30+default-dev,
+ librust-raw-window-handle-0.5+default-dev,
+ librust-raw-window-handle-0.5+std-dev,
+ librust-raw-window-handle-0.6+default-dev (>= 0.6.2),
+ librust-raw-window-handle-0.6+std-dev (>= 0.6.2),
+ librust-winit-0.30+rwh-05-dev (>= 0.30.5),
+ librust-winit-0.30+rwh-06-dev (>= 0.30.5),
+ librust-winit-0.30+wayland-dev (>= 0.30.5),
+ librust-winit-0.30+x11-dev (>= 0.30.5),
+ librust-winit-0.30-dev (>= 0.30.5)
+Provides:
+ librust-accesskit-winit+accesskit-android-dev (= ${binary:Version}),
+ librust-accesskit-winit+accesskit-unix-dev (= ${binary:Version}),
+ librust-accesskit-winit+async-io-dev (= ${binary:Version}),
+ librust-accesskit-winit+default-dev (= ${binary:Version}),
+ librust-accesskit-winit+rwh-05-dev (= ${binary:Version}),
+ librust-accesskit-winit+rwh-06-dev (= ${binary:Version}),
+ librust-accesskit-winit+tokio-dev (= ${binary:Version}),
+ librust-accesskit-winit-0-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+accesskit-android-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+accesskit-unix-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+async-io-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+default-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+rwh-05-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+rwh-06-dev (= ${binary:Version}),
+ librust-accesskit-winit-0+tokio-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+accesskit-android-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+accesskit-unix-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+async-io-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+default-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+rwh-05-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+rwh-06-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30+tokio-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+accesskit-android-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+accesskit-unix-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+async-io-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+default-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+rwh-05-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+rwh-06-dev (= ${binary:Version}),
+ librust-accesskit-winit-0.30.0+tokio-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: AccessKit UI accessibility infrastructure: winit adapter - Rust source code
+ Source code for Debianized Rust crate "accesskit_winit"

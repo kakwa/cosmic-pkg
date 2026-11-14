@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test derive_pod 0.1.3 --all-targets --all-features
+Features: test-name=rust-derive-pod:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

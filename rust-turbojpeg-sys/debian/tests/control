@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --all-features
+Features: test-name=rust-turbojpeg-sys:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --no-default-features --features bindgen
+Features: test-name=librust-turbojpeg-sys-dev:bindgen
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --no-default-features --features cmake
+Features: test-name=librust-turbojpeg-sys-dev:cmake
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets
+Features: test-name=librust-turbojpeg-sys-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --no-default-features --features pkg-config
+Features: test-name=librust-turbojpeg-sys-dev:pkg-config
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --no-default-features --features require-simd
+Features: test-name=librust-turbojpeg-sys-dev:require-simd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test turbojpeg-sys 1.2.0 --all-targets --no-default-features
+Features: test-name=librust-turbojpeg-sys-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

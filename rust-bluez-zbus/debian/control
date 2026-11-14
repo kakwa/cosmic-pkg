@@ -1,0 +1,30 @@
+Source: rust-bluez-zbus
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bluez-zbus]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bluez-zbus
+Homepage: https://gitlab.com/flukejones/bluez-zbus
+X-Cargo-Crate: bluez-zbus
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-bluez-zbus-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-bluez-zbus+default-dev (= ${binary:Version}),
+ librust-bluez-zbus-0-dev (= ${binary:Version}),
+ librust-bluez-zbus-0+default-dev (= ${binary:Version}),
+ librust-bluez-zbus-0.1-dev (= ${binary:Version}),
+ librust-bluez-zbus-0.1+default-dev (= ${binary:Version}),
+ librust-bluez-zbus-0.1.0-dev (= ${binary:Version}),
+ librust-bluez-zbus-0.1.0+default-dev (= ${binary:Version})
+Description: Dbus client (using zbus) for bluez - Rust source code
+ Source code for Debianized Rust crate "bluez-zbus"

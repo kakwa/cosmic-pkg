@@ -1,0 +1,40 @@
+Source: rust-objc2-encode
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/objc2-encode]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/objc2-encode
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: objc2-encode
+X-Cargo-Crate-Version: 4.1.0
+
+Package: librust-objc2-encode-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-objc2-encode+alloc-dev (= ${binary:Version}),
+ librust-objc2-encode+default-dev (= ${binary:Version}),
+ librust-objc2-encode+std-dev (= ${binary:Version}),
+ librust-objc2-encode-4-dev (= ${binary:Version}),
+ librust-objc2-encode-4+alloc-dev (= ${binary:Version}),
+ librust-objc2-encode-4+default-dev (= ${binary:Version}),
+ librust-objc2-encode-4+std-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1+alloc-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1+default-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1+std-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1.0-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1.0+alloc-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1.0+default-dev (= ${binary:Version}),
+ librust-objc2-encode-4.1.0+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Objective-C type-encoding representation and parsing - Rust source code
+ Source code for Debianized Rust crate "objc2-encode"
