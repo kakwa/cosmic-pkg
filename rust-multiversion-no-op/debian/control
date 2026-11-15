@@ -21,13 +21,13 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-multiversion-no-op+default-dev (= ${binary:Version}),
+ librust-multiversion-no-opdev (= ${binary:Version}),
  librust-multiversion-no-op-1-dev (= ${binary:Version}),
- librust-multiversion-no-op-1+default-dev (= ${binary:Version}),
+ librust-multiversion-no-op-dev (= ${binary:Version}),
  librust-multiversion-no-op-1.0-dev (= ${binary:Version}),
- librust-multiversion-no-op-1.0+default-dev (= ${binary:Version}),
+ librust-multiversion-no-op-dev (= ${binary:Version}),
  librust-multiversion-no-op-1.0.0-dev (= ${binary:Version}),
- librust-multiversion-no-op-1.0.0+default-dev (= ${binary:Version})
+ librust-multiversion-no-op-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.56~)
 Description: Provides a pass-through function attribute called multiversion for optimizing build times - Rust source code

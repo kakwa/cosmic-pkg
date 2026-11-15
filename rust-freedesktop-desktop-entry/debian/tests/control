@@ -1,21 +1,21 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test freedesktop-desktop-entry 0.8.4 --all-targets --all-features
 Features: test-name=rust-freedesktop-desktop-entry:@
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test freedesktop-desktop-entry 0.8.4 --all-targets
 Features: test-name=librust-freedesktop-desktop-entry-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test freedesktop-desktop-entry 0.8.4 --all-targets --no-default-features --features gettext
 Features: test-name=librust-freedesktop-desktop-entry-dev:gettext
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test freedesktop-desktop-entry 0.8.4 --all-targets --no-default-features
 Features: test-name=librust-freedesktop-desktop-entry-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

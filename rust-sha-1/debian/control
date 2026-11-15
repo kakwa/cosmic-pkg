@@ -5,12 +5,12 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-block-buffer-0.9+default-dev <!nocheck>,
- librust-cfg-if-1+default-dev <!nocheck>,
- librust-cpufeatures-0.2+default-dev <!nocheck>,
- librust-digest-0.9+default-dev <!nocheck>,
+ librust-block-buffer-dev <!nocheck>,
+ librust-cfg-if-dev <!nocheck>,
+ librust-cpufeatures-dev <!nocheck>,
+ librust-digest-dev <!nocheck>,
  librust-digest-0.9+std-dev <!nocheck>,
- librust-opaque-debug-0.3+default-dev <!nocheck>
+ librust-opaque-debug-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/sha-1]
@@ -24,18 +24,18 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-block-buffer-0.9+default-dev,
- librust-cfg-if-1+default-dev,
- librust-cpufeatures-0.2+default-dev,
- librust-digest-0.9+default-dev,
+ librust-block-buffer-dev,
+ librust-cfg-if-dev,
+ librust-cpufeatures-dev,
+ librust-digest-dev,
  librust-digest-0.9+std-dev,
- librust-opaque-debug-0.3+default-dev,
- librust-sha1-asm-0.5+default-dev
+ librust-opaque-debug-dev,
+ librust-sha1-asm-dev
 Provides:
  librust-sha-1+asm-dev (= ${binary:Version}),
  librust-sha-1+asm-aarch64-dev (= ${binary:Version}),
  librust-sha-1+compress-dev (= ${binary:Version}),
- librust-sha-1+default-dev (= ${binary:Version}),
+ librust-sha-dev (= ${binary:Version}),
  librust-sha-1+force-soft-dev (= ${binary:Version}),
  librust-sha-1+sha1-asm-dev (= ${binary:Version}),
  librust-sha-1+std-dev (= ${binary:Version}),
@@ -43,7 +43,7 @@ Provides:
  librust-sha-1-0+asm-dev (= ${binary:Version}),
  librust-sha-1-0+asm-aarch64-dev (= ${binary:Version}),
  librust-sha-1-0+compress-dev (= ${binary:Version}),
- librust-sha-1-0+default-dev (= ${binary:Version}),
+ librust-sha-1-dev (= ${binary:Version}),
  librust-sha-1-0+force-soft-dev (= ${binary:Version}),
  librust-sha-1-0+sha1-asm-dev (= ${binary:Version}),
  librust-sha-1-0+std-dev (= ${binary:Version}),
@@ -51,7 +51,7 @@ Provides:
  librust-sha-1-0.9+asm-dev (= ${binary:Version}),
  librust-sha-1-0.9+asm-aarch64-dev (= ${binary:Version}),
  librust-sha-1-0.9+compress-dev (= ${binary:Version}),
- librust-sha-1-0.9+default-dev (= ${binary:Version}),
+ librust-sha-1-dev (= ${binary:Version}),
  librust-sha-1-0.9+force-soft-dev (= ${binary:Version}),
  librust-sha-1-0.9+sha1-asm-dev (= ${binary:Version}),
  librust-sha-1-0.9+std-dev (= ${binary:Version}),
@@ -59,7 +59,7 @@ Provides:
  librust-sha-1-0.9.8+asm-dev (= ${binary:Version}),
  librust-sha-1-0.9.8+asm-aarch64-dev (= ${binary:Version}),
  librust-sha-1-0.9.8+compress-dev (= ${binary:Version}),
- librust-sha-1-0.9.8+default-dev (= ${binary:Version}),
+ librust-sha-1-dev (= ${binary:Version}),
  librust-sha-1-0.9.8+force-soft-dev (= ${binary:Version}),
  librust-sha-1-0.9.8+sha1-asm-dev (= ${binary:Version}),
  librust-sha-1-0.9.8+std-dev (= ${binary:Version})

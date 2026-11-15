@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.87.0) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-zune-core-0.5+default-dev (>= 0.5.1) <!nocheck>,
+ librust-zune-core-dev (>= 0.5.1) <!nocheck>,
  librust-zune-core-0.5+log-dev (>= 0.5.1) <!nocheck>,
  librust-zune-core-0.5+std-dev (>= 0.5.1) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
@@ -21,23 +21,23 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-zune-core-0.5+default-dev (>= 0.5.1),
+ librust-zune-core-dev (>= 0.5.1),
  librust-zune-core-0.5+log-dev (>= 0.5.1),
  librust-zune-core-0.5+std-dev (>= 0.5.1)
 Provides:
- librust-zune-qoi+default-dev (= ${binary:Version}),
+ librust-zune-qoidev (= ${binary:Version}),
  librust-zune-qoi+log-dev (= ${binary:Version}),
  librust-zune-qoi+std-dev (= ${binary:Version}),
  librust-zune-qoi-0-dev (= ${binary:Version}),
- librust-zune-qoi-0+default-dev (= ${binary:Version}),
+ librust-zune-qoi-dev (= ${binary:Version}),
  librust-zune-qoi-0+log-dev (= ${binary:Version}),
  librust-zune-qoi-0+std-dev (= ${binary:Version}),
  librust-zune-qoi-0.5-dev (= ${binary:Version}),
- librust-zune-qoi-0.5+default-dev (= ${binary:Version}),
+ librust-zune-qoi-dev (= ${binary:Version}),
  librust-zune-qoi-0.5+log-dev (= ${binary:Version}),
  librust-zune-qoi-0.5+std-dev (= ${binary:Version}),
  librust-zune-qoi-0.5.2-dev (= ${binary:Version}),
- librust-zune-qoi-0.5.2+default-dev (= ${binary:Version}),
+ librust-zune-qoi-dev (= ${binary:Version}),
  librust-zune-qoi-0.5.2+log-dev (= ${binary:Version}),
  librust-zune-qoi-0.5.2+std-dev (= ${binary:Version})
 Breaks:

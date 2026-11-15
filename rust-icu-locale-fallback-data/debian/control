@@ -19,13 +19,13 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-icu-locale-fallback-data+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-datadev (= ${binary:Version}),
  librust-icu-locale-fallback-data-2-dev (= ${binary:Version}),
- librust-icu-locale-fallback-data-2+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-dev (= ${binary:Version}),
  librust-icu-locale-fallback-data-2.3-dev (= ${binary:Version}),
- librust-icu-locale-fallback-data-2.3+default-dev (= ${binary:Version}),
+ librust-icu-locale-fallback-data-dev (= ${binary:Version}),
  librust-icu-locale-fallback-data-2.3.0-dev (= ${binary:Version}),
- librust-icu-locale-fallback-data-2.3.0+default-dev (= ${binary:Version})
+ librust-icu-locale-fallback-data-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.88~)
 Description: Data for the icu_locale_fallback crate - Rust source code

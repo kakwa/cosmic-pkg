@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-hostname-validator+default-dev (= ${binary:Version}),
+ librust-hostname-validatordev (= ${binary:Version}),
  librust-hostname-validator-1-dev (= ${binary:Version}),
- librust-hostname-validator-1+default-dev (= ${binary:Version}),
+ librust-hostname-validator-dev (= ${binary:Version}),
  librust-hostname-validator-1.1-dev (= ${binary:Version}),
- librust-hostname-validator-1.1+default-dev (= ${binary:Version}),
+ librust-hostname-validator-dev (= ${binary:Version}),
  librust-hostname-validator-1.1.1-dev (= ${binary:Version}),
- librust-hostname-validator-1.1.1+default-dev (= ${binary:Version})
+ librust-hostname-validator-dev (= ${binary:Version})
 Description: Validate hostnames according to IETF RFC 1123 - Rust source code
  Source code for Debianized Rust crate "hostname-validator"

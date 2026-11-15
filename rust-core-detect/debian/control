@@ -20,19 +20,19 @@ Depends:
  ${misc:Depends}
 Provides:
  librust-core-detect+assume-has-cpuid-dev (= ${binary:Version}),
- librust-core-detect+default-dev (= ${binary:Version}),
+ librust-core-detectdev (= ${binary:Version}),
  librust-core-detect+unstable-has-cpuid-dev (= ${binary:Version}),
  librust-core-detect-1-dev (= ${binary:Version}),
  librust-core-detect-1+assume-has-cpuid-dev (= ${binary:Version}),
- librust-core-detect-1+default-dev (= ${binary:Version}),
+ librust-core-detect-dev (= ${binary:Version}),
  librust-core-detect-1+unstable-has-cpuid-dev (= ${binary:Version}),
  librust-core-detect-1.0-dev (= ${binary:Version}),
  librust-core-detect-1.0+assume-has-cpuid-dev (= ${binary:Version}),
- librust-core-detect-1.0+default-dev (= ${binary:Version}),
+ librust-core-detect-dev (= ${binary:Version}),
  librust-core-detect-1.0+unstable-has-cpuid-dev (= ${binary:Version}),
  librust-core-detect-1.0.0-dev (= ${binary:Version}),
  librust-core-detect-1.0.0+assume-has-cpuid-dev (= ${binary:Version}),
- librust-core-detect-1.0.0+default-dev (= ${binary:Version}),
+ librust-core-detect-dev (= ${binary:Version}),
  librust-core-detect-1.0.0+unstable-has-cpuid-dev (= ${binary:Version})
 Description: `no_std` version of the `std::is_x86_feature_detected!` macro - Rust source code
  Source code for Debianized Rust crate "core_detect"

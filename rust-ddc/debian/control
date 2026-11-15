@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-mccs-0.1+default-dev <!nocheck>
+ librust-mccs-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/ddc]
@@ -19,14 +19,14 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-mccs-0.1+default-dev
+ librust-mccs-dev
 Provides:
- librust-ddc+default-dev (= ${binary:Version}),
+ librust-ddcdev (= ${binary:Version}),
  librust-ddc-0-dev (= ${binary:Version}),
- librust-ddc-0+default-dev (= ${binary:Version}),
+ librust-ddc-dev (= ${binary:Version}),
  librust-ddc-0.2-dev (= ${binary:Version}),
- librust-ddc-0.2+default-dev (= ${binary:Version}),
+ librust-ddc-dev (= ${binary:Version}),
  librust-ddc-0.2.2-dev (= ${binary:Version}),
- librust-ddc-0.2.2+default-dev (= ${binary:Version})
+ librust-ddc-dev (= ${binary:Version})
 Description: DDC/CI monitor control - Rust source code
  Source code for Debianized Rust crate "ddc"

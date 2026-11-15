@@ -1,111 +1,111 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --all-features
 Features: test-name=rust-cosmic-text:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features core_maths
 Features: test-name=librust-cosmic-text-dev:core_maths
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features cosmic_undo_2
 Features: test-name=librust-cosmic-text-dev:cosmic_undo_2
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets
 Features: test-name=librust-cosmic-text-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features fontconfig
 Features: test-name=librust-cosmic-text-dev:fontconfig
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features hashbrown
 Features: test-name=librust-cosmic-text-dev:hashbrown
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features modit
 Features: test-name=librust-cosmic-text-dev:modit
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features monospace_fallback
 Features: test-name=librust-cosmic-text-dev:monospace_fallback
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features no_std
 Features: test-name=librust-cosmic-text-dev:no_std
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features peniko
 Features: test-name=librust-cosmic-text-dev:peniko
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features shape-run-cache
 Features: test-name=librust-cosmic-text-dev:shape-run-cache
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features std
 Features: test-name=librust-cosmic-text-dev:std
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features swash
 Features: test-name=librust-cosmic-text-dev:swash
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features syntect
 Features: test-name=librust-cosmic-text-dev:syntect
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features sys-locale
 Features: test-name=librust-cosmic-text-dev:sys-locale
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features vi
 Features: test-name=librust-cosmic-text-dev:vi
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features warn_on_missing_glyphs
 Features: test-name=librust-cosmic-text-dev:warn_on_missing_glyphs
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features --features wasm-web
 Features: test-name=librust-cosmic-text-dev:wasm-web
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cosmic-text 0.19.0 --all-targets --no-default-features
 Features: test-name=librust-cosmic-text-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-0.11+default-dev (>= 0.11.4), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.89), librust-criterion-0.8+cargo-bench-support-dev (>= 0.8.1), librust-tiny-skia-dev (>= 0.11.4), @
 Restrictions: allow-stderr
 Architecture: !riscv64

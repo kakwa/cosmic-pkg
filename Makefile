@@ -57,8 +57,10 @@ endif
 # ----------------------------------------------------------------------------
 ifeq ($(NOCHROOT), true)
 DEB_REPO_DEP := deb
-else
+else ifeq ($(wildcard deb.ordering),)
 DEB_REPO_DEP := deb_chroot
+else
+DEB_REPO_DEP := deb_chroot_ordered
 endif
 
 ifeq ($(NOCHROOT), true)
@@ -174,6 +176,44 @@ deb_chroot:
 	# do a last build iteration to make sure every packages are build correctly
 	@$(MAKE) deb_chroot_internal UPDATE_REPO=false \
 		COW_NAME=$(COW_NAME) SKIP_COWBUILDER_SETUP=true
+
+# Debian Build Target (Chroot, ordered)
+deb_chroot_ordered:
+	# Initialize output directory as local repo
+	@mkdir -p $(LOCAL_REPO_PATH)
+	@cd $(LOCAL_REPO_PATH) && dpkg-scanpackages . /dev/null > Packages
+	@$(SUDO) mkdir -p $(COW_DIR)/aptcache/
+	
+	# Initialize or update cowbuilder chroot
+	if [ "$(BUILDER)" = "cowbuilder" ]; then \
+	    TEST_FILE="$(COW_BASEPATH)/etc/hosts"; \
+	else \
+	    TEST_FILE="$(COW_BASEPATH)"; \
+	fi; \
+	if ! [ -f $$TEST_FILE ] || [ $$(( $$(date +%s) - $$(stat -c %Y $$TEST_FILE) )) -gt 86400 ]; then \
+		export TMPDIR=/tmp/; \
+		$(SUDO) rm -rf -- $(COW_BASEPATH); \
+		$(SUDO) $(BUILDER) --create $(COWBUILDER_CREATE_ARGS); \
+	else \
+		export TMPDIR=/tmp/; \
+		$(SUDO) $(BUILDER) --update $(COWBUILDER_UPDATE_ARGS); \
+	fi
+	
+	# Build packages sequentially, in the order given by deb.ordering:
+	# after each package, update the local repo and the chroot so that
+	# the next build can see the newly built packages
+	@while read -r pkg; do \
+		[ -z "$$pkg" ] && continue; \
+		[ -d "$$pkg" ] || continue; \
+		echo  $(MAKE) -C $$pkg deb_chroot; \
+		$(MAKE) -C $$pkg deb_chroot \
+			UPDATE_REPO=false \
+			COW_NAME=$(COW_NAME) \
+			SKIP_COWBUILDER_SETUP=true || exit 1; \
+		cd $(LOCAL_REPO_PATH) && dpkg-scanpackages . /dev/null > Packages || exit 1; cd - > /dev/null; \
+		export TMPDIR=/tmp/; \
+		$(SUDO) $(BUILDER) --update $(COWBUILDER_UPDATE_ARGS); \
+	done < deb.ordering
 
 # Build Status Reporting
 # ----------------------------------------------------------------------------
@@ -305,7 +345,7 @@ vulncheck: $(vulncheck_PKG)
 .PHONY: $(DEB_REPO_TARGETS) $(RPM_REPO_TARGETS) \
   internal_deb_repo rpm deb deb_repo rpm_repo export_key \
   clean_pkg clean_repo clean_rpm_repo help \
-  deb_chroot deb_internal deb_chroot_internal deb_get_chroot_path list_dist vulncheck \
+  deb_chroot deb_chroot_ordered deb_internal deb_chroot_internal deb_get_chroot_path list_dist vulncheck \
   rpm_repo rpm_chroot_internal rpm_chroot update deb_all_repos rpm_all_repos all_repos github_matrix
 
 # Help Target
@@ -319,6 +359,7 @@ targets:
 * deb_chroot   : Build all .deb in build chroots (using cowbuilder)
                    Parameter "DIST=<code name>" must be specified, for example "make deb_chroot DIST=trixie"
                    Parameter "ARCH=<arch>" is optional (default=native), for example "make deb_chroot DIST=trixie ARCH=arm64"
+* deb_chroot_ordered : Like deb_chroot, but build packages sequentially in the order listed in deb.ordering
 * deb_repo     : Build the complete .deb repo
                    Parameter "DIST=<code name>" must be specified.
                    Parameter "ARCH=<arch>" is optional.

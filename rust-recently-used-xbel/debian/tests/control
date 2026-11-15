@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test recently-used-xbel 1.2.0 --all-targets --all-features
 Features: test-name=rust-recently-used-xbel:@
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev (>= 3.12.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev (>= 3.12.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test recently-used-xbel 1.2.0 --all-targets
 Features: test-name=librust-recently-used-xbel-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev (>= 3.12.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev (>= 3.12.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test recently-used-xbel 1.2.0 --all-targets --no-default-features
 Features: test-name=librust-recently-used-xbel-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-tempfile-3+default-dev (>= 3.12.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-tempfile-dev (>= 3.12.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

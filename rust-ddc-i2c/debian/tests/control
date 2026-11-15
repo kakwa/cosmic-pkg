@@ -1,33 +1,33 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets --all-features
 Features: test-name=rust-ddc-i2c:@
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets
 Features: test-name=librust-ddc-i2c-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets --no-default-features --features i2c-linux
 Features: test-name=librust-ddc-i2c-dev:i2c-linux
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets --no-default-features --features with-linux
 Features: test-name=librust-ddc-i2c-dev:with-linux
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets --no-default-features --features with-linux-enumerate
 Features: test-name=librust-ddc-i2c-dev:with-linux-enumerate
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test ddc-i2c 0.2.2 --all-targets --no-default-features
 Features: test-name=librust-ddc-i2c-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-edid-0.3+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-edid-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

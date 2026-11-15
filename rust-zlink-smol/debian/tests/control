@@ -1,63 +1,63 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --all-features
 Features: test-name=rust-zlink-smol:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets
 Features: test-name=librust-zlink-smol-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features defmt
 Features: test-name=librust-zlink-smol-dev:defmt
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features idl
 Features: test-name=librust-zlink-smol-dev:idl
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features idl-parse
 Features: test-name=librust-zlink-smol-dev:idl-parse
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features introspection
 Features: test-name=librust-zlink-smol-dev:introspection
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features proxy
 Features: test-name=librust-zlink-smol-dev:proxy
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features server
 Features: test-name=librust-zlink-smol-dev:server
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features service
 Features: test-name=librust-zlink-smol-dev:service
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features --features tracing
 Features: test-name=librust-zlink-smol-dev:tracing
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-smol 0.5.0 --all-targets --no-default-features
 Features: test-name=librust-zlink-smol-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-smol-2+default-dev, librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-smol-dev, librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), @
 Restrictions: allow-stderr
 Architecture: !riscv64

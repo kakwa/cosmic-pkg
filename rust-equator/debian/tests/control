@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test equator 0.4.2 --all-targets --all-features
 Features: test-name=rust-equator:@
-Depends: dh-cargo (>= 33~), rustc, librust-assert2-0.3+default-dev (>= 0.3.14), @
+Depends: dh-cargo (>= 33~), rustc, librust-assert2-dev (>= 0.3.14), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test equator 0.4.2 --all-targets
 Features: test-name=librust-equator-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-assert2-0.3+default-dev (>= 0.3.14), @
+Depends: dh-cargo (>= 33~), rustc, librust-assert2-dev (>= 0.3.14), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test equator 0.4.2 --all-targets --no-default-features
 Features: test-name=librust-equator-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-assert2-0.3+default-dev (>= 0.3.14), @
+Depends: dh-cargo (>= 33~), rustc, librust-assert2-dev (>= 0.3.14), @
 Restrictions: allow-stderr
 Architecture: !riscv64

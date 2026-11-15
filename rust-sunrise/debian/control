@@ -20,21 +20,21 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-chrono-0.4-dev,
- librust-libm-0.2+default-dev
+ librust-libm-dev
 Provides:
- librust-sunrise+default-dev (= ${binary:Version}),
+ librust-sunrisedev (= ${binary:Version}),
  librust-sunrise+libm-dev (= ${binary:Version}),
  librust-sunrise+std-dev (= ${binary:Version}),
  librust-sunrise-3-dev (= ${binary:Version}),
- librust-sunrise-3+default-dev (= ${binary:Version}),
+ librust-sunrise-dev (= ${binary:Version}),
  librust-sunrise-3+libm-dev (= ${binary:Version}),
  librust-sunrise-3+std-dev (= ${binary:Version}),
  librust-sunrise-3.0-dev (= ${binary:Version}),
- librust-sunrise-3.0+default-dev (= ${binary:Version}),
+ librust-sunrise-dev (= ${binary:Version}),
  librust-sunrise-3.0+libm-dev (= ${binary:Version}),
  librust-sunrise-3.0+std-dev (= ${binary:Version}),
  librust-sunrise-3.0.0-dev (= ${binary:Version}),
- librust-sunrise-3.0.0+default-dev (= ${binary:Version}),
+ librust-sunrise-dev (= ${binary:Version}),
  librust-sunrise-3.0.0+libm-dev (= ${binary:Version}),
  librust-sunrise-3.0.0+std-dev (= ${binary:Version})
 Description: Sunrise and sunset calculator - Rust source code

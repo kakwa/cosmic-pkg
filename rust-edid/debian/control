@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-nom-3+default-dev (>= 3.2.0) <!nocheck>,
+ librust-nom-dev (>= 3.2.0) <!nocheck>,
  librust-nom-3+verbose-errors-dev (>= 3.2.0) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -20,15 +20,15 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-nom-3+default-dev (>= 3.2.0),
+ librust-nom-dev (>= 3.2.0),
  librust-nom-3+verbose-errors-dev (>= 3.2.0)
 Provides:
- librust-edid+default-dev (= ${binary:Version}),
+ librust-ediddev (= ${binary:Version}),
  librust-edid-0-dev (= ${binary:Version}),
- librust-edid-0+default-dev (= ${binary:Version}),
+ librust-edid-dev (= ${binary:Version}),
  librust-edid-0.3-dev (= ${binary:Version}),
- librust-edid-0.3+default-dev (= ${binary:Version}),
+ librust-edid-dev (= ${binary:Version}),
  librust-edid-0.3.0-dev (= ${binary:Version}),
- librust-edid-0.3.0+default-dev (= ${binary:Version})
+ librust-edid-dev (= ${binary:Version})
 Description: Parse EDID data structures - Rust source code
  Source code for Debianized Rust crate "edid"

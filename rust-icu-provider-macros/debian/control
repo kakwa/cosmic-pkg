@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.67) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-proc-macro2-1+default-dev (>= 1.0.61) <!nocheck>,
- librust-quote-1+default-dev (>= 1.0.28) <!nocheck>,
- librust-syn-2+default-dev (>= 2.0.21) <!nocheck>
+ librust-proc-macro2-dev (>= 1.0.61) <!nocheck>,
+ librust-quote-dev (>= 1.0.28) <!nocheck>,
+ librust-syn-dev (>= 2.0.21) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-provider-macros]
@@ -21,17 +21,17 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-proc-macro2-1+default-dev (>= 1.0.61),
- librust-quote-1+default-dev (>= 1.0.28),
- librust-syn-2+default-dev (>= 2.0.21)
+ librust-proc-macro2-dev (>= 1.0.61),
+ librust-quote-dev (>= 1.0.28),
+ librust-syn-dev (>= 2.0.21)
 Provides:
- librust-icu-provider-macros+default-dev (= ${binary:Version}),
+ librust-icu-provider-macrosdev (= ${binary:Version}),
  librust-icu-provider-macros-1-dev (= ${binary:Version}),
- librust-icu-provider-macros-1+default-dev (= ${binary:Version}),
+ librust-icu-provider-macros-dev (= ${binary:Version}),
  librust-icu-provider-macros-1.5-dev (= ${binary:Version}),
- librust-icu-provider-macros-1.5+default-dev (= ${binary:Version}),
+ librust-icu-provider-macros-dev (= ${binary:Version}),
  librust-icu-provider-macros-1.5.0-dev (= ${binary:Version}),
- librust-icu-provider-macros-1.5.0+default-dev (= ${binary:Version})
+ librust-icu-provider-macros-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.67~)
 Description: Proc macros for ICU data providers - Rust source code

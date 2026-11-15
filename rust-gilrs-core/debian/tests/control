@@ -1,57 +1,57 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --all-features
 Features: test-name=rust-gilrs-core:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets
 Features: test-name=librust-gilrs-core-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features rusty-xinput
 Features: test-name=librust-gilrs-core-dev:rusty-xinput
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features serde
 Features: test-name=librust-gilrs-core-dev:serde
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features serde-serialize
 Features: test-name=librust-gilrs-core-dev:serde-serialize
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features wgi
 Features: test-name=librust-gilrs-core-dev:wgi
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features winapi
 Features: test-name=librust-gilrs-core-dev:winapi
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features windows
 Features: test-name=librust-gilrs-core-dev:windows
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features --features xinput
 Features: test-name=librust-gilrs-core-dev:xinput
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gilrs-core 0.6.8 --all-targets --no-default-features
 Features: test-name=librust-gilrs-core-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-0.11+default-dev (>= 0.11.5), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.0), librust-env-logger-dev (>= 0.11.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64

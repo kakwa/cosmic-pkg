@@ -1,45 +1,45 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --all-features
 Features: test-name=rust-lyon-tessellation:@
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features --features debugger
 Features: test-name=librust-lyon-tessellation-dev:debugger
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets
 Features: test-name=librust-lyon-tessellation-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features --features profiling
 Features: test-name=librust-lyon-tessellation-dev:profiling
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features --features serde
 Features: test-name=librust-lyon-tessellation-dev:serde
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features --features serialization
 Features: test-name=librust-lyon-tessellation-dev:serialization
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features --features std
 Features: test-name=librust-lyon-tessellation-dev:std
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test lyon_tessellation 1.0.23 --all-targets --no-default-features
 Features: test-name=librust-lyon-tessellation-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-lyon-extra-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-zbus-3+default-dev (>= 3.8.0) <!nocheck>
+ librust-zbus-dev (>= 3.8.0) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/timedate-zbus]
@@ -19,14 +19,14 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-zbus-3+default-dev (>= 3.8.0)
+ librust-zbus-dev (>= 3.8.0)
 Provides:
- librust-timedate-zbus+default-dev (= ${binary:Version}),
+ librust-timedate-zbusdev (= ${binary:Version}),
  librust-timedate-zbus-0-dev (= ${binary:Version}),
- librust-timedate-zbus-0+default-dev (= ${binary:Version}),
+ librust-timedate-zbus-dev (= ${binary:Version}),
  librust-timedate-zbus-0.1-dev (= ${binary:Version}),
- librust-timedate-zbus-0.1+default-dev (= ${binary:Version}),
+ librust-timedate-zbus-dev (= ${binary:Version}),
  librust-timedate-zbus-0.1.0-dev (= ${binary:Version}),
- librust-timedate-zbus-0.1.0+default-dev (= ${binary:Version})
+ librust-timedate-zbus-dev (= ${binary:Version})
 Description: Dbus client (using zbus) for timedate - Rust source code
  Source code for Debianized Rust crate "timedate-zbus"

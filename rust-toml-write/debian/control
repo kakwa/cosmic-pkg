@@ -20,19 +20,19 @@ Depends:
  ${misc:Depends}
 Provides:
  librust-toml-write+alloc-dev (= ${binary:Version}),
- librust-toml-write+default-dev (= ${binary:Version}),
+ librust-toml-writedev (= ${binary:Version}),
  librust-toml-write+std-dev (= ${binary:Version}),
  librust-toml-write-0-dev (= ${binary:Version}),
  librust-toml-write-0+alloc-dev (= ${binary:Version}),
- librust-toml-write-0+default-dev (= ${binary:Version}),
+ librust-toml-write-dev (= ${binary:Version}),
  librust-toml-write-0+std-dev (= ${binary:Version}),
  librust-toml-write-0.1-dev (= ${binary:Version}),
  librust-toml-write-0.1+alloc-dev (= ${binary:Version}),
- librust-toml-write-0.1+default-dev (= ${binary:Version}),
+ librust-toml-write-dev (= ${binary:Version}),
  librust-toml-write-0.1+std-dev (= ${binary:Version}),
  librust-toml-write-0.1.2-dev (= ${binary:Version}),
  librust-toml-write-0.1.2+alloc-dev (= ${binary:Version}),
- librust-toml-write-0.1.2+default-dev (= ${binary:Version}),
+ librust-toml-write-dev (= ${binary:Version}),
  librust-toml-write-0.1.2+std-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.66~)

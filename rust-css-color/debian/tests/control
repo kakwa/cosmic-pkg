@@ -1,21 +1,21 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test css-color 0.2.8 --all-targets --all-features
 Features: test-name=rust-css-color:@
-Depends: dh-cargo (>= 33~), rustc, librust-regex-1+default-dev (>= 1.7.1), librust-serde-json-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-regex-dev (>= 1.7.1), librust-serde-json-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test css-color 0.2.8 --all-targets --no-default-features --features bench
 Features: test-name=librust-css-color-dev:bench
-Depends: dh-cargo (>= 33~), rustc, librust-regex-1+default-dev (>= 1.7.1), librust-serde-json-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-regex-dev (>= 1.7.1), librust-serde-json-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test css-color 0.2.8 --all-targets
 Features: test-name=librust-css-color-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-regex-1+default-dev (>= 1.7.1), librust-serde-json-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-regex-dev (>= 1.7.1), librust-serde-json-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test css-color 0.2.8 --all-targets --no-default-features
 Features: test-name=librust-css-color-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-regex-1+default-dev (>= 1.7.1), librust-serde-json-1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-regex-dev (>= 1.7.1), librust-serde-json-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

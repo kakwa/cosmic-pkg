@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-apply+default-dev (= ${binary:Version}),
+ librust-applydev (= ${binary:Version}),
  librust-apply-0-dev (= ${binary:Version}),
- librust-apply-0+default-dev (= ${binary:Version}),
+ librust-apply-dev (= ${binary:Version}),
  librust-apply-0.3-dev (= ${binary:Version}),
- librust-apply-0.3+default-dev (= ${binary:Version}),
+ librust-apply-dev (= ${binary:Version}),
  librust-apply-0.3.0-dev (= ${binary:Version}),
- librust-apply-0.3.0+default-dev (= ${binary:Version})
+ librust-apply-dev (= ${binary:Version})
 Description: Tiny library for chaining free functions into method call chains - Rust source code
  Source code for Debianized Rust crate "apply"

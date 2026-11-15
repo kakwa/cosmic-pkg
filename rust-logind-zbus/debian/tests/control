@@ -1,27 +1,27 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test logind-zbus 5.3.2 --all-targets --all-features
 Features: test-name=rust-logind-zbus:@
-Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-2+default-dev (>= 2.5.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-dev (>= 2.5.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test logind-zbus 5.3.2 --all-targets --no-default-features --features async-io
 Features: test-name=librust-logind-zbus-dev:async-io
-Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-2+default-dev (>= 2.5.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-dev (>= 2.5.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test logind-zbus 5.3.2 --all-targets --no-default-features --features blocking-api
 Features: test-name=librust-logind-zbus-dev:blocking-api
-Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-2+default-dev (>= 2.5.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-dev (>= 2.5.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test logind-zbus 5.3.2 --all-targets
 Features: test-name=librust-logind-zbus-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-2+default-dev (>= 2.5.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-dev (>= 2.5.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test logind-zbus 5.3.2 --all-targets --no-default-features
 Features: test-name=librust-logind-zbus-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-2+default-dev (>= 2.5.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-futures-lite-dev (>= 2.5.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

@@ -23,19 +23,19 @@ Depends:
  librust-serde-1+derive-dev (>= 1.0.219),
  librust-serde-1+std-dev (>= 1.0.219)
 Provides:
- librust-dnd+default-dev (= ${binary:Version}),
+ librust-dnddev (= ${binary:Version}),
  librust-dnd+serde-dev (= ${binary:Version}),
  librust-dnd+std-dev (= ${binary:Version}),
  librust-dnd-0-dev (= ${binary:Version}),
- librust-dnd-0+default-dev (= ${binary:Version}),
+ librust-dnd-dev (= ${binary:Version}),
  librust-dnd-0+serde-dev (= ${binary:Version}),
  librust-dnd-0+std-dev (= ${binary:Version}),
  librust-dnd-0.1-dev (= ${binary:Version}),
- librust-dnd-0.1+default-dev (= ${binary:Version}),
+ librust-dnd-dev (= ${binary:Version}),
  librust-dnd-0.1+serde-dev (= ${binary:Version}),
  librust-dnd-0.1+std-dev (= ${binary:Version}),
  librust-dnd-0.1.0-dev (= ${binary:Version}),
- librust-dnd-0.1.0+default-dev (= ${binary:Version}),
+ librust-dnd-dev (= ${binary:Version}),
  librust-dnd-0.1.0+serde-dev (= ${binary:Version}),
  librust-dnd-0.1.0+std-dev (= ${binary:Version})
 Description: D&D 5e types and common mechanics - Rust source code

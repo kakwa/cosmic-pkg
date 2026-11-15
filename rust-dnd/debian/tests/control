@@ -1,27 +1,27 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test dnd 0.1.0 --all-targets --all-features
 Features: test-name=rust-dnd:@
-Depends: dh-cargo (>= 33~), rustc, librust-serde-json-1+default-dev (>= 1.0.140), @
+Depends: dh-cargo (>= 33~), rustc, librust-serde-json-dev (>= 1.0.140), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test dnd 0.1.0 --all-targets
 Features: test-name=librust-dnd-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-serde-json-1+default-dev (>= 1.0.140), @
+Depends: dh-cargo (>= 33~), rustc, librust-serde-json-dev (>= 1.0.140), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test dnd 0.1.0 --all-targets --no-default-features --features serde
 Features: test-name=librust-dnd-dev:serde
-Depends: dh-cargo (>= 33~), rustc, librust-serde-json-1+default-dev (>= 1.0.140), @
+Depends: dh-cargo (>= 33~), rustc, librust-serde-json-dev (>= 1.0.140), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test dnd 0.1.0 --all-targets --no-default-features --features std
 Features: test-name=librust-dnd-dev:std
-Depends: dh-cargo (>= 33~), rustc, librust-serde-json-1+default-dev (>= 1.0.140), @
+Depends: dh-cargo (>= 33~), rustc, librust-serde-json-dev (>= 1.0.140), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test dnd 0.1.0 --all-targets --no-default-features
 Features: test-name=librust-dnd-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-serde-json-1+default-dev (>= 1.0.140), @
+Depends: dh-cargo (>= 33~), rustc, librust-serde-json-dev (>= 1.0.140), @
 Restrictions: allow-stderr
 Architecture: !riscv64

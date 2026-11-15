@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-almost+default-dev (= ${binary:Version}),
+ librust-almostdev (= ${binary:Version}),
  librust-almost-0-dev (= ${binary:Version}),
- librust-almost-0+default-dev (= ${binary:Version}),
+ librust-almost-dev (= ${binary:Version}),
  librust-almost-0.2-dev (= ${binary:Version}),
- librust-almost-0.2+default-dev (= ${binary:Version}),
+ librust-almost-dev (= ${binary:Version}),
  librust-almost-0.2.0-dev (= ${binary:Version}),
- librust-almost-0.2.0+default-dev (= ${binary:Version})
+ librust-almost-dev (= ${binary:Version})
 Description: Comparing floating point numbers - Rust source code
  Source code for Debianized Rust crate "almost"

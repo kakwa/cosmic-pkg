@@ -5,8 +5,8 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-mccs-0.1+default-dev <!nocheck>,
- librust-nom-3+default-dev <!nocheck>
+ librust-mccs-dev <!nocheck>,
+ librust-nom-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/mccs-caps]
@@ -20,20 +20,20 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-mccs-0.1+default-dev,
- librust-nom-3+default-dev,
+ librust-mccs-dev,
+ librust-nom-dev,
  librust-nom-3+verbose-errors-dev
 Provides:
- librust-mccs-caps+default-dev (= ${binary:Version}),
+ librust-mccs-capsdev (= ${binary:Version}),
  librust-mccs-caps+test-nom-errors-dev (= ${binary:Version}),
  librust-mccs-caps-0-dev (= ${binary:Version}),
- librust-mccs-caps-0+default-dev (= ${binary:Version}),
+ librust-mccs-caps-dev (= ${binary:Version}),
  librust-mccs-caps-0+test-nom-errors-dev (= ${binary:Version}),
  librust-mccs-caps-0.1-dev (= ${binary:Version}),
- librust-mccs-caps-0.1+default-dev (= ${binary:Version}),
+ librust-mccs-caps-dev (= ${binary:Version}),
  librust-mccs-caps-0.1+test-nom-errors-dev (= ${binary:Version}),
  librust-mccs-caps-0.1.3-dev (= ${binary:Version}),
- librust-mccs-caps-0.1.3+default-dev (= ${binary:Version}),
+ librust-mccs-caps-dev (= ${binary:Version}),
  librust-mccs-caps-0.1.3+test-nom-errors-dev (= ${binary:Version})
 Description: MCCS capability string parser - Rust source code
  Source code for Debianized Rust crate "mccs-caps"

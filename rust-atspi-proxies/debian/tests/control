@@ -1,21 +1,21 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-proxies 0.13.0 --all-targets --all-features
 Features: test-name=rust-atspi-proxies:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-0.13+default-dev, librust-byteorder-1+default-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-0.1+default-dev, librust-serde-json-1+default-dev (>= 1.0.96), librust-serde-plain-1+default-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-tracing-0.1+default-dev (>= 0.1.40), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-dev, librust-byteorder-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-dev, librust-serde-json-dev (>= 1.0.96), librust-serde-plain-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-dev (>= 0.1.1), librust-tokio-test-dev (>= 0.4.2), librust-tracing-dev (>= 0.1.40), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-proxies 0.13.0 --all-targets
 Features: test-name=librust-atspi-proxies-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-0.13+default-dev, librust-byteorder-1+default-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-0.1+default-dev, librust-serde-json-1+default-dev (>= 1.0.96), librust-serde-plain-1+default-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-tracing-0.1+default-dev (>= 0.1.40), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-dev, librust-byteorder-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-dev, librust-serde-json-dev (>= 1.0.96), librust-serde-plain-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-dev (>= 0.1.1), librust-tokio-test-dev (>= 0.4.2), librust-tracing-dev (>= 0.1.40), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-proxies 0.13.0 --all-targets --no-default-features --features wrappers
 Features: test-name=librust-atspi-proxies-dev:wrappers
-Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-0.13+default-dev, librust-byteorder-1+default-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-0.1+default-dev, librust-serde-json-1+default-dev (>= 1.0.96), librust-serde-plain-1+default-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-tracing-0.1+default-dev (>= 0.1.40), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-dev, librust-byteorder-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-dev, librust-serde-json-dev (>= 1.0.96), librust-serde-plain-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-dev (>= 0.1.1), librust-tokio-test-dev (>= 0.4.2), librust-tracing-dev (>= 0.1.40), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-proxies 0.13.0 --all-targets --no-default-features
 Features: test-name=librust-atspi-proxies-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-0.13+default-dev, librust-byteorder-1+default-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-0.1+default-dev, librust-serde-json-1+default-dev (>= 1.0.96), librust-serde-plain-1+default-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-0.1+default-dev (>= 0.1.1), librust-tokio-test-0.4+default-dev (>= 0.4.2), librust-tracing-0.1+default-dev (>= 0.1.40), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-dev, librust-byteorder-dev (>= 1.4), librust-futures-lite-2-dev (>= 2.6.0), librust-rename-item-dev, librust-serde-json-dev (>= 1.0.96), librust-serde-plain-dev (>= 1.0.1), librust-tokio-1+macros-dev (>= 1.38.2), librust-tokio-1+rt-multi-thread-dev (>= 1.38.2), librust-tokio-stream-dev (>= 0.1.1), librust-tokio-test-dev (>= 0.4.2), librust-tracing-dev (>= 0.1.40), @
 Restrictions: allow-stderr
 Architecture: !riscv64

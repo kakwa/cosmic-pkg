@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-whitespace-conf+default-dev (= ${binary:Version}),
+ librust-whitespace-confdev (= ${binary:Version}),
  librust-whitespace-conf-1-dev (= ${binary:Version}),
- librust-whitespace-conf-1+default-dev (= ${binary:Version}),
+ librust-whitespace-conf-dev (= ${binary:Version}),
  librust-whitespace-conf-1.0-dev (= ${binary:Version}),
- librust-whitespace-conf-1.0+default-dev (= ${binary:Version}),
+ librust-whitespace-conf-dev (= ${binary:Version}),
  librust-whitespace-conf-1.0.0-dev (= ${binary:Version}),
- librust-whitespace-conf-1.0.0+default-dev (= ${binary:Version})
+ librust-whitespace-conf-dev (= ${binary:Version})
 Description: Key-value configuration file delimited with whitespaces - Rust source code
  Source code for Debianized Rust crate "whitespace-conf"

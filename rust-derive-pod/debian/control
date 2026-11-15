@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-derive-pod+default-dev (= ${binary:Version}),
+ librust-derive-poddev (= ${binary:Version}),
  librust-derive-pod-0-dev (= ${binary:Version}),
- librust-derive-pod-0+default-dev (= ${binary:Version}),
+ librust-derive-pod-dev (= ${binary:Version}),
  librust-derive-pod-0.1-dev (= ${binary:Version}),
- librust-derive-pod-0.1+default-dev (= ${binary:Version}),
+ librust-derive-pod-dev (= ${binary:Version}),
  librust-derive-pod-0.1.3-dev (= ${binary:Version}),
- librust-derive-pod-0.1.3+default-dev (= ${binary:Version})
+ librust-derive-pod-dev (= ${binary:Version})
 Description: Implement the Pod trait safely with a derive macro - Rust source code
  Source code for Debianized Rust crate "derive_pod"

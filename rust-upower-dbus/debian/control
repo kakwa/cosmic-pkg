@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-serde-1+default-dev (>= 1.0.152) <!nocheck>,
- librust-serde-repr-0.1+default-dev (>= 0.1.10) <!nocheck>,
- librust-zbus-3+default-dev (>= 3.7.0) <!nocheck>
+ librust-serde-dev (>= 1.0.152) <!nocheck>,
+ librust-serde-repr-dev (>= 0.1.10) <!nocheck>,
+ librust-zbus-dev (>= 3.7.0) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/upower-dbus]
@@ -21,16 +21,16 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-serde-1+default-dev (>= 1.0.152),
- librust-serde-repr-0.1+default-dev (>= 0.1.10),
- librust-zbus-3+default-dev (>= 3.7.0)
+ librust-serde-dev (>= 1.0.152),
+ librust-serde-repr-dev (>= 0.1.10),
+ librust-zbus-dev (>= 3.7.0)
 Provides:
- librust-upower-dbus+default-dev (= ${binary:Version}),
+ librust-upower-dbusdev (= ${binary:Version}),
  librust-upower-dbus-0-dev (= ${binary:Version}),
- librust-upower-dbus-0+default-dev (= ${binary:Version}),
+ librust-upower-dbus-dev (= ${binary:Version}),
  librust-upower-dbus-0.3-dev (= ${binary:Version}),
- librust-upower-dbus-0.3+default-dev (= ${binary:Version}),
+ librust-upower-dbus-dev (= ${binary:Version}),
  librust-upower-dbus-0.3.2-dev (= ${binary:Version}),
- librust-upower-dbus-0.3.2+default-dev (= ${binary:Version})
+ librust-upower-dbus-dev (= ${binary:Version})
 Description: UPower info via zbus - Rust source code
  Source code for Debianized Rust crate "upower_dbus"

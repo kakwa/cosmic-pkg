@@ -1,45 +1,45 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --all-features
 Features: test-name=rust-icu-locid-transform:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features --features bench
 Features: test-name=librust-icu-locid-transform-dev:bench
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features --features compiled_data
 Features: test-name=librust-icu-locid-transform-dev:compiled_data
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features --features datagen
 Features: test-name=librust-icu-locid-transform-dev:datagen
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets
 Features: test-name=librust-icu-locid-transform-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features --features serde
 Features: test-name=librust-icu-locid-transform-dev:serde
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features --features std
 Features: test-name=librust-icu-locid-transform-dev:std
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test icu_locid_transform 1.5.0 --all-targets --no-default-features
 Features: test-name=librust-icu-locid-transform-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-0.5+default-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-1+default-dev (>= 1.0.45), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-criterion-dev, librust-serde-1+derive-dev (>= 1.0.110), librust-serde-json-dev (>= 1.0.45), @
 Restrictions: allow-stderr
 Architecture: !riscv64

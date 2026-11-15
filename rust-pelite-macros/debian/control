@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-pelite-macros+default-dev (= ${binary:Version}),
+ librust-pelite-macrosdev (= ${binary:Version}),
  librust-pelite-macros-0-dev (= ${binary:Version}),
- librust-pelite-macros-0+default-dev (= ${binary:Version}),
+ librust-pelite-macros-dev (= ${binary:Version}),
  librust-pelite-macros-0.1-dev (= ${binary:Version}),
- librust-pelite-macros-0.1+default-dev (= ${binary:Version}),
+ librust-pelite-macros-dev (= ${binary:Version}),
  librust-pelite-macros-0.1.1-dev (= ${binary:Version}),
- librust-pelite-macros-0.1.1+default-dev (= ${binary:Version})
+ librust-pelite-macros-dev (= ${binary:Version})
 Description: Implements procedural macros for the pelite crate - Rust source code
  Source code for Debianized Rust crate "pelite-macros"

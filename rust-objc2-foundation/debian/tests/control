@@ -1,1125 +1,1125 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --all-features
 Features: test-name=rust-objc2-foundation:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features FoundationErrors
 Features: test-name=librust-objc2-foundation-dev:FoundationErrors
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features FoundationLegacySwiftCompatibility
 Features: test-name=librust-objc2-foundation-dev:FoundationLegacySwiftCompatibility
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAffineTransform
 Features: test-name=librust-objc2-foundation-dev:NSAffineTransform
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAppleEventDescriptor
 Features: test-name=librust-objc2-foundation-dev:NSAppleEventDescriptor
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAppleEventManager
 Features: test-name=librust-objc2-foundation-dev:NSAppleEventManager
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAppleScript
 Features: test-name=librust-objc2-foundation-dev:NSAppleScript
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSArchiver
 Features: test-name=librust-objc2-foundation-dev:NSArchiver
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSArray
 Features: test-name=librust-objc2-foundation-dev:NSArray
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAttributedString
 Features: test-name=librust-objc2-foundation-dev:NSAttributedString
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSAutoreleasePool
 Features: test-name=librust-objc2-foundation-dev:NSAutoreleasePool
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSBackgroundActivityScheduler
 Features: test-name=librust-objc2-foundation-dev:NSBackgroundActivityScheduler
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSBundle
 Features: test-name=librust-objc2-foundation-dev:NSBundle
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSByteCountFormatter
 Features: test-name=librust-objc2-foundation-dev:NSByteCountFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSByteOrder
 Features: test-name=librust-objc2-foundation-dev:NSByteOrder
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCache
 Features: test-name=librust-objc2-foundation-dev:NSCache
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCalendar
 Features: test-name=librust-objc2-foundation-dev:NSCalendar
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCalendarDate
 Features: test-name=librust-objc2-foundation-dev:NSCalendarDate
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCharacterSet
 Features: test-name=librust-objc2-foundation-dev:NSCharacterSet
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSClassDescription
 Features: test-name=librust-objc2-foundation-dev:NSClassDescription
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCoder
 Features: test-name=librust-objc2-foundation-dev:NSCoder
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSComparisonPredicate
 Features: test-name=librust-objc2-foundation-dev:NSComparisonPredicate
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSCompoundPredicate
 Features: test-name=librust-objc2-foundation-dev:NSCompoundPredicate
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSConnection
 Features: test-name=librust-objc2-foundation-dev:NSConnection
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSData
 Features: test-name=librust-objc2-foundation-dev:NSData
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDate
 Features: test-name=librust-objc2-foundation-dev:NSDate
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDateComponentsFormatter
 Features: test-name=librust-objc2-foundation-dev:NSDateComponentsFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDateFormatter
 Features: test-name=librust-objc2-foundation-dev:NSDateFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDateInterval
 Features: test-name=librust-objc2-foundation-dev:NSDateInterval
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDateIntervalFormatter
 Features: test-name=librust-objc2-foundation-dev:NSDateIntervalFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDebug
 Features: test-name=librust-objc2-foundation-dev:NSDebug
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDecimal
 Features: test-name=librust-objc2-foundation-dev:NSDecimal
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDecimalNumber
 Features: test-name=librust-objc2-foundation-dev:NSDecimalNumber
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDictionary
 Features: test-name=librust-objc2-foundation-dev:NSDictionary
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDistantObject
 Features: test-name=librust-objc2-foundation-dev:NSDistantObject
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDistributedLock
 Features: test-name=librust-objc2-foundation-dev:NSDistributedLock
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSDistributedNotificationCenter
 Features: test-name=librust-objc2-foundation-dev:NSDistributedNotificationCenter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSEnergyFormatter
 Features: test-name=librust-objc2-foundation-dev:NSEnergyFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSEnumerator
 Features: test-name=librust-objc2-foundation-dev:NSEnumerator
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSError
 Features: test-name=librust-objc2-foundation-dev:NSError
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSException
 Features: test-name=librust-objc2-foundation-dev:NSException
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSExpression
 Features: test-name=librust-objc2-foundation-dev:NSExpression
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSExtensionContext
 Features: test-name=librust-objc2-foundation-dev:NSExtensionContext
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSExtensionItem
 Features: test-name=librust-objc2-foundation-dev:NSExtensionItem
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSExtensionRequestHandling
 Features: test-name=librust-objc2-foundation-dev:NSExtensionRequestHandling
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFileCoordinator
 Features: test-name=librust-objc2-foundation-dev:NSFileCoordinator
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFileHandle
 Features: test-name=librust-objc2-foundation-dev:NSFileHandle
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFileManager
 Features: test-name=librust-objc2-foundation-dev:NSFileManager
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFilePresenter
 Features: test-name=librust-objc2-foundation-dev:NSFilePresenter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFileVersion
 Features: test-name=librust-objc2-foundation-dev:NSFileVersion
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFileWrapper
 Features: test-name=librust-objc2-foundation-dev:NSFileWrapper
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSFormatter
 Features: test-name=librust-objc2-foundation-dev:NSFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSGarbageCollector
 Features: test-name=librust-objc2-foundation-dev:NSGarbageCollector
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSGeometry
 Features: test-name=librust-objc2-foundation-dev:NSGeometry
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSHFSFileTypes
 Features: test-name=librust-objc2-foundation-dev:NSHFSFileTypes
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSHTTPCookie
 Features: test-name=librust-objc2-foundation-dev:NSHTTPCookie
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSHTTPCookieStorage
 Features: test-name=librust-objc2-foundation-dev:NSHTTPCookieStorage
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSHashTable
 Features: test-name=librust-objc2-foundation-dev:NSHashTable
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSHost
 Features: test-name=librust-objc2-foundation-dev:NSHost
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSISO8601DateFormatter
 Features: test-name=librust-objc2-foundation-dev:NSISO8601DateFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSIndexPath
 Features: test-name=librust-objc2-foundation-dev:NSIndexPath
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSIndexSet
 Features: test-name=librust-objc2-foundation-dev:NSIndexSet
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSInflectionRule
 Features: test-name=librust-objc2-foundation-dev:NSInflectionRule
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSInvocation
 Features: test-name=librust-objc2-foundation-dev:NSInvocation
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSItemProvider
 Features: test-name=librust-objc2-foundation-dev:NSItemProvider
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSJSONSerialization
 Features: test-name=librust-objc2-foundation-dev:NSJSONSerialization
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSKeyValueCoding
 Features: test-name=librust-objc2-foundation-dev:NSKeyValueCoding
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSKeyValueObserving
 Features: test-name=librust-objc2-foundation-dev:NSKeyValueObserving
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSKeyValueSharedObservers
 Features: test-name=librust-objc2-foundation-dev:NSKeyValueSharedObservers
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSKeyedArchiver
 Features: test-name=librust-objc2-foundation-dev:NSKeyedArchiver
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSLengthFormatter
 Features: test-name=librust-objc2-foundation-dev:NSLengthFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSLinguisticTagger
 Features: test-name=librust-objc2-foundation-dev:NSLinguisticTagger
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSListFormatter
 Features: test-name=librust-objc2-foundation-dev:NSListFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSLocale
 Features: test-name=librust-objc2-foundation-dev:NSLocale
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSLocalizedNumberFormatRule
 Features: test-name=librust-objc2-foundation-dev:NSLocalizedNumberFormatRule
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSLock
 Features: test-name=librust-objc2-foundation-dev:NSLock
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMapTable
 Features: test-name=librust-objc2-foundation-dev:NSMapTable
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMassFormatter
 Features: test-name=librust-objc2-foundation-dev:NSMassFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMeasurement
 Features: test-name=librust-objc2-foundation-dev:NSMeasurement
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMeasurementFormatter
 Features: test-name=librust-objc2-foundation-dev:NSMeasurementFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMetadata
 Features: test-name=librust-objc2-foundation-dev:NSMetadata
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMetadataAttributes
 Features: test-name=librust-objc2-foundation-dev:NSMetadataAttributes
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMethodSignature
 Features: test-name=librust-objc2-foundation-dev:NSMethodSignature
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSMorphology
 Features: test-name=librust-objc2-foundation-dev:NSMorphology
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSNetServices
 Features: test-name=librust-objc2-foundation-dev:NSNetServices
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSNotification
 Features: test-name=librust-objc2-foundation-dev:NSNotification
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSNotificationQueue
 Features: test-name=librust-objc2-foundation-dev:NSNotificationQueue
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSNull
 Features: test-name=librust-objc2-foundation-dev:NSNull
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSNumberFormatter
 Features: test-name=librust-objc2-foundation-dev:NSNumberFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSObjCRuntime
 Features: test-name=librust-objc2-foundation-dev:NSObjCRuntime
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSObject
 Features: test-name=librust-objc2-foundation-dev:NSObject
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSObjectScripting
 Features: test-name=librust-objc2-foundation-dev:NSObjectScripting
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSOperation
 Features: test-name=librust-objc2-foundation-dev:NSOperation
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSOrderedCollectionChange
 Features: test-name=librust-objc2-foundation-dev:NSOrderedCollectionChange
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSOrderedCollectionDifference
 Features: test-name=librust-objc2-foundation-dev:NSOrderedCollectionDifference
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSOrderedSet
 Features: test-name=librust-objc2-foundation-dev:NSOrderedSet
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSOrthography
 Features: test-name=librust-objc2-foundation-dev:NSOrthography
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPathUtilities
 Features: test-name=librust-objc2-foundation-dev:NSPathUtilities
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPersonNameComponents
 Features: test-name=librust-objc2-foundation-dev:NSPersonNameComponents
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPersonNameComponentsFormatter
 Features: test-name=librust-objc2-foundation-dev:NSPersonNameComponentsFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPointerArray
 Features: test-name=librust-objc2-foundation-dev:NSPointerArray
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPointerFunctions
 Features: test-name=librust-objc2-foundation-dev:NSPointerFunctions
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPort
 Features: test-name=librust-objc2-foundation-dev:NSPort
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPortCoder
 Features: test-name=librust-objc2-foundation-dev:NSPortCoder
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPortMessage
 Features: test-name=librust-objc2-foundation-dev:NSPortMessage
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPortNameServer
 Features: test-name=librust-objc2-foundation-dev:NSPortNameServer
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPredicate
 Features: test-name=librust-objc2-foundation-dev:NSPredicate
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSProcessInfo
 Features: test-name=librust-objc2-foundation-dev:NSProcessInfo
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSProgress
 Features: test-name=librust-objc2-foundation-dev:NSProgress
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSPropertyList
 Features: test-name=librust-objc2-foundation-dev:NSPropertyList
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSProtocolChecker
 Features: test-name=librust-objc2-foundation-dev:NSProtocolChecker
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSProxy
 Features: test-name=librust-objc2-foundation-dev:NSProxy
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSRange
 Features: test-name=librust-objc2-foundation-dev:NSRange
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSRegularExpression
 Features: test-name=librust-objc2-foundation-dev:NSRegularExpression
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSRelativeDateTimeFormatter
 Features: test-name=librust-objc2-foundation-dev:NSRelativeDateTimeFormatter
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSRunLoop
 Features: test-name=librust-objc2-foundation-dev:NSRunLoop
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScanner
 Features: test-name=librust-objc2-foundation-dev:NSScanner
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptClassDescription
 Features: test-name=librust-objc2-foundation-dev:NSScriptClassDescription
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptCoercionHandler
 Features: test-name=librust-objc2-foundation-dev:NSScriptCoercionHandler
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptCommand
 Features: test-name=librust-objc2-foundation-dev:NSScriptCommand
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptCommandDescription
 Features: test-name=librust-objc2-foundation-dev:NSScriptCommandDescription
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptExecutionContext
 Features: test-name=librust-objc2-foundation-dev:NSScriptExecutionContext
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptKeyValueCoding
 Features: test-name=librust-objc2-foundation-dev:NSScriptKeyValueCoding
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptObjectSpecifiers
 Features: test-name=librust-objc2-foundation-dev:NSScriptObjectSpecifiers
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptStandardSuiteCommands
 Features: test-name=librust-objc2-foundation-dev:NSScriptStandardSuiteCommands
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptSuiteRegistry
 Features: test-name=librust-objc2-foundation-dev:NSScriptSuiteRegistry
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSScriptWhoseTests
 Features: test-name=librust-objc2-foundation-dev:NSScriptWhoseTests
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSSet
 Features: test-name=librust-objc2-foundation-dev:NSSet
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSSortDescriptor
 Features: test-name=librust-objc2-foundation-dev:NSSortDescriptor
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSSpellServer
 Features: test-name=librust-objc2-foundation-dev:NSSpellServer
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSStream
 Features: test-name=librust-objc2-foundation-dev:NSStream
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSString
 Features: test-name=librust-objc2-foundation-dev:NSString
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSTask
 Features: test-name=librust-objc2-foundation-dev:NSTask
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSTermOfAddress
 Features: test-name=librust-objc2-foundation-dev:NSTermOfAddress
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSTextCheckingResult
 Features: test-name=librust-objc2-foundation-dev:NSTextCheckingResult
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSThread
 Features: test-name=librust-objc2-foundation-dev:NSThread
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSTimeZone
 Features: test-name=librust-objc2-foundation-dev:NSTimeZone
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSTimer
 Features: test-name=librust-objc2-foundation-dev:NSTimer
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURL
 Features: test-name=librust-objc2-foundation-dev:NSURL
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLAuthenticationChallenge
 Features: test-name=librust-objc2-foundation-dev:NSURLAuthenticationChallenge
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLCache
 Features: test-name=librust-objc2-foundation-dev:NSURLCache
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLConnection
 Features: test-name=librust-objc2-foundation-dev:NSURLConnection
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLCredential
 Features: test-name=librust-objc2-foundation-dev:NSURLCredential
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLCredentialStorage
 Features: test-name=librust-objc2-foundation-dev:NSURLCredentialStorage
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLDownload
 Features: test-name=librust-objc2-foundation-dev:NSURLDownload
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLError
 Features: test-name=librust-objc2-foundation-dev:NSURLError
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLHandle
 Features: test-name=librust-objc2-foundation-dev:NSURLHandle
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLProtectionSpace
 Features: test-name=librust-objc2-foundation-dev:NSURLProtectionSpace
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLProtocol
 Features: test-name=librust-objc2-foundation-dev:NSURLProtocol
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLRequest
 Features: test-name=librust-objc2-foundation-dev:NSURLRequest
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLResponse
 Features: test-name=librust-objc2-foundation-dev:NSURLResponse
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSURLSession
 Features: test-name=librust-objc2-foundation-dev:NSURLSession
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUUID
 Features: test-name=librust-objc2-foundation-dev:NSUUID
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUbiquitousKeyValueStore
 Features: test-name=librust-objc2-foundation-dev:NSUbiquitousKeyValueStore
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUndoManager
 Features: test-name=librust-objc2-foundation-dev:NSUndoManager
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUnit
 Features: test-name=librust-objc2-foundation-dev:NSUnit
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUserActivity
 Features: test-name=librust-objc2-foundation-dev:NSUserActivity
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUserDefaults
 Features: test-name=librust-objc2-foundation-dev:NSUserDefaults
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUserNotification
 Features: test-name=librust-objc2-foundation-dev:NSUserNotification
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSUserScriptTask
 Features: test-name=librust-objc2-foundation-dev:NSUserScriptTask
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSValue
 Features: test-name=librust-objc2-foundation-dev:NSValue
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSValueTransformer
 Features: test-name=librust-objc2-foundation-dev:NSValueTransformer
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLDTD
 Features: test-name=librust-objc2-foundation-dev:NSXMLDTD
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLDTDNode
 Features: test-name=librust-objc2-foundation-dev:NSXMLDTDNode
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLDocument
 Features: test-name=librust-objc2-foundation-dev:NSXMLDocument
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLElement
 Features: test-name=librust-objc2-foundation-dev:NSXMLElement
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLNode
 Features: test-name=librust-objc2-foundation-dev:NSXMLNode
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLNodeOptions
 Features: test-name=librust-objc2-foundation-dev:NSXMLNodeOptions
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXMLParser
 Features: test-name=librust-objc2-foundation-dev:NSXMLParser
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSXPCConnection
 Features: test-name=librust-objc2-foundation-dev:NSXPCConnection
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features NSZone
 Features: test-name=librust-objc2-foundation-dev:NSZone
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features alloc
 Features: test-name=librust-objc2-foundation-dev:alloc
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features bitflags
 Features: test-name=librust-objc2-foundation-dev:bitflags
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features block2
 Features: test-name=librust-objc2-foundation-dev:block2
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets
 Features: test-name=librust-objc2-foundation-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features gnustep-1-7
 Features: test-name=librust-objc2-foundation-dev:gnustep-1-7
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features gnustep-1-8
 Features: test-name=librust-objc2-foundation-dev:gnustep-1-8
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features gnustep-1-9
 Features: test-name=librust-objc2-foundation-dev:gnustep-1-9
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features gnustep-2-0
 Features: test-name=librust-objc2-foundation-dev:gnustep-2-0
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features gnustep-2-1
 Features: test-name=librust-objc2-foundation-dev:gnustep-2-1
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features libc
 Features: test-name=librust-objc2-foundation-dev:libc
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features objc2-core-foundation
 Features: test-name=librust-objc2-foundation-dev:objc2-core-foundation
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features objc2-core-services
 Features: test-name=librust-objc2-foundation-dev:objc2-core-services
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features std
 Features: test-name=librust-objc2-foundation-dev:std
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features unstable-darwin-objc
 Features: test-name=librust-objc2-foundation-dev:unstable-darwin-objc
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features unstable-mutation-return-null
 Features: test-name=librust-objc2-foundation-dev:unstable-mutation-return-null
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features --features unstable-static-nsstring
 Features: test-name=librust-objc2-foundation-dev:unstable-static-nsstring
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-foundation 0.3.2 --all-targets --no-default-features
 Features: test-name=librust-objc2-foundation-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-objc2-core-foundation-0.3+cfstring-dev (>= 0.3.2), librust-static-assertions-dev (>= 1.1.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

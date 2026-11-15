@@ -5,10 +5,10 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-proc-macro-crate-3+default-dev <!nocheck>,
- librust-proc-macro2-1+default-dev (>= 1.0.69) <!nocheck>,
- librust-quote-1+default-dev (>= 1.0.33) <!nocheck>,
- librust-syn-2+default-dev (>= 2.0.38) <!nocheck>,
+ librust-proc-macro-crate-dev <!nocheck>,
+ librust-proc-macro2-dev (>= 1.0.69) <!nocheck>,
+ librust-quote-dev (>= 1.0.33) <!nocheck>,
+ librust-syn-dev (>= 2.0.38) <!nocheck>,
  librust-syn-2+full-dev (>= 2.0.38) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -23,18 +23,18 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-proc-macro-crate-3+default-dev,
- librust-proc-macro2-1+default-dev (>= 1.0.69),
- librust-quote-1+default-dev (>= 1.0.33),
- librust-syn-2+default-dev (>= 2.0.38),
+ librust-proc-macro-crate-dev,
+ librust-proc-macro2-dev (>= 1.0.69),
+ librust-quote-dev (>= 1.0.33),
+ librust-syn-dev (>= 2.0.38),
  librust-syn-2+full-dev (>= 2.0.38)
 Provides:
- librust-compio-macros+default-dev (= ${binary:Version}),
+ librust-compio-macrosdev (= ${binary:Version}),
  librust-compio-macros-0-dev (= ${binary:Version}),
- librust-compio-macros-0+default-dev (= ${binary:Version}),
+ librust-compio-macros-dev (= ${binary:Version}),
  librust-compio-macros-0.1-dev (= ${binary:Version}),
- librust-compio-macros-0.1+default-dev (= ${binary:Version}),
+ librust-compio-macros-dev (= ${binary:Version}),
  librust-compio-macros-0.1.2-dev (= ${binary:Version}),
- librust-compio-macros-0.1.2+default-dev (= ${binary:Version})
+ librust-compio-macros-dev (= ${binary:Version})
 Description: Proc macro of compio - Rust source code
  Source code for Debianized Rust crate "compio-macros"

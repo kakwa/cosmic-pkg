@@ -5,10 +5,10 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-lazy-static-1+default-dev (>= 1.4) <!nocheck>,
- librust-proc-macro2-1+default-dev <!nocheck>,
- librust-quote-1+default-dev <!nocheck>,
- librust-syn-1+default-dev <!nocheck>,
+ librust-lazy-static-dev (>= 1.4) <!nocheck>,
+ librust-proc-macro2-dev <!nocheck>,
+ librust-quote-dev <!nocheck>,
+ librust-syn-dev <!nocheck>,
  librust-syn-1+full-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -23,22 +23,22 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-lazy-static-1+default-dev (>= 1.4),
- librust-proc-macro2-1+default-dev,
- librust-quote-1+default-dev,
- librust-syn-1+default-dev,
+ librust-lazy-static-dev (>= 1.4),
+ librust-proc-macro2-dev,
+ librust-quote-dev,
+ librust-syn-dev,
  librust-syn-1+full-dev
 Provides:
- librust-memoize-inner+default-dev (= ${binary:Version}),
+ librust-memoize-innerdev (= ${binary:Version}),
  librust-memoize-inner+full-dev (= ${binary:Version}),
  librust-memoize-inner-0-dev (= ${binary:Version}),
- librust-memoize-inner-0+default-dev (= ${binary:Version}),
+ librust-memoize-inner-dev (= ${binary:Version}),
  librust-memoize-inner-0+full-dev (= ${binary:Version}),
  librust-memoize-inner-0.5-dev (= ${binary:Version}),
- librust-memoize-inner-0.5+default-dev (= ${binary:Version}),
+ librust-memoize-inner-dev (= ${binary:Version}),
  librust-memoize-inner-0.5+full-dev (= ${binary:Version}),
  librust-memoize-inner-0.5.1-dev (= ${binary:Version}),
- librust-memoize-inner-0.5.1+default-dev (= ${binary:Version}),
+ librust-memoize-inner-dev (= ${binary:Version}),
  librust-memoize-inner-0.5.1+full-dev (= ${binary:Version})
 Description: Helper crate for memoize - Rust source code
  Source code for Debianized Rust crate "memoize-inner"

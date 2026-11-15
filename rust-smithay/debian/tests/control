@@ -1,327 +1,327 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --all-features
 Features: test-name=rust-smithay:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features aliasable
 Features: test-name=librust-smithay-dev:aliasable
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features ash
 Features: test-name=librust-smithay-dev:ash
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_drm
 Features: test-name=librust-smithay-dev:backend_drm
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_egl
 Features: test-name=librust-smithay-dev:backend_egl
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_gbm
 Features: test-name=librust-smithay-dev:backend_gbm
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_gbm_has_create_with_modifiers2
 Features: test-name=librust-smithay-dev:backend_gbm_has_create_with_modifiers2
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_gbm_has_fd_for_plane
 Features: test-name=librust-smithay-dev:backend_gbm_has_fd_for_plane
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_libinput
 Features: test-name=librust-smithay-dev:backend_libinput
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_session
 Features: test-name=librust-smithay-dev:backend_session
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_session_libseat
 Features: test-name=librust-smithay-dev:backend_session_libseat
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_udev
 Features: test-name=librust-smithay-dev:backend_udev
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_vulkan
 Features: test-name=librust-smithay-dev:backend_vulkan
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_winit
 Features: test-name=librust-smithay-dev:backend_winit
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features backend_x11
 Features: test-name=librust-smithay-dev:backend_x11
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features cc
 Features: test-name=librust-smithay-dev:cc
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets
 Features: test-name=librust-smithay-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features desktop
 Features: test-name=librust-smithay-dev:desktop
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features drm
 Features: test-name=librust-smithay-dev:drm
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features drm-ffi
 Features: test-name=librust-smithay-dev:drm-ffi
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features encoding_rs
 Features: test-name=librust-smithay-dev:encoding_rs
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features gbm
 Features: test-name=librust-smithay-dev:gbm
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features gl_generator
 Features: test-name=librust-smithay-dev:gl_generator
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features glow
 Features: test-name=librust-smithay-dev:glow
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features input
 Features: test-name=librust-smithay-dev:input
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features libloading
 Features: test-name=librust-smithay-dev:libloading
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features libseat
 Features: test-name=librust-smithay-dev:libseat
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features pixman
 Features: test-name=librust-smithay-dev:pixman
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features pkg-config
 Features: test-name=librust-smithay-dev:pkg-config
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features renderer_gl
 Features: test-name=librust-smithay-dev:renderer_gl
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features renderer_glow
 Features: test-name=librust-smithay-dev:renderer_glow
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features renderer_multi
 Features: test-name=librust-smithay-dev:renderer_multi
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features renderer_pixman
 Features: test-name=librust-smithay-dev:renderer_pixman
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features renderer_test
 Features: test-name=librust-smithay-dev:renderer_test
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features scopeguard
 Features: test-name=librust-smithay-dev:scopeguard
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features tempfile
 Features: test-name=librust-smithay-dev:tempfile
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --features test_all_features
 Features: test-name=librust-smithay-dev:test_all_features
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features udev
 Features: test-name=librust-smithay-dev:udev
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features use_bindgen
 Features: test-name=librust-smithay-dev:use_bindgen
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features use_system_lib
 Features: test-name=librust-smithay-dev:use_system_lib
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-backend
 Features: test-name=librust-smithay-dev:wayland-backend
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-client
 Features: test-name=librust-smithay-dev:wayland-client
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-cursor
 Features: test-name=librust-smithay-dev:wayland-cursor
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-egl
 Features: test-name=librust-smithay-dev:wayland-egl
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-protocols
 Features: test-name=librust-smithay-dev:wayland-protocols
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-protocols-misc
 Features: test-name=librust-smithay-dev:wayland-protocols-misc
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-protocols-wlr
 Features: test-name=librust-smithay-dev:wayland-protocols-wlr
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-server
 Features: test-name=librust-smithay-dev:wayland-server
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland-sys
 Features: test-name=librust-smithay-dev:wayland-sys
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features wayland_frontend
 Features: test-name=librust-smithay-dev:wayland_frontend
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features winit
 Features: test-name=librust-smithay-dev:winit
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features x11rb
 Features: test-name=librust-smithay-dev:x11rb
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features x11rb_event_source
 Features: test-name=librust-smithay-dev:x11rb_event_source
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features --features xwayland
 Features: test-name=librust-smithay-dev:xwayland
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay 0.7.0 --all-targets --no-default-features
 Features: test-name=librust-smithay-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-criterion-0.5+default-dev, librust-image-0.25+default-dev, librust-tracing-subscriber-0.3+default-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.80.1), librust-clap-dev, librust-clap-4+derive-dev, librust-criterion-dev, librust-image-dev, librust-tracing-subscriber-dev (>= 0.3.16), librust-tracing-subscriber-0.3+env-filter-dev (>= 0.3.16), @
 Restrictions: allow-stderr
 Architecture: !riscv64

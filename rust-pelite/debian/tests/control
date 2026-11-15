@@ -1,81 +1,81 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --all-features
 Features: test-name=rust-pelite:@
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features data-encoding
 Features: test-name=librust-pelite-dev:data-encoding
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets
 Features: test-name=librust-pelite-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features derive_pod
 Features: test-name=librust-pelite-dev:derive_pod
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features hashbrown
 Features: test-name=librust-pelite-dev:hashbrown
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features libc
 Features: test-name=librust-pelite-dev:libc
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features mmap
 Features: test-name=librust-pelite-dev:mmap
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features resources_nostd
 Features: test-name=librust-pelite-dev:resources_nostd
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features serde
 Features: test-name=librust-pelite-dev:serde
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features std
 Features: test-name=librust-pelite-dev:std
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features unsafe_alignment
 Features: test-name=librust-pelite-dev:unsafe_alignment
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features unstable
 Features: test-name=librust-pelite-dev:unstable
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features --features winapi
 Features: test-name=librust-pelite-dev:winapi
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pelite 0.10.0 --all-targets --no-default-features
 Features: test-name=librust-pelite-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-format-xml-0.2+default-dev, librust-lde-0.3+default-dev, librust-rand-0.5+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-format-xml-dev, librust-lde-dev, librust-rand-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

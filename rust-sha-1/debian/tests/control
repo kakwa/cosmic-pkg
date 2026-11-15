@@ -1,51 +1,51 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --all-features
 Features: test-name=rust-sha-1:@
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features asm
 Features: test-name=librust-sha-1-dev:asm
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features asm-aarch64
 Features: test-name=librust-sha-1-dev:asm-aarch64
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features compress
 Features: test-name=librust-sha-1-dev:compress
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets
 Features: test-name=librust-sha-1-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features force-soft
 Features: test-name=librust-sha-1-dev:force-soft
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features sha1-asm
 Features: test-name=librust-sha-1-dev:sha1-asm
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features --features std
 Features: test-name=librust-sha-1-dev:std
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test sha-1 0.9.8 --all-targets --no-default-features
 Features: test-name=librust-sha-1-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-digest-0.9+default-dev, librust-digest-0.9+dev-dev, librust-hex-literal-0.2+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-digest-dev, librust-digest-0.9+dev-dev, librust-hex-literal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

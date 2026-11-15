@@ -5,8 +5,8 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.81) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-backtrace-0.3+default-dev (>= 0.3.57) <!nocheck>,
- librust-termcolor-1+default-dev (>= 1.1.2) <!nocheck>
+ librust-backtrace-dev (>= 0.3.57) <!nocheck>,
+ librust-termcolor-dev (>= 1.1.2) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/color-backtrace]
@@ -20,27 +20,27 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-backtrace-0.3+default-dev (>= 0.3.57),
- librust-btparse-0.2+default-dev,
- librust-regex-1+default-dev (>= 1.4.6),
- librust-termcolor-1+default-dev (>= 1.1.2)
+ librust-backtrace-dev (>= 0.3.57),
+ librust-btparse-dev,
+ librust-regex-dev (>= 1.4.6),
+ librust-termcolor-dev (>= 1.1.2)
 Provides:
- librust-color-backtrace+default-dev (= ${binary:Version}),
+ librust-color-backtracedev (= ${binary:Version}),
  librust-color-backtrace+resolve-modules-dev (= ${binary:Version}),
  librust-color-backtrace+use-backtrace-crate-dev (= ${binary:Version}),
  librust-color-backtrace+use-btparse-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0-dev (= ${binary:Version}),
- librust-color-backtrace-0+default-dev (= ${binary:Version}),
+ librust-color-backtrace-dev (= ${binary:Version}),
  librust-color-backtrace-0+resolve-modules-dev (= ${binary:Version}),
  librust-color-backtrace-0+use-backtrace-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0+use-btparse-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0.7-dev (= ${binary:Version}),
- librust-color-backtrace-0.7+default-dev (= ${binary:Version}),
+ librust-color-backtrace-dev (= ${binary:Version}),
  librust-color-backtrace-0.7+resolve-modules-dev (= ${binary:Version}),
  librust-color-backtrace-0.7+use-backtrace-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0.7+use-btparse-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0.7.4-dev (= ${binary:Version}),
- librust-color-backtrace-0.7.4+default-dev (= ${binary:Version}),
+ librust-color-backtrace-dev (= ${binary:Version}),
  librust-color-backtrace-0.7.4+resolve-modules-dev (= ${binary:Version}),
  librust-color-backtrace-0.7.4+use-backtrace-crate-dev (= ${binary:Version}),
  librust-color-backtrace-0.7.4+use-btparse-crate-dev (= ${binary:Version})

@@ -1,111 +1,111 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --all-features
 Features: test-name=rust-zbus-systemd:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets
 Features: test-name=librust-zbus-systemd-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features home1
 Features: test-name=librust-zbus-systemd-dev:home1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features hostname1
 Features: test-name=librust-zbus-systemd-dev:hostname1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features import1
 Features: test-name=librust-zbus-systemd-dev:import1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features locale1
 Features: test-name=librust-zbus-systemd-dev:locale1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features login1
 Features: test-name=librust-zbus-systemd-dev:login1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features machine1
 Features: test-name=librust-zbus-systemd-dev:machine1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features network1
 Features: test-name=librust-zbus-systemd-dev:network1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features oom1
 Features: test-name=librust-zbus-systemd-dev:oom1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features portable1
 Features: test-name=librust-zbus-systemd-dev:portable1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features resolve1
 Features: test-name=librust-zbus-systemd-dev:resolve1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features systemd1
 Features: test-name=librust-zbus-systemd-dev:systemd1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features sysupdate1
 Features: test-name=librust-zbus-systemd-dev:sysupdate1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features timedate1
 Features: test-name=librust-zbus-systemd-dev:timedate1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features timesync1
 Features: test-name=librust-zbus-systemd-dev:timesync1
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features zbus-async-smol
 Features: test-name=librust-zbus-systemd-dev:zbus-async-smol
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features --features zbus-async-tokio
 Features: test-name=librust-zbus-systemd-dev:zbus-async-tokio
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zbus_systemd 0.26000.0 --all-targets --no-default-features
 Features: test-name=librust-zbus-systemd-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.87.0), librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

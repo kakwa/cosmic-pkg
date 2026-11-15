@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-iced-graphics-0.14+default-dev <!nocheck>,
- librust-log-0.4+default-dev <!nocheck>,
- librust-thiserror-2+default-dev <!nocheck>
+ librust-iced-graphics-dev <!nocheck>,
+ librust-log-dev <!nocheck>,
+ librust-thiserror-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-renderer]
@@ -21,7 +21,7 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-iced-graphics-0.14+default-dev,
+ librust-iced-graphics-dev,
  librust-iced-graphics-0.14+fira-sans-dev,
  librust-iced-graphics-0.14+geometry-dev,
  librust-iced-tiny-skia-0.14+geometry-dev,
@@ -30,7 +30,7 @@ Depends:
  librust-iced-tiny-skia-0.14+wayland-dev,
  librust-iced-tiny-skia-0.14+x11-dev,
  librust-iced-tiny-skia-0.14-dev,
- librust-iced-wgpu-0.14+default-dev,
+ librust-iced-wgpu-dev,
  librust-iced-wgpu-0.14+geometry-dev,
  librust-iced-wgpu-0.14+image-dev,
  librust-iced-wgpu-0.14+strict-assertions-dev,
@@ -38,10 +38,10 @@ Depends:
  librust-iced-wgpu-0.14+web-colors-dev,
  librust-iced-wgpu-0.14+webgl-dev,
  librust-iced-wgpu-0.14-dev,
- librust-log-0.4+default-dev,
- librust-thiserror-2+default-dev
+ librust-log-dev,
+ librust-thiserror-dev
 Provides:
- librust-iced-renderer+default-dev (= ${binary:Version}),
+ librust-iced-rendererdev (= ${binary:Version}),
  librust-iced-renderer+fira-sans-dev (= ${binary:Version}),
  librust-iced-renderer+geometry-dev (= ${binary:Version}),
  librust-iced-renderer+iced-tiny-skia-dev (= ${binary:Version}),
@@ -57,7 +57,7 @@ Provides:
  librust-iced-renderer+wgpu-bare-dev (= ${binary:Version}),
  librust-iced-renderer+x11-dev (= ${binary:Version}),
  librust-iced-renderer-0-dev (= ${binary:Version}),
- librust-iced-renderer-0+default-dev (= ${binary:Version}),
+ librust-iced-renderer-dev (= ${binary:Version}),
  librust-iced-renderer-0+fira-sans-dev (= ${binary:Version}),
  librust-iced-renderer-0+geometry-dev (= ${binary:Version}),
  librust-iced-renderer-0+iced-tiny-skia-dev (= ${binary:Version}),
@@ -73,7 +73,7 @@ Provides:
  librust-iced-renderer-0+wgpu-bare-dev (= ${binary:Version}),
  librust-iced-renderer-0+x11-dev (= ${binary:Version}),
  librust-iced-renderer-0.14-dev (= ${binary:Version}),
- librust-iced-renderer-0.14+default-dev (= ${binary:Version}),
+ librust-iced-renderer-dev (= ${binary:Version}),
  librust-iced-renderer-0.14+fira-sans-dev (= ${binary:Version}),
  librust-iced-renderer-0.14+geometry-dev (= ${binary:Version}),
  librust-iced-renderer-0.14+iced-tiny-skia-dev (= ${binary:Version}),
@@ -89,7 +89,7 @@ Provides:
  librust-iced-renderer-0.14+wgpu-bare-dev (= ${binary:Version}),
  librust-iced-renderer-0.14+x11-dev (= ${binary:Version}),
  librust-iced-renderer-0.14.0-dev (= ${binary:Version}),
- librust-iced-renderer-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-renderer-dev (= ${binary:Version}),
  librust-iced-renderer-0.14.0+fira-sans-dev (= ${binary:Version}),
  librust-iced-renderer-0.14.0+geometry-dev (= ${binary:Version}),
  librust-iced-renderer-0.14.0+iced-tiny-skia-dev (= ${binary:Version}),

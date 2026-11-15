@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-crabtime-internal-1+default-dev (>= 1.1.4) <!nocheck>
+ librust-crabtime-internal-dev (>= 1.1.4) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/crabtime]
@@ -21,18 +21,18 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-crabtime-internal-1+default-dev (>= 1.1.4)
+ librust-crabtime-internal-dev (>= 1.1.4)
 Provides:
- librust-crabtime+default-dev (= ${binary:Version}),
+ librust-crabtimedev (= ${binary:Version}),
  librust-crabtime+std-dev (= ${binary:Version}),
  librust-crabtime-1-dev (= ${binary:Version}),
- librust-crabtime-1+default-dev (= ${binary:Version}),
+ librust-crabtime-dev (= ${binary:Version}),
  librust-crabtime-1+std-dev (= ${binary:Version}),
  librust-crabtime-1.1-dev (= ${binary:Version}),
- librust-crabtime-1.1+default-dev (= ${binary:Version}),
+ librust-crabtime-dev (= ${binary:Version}),
  librust-crabtime-1.1+std-dev (= ${binary:Version}),
  librust-crabtime-1.1.4-dev (= ${binary:Version}),
- librust-crabtime-1.1.4+default-dev (= ${binary:Version}),
+ librust-crabtime-dev (= ${binary:Version}),
  librust-crabtime-1.1.4+std-dev (= ${binary:Version})
 Description: Powerful yet easy-to-use Rust macro that generates code by evaluating inline Rust logic at compile time - Rust source code
  Source code for Debianized Rust crate "crabtime"

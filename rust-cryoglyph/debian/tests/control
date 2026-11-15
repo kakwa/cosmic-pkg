@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cryoglyph 0.1.0 --all-targets --all-features
 Features: test-name=rust-cryoglyph:@
-Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-0.4+default-dev, librust-winit-0.30+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-dev, librust-winit-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cryoglyph 0.1.0 --all-targets
 Features: test-name=librust-cryoglyph-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-0.4+default-dev, librust-winit-0.30+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-dev, librust-winit-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test cryoglyph 0.1.0 --all-targets --no-default-features
 Features: test-name=librust-cryoglyph-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-0.4+default-dev, librust-winit-0.30+default-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-criterion-dev, librust-criterion-0.5+html-reports-dev, librust-pollster-dev, librust-winit-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

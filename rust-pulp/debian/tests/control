@@ -1,51 +1,51 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --all-features
 Features: test-name=rust-pulp:@
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets
 Features: test-name=librust-pulp-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features macro
 Features: test-name=librust-pulp-dev:macro
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features nightly
 Features: test-name=librust-pulp-dev:nightly
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features relaxed-simd
 Features: test-name=librust-pulp-dev:relaxed-simd
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features std
 Features: test-name=librust-pulp-dev:std
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features x86-v3
 Features: test-name=librust-pulp-dev:x86-v3
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features --features x86-v4
 Features: test-name=librust-pulp-dev:x86-v4
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test pulp 0.22.3 --all-targets --no-default-features
 Features: test-name=librust-pulp-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-0.6+default-dev, librust-assert-approx-eq-1+default-dev (>= 1.1.0), librust-criterion-0.5+default-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-0.8+default-dev (>= 0.8.5), @
+Depends: dh-cargo (>= 33~), rustc, librust-aligned-vec-dev, librust-assert-approx-eq-dev (>= 1.1.0), librust-criterion-dev, librust-diol-0.8-dev (>= 0.8.3), librust-rand-dev (>= 0.8.5), @
 Restrictions: allow-stderr
 Architecture: !riscv64

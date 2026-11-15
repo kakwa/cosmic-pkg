@@ -1,57 +1,57 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --all-features
 Features: test-name=rust-compio-runtime:@
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features criterion
 Features: test-name=librust-compio-runtime-dev:criterion
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features current_thread_id
 Features: test-name=librust-compio-runtime-dev:current_thread_id
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets
 Features: test-name=librust-compio-runtime-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features event
 Features: test-name=librust-compio-runtime-dev:event
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features future-combinator
 Features: test-name=librust-compio-runtime-dev:future-combinator
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features nightly
 Features: test-name=librust-compio-runtime-dev:nightly
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features notify-always
 Features: test-name=librust-compio-runtime-dev:notify-always
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features --features time
 Features: test-name=librust-compio-runtime-dev:time
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-runtime 0.11.0 --all-targets --no-default-features
 Features: test-name=librust-compio-runtime-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-block2-0.6+default-dev, librust-core-foundation-0.10+default-dev, librust-windows-sys-0.61+default-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-block2-dev, librust-core-foundation-dev, librust-windows-sys-dev, librust-windows-sys-0.61+win32-ui-windowsandmessaging-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

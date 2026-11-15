@@ -1,69 +1,69 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --all-features
 Features: test-name=rust-static-init:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features bench_nightly
 Features: test-name=librust-static-init-dev:bench_nightly
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features debug_order
 Features: test-name=librust-static-init-dev:debug_order
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets
 Features: test-name=librust-static-init-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features lock_statistics
 Features: test-name=librust-static-init-dev:lock_statistics
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features parking_lot
 Features: test-name=librust-static-init-dev:parking_lot
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features parking_lot_core
 Features: test-name=librust-static-init-dev:parking_lot_core
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features spin_loop
 Features: test-name=librust-static-init-dev:spin_loop
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features test_no_global_lazy_hint
 Features: test-name=librust-static-init-dev:test_no_global_lazy_hint
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features test_pthread_support
 Features: test-name=librust-static-init-dev:test_pthread_support
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features --features thread_local
 Features: test-name=librust-static-init-dev:thread_local
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test static_init 1.0.4 --all-targets --no-default-features
 Features: test-name=librust-static-init-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-0.6+default-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-0.8+default-dev, librust-ctor-0.2+default-dev, librust-double-checked-cell-2+default-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-parking-lot-0.12+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.82), librust-criterion-dev, librust-criterion-0.6+html-reports-dev, librust-crossbeam-dev, librust-ctor-dev, librust-double-checked-cell-dev (>= 2.1), librust-double-checked-cell-2+parking-lot-mutex-dev (>= 2.1), librust-lazy-static-dev, librust-libc-dev, librust-parking-lot-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

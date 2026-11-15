@@ -19,16 +19,16 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-uninitialized+default-dev (= ${binary:Version}),
+ librust-uninitializeddev (= ${binary:Version}),
  librust-uninitialized+uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0-dev (= ${binary:Version}),
- librust-uninitialized-0+default-dev (= ${binary:Version}),
+ librust-uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0+uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0.0-dev (= ${binary:Version}),
- librust-uninitialized-0.0+default-dev (= ${binary:Version}),
+ librust-uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0.0+uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0.0.2-dev (= ${binary:Version}),
- librust-uninitialized-0.0.2+default-dev (= ${binary:Version}),
+ librust-uninitialized-dev (= ${binary:Version}),
  librust-uninitialized-0.0.2+uninitialized-dev (= ${binary:Version})
 Description: Opt-in unsafe uninitialized memory - Rust source code
  Source code for Debianized Rust crate "uninitialized"

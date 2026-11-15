@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.76) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-wgpu-hal-28+default-dev <!nocheck>
+ librust-wgpu-hal-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wgpu-core-deps-windows-linux-android]
@@ -19,31 +19,31 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-wgpu-hal-28+default-dev,
+ librust-wgpu-hal-dev,
  librust-wgpu-hal-28+dx12-dev,
  librust-wgpu-hal-28+gles-dev,
  librust-wgpu-hal-28+renderdoc-dev,
  librust-wgpu-hal-28+vulkan-dev
 Provides:
- librust-wgpu-core-deps-windows-linux-android+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-windows-linux-androiddev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android+dx12-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android+gles-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android+renderdoc-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android+vulkan-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28-dev (= ${binary:Version}),
- librust-wgpu-core-deps-windows-linux-android-28+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-windows-linux-android-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28+dx12-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28+gles-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28+renderdoc-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28+vulkan-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0-dev (= ${binary:Version}),
- librust-wgpu-core-deps-windows-linux-android-28.0+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-windows-linux-android-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0+dx12-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0+gles-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0+renderdoc-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0+vulkan-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0.0-dev (= ${binary:Version}),
- librust-wgpu-core-deps-windows-linux-android-28.0.0+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-windows-linux-android-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0.0+dx12-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0.0+gles-dev (= ${binary:Version}),
  librust-wgpu-core-deps-windows-linux-android-28.0.0+renderdoc-dev (= ${binary:Version}),

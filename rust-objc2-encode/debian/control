@@ -20,19 +20,19 @@ Depends:
  ${misc:Depends}
 Provides:
  librust-objc2-encode+alloc-dev (= ${binary:Version}),
- librust-objc2-encode+default-dev (= ${binary:Version}),
+ librust-objc2-encodedev (= ${binary:Version}),
  librust-objc2-encode+std-dev (= ${binary:Version}),
  librust-objc2-encode-4-dev (= ${binary:Version}),
  librust-objc2-encode-4+alloc-dev (= ${binary:Version}),
- librust-objc2-encode-4+default-dev (= ${binary:Version}),
+ librust-objc2-encode-dev (= ${binary:Version}),
  librust-objc2-encode-4+std-dev (= ${binary:Version}),
  librust-objc2-encode-4.1-dev (= ${binary:Version}),
  librust-objc2-encode-4.1+alloc-dev (= ${binary:Version}),
- librust-objc2-encode-4.1+default-dev (= ${binary:Version}),
+ librust-objc2-encode-dev (= ${binary:Version}),
  librust-objc2-encode-4.1+std-dev (= ${binary:Version}),
  librust-objc2-encode-4.1.0-dev (= ${binary:Version}),
  librust-objc2-encode-4.1.0+alloc-dev (= ${binary:Version}),
- librust-objc2-encode-4.1.0+default-dev (= ${binary:Version}),
+ librust-objc2-encode-dev (= ${binary:Version}),
  librust-objc2-encode-4.1.0+std-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.71~)

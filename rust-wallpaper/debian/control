@@ -5,12 +5,12 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-dirs-1+default-dev <!nocheck>,
- librust-enquote-1+default-dev <!nocheck>,
- librust-rust-ini-0.12+default-dev <!nocheck>,
- librust-winapi-0.3+default-dev <!nocheck>,
+ librust-dirs-dev <!nocheck>,
+ librust-enquote-dev <!nocheck>,
+ librust-rust-ini-dev <!nocheck>,
+ librust-winapi-dev <!nocheck>,
  librust-winapi-0.3+winuser-dev <!nocheck>,
- librust-winreg-0.9+default-dev <!nocheck>
+ librust-winreg-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wallpaper]
@@ -24,31 +24,31 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-dirs-1+default-dev,
- librust-enquote-1+default-dev,
+ librust-dirs-dev,
+ librust-enquote-dev,
  librust-reqwest-0.11+blocking-dev,
- librust-reqwest-0.11+default-dev,
- librust-rust-ini-0.12+default-dev,
- librust-winapi-0.3+default-dev,
+ librust-reqwest-dev,
+ librust-rust-ini-dev,
+ librust-winapi-dev,
  librust-winapi-0.3+winuser-dev,
- librust-winreg-0.9+default-dev
+ librust-winreg-dev
 Provides:
- librust-wallpaper+default-dev (= ${binary:Version}),
+ librust-wallpaperdev (= ${binary:Version}),
  librust-wallpaper+dirs-dev (= ${binary:Version}),
  librust-wallpaper+from-url-dev (= ${binary:Version}),
  librust-wallpaper+reqwest-dev (= ${binary:Version}),
  librust-wallpaper-3-dev (= ${binary:Version}),
- librust-wallpaper-3+default-dev (= ${binary:Version}),
+ librust-wallpaper-dev (= ${binary:Version}),
  librust-wallpaper-3+dirs-dev (= ${binary:Version}),
  librust-wallpaper-3+from-url-dev (= ${binary:Version}),
  librust-wallpaper-3+reqwest-dev (= ${binary:Version}),
  librust-wallpaper-3.2-dev (= ${binary:Version}),
- librust-wallpaper-3.2+default-dev (= ${binary:Version}),
+ librust-wallpaper-dev (= ${binary:Version}),
  librust-wallpaper-3.2+dirs-dev (= ${binary:Version}),
  librust-wallpaper-3.2+from-url-dev (= ${binary:Version}),
  librust-wallpaper-3.2+reqwest-dev (= ${binary:Version}),
  librust-wallpaper-3.2.0-dev (= ${binary:Version}),
- librust-wallpaper-3.2.0+default-dev (= ${binary:Version}),
+ librust-wallpaper-dev (= ${binary:Version}),
  librust-wallpaper-3.2.0+dirs-dev (= ${binary:Version}),
  librust-wallpaper-3.2.0+from-url-dev (= ${binary:Version}),
  librust-wallpaper-3.2.0+reqwest-dev (= ${binary:Version})

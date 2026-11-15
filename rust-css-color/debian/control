@@ -20,15 +20,15 @@ Depends:
  ${misc:Depends}
 Provides:
  librust-css-color+bench-dev (= ${binary:Version}),
- librust-css-color+default-dev (= ${binary:Version}),
+ librust-css-colordev (= ${binary:Version}),
  librust-css-color-0-dev (= ${binary:Version}),
  librust-css-color-0+bench-dev (= ${binary:Version}),
- librust-css-color-0+default-dev (= ${binary:Version}),
+ librust-css-color-dev (= ${binary:Version}),
  librust-css-color-0.2-dev (= ${binary:Version}),
  librust-css-color-0.2+bench-dev (= ${binary:Version}),
- librust-css-color-0.2+default-dev (= ${binary:Version}),
+ librust-css-color-dev (= ${binary:Version}),
  librust-css-color-0.2.8-dev (= ${binary:Version}),
  librust-css-color-0.2.8+bench-dev (= ${binary:Version}),
- librust-css-color-0.2.8+default-dev (= ${binary:Version})
+ librust-css-color-dev (= ${binary:Version})
 Description: CSS color strings - Rust source code
  Source code for Debianized Rust crate "css-color"

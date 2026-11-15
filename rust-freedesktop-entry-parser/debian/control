@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.65) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-indexmap-2.11+default-dev (<< 2.11.5) <!nocheck>,
- librust-indexmap-2.11+default-dev (>= 2.11.4) <!nocheck>,
- librust-nom-8+default-dev <!nocheck>
+ librust-indexmap-dev (<< 2.11.5) <!nocheck>,
+ librust-indexmap-dev (>= 2.11.4) <!nocheck>,
+ librust-nom-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/freedesktop-entry-parser]
@@ -21,20 +21,20 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-indexmap-2.11+default-dev (<< 2.11.5),
- librust-indexmap-2.11+default-dev (>= 2.11.4),
- librust-nom-8+default-dev
+ librust-indexmap-dev (<< 2.11.5),
+ librust-indexmap-dev (>= 2.11.4),
+ librust-nom-dev
 Provides:
- librust-freedesktop-entry-parser+default-dev (= ${binary:Version}),
+ librust-freedesktop-entry-parserdev (= ${binary:Version}),
  librust-freedesktop-entry-parser+high-level-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2-dev (= ${binary:Version}),
- librust-freedesktop-entry-parser-2+default-dev (= ${binary:Version}),
+ librust-freedesktop-entry-parser-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2+high-level-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2.0-dev (= ${binary:Version}),
- librust-freedesktop-entry-parser-2.0+default-dev (= ${binary:Version}),
+ librust-freedesktop-entry-parser-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2.0+high-level-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2.0.1-dev (= ${binary:Version}),
- librust-freedesktop-entry-parser-2.0.1+default-dev (= ${binary:Version}),
+ librust-freedesktop-entry-parser-dev (= ${binary:Version}),
  librust-freedesktop-entry-parser-2.0.1+high-level-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.65~)

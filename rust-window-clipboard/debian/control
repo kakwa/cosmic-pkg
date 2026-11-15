@@ -5,14 +5,14 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-clipboard-macos-0.1+default-dev <!nocheck>,
- librust-clipboard-wayland-0.2+default-dev (>= 0.2.2) <!nocheck>,
- librust-clipboard-win-5+default-dev <!nocheck>,
+ librust-clipboard-macos-dev <!nocheck>,
+ librust-clipboard-wayland-dev (>= 0.2.2) <!nocheck>,
+ librust-clipboard-win-dev <!nocheck>,
  librust-clipboard-win-5+std-dev <!nocheck>,
- librust-clipboard-x11-0.4+default-dev (>= 0.4.2) <!nocheck>,
- librust-raw-window-handle-0.6+default-dev <!nocheck>,
+ librust-clipboard-x11-dev (>= 0.4.2) <!nocheck>,
+ librust-raw-window-handle-dev <!nocheck>,
  librust-raw-window-handle-0.6+std-dev <!nocheck>,
- librust-thiserror-1+default-dev <!nocheck>
+ librust-thiserror-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/window-clipboard]
@@ -26,21 +26,21 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-clipboard-macos-0.1+default-dev,
- librust-clipboard-wayland-0.2+default-dev (>= 0.2.2),
- librust-clipboard-win-5+default-dev,
+ librust-clipboard-macos-dev,
+ librust-clipboard-wayland-dev (>= 0.2.2),
+ librust-clipboard-win-dev,
  librust-clipboard-win-5+std-dev,
- librust-clipboard-x11-0.4+default-dev (>= 0.4.2),
- librust-raw-window-handle-0.6+default-dev,
+ librust-clipboard-x11-dev (>= 0.4.2),
+ librust-raw-window-handle-dev,
  librust-raw-window-handle-0.6+std-dev,
- librust-thiserror-1+default-dev
+ librust-thiserror-dev
 Provides:
- librust-window-clipboard+default-dev (= ${binary:Version}),
+ librust-window-clipboarddev (= ${binary:Version}),
  librust-window-clipboard-0-dev (= ${binary:Version}),
- librust-window-clipboard-0+default-dev (= ${binary:Version}),
+ librust-window-clipboard-dev (= ${binary:Version}),
  librust-window-clipboard-0.4-dev (= ${binary:Version}),
- librust-window-clipboard-0.4+default-dev (= ${binary:Version}),
+ librust-window-clipboard-dev (= ${binary:Version}),
  librust-window-clipboard-0.4.1-dev (= ${binary:Version}),
- librust-window-clipboard-0.4.1+default-dev (= ${binary:Version})
+ librust-window-clipboard-dev (= ${binary:Version})
 Description: Obtain clipboard access from a `raw-window-handle` - Rust source code
  Source code for Debianized Rust crate "window_clipboard"

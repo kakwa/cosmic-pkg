@@ -6,8 +6,8 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.70.0) <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-cc-1-dev (>= 1.0.83) <!nocheck>,
- librust-windows-targets+default-dev (<< 0.53) <!nocheck>,
- librust-windows-targets+default-dev (>= 0.48) <!nocheck>
+ librust-windows-targetsdev (<< 0.53) <!nocheck>,
+ librust-windows-targetsdev (>= 0.48) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracy-client-sys]
@@ -22,8 +22,8 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-cc-1-dev (>= 1.0.83),
- librust-windows-targets+default-dev (<< 0.53),
- librust-windows-targets+default-dev (>= 0.48)
+ librust-windows-targetsdev (<< 0.53),
+ librust-windows-targetsdev (>= 0.48)
 Provides:
  librust-tracy-client-sys+broadcast-dev (= ${binary:Version}),
  librust-tracy-client-sys+callstack-inlines-dev (= ${binary:Version}),
@@ -31,7 +31,7 @@ Provides:
  librust-tracy-client-sys+context-switch-tracing-dev (= ${binary:Version}),
  librust-tracy-client-sys+crash-handler-dev (= ${binary:Version}),
  librust-tracy-client-sys+debuginfod-dev (= ${binary:Version}),
- librust-tracy-client-sys+default-dev (= ${binary:Version}),
+ librust-tracy-client-sysdev (= ${binary:Version}),
  librust-tracy-client-sys+delayed-init-dev (= ${binary:Version}),
  librust-tracy-client-sys+demangle-dev (= ${binary:Version}),
  librust-tracy-client-sys+enable-dev (= ${binary:Version}),
@@ -52,7 +52,7 @@ Provides:
  librust-tracy-client-sys-0+context-switch-tracing-dev (= ${binary:Version}),
  librust-tracy-client-sys-0+crash-handler-dev (= ${binary:Version}),
  librust-tracy-client-sys-0+debuginfod-dev (= ${binary:Version}),
- librust-tracy-client-sys-0+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-dev (= ${binary:Version}),
  librust-tracy-client-sys-0+delayed-init-dev (= ${binary:Version}),
  librust-tracy-client-sys-0+demangle-dev (= ${binary:Version}),
  librust-tracy-client-sys-0+enable-dev (= ${binary:Version}),
@@ -73,7 +73,7 @@ Provides:
  librust-tracy-client-sys-0.28+context-switch-tracing-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28+crash-handler-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28+debuginfod-dev (= ${binary:Version}),
- librust-tracy-client-sys-0.28+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28+delayed-init-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28+demangle-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28+enable-dev (= ${binary:Version}),
@@ -94,7 +94,7 @@ Provides:
  librust-tracy-client-sys-0.28.0+context-switch-tracing-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28.0+crash-handler-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28.0+debuginfod-dev (= ${binary:Version}),
- librust-tracy-client-sys-0.28.0+default-dev (= ${binary:Version}),
+ librust-tracy-client-sys-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28.0+delayed-init-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28.0+demangle-dev (= ${binary:Version}),
  librust-tracy-client-sys-0.28.0+enable-dev (= ${binary:Version}),

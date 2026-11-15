@@ -5,17 +5,17 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-const-format-0.2+default-dev (>= 0.2.34) <!nocheck>,
- librust-dirs-6+default-dev <!nocheck>,
- librust-futures-0.3+default-dev (>= 0.3.31) <!nocheck>,
- librust-serde-1+default-dev (>= 1.0.226) <!nocheck>,
+ librust-const-format-dev (>= 0.2.34) <!nocheck>,
+ librust-dirs-dev <!nocheck>,
+ librust-futures-dev (>= 0.3.31) <!nocheck>,
+ librust-serde-dev (>= 1.0.226) <!nocheck>,
  librust-serde-1+derive-dev (>= 1.0.226) <!nocheck>,
- librust-serde-json-1+default-dev (>= 1.0.145) <!nocheck>,
- librust-serde-with-3+default-dev (>= 3.14.1) <!nocheck>,
- librust-tokio-1+default-dev (>= 1.47.1) <!nocheck>,
+ librust-serde-json-dev (>= 1.0.145) <!nocheck>,
+ librust-serde-with-dev (>= 3.14.1) <!nocheck>,
+ librust-tokio-dev (>= 1.47.1) <!nocheck>,
  librust-tokio-1+io-std-dev (>= 1.47.1) <!nocheck>,
  librust-tokio-1+io-util-dev (>= 1.47.1) <!nocheck>,
- librust-tokio-stream-0.1+default-dev (>= 0.1.17) <!nocheck>,
+ librust-tokio-stream-dev (>= 0.1.17) <!nocheck>,
  librust-tokio-stream-0.1+io-util-dev (>= 0.1.17) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -30,25 +30,25 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-const-format-0.2+default-dev (>= 0.2.34),
- librust-dirs-6+default-dev,
- librust-futures-0.3+default-dev (>= 0.3.31),
- librust-serde-1+default-dev (>= 1.0.226),
+ librust-const-format-dev (>= 0.2.34),
+ librust-dirs-dev,
+ librust-futures-dev (>= 0.3.31),
+ librust-serde-dev (>= 1.0.226),
  librust-serde-1+derive-dev (>= 1.0.226),
- librust-serde-json-1+default-dev (>= 1.0.145),
- librust-serde-with-3+default-dev (>= 3.14.1),
- librust-tokio-1+default-dev (>= 1.47.1),
+ librust-serde-json-dev (>= 1.0.145),
+ librust-serde-with-dev (>= 3.14.1),
+ librust-tokio-dev (>= 1.47.1),
  librust-tokio-1+io-std-dev (>= 1.47.1),
  librust-tokio-1+io-util-dev (>= 1.47.1),
- librust-tokio-stream-0.1+default-dev (>= 0.1.17),
+ librust-tokio-stream-dev (>= 0.1.17),
  librust-tokio-stream-0.1+io-util-dev (>= 0.1.17)
 Provides:
- librust-pop-launcher+default-dev (= ${binary:Version}),
+ librust-pop-launcherdev (= ${binary:Version}),
  librust-pop-launcher-1-dev (= ${binary:Version}),
- librust-pop-launcher-1+default-dev (= ${binary:Version}),
+ librust-pop-launcher-dev (= ${binary:Version}),
  librust-pop-launcher-1.2-dev (= ${binary:Version}),
- librust-pop-launcher-1.2+default-dev (= ${binary:Version}),
+ librust-pop-launcher-dev (= ${binary:Version}),
  librust-pop-launcher-1.2.7-dev (= ${binary:Version}),
- librust-pop-launcher-1.2.7+default-dev (= ${binary:Version})
+ librust-pop-launcher-dev (= ${binary:Version})
 Description: Writing plugins and frontends for pop-launcher - Rust source code
  Source code for Debianized Rust crate "pop-launcher"

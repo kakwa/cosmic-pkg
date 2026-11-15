@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-zbus-3+default-dev <!nocheck>
+ librust-zbus-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/hostname1-zbus]
@@ -19,14 +19,14 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-zbus-3+default-dev
+ librust-zbus-dev
 Provides:
- librust-hostname1-zbus+default-dev (= ${binary:Version}),
+ librust-hostname1-zbusdev (= ${binary:Version}),
  librust-hostname1-zbus-0-dev (= ${binary:Version}),
- librust-hostname1-zbus-0+default-dev (= ${binary:Version}),
+ librust-hostname1-zbus-dev (= ${binary:Version}),
  librust-hostname1-zbus-0.1-dev (= ${binary:Version}),
- librust-hostname1-zbus-0.1+default-dev (= ${binary:Version}),
+ librust-hostname1-zbus-dev (= ${binary:Version}),
  librust-hostname1-zbus-0.1.0-dev (= ${binary:Version}),
- librust-hostname1-zbus-0.1.0+default-dev (= ${binary:Version})
+ librust-hostname1-zbus-dev (= ${binary:Version})
 Description: Dbus bindings for org.freedesktop.hostname1 with zbus - Rust source code
  Source code for Debianized Rust crate "hostname1-zbus"

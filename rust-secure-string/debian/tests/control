@@ -1,21 +1,21 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test secure-string 0.3.0 --all-targets --all-features
 Features: test-name=rust-secure-string:@
-Depends: dh-cargo (>= 33~), rustc, librust-pre-0.2+default-dev (>= 0.2.1), librust-serde-cbor-0.11+default-dev, librust-serde-json-1+default-dev (>= 1.0.105), @
+Depends: dh-cargo (>= 33~), rustc, librust-pre-dev (>= 0.2.1), librust-serde-cbor-dev, librust-serde-json-dev (>= 1.0.105), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test secure-string 0.3.0 --all-targets
 Features: test-name=librust-secure-string-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-pre-0.2+default-dev (>= 0.2.1), librust-serde-cbor-0.11+default-dev, librust-serde-json-1+default-dev (>= 1.0.105), @
+Depends: dh-cargo (>= 33~), rustc, librust-pre-dev (>= 0.2.1), librust-serde-cbor-dev, librust-serde-json-dev (>= 1.0.105), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test secure-string 0.3.0 --all-targets --no-default-features --features serde
 Features: test-name=librust-secure-string-dev:serde
-Depends: dh-cargo (>= 33~), rustc, librust-pre-0.2+default-dev (>= 0.2.1), librust-serde-cbor-0.11+default-dev, librust-serde-json-1+default-dev (>= 1.0.105), @
+Depends: dh-cargo (>= 33~), rustc, librust-pre-dev (>= 0.2.1), librust-serde-cbor-dev, librust-serde-json-dev (>= 1.0.105), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test secure-string 0.3.0 --all-targets --no-default-features
 Features: test-name=librust-secure-string-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-pre-0.2+default-dev (>= 0.2.1), librust-serde-cbor-0.11+default-dev, librust-serde-json-1+default-dev (>= 1.0.105), @
+Depends: dh-cargo (>= 33~), rustc, librust-pre-dev (>= 0.2.1), librust-serde-cbor-dev, librust-serde-json-dev (>= 1.0.105), @
 Restrictions: allow-stderr
 Architecture: !riscv64

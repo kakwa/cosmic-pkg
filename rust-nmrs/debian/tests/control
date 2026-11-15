@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test nmrs 3.5.7 --all-targets --all-features
 Features: test-name=rust-nmrs:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-4+default-dev (>= 4.0.1), librust-zbus-5+default-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-dev (>= 4.0.1), librust-zbus-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test nmrs 3.5.7 --all-targets
 Features: test-name=librust-nmrs-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-4+default-dev (>= 4.0.1), librust-zbus-5+default-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-dev (>= 4.0.1), librust-zbus-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test nmrs 3.5.7 --all-targets --no-default-features
 Features: test-name=librust-nmrs-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-4+default-dev (>= 4.0.1), librust-zbus-5+default-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.90.0), librust-serial-test-dev (>= 4.0.1), librust-zbus-dev (>= 5.16.0), librust-zbus-5+p2p-dev (>= 5.16.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

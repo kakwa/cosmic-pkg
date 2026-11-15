@@ -1,33 +1,33 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets --all-features
 Features: test-name=rust-snowflake:@
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets
 Features: test-name=librust-snowflake-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets --no-default-features --features serde
 Features: test-name=librust-snowflake-dev:serde
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets --no-default-features --features serde_derive
 Features: test-name=librust-snowflake-dev:serde_derive
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets --no-default-features --features serde_support
 Features: test-name=librust-snowflake-dev:serde_support
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test snowflake 1.3.0 --all-targets --no-default-features
 Features: test-name=librust-snowflake-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-rand-0.3+default-dev, librust-threadpool-1+default-dev, librust-time-0.1+default-dev, librust-uuid-0.5+default-dev, librust-uuid-0.5+v4-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-rand-dev, librust-threadpool-dev, librust-time-dev, librust-uuid-dev, librust-uuid-0.5+v4-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

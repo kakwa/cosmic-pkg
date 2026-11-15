@@ -1,63 +1,63 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --all-features
 Features: test-name=rust-zlink-tokio:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets
 Features: test-name=librust-zlink-tokio-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features defmt
 Features: test-name=librust-zlink-tokio-dev:defmt
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features idl
 Features: test-name=librust-zlink-tokio-dev:idl
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features idl-parse
 Features: test-name=librust-zlink-tokio-dev:idl-parse
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features introspection
 Features: test-name=librust-zlink-tokio-dev:introspection
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features proxy
 Features: test-name=librust-zlink-tokio-dev:proxy
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features server
 Features: test-name=librust-zlink-tokio-dev:server
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features service
 Features: test-name=librust-zlink-tokio-dev:service
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features --features tracing
 Features: test-name=librust-zlink-tokio-dev:tracing
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test zlink-tokio 0.5.0 --all-targets --no-default-features
 Features: test-name=librust-zlink-tokio-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-0.1+default-dev (>= 0.1.20), librust-tempfile-3+default-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-1+default-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
+Depends: dh-cargo (>= 33~), rustc (>= 1.85), librust-serde-1+derive-dev (>= 1.0.218), librust-serde-repr-dev (>= 0.1.20), librust-tempfile-dev (>= 3.14), librust-test-log-0.2+color-dev (>= 0.2.17), librust-test-log-0.2+trace-dev (>= 0.2.17), librust-tokio-dev (>= 1.44.0), librust-tokio-1+fs-dev (>= 1.44.0), librust-tokio-1+macros-dev (>= 1.44.0), librust-tokio-1+rt-dev (>= 1.44.0), librust-tokio-1+rt-multi-thread-dev (>= 1.44.0), librust-tokio-1+test-util-dev (>= 1.44.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-ddc-0.2+default-dev <!nocheck>,
- librust-i2c-0.1+default-dev <!nocheck>,
- librust-resize-slice-0.1+default-dev <!nocheck>
+ librust-ddc-dev <!nocheck>,
+ librust-i2c-dev <!nocheck>,
+ librust-resize-slice-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/ddc-i2c]
@@ -21,29 +21,29 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-ddc-0.2+default-dev,
- librust-i2c-0.1+default-dev,
- librust-i2c-linux-0.1+default-dev,
+ librust-ddc-dev,
+ librust-i2c-dev,
+ librust-i2c-linux-dev,
  librust-i2c-linux-0.1+i2c-dev,
  librust-i2c-linux-0.1+udev-dev,
- librust-resize-slice-0.1+default-dev
+ librust-resize-slice-dev
 Provides:
- librust-ddc-i2c+default-dev (= ${binary:Version}),
+ librust-ddc-i2cdev (= ${binary:Version}),
  librust-ddc-i2c+i2c-linux-dev (= ${binary:Version}),
  librust-ddc-i2c+with-linux-dev (= ${binary:Version}),
  librust-ddc-i2c+with-linux-enumerate-dev (= ${binary:Version}),
  librust-ddc-i2c-0-dev (= ${binary:Version}),
- librust-ddc-i2c-0+default-dev (= ${binary:Version}),
+ librust-ddc-i2c-dev (= ${binary:Version}),
  librust-ddc-i2c-0+i2c-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0+with-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0+with-linux-enumerate-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2-dev (= ${binary:Version}),
- librust-ddc-i2c-0.2+default-dev (= ${binary:Version}),
+ librust-ddc-i2c-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2+i2c-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2+with-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2+with-linux-enumerate-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2.2-dev (= ${binary:Version}),
- librust-ddc-i2c-0.2.2+default-dev (= ${binary:Version}),
+ librust-ddc-i2c-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2.2+i2c-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2.2+with-linux-dev (= ${binary:Version}),
  librust-ddc-i2c-0.2.2+with-linux-enumerate-dev (= ${binary:Version})

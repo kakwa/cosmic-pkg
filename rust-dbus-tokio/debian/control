@@ -5,10 +5,10 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-dbus-0.9+default-dev <!nocheck>,
+ librust-dbus-dev <!nocheck>,
  librust-dbus-0.9+futures-dev <!nocheck>,
- librust-libc-0.2+default-dev (>= 0.2.69) <!nocheck>,
- librust-tokio-1+default-dev <!nocheck>,
+ librust-libc-dev (>= 0.2.69) <!nocheck>,
+ librust-tokio-dev <!nocheck>,
  librust-tokio-1+net-dev <!nocheck>,
  librust-tokio-1+time-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
@@ -26,24 +26,24 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-dbus-0.9+default-dev,
+ librust-dbus-dev,
  librust-dbus-0.9+futures-dev,
- librust-dbus-crossroads-0.5+default-dev,
- librust-libc-0.2+default-dev (>= 0.2.69),
- librust-tokio-1+default-dev,
+ librust-dbus-crossroads-dev,
+ librust-libc-dev (>= 0.2.69),
+ librust-tokio-dev,
  librust-tokio-1+net-dev,
  librust-tokio-1+time-dev
 Provides:
  librust-dbus-tokio+dbus-crossroads-dev (= ${binary:Version}),
- librust-dbus-tokio+default-dev (= ${binary:Version}),
+ librust-dbus-tokiodev (= ${binary:Version}),
  librust-dbus-tokio-0-dev (= ${binary:Version}),
  librust-dbus-tokio-0+dbus-crossroads-dev (= ${binary:Version}),
- librust-dbus-tokio-0+default-dev (= ${binary:Version}),
+ librust-dbus-tokio-dev (= ${binary:Version}),
  librust-dbus-tokio-0.7-dev (= ${binary:Version}),
  librust-dbus-tokio-0.7+dbus-crossroads-dev (= ${binary:Version}),
- librust-dbus-tokio-0.7+default-dev (= ${binary:Version}),
+ librust-dbus-tokio-dev (= ${binary:Version}),
  librust-dbus-tokio-0.7.6-dev (= ${binary:Version}),
  librust-dbus-tokio-0.7.6+dbus-crossroads-dev (= ${binary:Version}),
- librust-dbus-tokio-0.7.6+default-dev (= ${binary:Version})
+ librust-dbus-tokio-dev (= ${binary:Version})
 Description: Makes it possible to use Tokio with D-Bus, which is a bus commonly used on Linux for inter-process communication - Rust source code
  Source code for Debianized Rust crate "dbus-tokio"

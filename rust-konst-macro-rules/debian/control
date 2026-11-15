@@ -19,7 +19,7 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-konst-macro-rules+default-dev (= ${binary:Version}),
+ librust-konst-macro-rulesdev (= ${binary:Version}),
  librust-konst-macro-rules+deref-raw-in-fn-dev (= ${binary:Version}),
  librust-konst-macro-rules+mut-refs-dev (= ${binary:Version}),
  librust-konst-macro-rules+nightly-mut-refs-dev (= ${binary:Version}),
@@ -29,7 +29,7 @@ Provides:
  librust-konst-macro-rules+rust-1-57-dev (= ${binary:Version}),
  librust-konst-macro-rules+rust-1-61-dev (= ${binary:Version}),
  librust-konst-macro-rules-0-dev (= ${binary:Version}),
- librust-konst-macro-rules-0+default-dev (= ${binary:Version}),
+ librust-konst-macro-rules-dev (= ${binary:Version}),
  librust-konst-macro-rules-0+deref-raw-in-fn-dev (= ${binary:Version}),
  librust-konst-macro-rules-0+mut-refs-dev (= ${binary:Version}),
  librust-konst-macro-rules-0+nightly-mut-refs-dev (= ${binary:Version}),
@@ -39,7 +39,7 @@ Provides:
  librust-konst-macro-rules-0+rust-1-57-dev (= ${binary:Version}),
  librust-konst-macro-rules-0+rust-1-61-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2-dev (= ${binary:Version}),
- librust-konst-macro-rules-0.2+default-dev (= ${binary:Version}),
+ librust-konst-macro-rules-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2+deref-raw-in-fn-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2+mut-refs-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2+nightly-mut-refs-dev (= ${binary:Version}),
@@ -49,7 +49,7 @@ Provides:
  librust-konst-macro-rules-0.2+rust-1-57-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2+rust-1-61-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2.19-dev (= ${binary:Version}),
- librust-konst-macro-rules-0.2.19+default-dev (= ${binary:Version}),
+ librust-konst-macro-rules-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2.19+deref-raw-in-fn-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2.19+mut-refs-dev (= ${binary:Version}),
  librust-konst-macro-rules-0.2.19+nightly-mut-refs-dev (= ${binary:Version}),

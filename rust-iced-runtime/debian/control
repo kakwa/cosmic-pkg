@@ -5,11 +5,11 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-bytes-1+default-dev (>= 1.6) <!nocheck>,
- librust-iced-core-0.14+default-dev <!nocheck>,
- librust-iced-futures-0.14+default-dev <!nocheck>,
- librust-raw-window-handle-0.6+default-dev <!nocheck>,
- librust-thiserror-2+default-dev <!nocheck>
+ librust-bytes-dev (>= 1.6) <!nocheck>,
+ librust-iced-core-dev <!nocheck>,
+ librust-iced-futures-dev <!nocheck>,
+ librust-raw-window-handle-dev <!nocheck>,
+ librust-thiserror-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-runtime]
@@ -23,27 +23,27 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-bytes-1+default-dev (>= 1.6),
- librust-iced-core-0.14+default-dev,
- librust-iced-futures-0.14+default-dev,
- librust-iced-selector-0.14+default-dev,
- librust-raw-window-handle-0.6+default-dev,
- librust-sipper-0.1+default-dev,
- librust-thiserror-2+default-dev
+ librust-bytes-dev (>= 1.6),
+ librust-iced-core-dev,
+ librust-iced-futures-dev,
+ librust-iced-selector-dev,
+ librust-raw-window-handle-dev,
+ librust-sipper-dev,
+ librust-thiserror-dev
 Provides:
- librust-iced-runtime+default-dev (= ${binary:Version}),
+ librust-iced-runtimedev (= ${binary:Version}),
  librust-iced-runtime+selector-dev (= ${binary:Version}),
  librust-iced-runtime+sipper-dev (= ${binary:Version}),
  librust-iced-runtime-0-dev (= ${binary:Version}),
- librust-iced-runtime-0+default-dev (= ${binary:Version}),
+ librust-iced-runtime-dev (= ${binary:Version}),
  librust-iced-runtime-0+selector-dev (= ${binary:Version}),
  librust-iced-runtime-0+sipper-dev (= ${binary:Version}),
  librust-iced-runtime-0.14-dev (= ${binary:Version}),
- librust-iced-runtime-0.14+default-dev (= ${binary:Version}),
+ librust-iced-runtime-dev (= ${binary:Version}),
  librust-iced-runtime-0.14+selector-dev (= ${binary:Version}),
  librust-iced-runtime-0.14+sipper-dev (= ${binary:Version}),
  librust-iced-runtime-0.14.0-dev (= ${binary:Version}),
- librust-iced-runtime-0.14.0+default-dev (= ${binary:Version}),
+ librust-iced-runtime-dev (= ${binary:Version}),
  librust-iced-runtime-0.14.0+selector-dev (= ${binary:Version}),
  librust-iced-runtime-0.14.0+sipper-dev (= ${binary:Version})
 Description: Renderer-agnostic runtime for iced - Rust source code

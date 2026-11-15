@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.87.0) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-serde-1+default-dev <!nocheck>,
+ librust-serde-dev <!nocheck>,
  librust-zbus-5-dev (>= 5.3) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -20,12 +20,12 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-serde-1+default-dev,
+ librust-serde-dev,
  librust-zbus-5+async-io-dev (>= 5.3),
  librust-zbus-5+tokio-dev (>= 5.3),
  librust-zbus-5-dev (>= 5.3)
 Provides:
- librust-zbus-systemd+default-dev (= ${binary:Version}),
+ librust-zbus-systemddev (= ${binary:Version}),
  librust-zbus-systemd+home1-dev (= ${binary:Version}),
  librust-zbus-systemd+hostname1-dev (= ${binary:Version}),
  librust-zbus-systemd+import1-dev (= ${binary:Version}),
@@ -43,7 +43,7 @@ Provides:
  librust-zbus-systemd+zbus-async-smol-dev (= ${binary:Version}),
  librust-zbus-systemd+zbus-async-tokio-dev (= ${binary:Version}),
  librust-zbus-systemd-0-dev (= ${binary:Version}),
- librust-zbus-systemd-0+default-dev (= ${binary:Version}),
+ librust-zbus-systemd-dev (= ${binary:Version}),
  librust-zbus-systemd-0+home1-dev (= ${binary:Version}),
  librust-zbus-systemd-0+hostname1-dev (= ${binary:Version}),
  librust-zbus-systemd-0+import1-dev (= ${binary:Version}),
@@ -61,7 +61,7 @@ Provides:
  librust-zbus-systemd-0+zbus-async-smol-dev (= ${binary:Version}),
  librust-zbus-systemd-0+zbus-async-tokio-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000-dev (= ${binary:Version}),
- librust-zbus-systemd-0.26000+default-dev (= ${binary:Version}),
+ librust-zbus-systemd-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000+home1-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000+hostname1-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000+import1-dev (= ${binary:Version}),
@@ -79,7 +79,7 @@ Provides:
  librust-zbus-systemd-0.26000+zbus-async-smol-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000+zbus-async-tokio-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000.0-dev (= ${binary:Version}),
- librust-zbus-systemd-0.26000.0+default-dev (= ${binary:Version}),
+ librust-zbus-systemd-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000.0+home1-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000.0+hostname1-dev (= ${binary:Version}),
  librust-zbus-systemd-0.26000.0+import1-dev (= ${binary:Version}),

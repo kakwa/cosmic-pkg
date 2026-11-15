@@ -19,12 +19,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-bluez-zbus+default-dev (= ${binary:Version}),
+ librust-bluez-zbusdev (= ${binary:Version}),
  librust-bluez-zbus-0-dev (= ${binary:Version}),
- librust-bluez-zbus-0+default-dev (= ${binary:Version}),
+ librust-bluez-zbus-dev (= ${binary:Version}),
  librust-bluez-zbus-0.1-dev (= ${binary:Version}),
- librust-bluez-zbus-0.1+default-dev (= ${binary:Version}),
+ librust-bluez-zbus-dev (= ${binary:Version}),
  librust-bluez-zbus-0.1.0-dev (= ${binary:Version}),
- librust-bluez-zbus-0.1.0+default-dev (= ${binary:Version})
+ librust-bluez-zbus-dev (= ${binary:Version})
 Description: Dbus client (using zbus) for bluez - Rust source code
  Source code for Debianized Rust crate "bluez-zbus"

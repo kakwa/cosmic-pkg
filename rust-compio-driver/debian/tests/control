@@ -1,75 +1,75 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --all-features
 Features: test-name=rust-compio-driver:@
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets
 Features: test-name=librust-compio-driver-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features io-uring
 Features: test-name=librust-compio-driver-dev:io-uring
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features io-uring-cqe32
 Features: test-name=librust-compio-driver-dev:io-uring-cqe32
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features io-uring-sqe128
 Features: test-name=librust-compio-driver-dev:io-uring-sqe128
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features iocp-global
 Features: test-name=librust-compio-driver-dev:iocp-global
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features iocp-wait-packet
 Features: test-name=librust-compio-driver-dev:iocp-wait-packet
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features nightly
 Features: test-name=librust-compio-driver-dev:nightly
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features once_cell_try
 Features: test-name=librust-compio-driver-dev:once_cell_try
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features polling
 Features: test-name=librust-compio-driver-dev:polling
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features proc_macro_diagnostic
 Features: test-name=librust-compio-driver-dev:proc_macro_diagnostic
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features --features sync
 Features: test-name=librust-compio-driver-dev:sync
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test compio-driver 0.11.4 --all-targets --no-default-features
 Features: test-name=librust-compio-driver-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-nix-0.31+default-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
+Depends: dh-cargo (>= 33~), rustc, librust-nix-dev (>= 0.31.1), librust-nix-0.31+fs-dev (>= 0.31.1), @
 Restrictions: allow-stderr
 Architecture: !riscv64

@@ -5,14 +5,14 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.85) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-bitflags-2+default-dev <!nocheck>,
- librust-cursor-icon-1+default-dev (>= 1.1.0) <!nocheck>,
- librust-dpi-0.1+default-dev (>= 0.1.2) <!nocheck>,
- librust-keyboard-types-0.8+default-dev <!nocheck>,
- librust-raw-window-handle-0.6+default-dev <!nocheck>,
+ librust-bitflags-dev <!nocheck>,
+ librust-cursor-icon-dev (>= 1.1.0) <!nocheck>,
+ librust-dpi-dev (>= 0.1.2) <!nocheck>,
+ librust-keyboard-types-dev <!nocheck>,
+ librust-raw-window-handle-dev <!nocheck>,
  librust-raw-window-handle-0.6+std-dev <!nocheck>,
- librust-smol-str-0.3+default-dev <!nocheck>,
- librust-web-time-1+default-dev <!nocheck>
+ librust-smol-str-dev <!nocheck>,
+ librust-web-time-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/winit-core]
@@ -26,32 +26,32 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-bitflags-2+default-dev,
+ librust-bitflags-dev,
  librust-bitflags-2+serde-dev,
- librust-cursor-icon-1+default-dev (>= 1.1.0),
+ librust-cursor-icon-dev (>= 1.1.0),
  librust-cursor-icon-1+serde-dev (>= 1.1.0),
- librust-dpi-0.1+default-dev (>= 0.1.2),
+ librust-dpi-dev (>= 0.1.2),
  librust-dpi-0.1+serde-dev (>= 0.1.2),
- librust-keyboard-types-0.8+default-dev,
+ librust-keyboard-types-dev,
  librust-keyboard-types-0.8+serde-dev,
- librust-raw-window-handle-0.6+default-dev,
+ librust-raw-window-handle-dev,
  librust-raw-window-handle-0.6+std-dev,
- librust-serde-1+default-dev,
+ librust-serde-dev,
  librust-serde-1+serde-derive-dev,
- librust-smol-str-0.3+default-dev,
+ librust-smol-str-dev,
  librust-smol-str-0.3+serde-dev,
- librust-web-time-1+default-dev
+ librust-web-time-dev
 Provides:
- librust-winit-core+default-dev (= ${binary:Version}),
+ librust-winit-coredev (= ${binary:Version}),
  librust-winit-core+serde-dev (= ${binary:Version}),
  librust-winit-core-0-dev (= ${binary:Version}),
- librust-winit-core-0+default-dev (= ${binary:Version}),
+ librust-winit-core-dev (= ${binary:Version}),
  librust-winit-core-0+serde-dev (= ${binary:Version}),
  librust-winit-core-0.31-dev (= ${binary:Version}),
- librust-winit-core-0.31+default-dev (= ${binary:Version}),
+ librust-winit-core-dev (= ${binary:Version}),
  librust-winit-core-0.31+serde-dev (= ${binary:Version}),
  librust-winit-core-0.31.0-dev (= ${binary:Version}),
- librust-winit-core-0.31.0+default-dev (= ${binary:Version}),
+ librust-winit-core-dev (= ${binary:Version}),
  librust-winit-core-0.31.0+serde-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.85~)

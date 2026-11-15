@@ -5,18 +5,18 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-chrono-0.4+default-dev <!nocheck>,
- librust-dirs-5+default-dev (>= 5.0.1) <!nocheck>,
- librust-infer-0.16+default-dev <!nocheck>,
- librust-mime-guess-2+default-dev (>= 2.0.5) <!nocheck>,
- librust-quick-xml-0.36+default-dev (>= 0.36.1) <!nocheck>,
+ librust-chrono-dev <!nocheck>,
+ librust-dirs-dev (>= 5.0.1) <!nocheck>,
+ librust-infer-dev <!nocheck>,
+ librust-mime-guess-dev (>= 2.0.5) <!nocheck>,
+ librust-quick-xml-dev (>= 0.36.1) <!nocheck>,
  librust-quick-xml-0.36+overlapped-lists-dev (>= 0.36.1) <!nocheck>,
  librust-quick-xml-0.36+serde-types-dev (>= 0.36.1) <!nocheck>,
  librust-quick-xml-0.36+serialize-dev (>= 0.36.1) <!nocheck>,
- librust-serde-1+default-dev (>= 1.0.209) <!nocheck>,
+ librust-serde-dev (>= 1.0.209) <!nocheck>,
  librust-serde-1+derive-dev (>= 1.0.209) <!nocheck>,
- librust-thiserror-1+default-dev (>= 1.0.63) <!nocheck>,
- librust-url-2+default-dev (>= 2.5.2) <!nocheck>
+ librust-thiserror-dev (>= 1.0.63) <!nocheck>,
+ librust-url-dev (>= 2.5.2) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/recently-used-xbel]
@@ -30,25 +30,25 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-chrono-0.4+default-dev,
- librust-dirs-5+default-dev (>= 5.0.1),
- librust-infer-0.16+default-dev,
- librust-mime-guess-2+default-dev (>= 2.0.5),
- librust-quick-xml-0.36+default-dev (>= 0.36.1),
+ librust-chrono-dev,
+ librust-dirs-dev (>= 5.0.1),
+ librust-infer-dev,
+ librust-mime-guess-dev (>= 2.0.5),
+ librust-quick-xml-dev (>= 0.36.1),
  librust-quick-xml-0.36+overlapped-lists-dev (>= 0.36.1),
  librust-quick-xml-0.36+serde-types-dev (>= 0.36.1),
  librust-quick-xml-0.36+serialize-dev (>= 0.36.1),
- librust-serde-1+default-dev (>= 1.0.209),
+ librust-serde-dev (>= 1.0.209),
  librust-serde-1+derive-dev (>= 1.0.209),
- librust-thiserror-1+default-dev (>= 1.0.63),
- librust-url-2+default-dev (>= 2.5.2)
+ librust-thiserror-dev (>= 1.0.63),
+ librust-url-dev (>= 2.5.2)
 Provides:
- librust-recently-used-xbel+default-dev (= ${binary:Version}),
+ librust-recently-used-xbeldev (= ${binary:Version}),
  librust-recently-used-xbel-1-dev (= ${binary:Version}),
- librust-recently-used-xbel-1+default-dev (= ${binary:Version}),
+ librust-recently-used-xbel-dev (= ${binary:Version}),
  librust-recently-used-xbel-1.2-dev (= ${binary:Version}),
- librust-recently-used-xbel-1.2+default-dev (= ${binary:Version}),
+ librust-recently-used-xbel-dev (= ${binary:Version}),
  librust-recently-used-xbel-1.2.0-dev (= ${binary:Version}),
- librust-recently-used-xbel-1.2.0+default-dev (= ${binary:Version})
+ librust-recently-used-xbel-dev (= ${binary:Version})
 Description: Parse the ~/.local/share/recently-used.xbel file - Rust source code
  Source code for Debianized Rust crate "recently-used-xbel"

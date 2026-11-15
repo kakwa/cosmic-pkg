@@ -19,13 +19,13 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-icu-locid-transform-data+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-datadev (= ${binary:Version}),
  librust-icu-locid-transform-data-1-dev (= ${binary:Version}),
- librust-icu-locid-transform-data-1+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-dev (= ${binary:Version}),
  librust-icu-locid-transform-data-1.5-dev (= ${binary:Version}),
- librust-icu-locid-transform-data-1.5+default-dev (= ${binary:Version}),
+ librust-icu-locid-transform-data-dev (= ${binary:Version}),
  librust-icu-locid-transform-data-1.5.1-dev (= ${binary:Version}),
- librust-icu-locid-transform-data-1.5.1+default-dev (= ${binary:Version})
+ librust-icu-locid-transform-data-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.67~)
 Description: Data for the icu_locid_transform crate - Rust source code

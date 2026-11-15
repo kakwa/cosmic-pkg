@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test hostname1-zbus 0.1.0 --all-targets --all-features
 Features: test-name=rust-hostname1-zbus:@
-Depends: dh-cargo (>= 33~), rustc, librust-pico-args-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-pico-args-dev, librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test hostname1-zbus 0.1.0 --all-targets
 Features: test-name=librust-hostname1-zbus-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-pico-args-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-pico-args-dev, librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test hostname1-zbus 0.1.0 --all-targets --no-default-features
 Features: test-name=librust-hostname1-zbus-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-pico-args-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, @
+Depends: dh-cargo (>= 33~), rustc, librust-pico-args-dev, librust-tokio-dev, librust-tokio-1+full-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

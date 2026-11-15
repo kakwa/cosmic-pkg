@@ -5,7 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-snowflake-1+default-dev (>= 1.3.0) <!nocheck>
+ librust-snowflake-dev (>= 1.3.0) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/id-tree]
@@ -19,27 +19,27 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-serde-1+default-dev,
- librust-serde-derive-1+default-dev,
- librust-snowflake-1+default-dev (>= 1.3.0),
+ librust-serde-dev,
+ librust-serde-derive-dev,
+ librust-snowflake-dev (>= 1.3.0),
  librust-snowflake-1+serde-support-dev (>= 1.3.0)
 Provides:
- librust-id-tree+default-dev (= ${binary:Version}),
+ librust-id-treedev (= ${binary:Version}),
  librust-id-tree+serde-dev (= ${binary:Version}),
  librust-id-tree+serde-derive-dev (= ${binary:Version}),
  librust-id-tree+serde-support-dev (= ${binary:Version}),
  librust-id-tree-1-dev (= ${binary:Version}),
- librust-id-tree-1+default-dev (= ${binary:Version}),
+ librust-id-tree-dev (= ${binary:Version}),
  librust-id-tree-1+serde-dev (= ${binary:Version}),
  librust-id-tree-1+serde-derive-dev (= ${binary:Version}),
  librust-id-tree-1+serde-support-dev (= ${binary:Version}),
  librust-id-tree-1.8-dev (= ${binary:Version}),
- librust-id-tree-1.8+default-dev (= ${binary:Version}),
+ librust-id-tree-dev (= ${binary:Version}),
  librust-id-tree-1.8+serde-dev (= ${binary:Version}),
  librust-id-tree-1.8+serde-derive-dev (= ${binary:Version}),
  librust-id-tree-1.8+serde-support-dev (= ${binary:Version}),
  librust-id-tree-1.8.0-dev (= ${binary:Version}),
- librust-id-tree-1.8.0+default-dev (= ${binary:Version}),
+ librust-id-tree-dev (= ${binary:Version}),
  librust-id-tree-1.8.0+serde-dev (= ${binary:Version}),
  librust-id-tree-1.8.0+serde-derive-dev (= ${binary:Version}),
  librust-id-tree-1.8.0+serde-support-dev (= ${binary:Version})

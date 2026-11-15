@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.79.0) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-bytes-1+default-dev (>= 1.9.0) <!nocheck>,
- librust-io-uring-0.7+default-dev (>= 0.7.11) <!nocheck>,
- librust-rustix-1+default-dev (>= 1.0.7) <!nocheck>,
+ librust-bytes-dev (>= 1.9.0) <!nocheck>,
+ librust-io-uring-dev (>= 0.7.11) <!nocheck>,
+ librust-rustix-dev (>= 1.0.7) <!nocheck>,
  librust-rustix-1+mm-dev (>= 1.0.7) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -22,22 +22,22 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-bytes-1+default-dev (>= 1.9.0),
- librust-io-uring-0.7+default-dev (>= 0.7.11),
- librust-rustix-1+default-dev (>= 1.0.7),
+ librust-bytes-dev (>= 1.9.0),
+ librust-io-uring-dev (>= 0.7.11),
+ librust-rustix-dev (>= 1.0.7),
  librust-rustix-1+mm-dev (>= 1.0.7)
 Provides:
  librust-io-uring-buf-ring+bytes-dev (= ${binary:Version}),
- librust-io-uring-buf-ring+default-dev (= ${binary:Version}),
+ librust-io-uring-buf-ringdev (= ${binary:Version}),
  librust-io-uring-buf-ring-0-dev (= ${binary:Version}),
  librust-io-uring-buf-ring-0+bytes-dev (= ${binary:Version}),
- librust-io-uring-buf-ring-0+default-dev (= ${binary:Version}),
+ librust-io-uring-buf-ring-dev (= ${binary:Version}),
  librust-io-uring-buf-ring-0.2-dev (= ${binary:Version}),
  librust-io-uring-buf-ring-0.2+bytes-dev (= ${binary:Version}),
- librust-io-uring-buf-ring-0.2+default-dev (= ${binary:Version}),
+ librust-io-uring-buf-ring-dev (= ${binary:Version}),
  librust-io-uring-buf-ring-0.2.3-dev (= ${binary:Version}),
  librust-io-uring-buf-ring-0.2.3+bytes-dev (= ${binary:Version}),
- librust-io-uring-buf-ring-0.2.3+default-dev (= ${binary:Version})
+ librust-io-uring-buf-ring-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.79.0~)
 Description: Help user create and manage io-uring buffer-ring - Rust source code

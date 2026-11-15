@@ -5,14 +5,14 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-bstr-1+default-dev (>= 1.13.1) <!nocheck>,
- librust-gettext-rs-0.8+default-dev <!nocheck>,
+ librust-bstr-dev (>= 1.13.1) <!nocheck>,
+ librust-gettext-rs-dev <!nocheck>,
  librust-gettext-rs-0.8+gettext-system-dev <!nocheck>,
- librust-log-0.4+default-dev <!nocheck>,
- librust-memchr-2+default-dev <!nocheck>,
- librust-thiserror-2+default-dev <!nocheck>,
- librust-unicase-2+default-dev (>= 2.9.0) <!nocheck>,
- librust-xdg-3+default-dev <!nocheck>
+ librust-log-dev <!nocheck>,
+ librust-memchr-dev <!nocheck>,
+ librust-thiserror-dev <!nocheck>,
+ librust-unicase-dev (>= 2.9.0) <!nocheck>,
+ librust-xdg-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/freedesktop-desktop-entry]
@@ -26,25 +26,25 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-bstr-1+default-dev (>= 1.13.1),
- librust-gettext-rs-0.8+default-dev,
+ librust-bstr-dev (>= 1.13.1),
+ librust-gettext-rs-dev,
  librust-gettext-rs-0.8+gettext-system-dev,
- librust-log-0.4+default-dev,
- librust-memchr-2+default-dev,
- librust-thiserror-2+default-dev,
- librust-unicase-2+default-dev (>= 2.9.0),
- librust-xdg-3+default-dev
+ librust-log-dev,
+ librust-memchr-dev,
+ librust-thiserror-dev,
+ librust-unicase-dev (>= 2.9.0),
+ librust-xdg-dev
 Provides:
- librust-freedesktop-desktop-entry+default-dev (= ${binary:Version}),
+ librust-freedesktop-desktop-entrydev (= ${binary:Version}),
  librust-freedesktop-desktop-entry+gettext-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0-dev (= ${binary:Version}),
- librust-freedesktop-desktop-entry-0+default-dev (= ${binary:Version}),
+ librust-freedesktop-desktop-entry-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0+gettext-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0.8-dev (= ${binary:Version}),
- librust-freedesktop-desktop-entry-0.8+default-dev (= ${binary:Version}),
+ librust-freedesktop-desktop-entry-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0.8+gettext-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0.8.4-dev (= ${binary:Version}),
- librust-freedesktop-desktop-entry-0.8.4+default-dev (= ${binary:Version}),
+ librust-freedesktop-desktop-entry-dev (= ${binary:Version}),
  librust-freedesktop-desktop-entry-0.8.4+gettext-dev (= ${binary:Version})
 Description: Freedesktop Desktop Entry Specification - Rust source code
  Source code for Debianized Rust crate "freedesktop-desktop-entry"

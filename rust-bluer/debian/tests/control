@@ -1,105 +1,105 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --all-features
 Features: test-name=rust-bluer:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features bluetoothd
 Features: test-name=librust-bluer-dev:bluetoothd
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features custom_debug
 Features: test-name=librust-bluer-dev:custom_debug
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features dbus
 Features: test-name=librust-bluer-dev:dbus
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features dbus-crossroads
 Features: test-name=librust-bluer-dev:dbus-crossroads
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features dbus-tokio
 Features: test-name=librust-bluer-dev:dbus-tokio
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets
 Features: test-name=librust-bluer-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features displaydoc
 Features: test-name=librust-bluer-dev:displaydoc
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features full
 Features: test-name=librust-bluer-dev:full
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features id
 Features: test-name=librust-bluer-dev:id
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features l2cap
 Features: test-name=librust-bluer-dev:l2cap
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features lazy_static
 Features: test-name=librust-bluer-dev:lazy_static
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features mesh
 Features: test-name=librust-bluer-dev:mesh
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features pin-project
 Features: test-name=librust-bluer-dev:pin-project
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features rfcomm
 Features: test-name=librust-bluer-dev:rfcomm
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features serde
 Features: test-name=librust-bluer-dev:serde
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features --features tokio-stream
 Features: test-name=librust-bluer-dev:tokio-stream
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test bluer 0.17.4 --all-targets --no-default-features
 Features: test-name=librust-bluer-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.75), librust-clap-dev, librust-clap-4+derive-dev, librust-env-logger-dev, librust-rand-dev, librust-tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

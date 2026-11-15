@@ -22,22 +22,22 @@ Depends:
  librust-memchr-2-dev
 Provides:
  librust-no-std-io2+alloc-dev (= ${binary:Version}),
- librust-no-std-io2+default-dev (= ${binary:Version}),
+ librust-no-std-iodev (= ${binary:Version}),
  librust-no-std-io2+nightly-dev (= ${binary:Version}),
  librust-no-std-io2+std-dev (= ${binary:Version}),
  librust-no-std-io2-0-dev (= ${binary:Version}),
  librust-no-std-io2-0+alloc-dev (= ${binary:Version}),
- librust-no-std-io2-0+default-dev (= ${binary:Version}),
+ librust-no-std-io2-dev (= ${binary:Version}),
  librust-no-std-io2-0+nightly-dev (= ${binary:Version}),
  librust-no-std-io2-0+std-dev (= ${binary:Version}),
  librust-no-std-io2-0.9-dev (= ${binary:Version}),
  librust-no-std-io2-0.9+alloc-dev (= ${binary:Version}),
- librust-no-std-io2-0.9+default-dev (= ${binary:Version}),
+ librust-no-std-io2-dev (= ${binary:Version}),
  librust-no-std-io2-0.9+nightly-dev (= ${binary:Version}),
  librust-no-std-io2-0.9+std-dev (= ${binary:Version}),
  librust-no-std-io2-0.9.4-dev (= ${binary:Version}),
  librust-no-std-io2-0.9.4+alloc-dev (= ${binary:Version}),
- librust-no-std-io2-0.9.4+default-dev (= ${binary:Version}),
+ librust-no-std-io2-dev (= ${binary:Version}),
  librust-no-std-io2-0.9.4+nightly-dev (= ${binary:Version}),
  librust-no-std-io2-0.9.4+std-dev (= ${binary:Version})
 Breaks:

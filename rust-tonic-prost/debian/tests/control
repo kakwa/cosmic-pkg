@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test tonic-prost 0.14.6 --all-targets --all-features
 Features: test-name=rust-tonic-prost:@
-Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-1+default-dev, librust-http-body-util-0.1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-0.1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-dev, librust-http-body-util-dev, librust-tokio-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test tonic-prost 0.14.6 --all-targets
 Features: test-name=librust-tonic-prost-dev:default
-Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-1+default-dev, librust-http-body-util-0.1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-0.1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-dev, librust-http-body-util-dev, librust-tokio-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-dev, @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test tonic-prost 0.14.6 --all-targets --no-default-features
 Features: test-name=librust-tonic-prost-dev:
-Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-1+default-dev, librust-http-body-util-0.1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-0.1+default-dev, @
+Depends: dh-cargo (>= 33~), rustc (>= 1.88), librust-http-body-dev, librust-http-body-util-dev, librust-tokio-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-stream-dev, @
 Restrictions: allow-stderr
 Architecture: !riscv64

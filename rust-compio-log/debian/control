@@ -21,16 +21,16 @@ Depends:
  ${misc:Depends},
  librust-tracing-0.1-dev
 Provides:
- librust-compio-log+default-dev (= ${binary:Version}),
+ librust-compio-logdev (= ${binary:Version}),
  librust-compio-log+enable-log-dev (= ${binary:Version}),
  librust-compio-log-0-dev (= ${binary:Version}),
- librust-compio-log-0+default-dev (= ${binary:Version}),
+ librust-compio-log-dev (= ${binary:Version}),
  librust-compio-log-0+enable-log-dev (= ${binary:Version}),
  librust-compio-log-0.1-dev (= ${binary:Version}),
- librust-compio-log-0.1+default-dev (= ${binary:Version}),
+ librust-compio-log-dev (= ${binary:Version}),
  librust-compio-log-0.1+enable-log-dev (= ${binary:Version}),
  librust-compio-log-0.1.0-dev (= ${binary:Version}),
- librust-compio-log-0.1.0+default-dev (= ${binary:Version}),
+ librust-compio-log-dev (= ${binary:Version}),
  librust-compio-log-0.1.0+enable-log-dev (= ${binary:Version})
 Description: Log of compio - Rust source code
  Source code for Debianized Rust crate "compio-log"

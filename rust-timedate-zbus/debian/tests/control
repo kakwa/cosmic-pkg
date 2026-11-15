@@ -1,15 +1,15 @@
 Test-Command: /usr/share/cargo/bin/cargo-auto-test timedate-zbus 0.1.0 --all-targets --all-features
 Features: test-name=rust-timedate-zbus:@
-Depends: dh-cargo (>= 33~), rustc, librust-chrono-0.4+default-dev (>= 0.4.23), librust-chrono-tz-0.8+default-dev (>= 0.8.1), librust-tokio-1+default-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-chrono-dev (>= 0.4.23), librust-chrono-tz-dev (>= 0.8.1), librust-tokio-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test timedate-zbus 0.1.0 --all-targets
 Features: test-name=librust-timedate-zbus-dev:default
-Depends: dh-cargo (>= 33~), rustc, librust-chrono-0.4+default-dev (>= 0.4.23), librust-chrono-tz-0.8+default-dev (>= 0.8.1), librust-tokio-1+default-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-chrono-dev (>= 0.4.23), librust-chrono-tz-dev (>= 0.8.1), librust-tokio-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
 Restrictions: allow-stderr
 
 Test-Command: /usr/share/cargo/bin/cargo-auto-test timedate-zbus 0.1.0 --all-targets --no-default-features
 Features: test-name=librust-timedate-zbus-dev:
-Depends: dh-cargo (>= 33~), rustc, librust-chrono-0.4+default-dev (>= 0.4.23), librust-chrono-tz-0.8+default-dev (>= 0.8.1), librust-tokio-1+default-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
+Depends: dh-cargo (>= 33~), rustc, librust-chrono-dev (>= 0.4.23), librust-chrono-tz-dev (>= 0.8.1), librust-tokio-dev (>= 1.25.0), librust-tokio-1+full-dev (>= 1.25.0), librust-zbus-3+tokio-dev (>= 3.8.0), @
 Restrictions: allow-stderr
 Architecture: !riscv64

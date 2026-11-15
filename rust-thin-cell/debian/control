@@ -21,12 +21,12 @@ Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
- librust-thin-cell+default-dev (= ${binary:Version}),
+ librust-thin-celldev (= ${binary:Version}),
  librust-thin-cell-0-dev (= ${binary:Version}),
- librust-thin-cell-0+default-dev (= ${binary:Version}),
+ librust-thin-cell-dev (= ${binary:Version}),
  librust-thin-cell-0.1-dev (= ${binary:Version}),
- librust-thin-cell-0.1+default-dev (= ${binary:Version}),
+ librust-thin-cell-dev (= ${binary:Version}),
  librust-thin-cell-0.1.2-dev (= ${binary:Version}),
- librust-thin-cell-0.1.2+default-dev (= ${binary:Version})
+ librust-thin-cell-dev (= ${binary:Version})
 Description: Compact, single-threaded smart pointer combining reference counting and interior mutability - Rust source code
  Source code for Debianized Rust crate "thin-cell"

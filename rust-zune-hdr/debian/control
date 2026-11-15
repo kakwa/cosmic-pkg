@@ -22,16 +22,16 @@ Depends:
  librust-zune-core-0.5+log-dev (>= 0.5.1),
  librust-zune-core-0.5+std-dev (>= 0.5.1)
 Provides:
- librust-zune-hdr+default-dev (= ${binary:Version}),
+ librust-zune-hdrdev (= ${binary:Version}),
  librust-zune-hdr+log-dev (= ${binary:Version}),
  librust-zune-hdr-0-dev (= ${binary:Version}),
- librust-zune-hdr-0+default-dev (= ${binary:Version}),
+ librust-zune-hdr-dev (= ${binary:Version}),
  librust-zune-hdr-0+log-dev (= ${binary:Version}),
  librust-zune-hdr-0.5-dev (= ${binary:Version}),
- librust-zune-hdr-0.5+default-dev (= ${binary:Version}),
+ librust-zune-hdr-dev (= ${binary:Version}),
  librust-zune-hdr-0.5+log-dev (= ${binary:Version}),
  librust-zune-hdr-0.5.2-dev (= ${binary:Version}),
- librust-zune-hdr-0.5.2+default-dev (= ${binary:Version}),
+ librust-zune-hdr-dev (= ${binary:Version}),
  librust-zune-hdr-0.5.2+log-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.77.0~)
