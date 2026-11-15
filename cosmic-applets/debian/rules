@@ -1,15 +1,16 @@
 #!/usr/bin/make -f
 
-export DESTDIR = debian/cosmic-applets
-
 %:
 	dh $@
 
-override_dh_auto_clean:
-	@true
-
-override_dh_auto_test:
-	@true
+override_dh_auto_build:
+	cargo build --release
 
 override_dh_auto_install:
-	just rootdir=$(DESTDIR) install
+	# upstream install seds @bindir@ -> /usr/bin into these service files
+	sed -e 's|@bindir@|/usr/bin|' \
+	    cosmic-applet-status-area/data/dbus-1/com.system76.CosmicStatusNotifierWatcher.service.in \
+	    > cosmic-applet-status-area/data/dbus-1/com.system76.CosmicStatusNotifierWatcher.service
+	sed -e 's|@bindir@|/usr/bin|' \
+	    cosmic-applet-status-area/data/com.system76.CosmicStatusNotifierWatcher.service.in \
+	    > cosmic-applet-status-area/data/com.system76.CosmicStatusNotifierWatcher.service

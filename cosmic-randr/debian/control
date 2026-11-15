@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
-    just,
     libwayland-dev,
     pkg-config,
     rust-all,

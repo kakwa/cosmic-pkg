@@ -1,15 +1,7 @@
 #!/usr/bin/make -f
 
-export DESTDIR = debian/cosmic-idle
-
 %:
 	dh $@
 
-override_dh_auto_clean:
-	@true
-
-override_dh_auto_test:
-	@true
-
-override_dh_auto_install:
-	just rootdir=$(DESTDIR) install
+override_dh_auto_build:
+	cargo build --release

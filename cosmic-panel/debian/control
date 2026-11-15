@@ -5,7 +5,6 @@ Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
     desktop-file-utils,
-    just,
     libwayland-dev,
     libxkbcommon-dev,
     pkg-config,

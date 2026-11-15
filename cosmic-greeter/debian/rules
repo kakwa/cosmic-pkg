@@ -1,18 +1,10 @@
 #!/usr/bin/make -f
 
-export DESTDIR = debian/tmp
-
 %:
 	dh $@
 
-override_dh_auto_clean:
-	@true
-
-override_dh_auto_test:
-	@true
-
-override_dh_auto_install:
-	just rootdir=$(DESTDIR) install-debian
+override_dh_auto_build:
+	cargo build --release
 
 execute_after_dh_install:
 	dh_installpam

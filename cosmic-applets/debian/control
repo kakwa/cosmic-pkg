@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
-    just,
     libclang-dev,
     libdbus-1-dev,
     libegl-dev,

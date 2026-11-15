@@ -5,7 +5,6 @@ Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     cmake,
     debhelper-compat (=13),
-    just (>= 1.13.0),
     libheif-dev,
     libxkbcommon-dev,
     nasm,

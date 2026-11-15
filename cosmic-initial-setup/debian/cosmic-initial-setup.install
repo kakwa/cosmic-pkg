@@ -1,2 +1,6 @@
-etc/
-usr/
+target/release/cosmic-initial-setup usr/bin
+res/icon.svg usr/share/icons/hicolor/scalable/apps/com.system76.CosmicInitialSetup.svg
+res/com.system76.CosmicInitialSetup.desktop usr/share/applications
+res/com.system76.CosmicInitialSetup.Autostart.desktop etc/xdg/autostart
+res/20-cosmic-initial-setup.rules usr/share/polkit-1/rules.d
+res/layouts usr/share/cosmic-layouts

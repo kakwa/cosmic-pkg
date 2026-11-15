@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-export DESTDIR = debian/cosmic-icons
-
 %:
 	dh $@
 
@@ -15,4 +13,7 @@ override_dh_auto_test:
 	@true
 
 override_dh_auto_install:
-	just rootdir=$(DESTDIR) install
+	dh_installdirs -A share/icons/Cosmic
+	install -Dm0644 index.theme share/icons/Cosmic/index.theme
+	find freedesktop/scalable -type f -exec install -Dm0644 {} share/icons/Cosmic/{} \;
+	find extra/scalable -type f -exec install -Dm0644 {} share/icons/Cosmic/{} \;

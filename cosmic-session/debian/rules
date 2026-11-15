@@ -1,15 +1,14 @@
 #!/usr/bin/make -f
 
-export DESTDIR = debian/cosmic-session
-
 %:
 	dh $@
 
-override_dh_auto_clean:
-	@true
-
-override_dh_auto_test:
-	@true
+override_dh_auto_build:
+	cargo build --release
 
 override_dh_auto_install:
-	just rootdir=$(DESTDIR) install
+	# upstream sed-patches start-cosmic to set DCONF_PROFILE to the absolute
+	# profile path; in a .deb the prefix is always /usr
+	sed -e 's|DCONF_PROFILE=cosmic|DCONF_PROFILE=/usr/share/dconf/profile/cosmic|' \
+	    data/start-cosmic > debian/tmp/usr/bin/start-cosmic
+	dh_install

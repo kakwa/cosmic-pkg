@@ -5,7 +5,6 @@ Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     cosmic-randr,
     debhelper-compat (=13),
-    just,
     libinput-dev,
     libudev-dev,
     libwayland-dev,
