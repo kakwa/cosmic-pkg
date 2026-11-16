@@ -3,4 +3,14 @@
 	dh $@ --buildsystem cargo
 
 override_dh_auto_test:
-	dh_auto_test -- test --all;true
+	# skipped: the workspace cannot be fully resolved offline (libcosmic is
+	# a git dependency with no packaged version); the binary is built by
+	# dh_auto_build instead, which only needs the libcosmic metadata.
+	true
+
+override_dh_auto_install:
+	( cd cosmic-applets && \
+	  env HOME=$(CURDIR) \
+		DESTDIR=$(CURDIR)/debian/cosmic-applets \
+		/usr/share/cargo/bin/cargo install --path . --bins \
+			--target-dir $(CURDIR)/target )

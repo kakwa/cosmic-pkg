@@ -1,49 +1,29 @@
 From: kakwa <carpentier.pf@gmail.com>
 Subject: Use packaged crates for the offline chroot build
-The upstream tree pulls a number of dependencies straight from git
-(pop-os/libcosmic, pop-os/winit, wash2/accesskit, pop-os/softbuffer,
-pop-os/smithay-clipboard, pop-os/window_clipboard, pop-os/dbus-settings-bindings,
-pop-os/cosmic-settings, pop-os/cosmic-settings-daemon, pop-os/cosmic-comp,
-pop-os/cosmic-notifications, pop-os/cosmic-osk, pop-os/cosmic-panel,
-pop-os/cosmic-protocols, iced-rs/cryoglyph, jackpot51/rust-atomicwrites).
 
-An offline chroot build (cowbuilder/pbuilder with no network access) cannot
-fetch any of these git repositories, and the Debian cargo wrapper additionally
-replaces the crates.io registry with the Debian-provided one, so version
-requirements that only match a git commit must be relaxed to the versions that
-are actually packaged.
+The upstream tree pulls a number of dependencies straight from git
+(pop-os/cosmic-protocols, pop-os/cosmic-settings,
+pop-os/cosmic-settings-daemon, pop-os/cosmic-comp,
+pop-os/cosmic-notifications, pop-os/cosmic-osk,
+pop-os/dbus-settings-bindings), plus it declares [patch] sections
+for the smithay-client-toolkit and cosmic-protocols git forks.
+
+An offline chroot build (cowbuilder/pbuilder with no network access)
+cannot fetch any of these git repositories, and the Debian cargo
+wrapper additionally replaces the crates.io registry with the
+Debian-provided one, so version requirements that only match a git
+commit must be relaxed to the versions that are actually packaged.
 
 This patch:
- - removes the `[patch."https://github.com/smithay/client-toolkit.git"]`
-   section: no crate in the workspace depends on that git URL, and the entry
-   is otherwise rejected because the packaged smithay-client-toolkit is 0.19.2
-   while the entry requires ^0.20.0;
- - switches the workspace and per-crate dependencies from git sources to the
-   packaged crate versions;
- - relaxes version requirements to the versions available in the Debian
-   archive.
-
-The resolved dependency graph stays equivalent: every crate that was fetched
-from a git repository has a packaged counterpart providing the same API, and
-the versions chosen here match the packaged ones.
-
----
- Cargo.toml                      | 32 ++++++++++++--------------------
- cosmic-applet-a11y/Cargo.toml   | 16 ++++-------------
- cosmic-applet-audio/Cargo.toml  |  8 ++------
- cosmic-applet-battery/Cargo.toml | 10 ++--------
- cosmic-applet-input-sources/Cargo.toml |  8 ++------
- cosmic-applet-notifications/Cargo.toml | 12 +++---------
- cosmic-applet-tiling/Cargo.toml |  8 ++------
- cosmic-applet-time/Cargo.toml   |  8 ++------
- cosmic-applet-workspaces/Cargo.toml |  6 ++----
- cosmic-app-list/Cargo.toml      |  8 ++------
- 10 files changed, 37 insertions(+), 99 deletions(-)
-
-diff --git a/Cargo.toml b/Cargo.toml
+ - removes the [patch."https://github.com/smithay/client-toolkit.git"]
+   and [patch."https://github.com/pop-os/cosmic-protocols"] sections,
+   since the packaged crates are now used directly
+ - switches the workspace and per-crate git dependencies to the
+   versions available in the local Debian repository
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -26,14 +26,14 @@
+@@ -26,12 +26,12 @@
+ 
  [workspace.dependencies]
  anyhow = "1.0.102"
 -cctk = { git = "https://github.com/pop-os/cosmic-protocols", package = "cosmic-client-toolkit", rev = "c0cff4d" }
@@ -53,12 +33,14 @@ diff --git a/Cargo.toml b/Cargo.toml
 -cosmic-protocols = { git = "https://github.com/pop-os/cosmic-protocols", default-features = false, features = [
 +cosmic-osk-config = "1.10"
 +cosmic-protocols = { version = "0.2.0", default-features = false, features = [
-     "ext-cosmic-app-list",
- ] }
- libcosmic = { version = "1.0.0", default-features = false, features = [
-     "liba11y",
-@@ -79,14 +79,6 @@
- # cosmic-config = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
+     "client",
+-], rev = "c0cff4d" }
++] }
+ 
+ futures = "0.3"
+ futures-util = "0.3"
+@@ -80,13 +80,6 @@
+ # libcosmic = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
  # iced_futures = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
  
 -[patch."https://github.com/smithay/client-toolkit.git"]
@@ -71,129 +53,107 @@ diff --git a/Cargo.toml b/Cargo.toml
  # [patch.'https://github.com/pop-os/dbus-settings-bindings']
  # cosmic-dbus-networkmanager = { path = "../dbus-settings-bindings/networkmanager" }
  # upower_dbus = { path = "../dbus-settings-bindings/upower" }
-
-diff --git a/cosmic-applet-a11y/Cargo.toml b/cosmic-applet-a11y/Cargo.toml
 --- a/cosmic-applet-a11y/Cargo.toml
 +++ b/cosmic-applet-a11y/Cargo.toml
-@@ -18,14 +18,8 @@
+@@ -16,10 +16,6 @@
+ tracing-subscriber.workspace = true
  tracing.workspace = true
  
 -[dependencies.cosmic-settings-a11y-manager-subscription]
 -git = "https://github.com/pop-os/cosmic-settings"
 -# path = "../../cosmic-settings/subscriptions/a11y-manager"
--
++cosmic-settings-a11y-manager-subscription = "1.10"
+ 
 -[dependencies.cosmic-settings-accessibility-subscription]
 -git = "https://github.com/pop-os/cosmic-settings"
 -# path = "../../cosmic-settings/subscriptions/accessibility"
--
--
-+cosmic-settings-a11y-manager-subscription = "1.10"
 +cosmic-settings-accessibility-subscription = "1.10"
-
-diff --git a/cosmic-applet-audio/Cargo.toml b/cosmic-applet-audio/Cargo.toml
 --- a/cosmic-applet-audio/Cargo.toml
 +++ b/cosmic-applet-audio/Cargo.toml
-@@ -8,9 +8,7 @@
- cosmic-applets-config.workspace = true
+@@ -9,7 +9,7 @@
+ i18n-embed-fl.workspace = true
+ i18n-embed.workspace = true
  libcosmic.workspace = true
 -mpris2-zbus = { git = "https://github.com/pop-os/dbus-settings-bindings" }
 +mpris2-zbus = "0.1.0"
+ rust-embed.workspace = true
+ serde.workspace = true
  tokio.workspace = true
- tracing.workspace = true
- tracing-log.workspace = true
-@@ -22,8 +20,6 @@
- tracing.workspace = true
+@@ -22,6 +22,4 @@
+ zlink.workspace = true
+ intmap = "3.1.3"
  
 -[dependencies.cosmic-settings-audio-client]
 -git = "https://github.com/pop-os/cosmic-settings-daemon"
--
--
-+cosmic-settings-audio-client = "1.10"
-
-diff --git a/cosmic-applet-battery/Cargo.toml b/cosmic-applet-battery/Cargo.toml
+-features = ["codec"]
++cosmic-settings-audio-client = { version = "1.10", features = ["codec"] }
 --- a/cosmic-applet-battery/Cargo.toml
 +++ b/cosmic-applet-battery/Cargo.toml
-@@ -23,12 +23,6 @@
- tracing.workspace = true
- tracing-subscriber.workspace = true
+@@ -23,10 +23,6 @@
+ zbus.workspace = true
+ serde.workspace = true
  
 -[dependencies.cosmic-settings-upower-subscription]
 -git = "https://github.com/pop-os/cosmic-settings"
--
+-# path = "../../cosmic-settings/subscriptions/upower"
++cosmic-settings-upower-subscription = "1.10"
+ 
 -[dependencies.cosmic-settings-daemon-subscription]
 -git = "https://github.com/pop-os/cosmic-settings"
--
-+cosmic-settings-upower-subscription = "1.10"
+-# path = "../../cosmic-settings/subscriptions/settings-daemon"
 +cosmic-settings-daemon-subscription = "1.10"
-
-diff --git a/cosmic-applet-input-sources/Cargo.toml b/cosmic-applet-input-sources/Cargo.toml
 --- a/cosmic-applet-input-sources/Cargo.toml
 +++ b/cosmic-applet-input-sources/Cargo.toml
-@@ -6,9 +6,7 @@
+@@ -6,7 +6,7 @@
+ 
+ [dependencies]
  cctk.workspace = true
--libcosmic.workspace = true
 -cosmic-comp-config = { git = "https://github.com/pop-os/cosmic-comp.git", rev = "5eb5af4" }
-+libcosmic.workspace = true
 +cosmic-comp-config = "0.1"
- tokio.workspace = true
- tracing.workspace = true
- tracing-subscriber.workspace = true
-
-diff --git a/cosmic-applet-notifications/Cargo.toml b/cosmic-applet-notifications/Cargo.toml
+ futures.workspace = true
+ i18n-embed-fl.workspace = true
+ i18n-embed.workspace = true
 --- a/cosmic-applet-notifications/Cargo.toml
 +++ b/cosmic-applet-notifications/Cargo.toml
-@@ -5,9 +5,7 @@
- anyhow.workspace = true
+@@ -5,8 +5,8 @@
+ license = "GPL-3.0-only"
+ 
+ [dependencies]
 -cosmic-notifications-util = { git = "https://github.com/pop-os/cosmic-notifications" }
 -cosmic-notifications-config = { git = "https://github.com/pop-os/cosmic-notifications" }
 +cosmic-notifications-util = "1.10"
 +cosmic-notifications-config = "1.10"
- cosmic-applets-config.workspace = true
+ anyhow.workspace = true
  libcosmic.workspace = true
  tokio.workspace = true
-
-diff --git a/cosmic-applet-tiling/Cargo.toml b/cosmic-applet-tiling/Cargo.toml
 --- a/cosmic-applet-tiling/Cargo.toml
 +++ b/cosmic-applet-tiling/Cargo.toml
-@@ -7,9 +7,7 @@
+@@ -8,7 +8,7 @@
  libcosmic.workspace = true
+ anyhow.workspace = true
  cctk.workspace = true
 -cosmic-comp-config = { git = "https://github.com/pop-os/cosmic-comp.git", rev = "5eb5af4" }
 +cosmic-comp-config = "0.1"
  cosmic-protocols.workspace = true
- tokio.workspace = true
- tracing.workspace = true
-
-diff --git a/cosmic-applet-time/Cargo.toml b/cosmic-applet-time/Cargo.toml
+ i18n-embed-fl.workspace = true
+ i18n-embed.workspace = true
 --- a/cosmic-applet-time/Cargo.toml
 +++ b/cosmic-applet-time/Cargo.toml
-@@ -16,9 +16,7 @@
- libcosmic.workspace = true
+@@ -17,5 +17,5 @@
+ tracing.workspace = true
+ icu = { version = "2.1.1", features = ["compiled_data"] }
+ zbus.workspace = true
 -timedate-zbus = { git = "https://github.com/pop-os/dbus-settings-bindings" }
 +timedate-zbus = "0.1.0"
- tokio.workspace = true
- tracing.workspace = true
- tracing-subscriber.workspace = true
-
-diff --git a/cosmic-applet-workspaces/Cargo.toml b/cosmic-applet-workspaces/Cargo.toml
---- a/cosmic-applet-workspaces/Cargo.toml
-+++ b/cosmic-applet-workspaces/Cargo.toml
-@@ -7,9 +7,7 @@
- libcosmic.workspace = true
- cctk.workspace = true
--cosmic-protocols.workspace = true
-+cosmic-protocols.workspace = true
- tokio.workspace = true
- tracing.workspace = true
- tracing-subscriber.workspace = true
-
-diff --git a/cosmic-app-list/Cargo.toml b/cosmic-app-list/Cargo.toml
+ logind-zbus = "5.3.2"
 --- a/cosmic-app-list/Cargo.toml
 +++ b/cosmic-app-list/Cargo.toml
-@@ -18,9 +18,7 @@
- libcosmic.workspace = true
+@@ -19,7 +19,7 @@
+ rust-embed.workspace = true
+ rustix.workspace = true
+ rustc-hash.workspace = true
 -switcheroo-control = { git = "https://github.com/pop-os/dbus-settings-bindings" }
 +switcheroo-control = "0.1.0"
  tokio.workspace = true
- tracing.workspace = true
+ tracing-log.workspace = true
  tracing-subscriber.workspace = true
