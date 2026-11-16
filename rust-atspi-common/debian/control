@@ -8,9 +8,6 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-enumflags2-dev <!nocheck>,
  librust-serde-dev <!nocheck>,
  librust-static-assertions-dev <!nocheck>,
- librust-zbus-5+async-io-dev <!nocheck>,
- librust-zbus-lockstep-dev <!nocheck>,
- librust-zbus-lockstep-macros-dev <!nocheck>,
  librust-zbus-names-dev <!nocheck>,
  librust-zvariant-5-dev  <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
@@ -29,9 +26,6 @@ Depends:
  librust-enumflags2-dev,
  librust-serde-dev,
  librust-static-assertions-dev,
- librust-zbus-5+async-io-dev,
- librust-zbus-lockstep-dev,
- librust-zbus-lockstep-macros-dev,
  librust-zbus-names-dev,
  librust-zvariant-5-dev,
 Provides:
