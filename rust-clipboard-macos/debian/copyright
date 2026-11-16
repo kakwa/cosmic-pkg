@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: clipboard_macos
+Source: https://github.com/hecrj/window_clipboard
+
+Files: *
+Copyright: FIXME kakwa <carpentier.pf@gmail.com>
+License: MIT

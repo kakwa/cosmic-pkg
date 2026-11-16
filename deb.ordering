@@ -4,12 +4,10 @@ rust-almost
 rust-apply
 rust-appstream
 rust-async-oneshot
-rust-atomicwrites
 rust-atspi-common
 rust-bitcode-derive
 rust-bluer
 rust-bluez-zbus
-rust-build-helpers
 rust-clipboard-macos
 rust-clipboard-wayland
 rust-clipboard-x11
@@ -168,6 +166,9 @@ rust-xdg-mime
 rust-xdgen
 rust-zlink-core
 rust-zune-image
+rust-accesskit
+rust-accesskit-consumer
+rust-smithay-client-toolkit
 cosmic-applets
 rust-atspi
 rust-block2

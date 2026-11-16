@@ -1,0 +1,20 @@
+Source: rust-clipboard-macos
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/hecrj/window_clipboard
+X-Cargo-Crate: clipboard_macos
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-clipboard-macos-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: macOS clipboard backend - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "clipboard_macos" (0.1.0).
