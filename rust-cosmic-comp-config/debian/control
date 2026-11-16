@@ -5,9 +5,9 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
-librust-cosmic-config-dev,
-librust-input-dev,
-librust-serde-dev
+ librust-cosmic-config-dev,
+ librust-input-dev,
+ librust-serde-dev
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Homepage: https://github.com/pop-os/cosmic-comp

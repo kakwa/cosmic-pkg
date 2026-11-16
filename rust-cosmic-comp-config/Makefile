@@ -2,7 +2,7 @@
 NAME = rust-cosmic-comp-config
 
 # Version
-VERSION = 0.1.0
+VERSION = 1.11.0
 
 # Revision number
 RELEASE = 1
@@ -11,7 +11,7 @@ RELEASE = 1
 URL = https://github.com/pop-os/cosmic-comp
 
 # URL of the upstream source archive
-URL_SRC = file:///tmp/gitc/cosmic-comp-config-0.1.0.tar.gz
+URL_SRC = https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-$(VERSION).tar.gz
 
 # short summary of what the package provides
 SUMMARY = COSMIC compositor config types - Rust source code
