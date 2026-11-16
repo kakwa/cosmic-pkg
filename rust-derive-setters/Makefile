@@ -14,7 +14,7 @@ URL = https://crates.io/crates/derive_setters
 URL_SRC = https://static.crates.io/crates/derive_setters/derive_setters-0.1.9.crate
 
 # short summary of what the package provides
-SUMMARY = Rust macro to automatically generates setter methods for a struct's fields - Rust source code
+SUMMARY = Rust macro to automatically generates setter methods for a struct fields - Rust source code
 
 # Long version of the summary, but I'm lazy
 DESCRIPTION = Source code for Debianized Rust crate "derive_setters"
