@@ -9,8 +9,6 @@ rust-bitcode-derive
 rust-bluer
 rust-bluez-zbus
 rust-clipboard-macos
-rust-clipboard-wayland
-rust-clipboard-x11
 rust-color-backtrace
 rust-compio-buf
 rust-compio-log
