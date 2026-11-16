@@ -5,8 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native (>= 1.65) <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-indexmap-dev (<< 2.11.5) <!nocheck>,
- librust-indexmap-dev (>= 2.11.4) <!nocheck>,
+ librust-indexmap-dev,
  librust-nom-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
@@ -21,8 +20,7 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-indexmap-dev (<< 2.11.5),
- librust-indexmap-dev (>= 2.11.4),
+ librust-indexmap-dev,
  librust-nom-dev
 Provides:
  librust-freedesktop-entry-parserdev (= ${binary:Version}),
