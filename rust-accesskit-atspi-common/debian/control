@@ -7,7 +7,7 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-accesskit-dev <!nocheck>,
  librust-accesskit-consumer-dev <!nocheck>,
- librust-atspi-common-0.13-dev <!nocheck>,
+ librust-atspi-common-dev <!nocheck>,
  librust-serde-dev <!nocheck>,
  librust-zvariant-5-dev (>= 5.4) <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>

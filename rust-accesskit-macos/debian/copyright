@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: accesskit_macos
+Source: https://github.com/wash2/accesskit
+
+Files: *
+Copyright: FIXME kakwa <carpentier.pf@gmail.com>
+License: MIT OR Apache-2.0
