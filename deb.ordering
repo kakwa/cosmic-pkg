@@ -173,9 +173,7 @@ rust-gilrs
 rust-gpu-allocator
 rust-iced
 rust-iced-video-player
-rust-cosmic-config
 rust-cosmic-comp-config
-rust-cosmic-config-derive
 rust-cosmic-dbus-a11y
 rust-cosmic-freedesktop-icons
 rust-cosmic-notifications-config
