@@ -1,0 +1,24 @@
+Source: rust-iced-accessibility
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-accesskit-dev,
+librust-accesskit-macos-dev,
+librust-accesskit-windows-dev,
+librust-accesskit-winit-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/libcosmic
+X-Cargo-Crate: iced_accessibility
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-iced-accessibility-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: Iced accessibility support - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "iced_accessibility" (0.1.0).

@@ -1,0 +1,10 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -4,6 +4,6 @@
+ edition = "2021"
+ 
+ [dependencies]
+-cosmic-config = { git = "https://github.com/pop-os/libcosmic/" }
++cosmic-config = { version = "1.0.0" }
+ input = "0.9.0"
+ serde = { version = "1", features = ["derive"] }

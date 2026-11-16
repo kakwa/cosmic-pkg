@@ -1,0 +1,9 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -8,5 +8,5 @@
+ 
+ [dependencies]
+ serde = { version = "1.0", features = ["derive"] }
+-cosmic-config = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = ["macro"] }
++cosmic-config = { version = "1.0.0", default-features = false, features = ["macro"] }
+ # cosmic-config = { git = "https://github.com/pop-os/libcosmic" }

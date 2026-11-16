@@ -1,0 +1,37 @@
+Source: rust-winit-x11
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-bitflags-dev,
+librust-bytemuck-dev,
+librust-calloop-dev,
+librust-cursor-icon-dev,
+librust-dpi-dev,
+librust-libc-dev,
+librust-percent-encoding-dev,
+librust-raw-window-handle-dev,
+librust-rustix-dev,
+librust-serde-dev,
+librust-smol-str-dev,
+librust-tracing-dev,
+librust-winit-common-dev,
+librust-winit-core-dev,
+librust-x11-dl-dev,
+librust-x11rb-dev,
+librust-xkbcommon-dl-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/winit
+X-Cargo-Crate: winit-x11
+X-Cargo-Crate-Version: 0.31.0-beta.2
+
+Package: librust-winit-x11-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: Winit X11 backend - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "winit-x11" (0.31.0-beta.2).

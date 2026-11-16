@@ -1,0 +1,9 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,5 +11,5 @@
+ serde = { version = "1.0.228", features = ["derive"] }
+ 
+ [dependencies.zlink]
+-workspace = true
++zlink = { version = "0.5", default-features = false, features = ["tokio"] }
+ features = ["introspection"]

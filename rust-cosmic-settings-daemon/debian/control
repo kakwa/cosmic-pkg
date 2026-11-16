@@ -1,0 +1,21 @@
+Source: rust-cosmic-settings-daemon
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-zbus-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/dbus-settings-bindings
+X-Cargo-Crate: cosmic-settings-daemon
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-cosmic-settings-daemon-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: COSMIC settings daemon dbus bindings - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-settings-daemon" (0.1.0).

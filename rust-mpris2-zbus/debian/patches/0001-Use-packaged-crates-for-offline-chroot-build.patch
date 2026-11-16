@@ -1,0 +1,21 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -6,12 +6,12 @@
+ license = "MPL-2.0"
+ 
+ [dependencies]
+-futures-util.workspace = true
+-serde.workspace = true
+-thiserror.workspace = true
+-jiff.workspace = true
+-zbus.workspace = true
+-zvariant.workspace = true
++futures-util = "0.3.31"
++serde = "1.0"
++thiserror = "2.0"
++jiff = "0.2"
++zbus = { version = "5.15", default-features = false }
++zvariant = "5"
+ 
+ [dev-dependencies]
+ miette = { version = "7.6", features = ["fancy"] }

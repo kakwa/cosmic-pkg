@@ -1,0 +1,26 @@
+Source: rust-cosmic-settings-accessibility-subscription
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-cosmic-dbus-a11y-dev,
+librust-futures-dev,
+librust-iced-futures-dev,
+librust-tokio-dev,
+librust-tracing-dev,
+librust-zbus-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/cosmic-settings
+X-Cargo-Crate: cosmic-settings-accessibility-subscription
+X-Cargo-Crate-Version: 1.10.0
+
+Package: librust-cosmic-settings-accessibility-subscription-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: accessibility settings subscription - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-settings-accessibility-subscription" (1.10.0).

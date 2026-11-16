@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: iced_accessibility
+Source: https://github.com/pop-os/libcosmic
+
+Files: *
+Copyright: FIXME kakwa <carpentier.pf@gmail.com>
+License: MIT OR Apache-2.0

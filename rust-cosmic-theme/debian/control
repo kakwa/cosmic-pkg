@@ -1,0 +1,31 @@
+Source: rust-cosmic-theme
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-almost-dev,
+librust-configparser-dev,
+librust-cosmic-config-dev,
+librust-csscolorparser-dev,
+librust-dirs-dev,
+librust-hex-color-dev,
+librust-palette-dev,
+librust-ron-dev,
+librust-serde-dev,
+librust-serde-json-dev,
+librust-thiserror-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/libcosmic
+X-Cargo-Crate: cosmic-theme
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-cosmic-theme-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: COSMIC theme definitions - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-theme" (1.0.0).

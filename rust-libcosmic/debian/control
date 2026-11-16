@@ -1,0 +1,75 @@
+Source: rust-libcosmic
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-apply-dev,
+librust-ashpd-dev,
+librust-async-fs-dev,
+librust-async-std-dev,
+librust-auto-enums-dev,
+librust-build-helpers-dev,
+librust-cosmic-client-toolkit-dev,
+librust-cosmic-config-dev,
+librust-cosmic-freedesktop-icons-dev,
+librust-cosmic-panel-config-dev,
+librust-cosmic-settings-config-dev,
+librust-cosmic-settings-daemon-dev,
+librust-cosmic-theme-dev,
+librust-css-color-dev,
+librust-derive-setters-dev,
+librust-enumflags2-dev,
+librust-float-cmp-dev,
+librust-freedesktop-desktop-entry-dev,
+librust-futures-dev,
+librust-i18n-embed-dev,
+librust-i18n-embed-fl-dev,
+librust-iced-dev,
+librust-iced-accessibility-dev,
+librust-iced-core-dev,
+librust-iced-futures-dev,
+librust-iced-renderer-dev,
+librust-iced-runtime-dev,
+librust-iced-tiny-skia-dev,
+librust-iced-wgpu-dev,
+librust-iced-widget-dev,
+librust-iced-winit-dev,
+librust-image-dev,
+librust-image-extras-dev,
+librust-jiff-dev,
+librust-libc-dev,
+librust-log-dev,
+librust-mime-dev,
+librust-palette-dev,
+librust-phf-dev,
+librust-rfd-dev,
+librust-ron-dev,
+librust-roxmltree-dev,
+librust-rust-embed-dev,
+librust-rustix-dev,
+librust-serde-dev,
+librust-shlex-dev,
+librust-slotmap-dev,
+librust-smol-dev,
+librust-taffy-dev,
+librust-thiserror-dev,
+librust-tokio-dev,
+librust-tracing-dev,
+librust-unicode-segmentation-dev,
+librust-url-dev,
+librust-zbus-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/libcosmic
+X-Cargo-Crate: libcosmic
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-libcosmic-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: The COSMIC desktop environment toolkit - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "libcosmic" (1.0.0).

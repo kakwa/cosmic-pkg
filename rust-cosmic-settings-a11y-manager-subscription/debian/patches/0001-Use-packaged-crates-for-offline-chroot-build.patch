@@ -1,0 +1,20 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -3,14 +3,13 @@
+ version = "1.10.0"
+ edition = "2024"
+ license = "MPL-2.0"
+-rust-version.workspace = true
+ publish = true
+ 
+ [dependencies]
+-cosmic-protocols = { git = "https://github.com/pop-os/cosmic-protocols" }
+-iced_futures = { git = "https://github.com/pop-os/libcosmic" }
++cosmic-protocols = { version = "0.2.0" }
++iced_futures = { version = "0.14.0" }
+ num-derive = "0.4.2"
+ num-traits = "0.2.19"
+-sctk.workspace = true
++sctk = { version = "0.20.0", default-features = false, features = ["client"] }
+ tokio = "1.53.1"
+ tracing = "0.1.44"

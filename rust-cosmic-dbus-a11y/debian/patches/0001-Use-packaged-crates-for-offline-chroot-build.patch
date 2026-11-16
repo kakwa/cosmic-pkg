@@ -1,0 +1,8 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -4,4 +4,4 @@
+ edition = "2024"
+ 
+ [dependencies]
+-zbus.workspace = true
++zbus = { version = "5.15", default-features = false }

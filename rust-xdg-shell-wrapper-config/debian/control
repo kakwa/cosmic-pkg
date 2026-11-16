@@ -1,0 +1,22 @@
+Source: rust-xdg-shell-wrapper-config
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-serde-dev,
+librust-wayland-protocols-wlr-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/cosmic-panel
+X-Cargo-Crate: xdg-shell-wrapper-config
+X-Cargo-Crate-Version: 1.10.0
+
+Package: librust-xdg-shell-wrapper-config-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: xdg shell wrapper config types - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "xdg-shell-wrapper-config" (1.10.0).

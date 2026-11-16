@@ -1,0 +1,19 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+ image = ["fast_image_resize"]
+ 
+ [dependencies]
+-libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false }
++libcosmic = { version = "1.0.0", default-features = false }
+ serde = { version = "1.0", features = ["derive"] }
+ zbus = { version = "5.14.0", optional = true }
+ fast_image_resize = { version = "6.0.0", optional = true }
+@@ -20,6 +20,4 @@
+ url = "2.5.8"
+ 
+ [dev-dependencies]
+-libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [
+-    "tokio",
+-] }
++libcosmic = { version = "1.0.0", default-features = false, features = [ "tokio", ] }

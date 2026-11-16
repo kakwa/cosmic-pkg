@@ -1,0 +1,16 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -2,12 +2,11 @@
+ name = "cosmic-settings-daemon-subscription"
+ version = "1.10.0"
+ edition = "2024"
+-rust-version.workspace = true
+ publish = true
+ 
+ [dependencies]
+ futures = "0.3.33"
+-iced_futures = { git = "https://github.com/pop-os/libcosmic" }
++iced_futures = { version = "0.14.0" }
+ log = "0.4.33"
+ tokio = "1.53.1"
+ tokio-stream = "0.1.19"

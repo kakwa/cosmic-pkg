@@ -1,0 +1,27 @@
+Source: rust-cosmic-freedesktop-icons
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-bstr-dev,
+librust-btoi-dev,
+librust-memchr-dev,
+librust-memmap2-dev,
+librust-thiserror-dev,
+librust-tracing-dev,
+librust-xdg-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/freedesktop-icons
+X-Cargo-Crate: cosmic-freedesktop-icons
+X-Cargo-Crate-Version: 0.4.0
+
+Package: librust-cosmic-freedesktop-icons-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: freedesktop icon lookup - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-freedesktop-icons" (0.4.0).

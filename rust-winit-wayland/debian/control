@@ -1,0 +1,40 @@
+Source: rust-winit-wayland
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+librust-ahash-dev,
+librust-bitflags-dev,
+librust-calloop-dev,
+librust-cursor-icon-dev,
+librust-dpi-dev,
+librust-libc-dev,
+librust-memmap2-dev,
+librust-raw-window-handle-dev,
+librust-rustix-dev,
+librust-sctk-adwaita-dev,
+librust-serde-dev,
+librust-smithay-client-toolkit-dev,
+librust-smol-str-dev,
+librust-tracing-dev,
+librust-wayland-backend-dev,
+librust-wayland-client-dev,
+librust-wayland-protocols-dev,
+librust-wayland-protocols-plasma-dev,
+librust-winit-common-dev,
+librust-winit-core-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/winit
+X-Cargo-Crate: winit-wayland
+X-Cargo-Crate-Version: 0.31.0-beta.2
+
+Package: librust-winit-wayland-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: Winit wayland backend - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "winit-wayland" (0.31.0-beta.2).
