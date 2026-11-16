@@ -39,6 +39,24 @@ This patch:
  
  futures = "0.3"
  futures-util = "0.3"
+@@ -40,7 +40,7 @@
+     "desktop-requester",
+ ] }
+ i18n-embed-fl = "0.10"
+-libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = [
++libcosmic = { version = "1.0.0", default-features = false, features = [
+     "applet",
+     "applet-token",
+     "dbus-config",
+@@ -60,7 +60,7 @@
+ tracing-log = "0.2.0"
+ tokio = { version = "1.49.0", features = ["full"] }
+ # cosmic-config = { path = "../libcosmic/cosmic-config" }
+-cosmic-config = { git = "https://github.com/pop-os/libcosmic" }
++cosmic-config = "1.0.0"
+ serde = { version = "1.0.228", features = ["derive"] }
+ zlink = "0.5.0"
+ 
 @@ -80,13 +80,6 @@
  # libcosmic = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
  # iced_futures = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
@@ -53,6 +71,7 @@ This patch:
  # [patch.'https://github.com/pop-os/dbus-settings-bindings']
  # cosmic-dbus-networkmanager = { path = "../dbus-settings-bindings/networkmanager" }
  # upower_dbus = { path = "../dbus-settings-bindings/upower" }
+
 --- a/cosmic-applet-a11y/Cargo.toml
 +++ b/cosmic-applet-a11y/Cargo.toml
 @@ -16,10 +16,6 @@
