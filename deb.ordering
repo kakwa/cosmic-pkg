@@ -42,7 +42,6 @@ rust-dbus-tokio
 rust-derive-pod
 rust-derive-setters
 rust-dnd
-rust-dpi
 rust-edid
 rust-enum-repr
 rust-equator-macro
@@ -72,7 +71,6 @@ rust-logind-zbus
 rust-lyon-tessellation
 rust-mccs
 rust-memoize-inner
-rust-mime
 rust-modit
 rust-mpris2-zbus
 rust-multiversion-no-op
@@ -88,9 +86,7 @@ rust-recently-used-xbel
 rust-secure-string
 rust-sha-1
 rust-smithay
-rust-smithay-clipboard
 rust-snowflake
-rust-softbuffer
 rust-static-init-macro
 rust-sunrise
 rust-switcheroo-control
@@ -109,7 +105,6 @@ rust-wallpaper
 rust-wayland-protocols-experimental
 rust-wgpu-hal
 rust-whitespace-conf
-rust-winit
 rust-winit-common
 rust-winit-wayland
 rust-winit-web
@@ -164,9 +159,6 @@ rust-xdg-mime
 rust-xdgen
 rust-zlink-core
 rust-zune-image
-rust-accesskit
-rust-accesskit-consumer
-rust-smithay-client-toolkit
 cosmic-applets
 rust-atspi
 rust-block2
