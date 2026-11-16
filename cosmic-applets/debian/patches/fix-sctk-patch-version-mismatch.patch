@@ -1,0 +1,35 @@
+From: kakwa <carpentier.pf@gmail.com>
+Subject: Fix smithay-client-toolkit patch version mismatch for offline chroot build
+The workspace declares a `[patch."https://github.com/smithay/client-toolkit.git"]`
+section that maps `sctk` to `smithay-client-toolkit` version 0.20.0 from the
+crates.io registry.
+
+No crate in the workspace actually depends on the git URL
+`https://github.com/smithay/client-toolkit.git`, so the patch is unused by
+normal resolution. However, the Debian cargo wrapper replaces the crates.io
+registry with the Debian-provided one, where the packaged
+`smithay-client-toolkit` is 0.19.2. Cargo then validates the (unused) patch
+entry against the patched registry and fails the build with:
+
+  error: patch `smithay-client-toolkit` version mismatch
+  note: patch location contains version `0.19.2`, but patch definition
+        requires `^0.20.0`
+
+Since the patch matches no dependency, removing it changes the resolved
+dependency graph in no way and unblocks the offline chroot build.
+---
+ Cargo.toml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -80,9 +80,6 @@
+ # iced_futures = { git = "https://github.com/pop-os/libcosmic//", branch = "theme-v2" }
+ 
+-[patch."https://github.com/smithay/client-toolkit.git"]
+-sctk = { package = "smithay-client-toolkit", version = "0.20.0" }
+-
+ [patch."https://github.com/pop-os/cosmic-protocols"]
+ cosmic-protocols = { git = "https://github.com/pop-os/cosmic-protocols//", rev = "c0cff4d" }
+ cosmic-client-toolkit = { git = "https://github.com/pop-os/cosmic-protocols//", rev = "c0cff4d" }
