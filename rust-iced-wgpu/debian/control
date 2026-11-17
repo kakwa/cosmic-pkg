@@ -19,8 +19,7 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-rustc-hash-dev <!nocheck>,
  librust-thiserror-dev <!nocheck>,
  librust-wgpu-dev <!nocheck>,
- librust-wgpu-27+std-dev <!nocheck>,
- librust-wgpu-27+wgsl-dev <!nocheck>
+  librust-wgpu-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-wgpu]

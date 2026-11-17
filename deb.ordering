@@ -84,7 +84,6 @@ rust-zune-png
 rust-zune-ppm
 rust-zune-psd
 rust-zune-qoi
-xdg-desktop-portal-cosmic
 cosmic-osd
 rust-atspi-proxies
 rust-bitcode
@@ -92,7 +91,6 @@ rust-compio-driver
 rust-compio-io
 rust-cosmic-client-toolkit
 rust-crabtime
-rust-cryoglyph
 rust-custom-debug
 rust-dataview
 rust-ddc
@@ -142,6 +140,16 @@ rust-iced-winit
 rust-objc2-foundation
 rust-gilrs
 rust-gpu-allocator
+rust-wgpu-hal
+rust-wgpu-core
+rust-wgpu
+rust-cryoglyph
+rust-iced-wgpu
+rust-winit-core
+rust-winit-common
+rust-winit-wayland
+rust-winit-x11
+rust-winit-web
 rust-iced
 rust-iced-video-player
 rust-i18n-embed
@@ -184,3 +192,4 @@ cosmic-term
 cosmic-viewer
 cosmic-wallpapers
 cosmic-workspaces-epoch
+xdg-desktop-portal-cosmic
