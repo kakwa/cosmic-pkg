@@ -26,9 +26,7 @@ Depends:
  librust-bytes-dev (>= 1.6),
  librust-iced-core-dev,
  librust-iced-futures-dev,
- librust-iced-selector-dev,
  librust-raw-window-handle-dev,
- librust-sipper-dev,
  librust-thiserror-dev
 Provides:
  librust-iced-runtimedev (= ${binary:Version}),

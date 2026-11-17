@@ -24,12 +24,7 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-iced-highlighter-dev,
  librust-iced-renderer-dev,
- librust-iced-renderer-0.14+geometry-dev,
- librust-iced-renderer-0.14+image-dev,
- librust-iced-renderer-0.14+svg-dev,
- librust-iced-renderer-0.14+wgpu-bare-dev,
  librust-log-dev,
  librust-num-traits-dev,
  librust-ouroboros-dev,

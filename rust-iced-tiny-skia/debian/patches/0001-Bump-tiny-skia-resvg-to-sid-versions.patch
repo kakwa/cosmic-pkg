@@ -1,0 +1,20 @@
+--- a/Cargo.toml	2026-11-17 20:15:19.246232858 +0100
++++ b/Cargo.toml	2026-11-17 20:15:32.793826185 +0100
+@@ -78,7 +78,7 @@
+ version = "0.4"
+ 
+ [dependencies.resvg]
+-version = "0.45"
++version = "0.48"
+ optional = true
+ 
+ [dependencies.rustc-hash]
+@@ -89,7 +89,7 @@
+ default-features = false
+ 
+ [dependencies.tiny-skia]
+-version = "0.11"
++version = "0.12"
+ features = [
+     "std",
+     "simd",

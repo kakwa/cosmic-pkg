@@ -2,13 +2,32 @@ Description: Use packaged crates for offline chroot build
  The libcosmic crate is built from the full git repo. This patch
  de-gits and de-workspaces all dependencies so the crate can be
  built offline using only packaged (Debian) dependencies.
+ It also removes the "a11y" feature (and its iced_accessibility
+ dependency) since iced-accessibility is a git-only crate not
+ available for the offline chroot build.
 
 Author: Debian Rust Maintainers
-Last-Update: 2026-11-16
+Last-Update: 2026-11-17
 ---
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -121,15 +121,15 @@
+@@ -11,15 +11,12 @@
+ default = [
+     "winit",
+     "tokio",
+-    "a11y",
+     "dbus-config",
+     "x11",
+     "wayland",
+     "multi-window",
+ ]
+ advanced-shaping = ["iced/advanced-shaping"]
+-# Accessibility support
+-a11y = ["iced/a11y", "iced_accessibility"]
+ # Enable about widget
+ about = []
+ # Builds support for animated images
+@@ -121,11 +118,11 @@
  [dependencies]
  apply = "0.3.0"
  async-fs = { version = "2.2", optional = true }
@@ -22,42 +41,19 @@ Last-Update: 2026-11-16
 +cosmic-settings-config = { version = "1.10.0", optional = true }
  # Internationalization
  i18n-embed = { version = "0.16.0", features = [
--    "fluent-system",
--    "desktop-requester",
-+"fluent-system",
-+"desktop-requester",
- ] }
- i18n-embed-fl = "0.10"
- rust-embed = "8.11.0"
-@@ -137,47 +137,47 @@
- derive_setters = "0.1.9"
- futures = "0.3"
- image = { version = "0.25.10", default-features = false, features = [
--    "ico",
--    "jpeg",
--    "png",
-+"ico",
-+"jpeg",
-+"png",
- ] }
- image-extras = { version = "0.1.0", default-features = false, features = [
--    "xpm",
--    "xbm",
-+"xpm",
-+"xbm",
- ], optional = true }
+     "fluent-system",
+@@ -148,36 +145,36 @@
  libc = { version = "0.2.186", optional = true }
  log = "0.4"
  mime = { version = "0.3.17", optional = true }
 -palette.workspace = true
 +palette = "0.7"
  rfd = { version = "0.16.0", default-features = false, features = [
--    "xdg-portal",
-+"xdg-portal",
+     "xdg-portal",
  ], optional = true }
  rustix = { version = "1.1", features = ["pipe", "process"], optional = true }
 -serde = { workspace = true, features = ["derive"] }
-+serde = { version = "1.0" , features = ["derive"] }
++serde = { version = "1.0", features = ["derive"] }
  slotmap = "1.1.1"
  smol = { version = "2.0.2", optional = true }
 -thiserror.workspace = true
@@ -95,7 +91,7 @@ Last-Update: 2026-11-16
  freedesktop-desktop-entry = { version = "0.8.1", optional = true }
  shlex = { version = "1.3.0", optional = true }
  
-@@ -185,83 +185,27 @@
+@@ -185,83 +182,27 @@
  # Used to embed bundled icons for non-unix platforms.
  phf = { version = "0.13.1", features = ["macros"] }
  
@@ -172,7 +168,6 @@ Last-Update: 2026-11-16
 -tracing = "0.1"
 -tokio = "1.52"
 -zbus = { version = "5.15", default-features = false }
--
 +] }
 +iced_runtime = { version = "0.14.0" }
 +iced_renderer = { version = "0.14.0" }
@@ -183,6 +178,7 @@ Last-Update: 2026-11-16
 +iced_winit = { version = "0.14.0", optional = true }
 +iced_wgpu = { version = "0.14.0", optional = true }
 +cosmic-panel-config = { version = "1.10.0", optional = true }
+ 
  [dev-dependencies]
  tempfile = "3.27.0"
  

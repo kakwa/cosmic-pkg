@@ -1,0 +1,11 @@
+--- a/Cargo.toml	2026-11-17 20:12:19.977330676 +0100
++++ b/Cargo.toml	2026-11-17 20:12:30.065927335 +0100
+@@ -63,7 +63,7 @@
+ features = ["derive"]
+ 
+ [dependencies.cosmic-text]
+-version = "0.15"
++version = "0.19"
+ 
+ [dependencies.half]
+ version = "2.2"

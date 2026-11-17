@@ -2,7 +2,7 @@
 NAME = rust-window-clipboard
 
 # Version
-VERSION = 0.4.1
+VERSION = 0.5.1
 
 # Revision number 
 RELEASE = 1
@@ -11,7 +11,7 @@ RELEASE = 1
 URL = https://crates.io/crates/window_clipboard
 
 # URL of the upstream source archive
-URL_SRC = https://static.crates.io/crates/window_clipboard/window_clipboard-0.4.1.crate
+URL_SRC = https://static.crates.io/crates/window_clipboard/window_clipboard-0.5.1.crate
 
 # short summary of what the package provides
 SUMMARY = Obtain clipboard access from a `raw-window-handle` - Rust source code

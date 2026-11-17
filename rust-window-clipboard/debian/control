@@ -5,10 +5,7 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
- librust-clipboard-macos-dev <!nocheck>,
  librust-clipboard-wayland-dev (>= 0.2.2) <!nocheck>,
- librust-clipboard-win-dev <!nocheck>,
- librust-clipboard-win-5+std-dev <!nocheck>,
  librust-clipboard-x11-dev (>= 0.4.2) <!nocheck>,
  librust-raw-window-handle-dev <!nocheck>,
  librust-raw-window-handle-0.6+std-dev <!nocheck>,
@@ -19,17 +16,14 @@ Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/window-clipbo
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/window-clipboard
 Homepage: https://github.com/hecrj/window_clipboard
 X-Cargo-Crate: window_clipboard
-X-Cargo-Crate-Version: 0.4.1
+X-Cargo-Crate-Version: 0.5.1
 
 Package: librust-window-clipboard-dev
 Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-clipboard-macos-dev,
  librust-clipboard-wayland-dev (>= 0.2.2),
- librust-clipboard-win-dev,
- librust-clipboard-win-5+std-dev,
  librust-clipboard-x11-dev (>= 0.4.2),
  librust-raw-window-handle-dev,
  librust-raw-window-handle-0.6+std-dev,
@@ -38,9 +32,9 @@ Provides:
  librust-window-clipboarddev (= ${binary:Version}),
  librust-window-clipboard-0-dev (= ${binary:Version}),
  librust-window-clipboard-dev (= ${binary:Version}),
- librust-window-clipboard-0.4-dev (= ${binary:Version}),
- librust-window-clipboard-dev (= ${binary:Version}),
- librust-window-clipboard-0.4.1-dev (= ${binary:Version}),
- librust-window-clipboard-dev (= ${binary:Version})
-Description: Obtain clipboard access from a `raw-window-handle` - Rust source code
+ librust-window-clipboard-0.5-dev (= ${binary:Version}),
+ librust-window-clipboard-0.5+x11-dev (= ${binary:Version}),
+ librust-window-clipboard-0.5+wayland-dev (= ${binary:Version}),
+ librust-window-clipboard-0.5.1-dev (= ${binary:Version})
+Description: Clipboard implementation for window_clipboard - Rust source code
  Source code for Debianized Rust crate "window_clipboard"

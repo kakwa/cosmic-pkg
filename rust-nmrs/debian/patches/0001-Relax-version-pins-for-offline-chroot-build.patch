@@ -10,7 +10,8 @@ cargo is allowed to resolve to.
 
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -104,7 +104,7 @@
+@@ -104,29 +104,29 @@
+ path = "tests/integration_test.rs"
  
  [dependencies.base64]
 -version = "0.23.1"
@@ -47,7 +48,8 @@ cargo is allowed to resolve to.
  features = [
      "rt-multi-thread",
      "macros",
-@@ -137,21 +137,21 @@
+@@ -136,23 +136,23 @@
+ ]
  
  [dependencies.uuid]
 -version = "1.28.0"
@@ -73,3 +75,5 @@ cargo is allowed to resolve to.
 -version = "5.16.0"
 +version = "5"
  features = ["p2p"]
+ 
+ [lints.clippy]

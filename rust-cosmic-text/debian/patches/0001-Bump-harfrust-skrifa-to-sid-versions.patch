@@ -1,0 +1,20 @@
+--- a/Cargo.toml	2026-11-17 20:10:34.313844287 +0100
++++ b/Cargo.toml	2026-11-17 20:10:47.455461102 +0100
+@@ -130,7 +130,7 @@
+ default-features = false
+ 
+ [dependencies.harfrust]
+-version = "0.5.0"
++version = "0.12.0"
+ default-features = false
+ 
+ [dependencies.hashbrown]
+@@ -164,7 +164,7 @@
+ version = "1.2.2"
+ 
+ [dependencies.skrifa]
+-version = "0.40.0"
++version = "0.44.0"
+ default-features = false
+ 
+ [dependencies.smol_str]
