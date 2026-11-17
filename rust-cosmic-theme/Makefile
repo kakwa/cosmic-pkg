@@ -11,7 +11,7 @@ RELEASE = 1
 URL = https://github.com/pop-os/libcosmic
 
 # URL of the upstream source archive
-URL_SRC = file:///tmp/gitc/cosmic-theme-1.0.0.tar.gz
+URL_SRC = https://github.com/pop-os/libcosmic/archive/430f3d48a97d8779f9c1985473912e594ccca1ae.tar.gz
 
 # short summary of what the package provides
 SUMMARY = COSMIC theme definitions - Rust source code
@@ -35,6 +35,9 @@ include buildenv/Makefile.common
 # from the upstream git tree at the revision pinned by cosmic-applets'
 # Cargo.lock. Recover it from the local staging area.
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
-	@$(WGS) -u $(URL_SRC) -O $(notdir $(URL_SRC))
-	@tar -xzf $(CACHE_DIR)/$(notdir $(URL_SRC)) -C $(SOURCE_DIR) --strip-components=0
+	@$(WGS) -u $(URL_SRC) -O cosmic-theme-1.0.0.tar.gz
+	@rm -rf $(SOURCE_DIR)/.crate_extract && mkdir -p $(SOURCE_DIR)/.crate_extract
+	@tar -xzf $(CACHE_DIR)/cosmic-theme-1.0.0.tar.gz -C $(SOURCE_DIR)/.crate_extract
+	@cp -a $(SOURCE_DIR)/.crate_extract/*/cosmic-theme/. $(SOURCE_DIR)/
+	@rm -rf $(SOURCE_DIR)/.crate_extract
 	@$(SOURCE_TAR_CMD)

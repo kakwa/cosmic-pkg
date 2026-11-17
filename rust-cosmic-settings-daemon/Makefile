@@ -11,7 +11,7 @@ RELEASE = 1
 URL = https://github.com/pop-os/dbus-settings-bindings
 
 # URL of the upstream source archive
-URL_SRC = file:///tmp/gitc/cosmic-settings-daemon-0.1.0.tar.gz
+URL_SRC = https://github.com/pop-os/dbus-settings-bindings/archive/eed01dd3609e90e3c8cd043656734c500956c793.tar.gz
 
 # short summary of what the package provides
 SUMMARY = COSMIC settings daemon dbus bindings - Rust source code
@@ -35,6 +35,9 @@ include buildenv/Makefile.common
 # from the upstream git tree at the revision pinned by cosmic-applets'
 # Cargo.lock. Recover it from the local staging area.
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
-	@$(WGS) -u $(URL_SRC) -O $(notdir $(URL_SRC))
-	@tar -xzf $(CACHE_DIR)/$(notdir $(URL_SRC)) -C $(SOURCE_DIR) --strip-components=0
+	@$(WGS) -u $(URL_SRC) -O cosmic-settings-daemon-0.1.0.tar.gz
+	@rm -rf $(SOURCE_DIR)/.crate_extract && mkdir -p $(SOURCE_DIR)/.crate_extract
+	@tar -xzf $(CACHE_DIR)/cosmic-settings-daemon-0.1.0.tar.gz -C $(SOURCE_DIR)/.crate_extract
+	@cp -a $(SOURCE_DIR)/.crate_extract/*/cosmic-settings-daemon/. $(SOURCE_DIR)/
+	@rm -rf $(SOURCE_DIR)/.crate_extract
 	@$(SOURCE_TAR_CMD)

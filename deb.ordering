@@ -89,7 +89,6 @@ rust-winit-common
 rust-winit-wayland
 rust-winit-web
 rust-winit-x11
-rust-xdg-shell-wrapper-config
 rust-xdg-user
 rust-xkb-data
 rust-yaml-rust
@@ -176,19 +175,8 @@ rust-iced-video-player
 rust-cosmic-comp-config
 rust-cosmic-dbus-a11y
 rust-cosmic-freedesktop-icons
-rust-cosmic-notifications-config
-rust-cosmic-notifications-util
-rust-cosmic-osk-config
-rust-cosmic-panel-config
 rust-cosmic-protocols
-rust-cosmic-settings-a11y-manager-subscription
-rust-cosmic-settings-accessibility-subscription
-rust-cosmic-settings-audio-client
-rust-cosmic-settings-audio-core
-rust-cosmic-settings-config
 rust-cosmic-settings-daemon
-rust-cosmic-settings-daemon-subscription
-rust-cosmic-settings-upower-subscription
 rust-cosmic-text
 rust-cosmic-theme
 cosmic-app-library

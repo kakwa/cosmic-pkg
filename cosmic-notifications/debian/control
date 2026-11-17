@@ -17,3 +17,30 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: notification-daemon
 Description: COSMIC notification daemon
  Notification daemon for the COSMIC desktop environment.
+
+Package: librust-cosmic-notifications-config-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends:
+    ${misc:Depends},
+    librust-cosmic-config-dev,
+    librust-serde-dev,
+Description: COSMIC notifications config - Rust source code
+ Source code for the Debianized Rust crate "cosmic-notifications-config".
+
+Package: librust-cosmic-notifications-util-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends:
+    ${misc:Depends},
+    librust-fast-image-resize-dev,
+    librust-libcosmic-dev,
+    librust-serde-dev,
+    librust-tl-dev,
+    librust-tracing-dev,
+    librust-url-dev,
+    librust-zbus-dev,
+Description: COSMIC notifications utilities - Rust source code
+ Source code for the Debianized Rust crate "cosmic-notifications-util".

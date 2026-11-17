@@ -5,3 +5,18 @@
 
 override_dh_auto_build:
 	cargo build --release
+
+override_dh_auto_install:
+	dh_auto_install
+	# Install Rust library crates from the workspace for librust-*-dev packages
+	set -e; \
+	for spec in "cosmic-settings-audio-client:audio-client:librust-cosmic-settings-audio-client-dev" \
+	            "cosmic-settings-audio-core:audio-core:librust-cosmic-settings-audio-core-dev" \
+	            "cosmic-settings-config:config:librust-cosmic-settings-config-dev"; do \
+	  crate=$${spec%%:*}; rest=$${spec#*:}; dir=$${rest%%:*}; pkg=$${rest#*:}; \
+	  ver=$$(grep '^version' $$dir/Cargo.toml | head -1 | sed 's/.*"\(.*\)".*/\1/'); \
+	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
+	  mkdir -p $$dest; \
+	  cp -a $$dir/. $$dest/; \
+	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
+	done

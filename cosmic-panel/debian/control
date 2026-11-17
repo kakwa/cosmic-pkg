@@ -17,3 +17,19 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: XDG Shell wrapper panel for COSMIC
  Panel for the COSMIC desktop environment.
+
+Package: librust-cosmic-panel-config-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: COSMIC panel config types - Rust source code
+ Source code for the Debianized Rust crate "cosmic-panel-config".
+
+Package: librust-xdg-shell-wrapper-config-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: xdg shell wrapper config types - Rust source code
+ Source code for the Debianized Rust crate "xdg-shell-wrapper-config".

@@ -19,3 +19,11 @@ Depends:
     ${shlibs:Depends}
 Description: COSMIC on-screen keyboard
  On-screen keyboard for the COSMIC desktop environment.
+
+Package: librust-cosmic-osk-config-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: COSMIC OSK config types - Rust source code
+ Source code for the Debianized Rust crate "cosmic-osk-config".

@@ -37,3 +37,35 @@ Depends:
 Recommends: adw-gtk3
 Description: Settings application for the COSMIC desktop environment
  Settings application for the COSMIC desktop environment
+
+Package: librust-cosmic-settings-a11y-manager-subscription-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: a11y-manager settings subscription - Rust source code
+ Source code for the Debianized Rust crate "cosmic-settings-a11y-manager-subscription".
+
+Package: librust-cosmic-settings-accessibility-subscription-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: accessibility settings subscription - Rust source code
+ Source code for the Debianized Rust crate "cosmic-settings-accessibility-subscription".
+
+Package: librust-cosmic-settings-daemon-subscription-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: settings-daemon settings subscription - Rust source code
+ Source code for the Debianized Rust crate "cosmic-settings-daemon-subscription".
+
+Package: librust-cosmic-settings-upower-subscription-dev
+Section: rust
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: upower settings subscription - Rust source code
+ Source code for the Debianized Rust crate "cosmic-settings-upower-subscription".

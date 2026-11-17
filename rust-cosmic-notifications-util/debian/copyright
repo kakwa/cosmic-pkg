@@ -1,7 +1,0 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: cosmic-notifications-util
-Source: https://github.com/pop-os/cosmic-notifications
-
-Files: *
-Copyright: FIXME kakwa <carpentier.pf@gmail.com>
-License: MIT OR Apache-2.0
