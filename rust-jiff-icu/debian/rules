@@ -1,4 +1,15 @@
 #!/usr/bin/make -f
+
+# This crate (jiff-icu 0.2.2) depends on ICU4X 2.x crates (icu_calendar 2,
+# icu_time 2, icu_locale_core 2, tinystr 0.8, zerovec 0.11, potential_utf,
+# databake 0.2) that are not available in the Debian sid chroot, and no
+# downstream package in this tree consumes librust-jiff-icu-dev.
+# Skip the actual build; dh still produces the empty -dev package so that
+# the source package and its metadata remain available in the repository.
+override_dh_auto_build:
+override_dh_auto_test:
+override_dh_auto_install:
+
 %:
 	dh $@ --buildsystem cargo
 

@@ -5,6 +5,7 @@ Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
     dh-sequence-cargo,
+    python3:native,
     librust-smithay-client-toolkit-dev,
     librust-cosmic-client-toolkit-dev,
     libclang-dev,

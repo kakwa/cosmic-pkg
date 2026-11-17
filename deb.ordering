@@ -34,9 +34,7 @@ rust-hostname-validator
 rust-hostname1-zbus
 rust-i2c
 rust-i2c-linux-sys
-rust-iced-accessibility
 rust-icu-locale-fallback-data
-rust-icu-locid
 rust-icu-locid-transform-data
 rust-icu-provider-macros
 rust-io-uring-buf-ring
@@ -44,7 +42,6 @@ rust-jiff-icu
 rust-keyboard-types
 rust-konst-macro-rules
 rust-launch-pad
-rust-libcosmic
 rust-libflatpak-sys
 rust-lilt
 rust-logind-zbus
@@ -118,7 +115,6 @@ rust-ddc
 rust-equator
 rust-iced-core
 rust-icu-locale-fallback
-rust-icu-locid-transform
 rust-id-tree
 rust-libflatpak
 rust-lyon
@@ -138,7 +134,6 @@ rust-xdg-mime
 rust-xdgen
 rust-zlink-core
 rust-zune-image
-cosmic-applets
 rust-atspi
 rust-block2
 rust-compio-runtime
@@ -172,13 +167,21 @@ rust-gilrs
 rust-gpu-allocator
 rust-iced
 rust-iced-video-player
+rust-i18n-embed
+rust-i18n-embed-fl
+rust-build-helpers
+rust-cosmic-config
+rust-cosmic-theme
+rust-cosmic-settings-config
+rust-cosmic-panel-config
+rust-cosmic-settings-daemon
+rust-libcosmic
+rust-cosmic-freedesktop-icons
 rust-cosmic-comp-config
 rust-cosmic-dbus-a11y
-rust-cosmic-freedesktop-icons
 rust-cosmic-protocols
-rust-cosmic-settings-daemon
+cosmic-applets
 rust-cosmic-text
-rust-cosmic-theme
 cosmic-app-library
 cosmic-bg
 cosmic-comp
@@ -205,4 +208,3 @@ cosmic-term
 cosmic-viewer
 cosmic-wallpapers
 cosmic-workspaces-epoch
-

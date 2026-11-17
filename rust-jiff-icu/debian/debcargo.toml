@@ -1,1 +1,7 @@
 semver_suffix = false
+# ICU4X 2.x crates (icu_calendar, icu_time, icu_locale_core, icu_provider,
+# tinystr 0.8, zerovec 0.11, potential_utf, databake 0.2, litemap 0.8)
+# are not available in the sid chroot, and no downstream package in this
+# tree consumes jiff-icu (libcosmic and mpris2-zbus only need librust-jiff-dev).
+# Disable building the crate; the source package is kept for provenance.
+disable = true

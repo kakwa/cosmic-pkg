@@ -2,7 +2,7 @@ Source: rust-cosmic-comp-config
 Section: rust
 Build-Depends: debhelper-compat (= 13),
  dh-sequence-cargo
-Build-Depends-Arch: cargo:native <!nocheck>,,
+Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-cosmic-config-dev,

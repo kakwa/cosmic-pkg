@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: build_helpers
+Source: https://github.com/pop-os/iced
+
+Files: *
+Copyright: FIXME kakwa <carpentier.pf@gmail.com>
+License: MIT

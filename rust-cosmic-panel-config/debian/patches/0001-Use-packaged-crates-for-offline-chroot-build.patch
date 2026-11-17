@@ -1,0 +1,31 @@
+Description: Use packaged crates for offline chroot build
+ The cosmic-panel-config crate is extracted from the full cosmic-panel git
+ repository. This patch de-gits and de-workspaces its dependencies so it
+ can be built offline using only packaged (Debian) dependencies, and
+ points the xdg-shell-wrapper-config path dependency at the co-packaged
+ copy.
+
+Author: Debian Rust Maintainers
+Last-Update: 2026-11-17
+---
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -7,13 +7,13 @@
+ default = ["wayland-rs"]
+ wayland-rs = ["wayland-protocols-wlr", "xdg-shell-wrapper-config", "sctk"]
+ [dependencies]
+ anyhow = "1.0.102"
+ serde = { version = "1.0", features = ["derive"] }
+ tracing = "0.1.44"
+ wayland-protocols-wlr = { version = "0.3.12", features = [
+     "server",
+     "client",
+ ], optional = true }
+-cosmic-config = { git = "https://github.com/pop-os/libcosmic" }
+-xdg-shell-wrapper-config = { path = "../xdg-shell-wrapper-config", optional = true }
++cosmic-config = { version = "1.0.0" }
++xdg-shell-wrapper-config = { path = "./xdg-shell-wrapper-config", optional = true }
+ # xdg-shell-wrapper-config = { git = "https://github.com/pop-os/xdg-shell-wrapper", optional = true }
+-sctk.workspace = true
+-sctk.optional = true
++sctk = { version = "0.20.0", package = "smithay-client-toolkit", optional = true }

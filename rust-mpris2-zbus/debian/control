@@ -2,15 +2,15 @@ Source: rust-mpris2-zbus
 Section: rust
 Build-Depends: debhelper-compat (= 13),
  dh-sequence-cargo
-Build-Depends-Arch: cargo:native <!nocheck>,,
+Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
-librust-futures-util-dev,
-librust-jiff-dev,
-librust-serde-dev,
-librust-thiserror-dev,
-librust-zbus-dev,
-librust-zvariant-dev
+  librust-futures-util-dev,
+  librust-jiff-dev,
+  librust-serde-dev,
+  librust-thiserror-dev,
+  librust-zbus-dev,
+  librust-zvariant-dev
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Homepage: https://github.com/pop-os/dbus-settings-bindings

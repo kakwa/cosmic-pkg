@@ -2,17 +2,17 @@ Source: rust-winit-common
 Section: rust
 Build-Depends: debhelper-compat (= 13),
  dh-sequence-cargo
-Build-Depends-Arch: cargo:native <!nocheck>,,
+Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
-librust-memmap2-dev,
-librust-objc2-dev,
-librust-objc2-core-foundation-dev,
-librust-smol-str-dev,
-librust-tracing-dev,
-librust-winit-core-dev,
-librust-x11-dl-dev,
-librust-xkbcommon-dl-dev
+  librust-memmap2-dev,
+  librust-objc2-dev,
+  librust-objc2-core-foundation-dev,
+  librust-smol-str-dev,
+  librust-tracing-dev,
+  librust-winit-core-dev,
+  librust-x11-dl-dev,
+  librust-xkbcommon-dl-dev
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Homepage: https://github.com/pop-os/winit

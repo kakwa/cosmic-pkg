@@ -1,0 +1,23 @@
+Description: Use packaged crates for offline chroot build
+ The cosmic-settings-config crate is extracted from the full
+ cosmic-settings-daemon git repository. This patch de-gits its
+ dependencies so it can be built offline using only packaged (Debian)
+ dependencies.
+
+Author: Debian Rust Maintainers
+Last-Update: 2026-11-17
+---
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -4,7 +4,7 @@
+ edition = "2024"
+
+ [dependencies]
+-cosmic-config = { git = "https://github.com/pop-os/libcosmic" }
++cosmic-config = { version = "1.0.0" }
+ serde = { version = "1.0", features = ["derive"] }
+ serde_with = "3.14.0"
+ tracing = "0.1.41"
+ xkbcommon = "0.9"
+-ron = "0.11"
++ron = "0.12"

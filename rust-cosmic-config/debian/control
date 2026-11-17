@@ -1,0 +1,46 @@
+Source: rust-cosmic-config
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+  librust-atomicwrites-dev,
+  librust-cosmic-settings-daemon-dev,
+  librust-dirs-dev,
+  librust-futures-util-dev,
+  librust-iced-futures-dev,
+  librust-notify-dev,
+  librust-ron-dev,
+  librust-serde-dev,
+  librust-tokio-dev,
+  librust-tracing-dev,
+  librust-xdg-dev,
+  librust-zbus-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/libcosmic
+X-Cargo-Crate: cosmic-config
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-cosmic-config-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+ librust-cosmic-config-derive-dev,
+ librust-cosmic-settings-daemon-dev,
+ librust-futures-util-dev,
+ librust-iced-futures-dev
+Description: COSMIC configuration system - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-config" (1.0.0).
+
+Package: librust-cosmic-config-derive-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+ librust-quote-dev,
+ librust-syn-2-dev
+Description: COSMIC configuration system derive macros - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "cosmic-config-derive" (1.0.0).

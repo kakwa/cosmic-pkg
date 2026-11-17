@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: i18n-embed
+Source: https://github.com/kellpossible/cargo-i18n
+
+Files: *
+Copyright: FIXME kakwa <carpentier.pf@gmail.com>
+License: MIT

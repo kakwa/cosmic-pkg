@@ -1,16 +1,29 @@
 #!/usr/bin/make -f
+include /usr/share/dpkg/architecture.mk
+include /usr/share/dpkg/buildflags.mk
+include /usr/share/rustc/architecture.mk
+export CFLAGS CXXFLAGS CPPFLAGS LDFLAGS
+export DEB_HOST_RUST_TYPE DEB_HOST_GNU_TYPE
+
 %:
 	dh $@ --buildsystem cargo
 
 override_dh_auto_test:
-	# skipped: the workspace cannot be fully resolved offline (libcosmic is
-	# a git dependency with no packaged version); the binary is built by
-	# dh_auto_build instead, which only needs the libcosmic metadata.
 	true
+
+override_dh_auto_build:
+	env CARGO_HOME=$(CURDIR)/debian/cargo_home \
+		DEB_CARGO_CRATE=cosmic-applets_1.11.0 \
+		DEB_CARGO_CRATE_IN_REGISTRY=0 \
+		/usr/share/cargo/bin/cargo prepare-debian \
+			$(CURDIR)/debian/cargo_registry --link-from-system
 
 override_dh_auto_install:
 	( cd cosmic-applets && \
 	  env HOME=$(CURDIR) \
+		CARGO_HOME=$(CURDIR)/debian/cargo_home \
+		DEB_CARGO_CRATE=cosmic-applets_1.11.0 \
+		DEB_CARGO_CRATE_IN_REGISTRY=0 \
 		DESTDIR=$(CURDIR)/debian/cosmic-applets \
-		/usr/share/cargo/bin/cargo install --path . --bins \
+		/usr/share/cargo/bin/cargo install --bins \
 			--target-dir $(CURDIR)/target )

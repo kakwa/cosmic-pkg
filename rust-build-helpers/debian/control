@@ -1,0 +1,21 @@
+Source: rust-build-helpers
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+  librust-cfg-aliases-dev
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Homepage: https://github.com/pop-os/libcosmic
+X-Cargo-Crate: build_helpers
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-build-helpers-dev
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: iced build helpers - Rust source code
+ This package contains the Rust source code for the Debianized crate
+ "build_helpers" (0.14.0).

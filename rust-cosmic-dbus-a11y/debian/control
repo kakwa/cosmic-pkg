@@ -2,10 +2,10 @@ Source: rust-cosmic-dbus-a11y
 Section: rust
 Build-Depends: debhelper-compat (= 13),
  dh-sequence-cargo
-Build-Depends-Arch: cargo:native <!nocheck>,,
+Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
-librust-zbus-dev
+  librust-zbus-dev
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Homepage: https://github.com/pop-os/dbus-settings-bindings
