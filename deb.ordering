@@ -44,7 +44,6 @@ rust-jiff-icu
 rust-keyboard-types
 rust-konst-macro-rules
 rust-launch-pad
-rust-libcosmic
 rust-libflatpak-sys
 rust-lilt
 rust-logind-zbus
@@ -138,7 +137,6 @@ rust-xdg-mime
 rust-xdgen
 rust-zlink-core
 rust-zune-image
-cosmic-applets
 rust-atspi
 rust-block2
 rust-compio-runtime
@@ -172,6 +170,7 @@ rust-gilrs
 rust-gpu-allocator
 rust-iced
 rust-iced-video-player
+rust-libcosmic
 rust-cosmic-comp-config
 rust-cosmic-dbus-a11y
 rust-cosmic-freedesktop-icons
@@ -179,6 +178,7 @@ rust-cosmic-protocols
 rust-cosmic-settings-daemon
 rust-cosmic-text
 rust-cosmic-theme
+cosmic-applets
 cosmic-app-library
 cosmic-bg
 cosmic-comp
