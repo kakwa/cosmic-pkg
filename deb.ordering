@@ -182,6 +182,8 @@ rust-cosmic-dbus-a11y
 rust-cosmic-protocols
 cosmic-applets
 rust-cosmic-text
+rust-cosmic-theme
+cosmic-applets
 cosmic-app-library
 cosmic-bg
 cosmic-comp
