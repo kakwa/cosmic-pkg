@@ -215,9 +215,11 @@ rust-cosmic-freedesktop-icons
 rust-cosmic-comp-config
 rust-cosmic-dbus-a11y
 rust-cosmic-protocols
+rust-drm-0.14
 cosmic-settings
 cosmic-settings-daemon
 cosmic-osk
+cosmic-notifications
 cosmic-applets
 cosmic-app-library
 cosmic-bg
@@ -230,7 +232,6 @@ cosmic-idle
 cosmic-initial-setup
 cosmic-launcher
 cosmic-monitor
-cosmic-notifications
 cosmic-panel
 cosmic-player
 cosmic-randr

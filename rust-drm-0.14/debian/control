@@ -1,0 +1,57 @@
+Source: rust-drm-0.14
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.66) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev <!nocheck>,
+ librust-bytemuck-1+default-dev (>= 1.12) <!nocheck>,
+ librust-bytemuck-1+derive-dev (>= 1.12) <!nocheck>,
+ librust-bytemuck-1+extern-crate-alloc-dev (>= 1.12) <!nocheck>,
+ librust-drm-ffi-0.9+default-dev <!nocheck>,
+ librust-drm-fourcc-2+default-dev (>= 2.2.0) <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>,
+ librust-rustix-0.38+default-dev (>= 0.38.22) <!nocheck>,
+ librust-rustix-0.38+fs-dev (>= 0.38.22) <!nocheck>,
+ librust-rustix-0.38+mm-dev (>= 0.38.22) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/drm-0.14]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/drm-0.14
+Homepage: https://github.com/Smithay/drm-rs
+X-Cargo-Crate: drm
+X-Cargo-Crate-Version: 0.14.1
+
+Package: librust-drm-0.14-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev,
+ librust-bytemuck-1+default-dev (>= 1.12),
+ librust-bytemuck-1+derive-dev (>= 1.12),
+ librust-bytemuck-1+extern-crate-alloc-dev (>= 1.12),
+ librust-drm-ffi-0.9+default-dev,
+ librust-drm-ffi-0.9+use-bindgen-dev,
+ librust-drm-fourcc-2+default-dev (>= 2.2.0),
+ librust-libc-0.2+default-dev,
+ librust-rustix-0.38+default-dev (>= 0.38.22),
+ librust-rustix-0.38+fs-dev (>= 0.38.22),
+ librust-rustix-0.38+mm-dev (>= 0.38.22)
+Provides:
+ librust-drm-0-dev (= ${binary:Version}),
+ librust-drm-0+default-dev (= ${binary:Version}),
+ librust-drm-0+use-bindgen-dev (= ${binary:Version}),
+ librust-drm-0.14+default-dev (= ${binary:Version}),
+ librust-drm-0.14+use-bindgen-dev (= ${binary:Version}),
+ librust-drm-0.14.1-dev (= ${binary:Version}),
+ librust-drm-0.14.1+default-dev (= ${binary:Version}),
+ librust-drm-0.14.1+use-bindgen-dev (= ${binary:Version})
+Replaces:
+ librust-drm-dev (<< 0.14.2~)
+Breaks:
+ librust-drm-dev (<< 0.14.2~),
+ rustc (<< 1.66~)
+Description: Safe, low-level bindings to the Direct Rendering Manager API - Rust source code
+ Source code for Debianized Rust crate "drm"

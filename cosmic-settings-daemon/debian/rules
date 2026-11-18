@@ -8,12 +8,13 @@ override_dh_auto_build:
 	env HOME="$(CURDIR)/debian/home" \
 		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
 		CARGO_NET_OFFLINE=true \
-		cargo build --locked --offline --release
+		cargo build --locked --offline --release --jobs 2
 
 override_dh_auto_install:
 	env HOME="$(CURDIR)/debian/home" \
 		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
 		CARGO_NET_OFFLINE=true \
+		CARGO_BUILD_JOBS=2 \
 		dh_auto_install
 	# Install Rust library crates from the workspace for librust-*-dev packages
 	set -e; \
@@ -25,5 +26,11 @@ override_dh_auto_install:
 	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
 	  mkdir -p $$dest; \
 	  cp -a $$dir/. $$dest/; \
+	  sed -i \
+	    -e 's|cosmic-config = { git = "https://github.com/pop-os/libcosmic" }|cosmic-config = "1.0.0"|' \
+	    -e 's|^cosmic-settings-audio-core = { path = "../audio-core" }$$|cosmic-settings-audio-core = "1.11"|' \
+	    -e 's|^workspace = true$$|version = "0.5"|' \
+	    -e 's|^zlink = { workspace = true, features = \["idl", "introspection", "tokio", "tracing", "server", "service"\] }$$|zlink = { version = "0.5", features = ["idl", "introspection", "tokio", "tracing", "server", "service"] }|' \
+	    $$dest/Cargo.toml; \
 	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
 	done

@@ -4,10 +4,17 @@
 	dh $@
 
 override_dh_auto_build:
-	cargo build --release
+	tar pxf vendor.tar
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		cargo build --locked --offline --release
 
 override_dh_auto_install:
-	dh_auto_install
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		dh_auto_install
 	# Install Rust library crates from the workspace for librust-*-dev packages
 	set -e; \
 	for spec in "cosmic-osk-config:config:librust-cosmic-osk-config-dev"; do \
@@ -16,5 +23,9 @@ override_dh_auto_install:
 	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
 	  mkdir -p $$dest; \
 	  cp -a $$dir/. $$dest/; \
+	  sed -i \
+	    -e '/^\[dependencies\.cosmic-config\]$$/,/^\[/ s|^git = .*|version = "1.0.0"|' \
+	    -e '/^\[dependencies\.iced_futures\]$$/,/^\[/ s|^git = .*|version = "0.14.0"|' \
+	    $$dest/Cargo.toml; \
 	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
 	done

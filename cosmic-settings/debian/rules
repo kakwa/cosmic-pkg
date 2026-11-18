@@ -26,5 +26,13 @@ override_dh_auto_install:
 	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
 	  mkdir -p $$dest; \
 	  cp -a $$dir/. $$dest/; \
+	  sed -i \
+	    -e 's/^rust-version\.workspace = true$$/rust-version = "1.93"/' \
+	    -e 's|cosmic-protocols = { git = "https://github.com/pop-os/cosmic-protocols" }|cosmic-protocols = "0.2.0"|' \
+	    -e 's|iced_futures = { git = "https://github.com/pop-os/libcosmic" }|iced_futures = "0.14.0"|' \
+	    -e 's|^sctk\.workspace = true$$|sctk = { version = "0.20", package = "smithay-client-toolkit" }|' \
+	    -e 's|cosmic-dbus-a11y = { git = "https://github.com/pop-os/dbus-settings-bindings" }|cosmic-dbus-a11y = "0.1.0"|' \
+	    -e 's|upower_dbus = { git = "https://github.com/pop-os/dbus-settings-bindings" }|upower_dbus = "0.3.2"|' \
+	    $$dest/Cargo.toml; \
 	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
 	done

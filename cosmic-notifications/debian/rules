@@ -4,10 +4,17 @@
 	dh $@
 
 override_dh_auto_build:
-	cargo build --release
+	tar pxf vendor.tar
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		cargo build --locked --offline --release
 
 override_dh_auto_install:
-	dh_auto_install
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		dh_auto_install
 	# Install Rust library crates from the workspace for librust-*-dev packages
 	set -e; \
 	for spec in "cosmic-notifications-config:cosmic-notifications-config:librust-cosmic-notifications-config-dev" \
@@ -17,5 +24,11 @@ override_dh_auto_install:
 	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
 	  mkdir -p $$dest; \
 	  cp -a $$dir/. $$dest/; \
-	  printf '{"package":"%s","files":{}}\n' "$$(sha256sum $$dest/Cargo.toml | cut -d' ' -f1)" > $$dest/.cargo-checksum.json 2>/dev/null || printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
+	  sed -i \
+	    -e 's|cosmic-config = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = \["macro"\] }|cosmic-config = { version = "1.0.0", default-features = false, features = ["macro"] }|' \
+	    -e '/^# cosmic-config = { git = /d' \
+	    -e 's|libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false }|libcosmic = { version = "1.0.0", default-features = false }|' \
+	    -e 's|libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = \[|libcosmic = { version = "1.0.0", default-features = false, features = [|' \
+	    $$dest/Cargo.toml; \
+	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
 	done

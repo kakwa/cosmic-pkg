@@ -35,9 +35,14 @@ LICENSE = GPL-3.0
 # Including common rules and targets
 include buildenv/Makefile.common
 
-# Recover the upstream sources and remove the upstream Debian packaging.
+# Recover the upstream sources, remove the upstream Debian packaging and
+# vendor the Rust dependencies so the chroot build can run fully offline.
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@$(WGS) -u $(URL_SRC) -O $(NAME)-$(VERSION).tar.gz
 	@tar -xf $(CACHE_DIR)/$(NAME)-$(VERSION).tar.gz -C $(SOURCE_DIR) --strip-components=1
-	@rm -rf -- $(SOURCE_DIR)/debian
+	@rm -rf -- $(SOURCE_DIR)/debian $(SOURCE_DIR)/vendor $(SOURCE_DIR)/vendor.tar
+	@mkdir -p $(SOURCE_DIR)/.cargo
+	@cd $(SOURCE_DIR) && cargo vendor --locked > .cargo/config.toml
+	@tar -pcf $(SOURCE_DIR)/vendor.tar -C $(SOURCE_DIR) vendor
+	@rm -rf -- $(SOURCE_DIR)/vendor
 	@$(SOURCE_TAR_CMD)
