@@ -1,0 +1,45 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --all-features
+Features: test-name=rust-codespan-reporting-0.12:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features --features ascii-only
+Features: test-name=librust-codespan-reporting-0.12-dev:ascii-only
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets
+Features: test-name=librust-codespan-reporting-0.12-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features --features serde
+Features: test-name=librust-codespan-reporting-0.12-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features --features serialization
+Features: test-name=librust-codespan-reporting-0.12-dev:serialization
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features --features std
+Features: test-name=librust-codespan-reporting-0.12-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features --features termcolor
+Features: test-name=librust-codespan-reporting-0.12-dev:termcolor
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test codespan-reporting 0.12.0 --all-targets --no-default-features
+Features: test-name=librust-codespan-reporting-0.12-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.67), librust-anyhow-1+default-dev, librust-insta-1+default-dev (>= 1.6.3), librust-lazy-static-1+default-dev (>= 1.4), librust-peg-0.7+default-dev, librust-pico-args-0.5+default-dev, librust-rustyline-6+default-dev, librust-unindent-0.1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

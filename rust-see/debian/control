@@ -1,0 +1,46 @@
+Source: rust-see
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-criterion-0.7+async-tokio-dev <!nocheck>,
+ librust-criterion-0.7+default-dev <!nocheck>,
+ librust-criterion-0.7+html-reports-dev <!nocheck>,
+ librust-event-listener-5+default-dev (>= 5.4.1) <!nocheck>,
+ librust-local-event-0.1+default-dev (>= 0.1.1) <!nocheck>,
+ librust-parking-lot-0.12+default-dev (>= 0.12.5) <!nocheck>,
+ librust-thiserror-2+default-dev (>= 2.0.17) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/see]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/see
+Homepage: https://github.com/compio-rs/see
+X-Cargo-Crate: see
+X-Cargo-Crate-Version: 0.1.1
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-see-dev is very long, consider overriding
+
+Package: librust-see-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-criterion-0.7+async-tokio-dev,
+ librust-criterion-0.7+default-dev,
+ librust-criterion-0.7+html-reports-dev,
+ librust-event-listener-5+default-dev (>= 5.4.1),
+ librust-local-event-0.1+default-dev (>= 0.1.1),
+ librust-parking-lot-0.12+default-dev (>= 0.12.5),
+ librust-thiserror-2+default-dev (>= 2.0.17)
+Provides:
+ librust-see+default-dev (= ${binary:Version}),
+ librust-see-0-dev (= ${binary:Version}),
+ librust-see-0+default-dev (= ${binary:Version}),
+ librust-see-0.1-dev (= ${binary:Version}),
+ librust-see-0.1+default-dev (= ${binary:Version}),
+ librust-see-0.1.1-dev (= ${binary:Version}),
+ librust-see-0.1.1+default-dev (= ${binary:Version})
+Description: High-performance, asynchronous runtime-agnostic alternative to tokio::sync::watch - Rust source code
+ Source code for Debianized Rust crate "see"

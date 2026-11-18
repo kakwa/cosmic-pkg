@@ -31,10 +31,13 @@ LICENSE = MIT OR Apache-2.0
 
 include buildenv/Makefile.common
 
-# This crate is not published on crates.io; its source is a tarball built
-# from the upstream git tree at the revision pinned by cosmic-applets'
-# Cargo.lock. Recover it from the local staging area.
+# This crate is not published on crates.io; its source lives in a subdirectory
+# of the upstream cosmic-comp tarball. Copy only that crate to the source root
+# so that the Debian patch and dh-cargo see the expected Cargo.toml layout.
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@$(WGS) -u $(URL_SRC) -O $(notdir $(URL_SRC))
-	@tar -xzf $(CACHE_DIR)/$(notdir $(URL_SRC)) -C $(SOURCE_DIR) --strip-components=0
+	@rm -rf $(SOURCE_DIR)/.crate_extract && mkdir -p $(SOURCE_DIR)/.crate_extract
+	@tar -xzf $(CACHE_DIR)/$(notdir $(URL_SRC)) -C $(SOURCE_DIR)/.crate_extract
+	@cp -a $(SOURCE_DIR)/.crate_extract/*/cosmic-comp-config/. $(SOURCE_DIR)/
+	@rm -rf $(SOURCE_DIR)/.crate_extract
 	@$(SOURCE_TAR_CMD)

@@ -8,7 +8,7 @@ Build-Depends-Arch: cargo:native <!nocheck>,
   librust-anyhow-dev,
   librust-cosmic-config-dev,
   librust-serde-dev,
-  librust-smithay-client-toolkit-dev,
+  librust-smithay-client-toolkit-0.20-dev,
   librust-tracing-dev,
   librust-wayland-protocols-wlr-dev
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
@@ -24,7 +24,7 @@ Depends: ${misc:Depends},
  librust-anyhow-dev,
  librust-cosmic-config-dev,
  librust-serde-dev,
- librust-smithay-client-toolkit-dev,
+ librust-smithay-client-toolkit-0.20-dev,
  librust-tracing-dev,
  librust-wayland-protocols-wlr-dev,
  librust-xdg-shell-wrapper-config-dev

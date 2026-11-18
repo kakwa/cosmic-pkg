@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-macros 1.0.1 --all-targets --all-features
+Features: test-name=rust-defmt-macros-1:@
+Depends: dh-cargo (>= 33~), rustc, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-macros 1.0.1 --all-targets
+Features: test-name=librust-defmt-macros-1-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-macros 1.0.1 --all-targets --no-default-features --features unstable-test
+Features: test-name=librust-defmt-macros-1-dev:unstable-test
+Depends: dh-cargo (>= 33~), rustc, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-macros 1.0.1 --all-targets --no-default-features
+Features: test-name=librust-defmt-macros-1-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

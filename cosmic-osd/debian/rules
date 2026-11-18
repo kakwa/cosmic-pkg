@@ -4,4 +4,7 @@
 	dh $@
 
 override_dh_auto_build:
-	cargo build --release
+	tar pxf vendor.tar
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		cargo build --locked --offline --release

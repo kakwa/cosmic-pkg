@@ -1,0 +1,55 @@
+Source: rust-objc2-exception-helper
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cc-dev (>= 1.0.80) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/objc2-exception-helper]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/objc2-exception-helper
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: objc2-exception-helper
+X-Cargo-Crate-Version: 0.1.1
+
+Package: librust-objc2-exception-helper-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-objc2-exception-helperdev (= ${binary:Version}),
+ librust-objc2-exception-helper-0-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+alloc-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+default-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+gnustep-2-1-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0+std-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+alloc-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+default-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+gnustep-2-1-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1+std-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+alloc-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+default-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+gnustep-2-1-dev (= ${binary:Version}),
+ librust-objc2-exception-helper-0.1.1+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: External helper function for catching Objective-C exceptions - Rust source code
+ Source code for Debianized Rust crate "objc2-exception-helper"

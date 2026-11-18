@@ -1,0 +1,42 @@
+Source: rust-spirv-0.3
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/spirv-0.3]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/spirv-0.3
+Homepage: https://github.com/gfx-rs/rspirv
+X-Cargo-Crate: spirv
+X-Cargo-Crate-Version: 0.3.0
+
+Package: librust-spirv-0.3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev,
+ librust-bitflags-2+serde-dev,
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev
+Provides:
+ librust-spirv-0-dev (= ${binary:Version}),
+ librust-spirv-0+default-dev (= ${binary:Version}),
+ librust-spirv-0+deserialize-dev (= ${binary:Version}),
+ librust-spirv-0+serde-dev (= ${binary:Version}),
+ librust-spirv-0+serialize-dev (= ${binary:Version}),
+ librust-spirv-0.3+default-dev (= ${binary:Version}),
+ librust-spirv-0.3+deserialize-dev (= ${binary:Version}),
+ librust-spirv-0.3+serde-dev (= ${binary:Version}),
+ librust-spirv-0.3+serialize-dev (= ${binary:Version}),
+ librust-spirv-0.3.0-dev (= ${binary:Version}),
+ librust-spirv-0.3.0+default-dev (= ${binary:Version}),
+ librust-spirv-0.3.0+deserialize-dev (= ${binary:Version}),
+ librust-spirv-0.3.0+serde-dev (= ${binary:Version}),
+ librust-spirv-0.3.0+serialize-dev (= ${binary:Version})
+Description: Rust definition of SPIR-V structs and enums - Rust source code
+ Source code for Debianized Rust crate "spirv"

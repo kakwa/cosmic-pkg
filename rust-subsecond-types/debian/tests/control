@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test subsecond_types 0.7.2 --all-targets --all-features
+Features: test-name=rust-subsecond-types:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test subsecond_types 0.7.2 --all-targets
+Features: test-name=librust-subsecond-types-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test subsecond_types 0.7.2 --all-targets --no-default-features
+Features: test-name=librust-subsecond-types-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

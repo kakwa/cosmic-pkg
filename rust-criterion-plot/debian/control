@@ -1,0 +1,32 @@
+Source: rust-criterion-plot-0.6
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cast-0.3+default-dev <!nocheck>,
+ librust-itertools-0.13+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/criterion-plot-0.6]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/criterion-plot-0.6
+Homepage: https://github.com/bheisler/criterion.rs
+X-Cargo-Crate: criterion-plot
+X-Cargo-Crate-Version: 0.6.0
+
+Package: librust-criterion-plot-0.6-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cast-0.3+default-dev,
+ librust-itertools-0.13+default-dev
+Provides:
+ librust-criterion-plot-0-dev (= ${binary:Version}),
+ librust-criterion-plot-0+default-dev (= ${binary:Version}),
+ librust-criterion-plot-0.6+default-dev (= ${binary:Version}),
+ librust-criterion-plot-0.6.0-dev (= ${binary:Version}),
+ librust-criterion-plot-0.6.0+default-dev (= ${binary:Version})
+Description: Criterion's plotting library - Rust source code
+ Source code for Debianized Rust crate "criterion-plot"

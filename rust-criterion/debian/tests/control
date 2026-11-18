@@ -1,0 +1,87 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --all-features
+Features: test-name=rust-criterion-0.7:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features async
+Features: test-name=librust-criterion-0.7-dev:async
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features async_futures
+Features: test-name=librust-criterion-0.7-dev:async_futures
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features async_smol
+Features: test-name=librust-criterion-0.7-dev:async_smol
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features async_std
+Features: test-name=librust-criterion-0.7-dev:async_std
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features async_tokio
+Features: test-name=librust-criterion-0.7-dev:async_tokio
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features cargo_bench_support
+Features: test-name=librust-criterion-0.7-dev:cargo_bench_support
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features csv_output
+Features: test-name=librust-criterion-0.7-dev:csv_output
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets
+Features: test-name=librust-criterion-0.7-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features html_reports
+Features: test-name=librust-criterion-0.7-dev:html_reports
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features plotters
+Features: test-name=librust-criterion-0.7-dev:plotters
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features rayon
+Features: test-name=librust-criterion-0.7-dev:rayon
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features real_blackbox
+Features: test-name=librust-criterion-0.7-dev:real_blackbox
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features --features stable
+Features: test-name=librust-criterion-0.7-dev:stable
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion 0.7.0 --all-targets --no-default-features
+Features: test-name=librust-criterion-0.7-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.80), librust-approx-0.5+default-dev, librust-futures-0.3+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

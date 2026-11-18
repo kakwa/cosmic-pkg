@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2_security 0.3.2 --all-targets --all-features
+Features: test-name=librust-objc2-security-0.3-dev:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2_security 0.3.2 --all-targets
+Features: test-name=librust-objc2-security-0.3-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2_security 0.3.2 --all-targets --no-default-features
+Features: test-name=librust-objc2-security-0.3-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

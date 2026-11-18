@@ -32,12 +32,6 @@ Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-ash-0.38+debug-dev, librust
 Restrictions: allow-stderr
 Architecture: !riscv64
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test gpu-allocator 0.28.0 --all-targets --no-default-features --features visualizer
-Features: test-name=librust-gpu-allocator-dev:visualizer
-Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-ash-0.38+debug-dev, librust-ash-0.38+loaded-dev, librust-env-logger-dev, librust-objc2-metal-0.3+mtlpixelformat-dev, librust-windowsdev (<< 0.63), librust-windowsdev (>= 0.58), librust-windows+win32-graphics-direct3d-dev (<< 0.63), librust-windows+win32-graphics-direct3d-dev (>= 0.58), librust-windows+win32-graphics-direct3d12-dev (<< 0.63), librust-windows+win32-graphics-direct3d12-dev (>= 0.58), librust-windows+win32-graphics-dxgi-common-dev (<< 0.63), librust-windows+win32-graphics-dxgi-common-dev (>= 0.58), @
-Restrictions: allow-stderr
-Architecture: !riscv64
-
 Test-Command: /usr/share/cargo/bin/cargo-auto-test gpu-allocator 0.28.0 --all-targets --no-default-features --features vulkan
 Features: test-name=librust-gpu-allocator-dev:vulkan
 Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-ash-0.38+debug-dev, librust-ash-0.38+loaded-dev, librust-env-logger-dev, librust-objc2-metal-0.3+mtlpixelformat-dev, librust-windowsdev (<< 0.63), librust-windowsdev (>= 0.58), librust-windows+win32-graphics-direct3d-dev (<< 0.63), librust-windows+win32-graphics-direct3d-dev (>= 0.58), librust-windows+win32-graphics-direct3d12-dev (<< 0.63), librust-windows+win32-graphics-direct3d12-dev (>= 0.58), librust-windows+win32-graphics-dxgi-common-dev (<< 0.63), librust-windows+win32-graphics-dxgi-common-dev (>= 0.58), @

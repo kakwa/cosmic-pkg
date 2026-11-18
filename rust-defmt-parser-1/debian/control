@@ -1,0 +1,33 @@
+Source: rust-defmt-parser-1
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/defmt-parser-1]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/defmt-parser-1
+Homepage: https://github.com/knurling-rs/defmt
+X-Cargo-Crate: defmt-parser
+X-Cargo-Crate-Version: 1.0.0
+
+Package: librust-defmt-parser-1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-thiserror-2+default-dev
+Provides:
+ librust-defmt-parser-1+default-dev (= ${binary:Version}),
+ librust-defmt-parser-1+unstable-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0+default-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0+unstable-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0.0-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0.0+default-dev (= ${binary:Version}),
+ librust-defmt-parser-1.0.0+unstable-dev (= ${binary:Version})
+Description: Parsing library for defmt format strings - Rust source code
+ Source code for Debianized Rust crate "defmt-parser"

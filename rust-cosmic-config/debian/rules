@@ -1,6 +1,25 @@
 #!/usr/bin/make -f
+
+DERIVE_PKG = librust-cosmic-config-derive-dev
+DERIVE_REGISTRY_DIR = debian/$(DERIVE_PKG)/usr/share/cargo/registry/cosmic-config-derive-1.0.0
+
 %:
 	dh $@ --buildsystem cargo
 
+override_dh_auto_clean:
+	dh_auto_clean --buildsystem=cargo -N$(DERIVE_PKG)
+
+override_dh_auto_configure:
+	dh_auto_configure --buildsystem=cargo -N$(DERIVE_PKG)
+
+override_dh_auto_build:
+	dh_auto_build --buildsystem=cargo -N$(DERIVE_PKG)
+
 override_dh_auto_test:
-	true
+	dh_auto_test --buildsystem=cargo -N$(DERIVE_PKG) -- test --all; true
+
+override_dh_auto_install:
+	dh_auto_install --buildsystem=cargo -N$(DERIVE_PKG)
+	install -d $(DERIVE_REGISTRY_DIR)
+	cp -a cosmic-config-derive/. $(DERIVE_REGISTRY_DIR)/
+	printf '{"package":"unknown","files":{}}\n' > $(DERIVE_REGISTRY_DIR)/.cargo-checksum.json

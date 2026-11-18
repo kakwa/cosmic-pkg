@@ -1,0 +1,30 @@
+Source: rust-compile-warning
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compile-warning]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/compile-warning
+Homepage: https://crates.io/crates/compile_warning/0.1.0
+X-Cargo-Crate: compile_warning
+X-Cargo-Crate-Version: 0.1.0
+
+Package: librust-compile-warning-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-compile-warning+default-dev (= ${binary:Version}),
+ librust-compile-warning-0-dev (= ${binary:Version}),
+ librust-compile-warning-0+default-dev (= ${binary:Version}),
+ librust-compile-warning-0.1-dev (= ${binary:Version}),
+ librust-compile-warning-0.1+default-dev (= ${binary:Version}),
+ librust-compile-warning-0.1.0-dev (= ${binary:Version}),
+ librust-compile-warning-0.1.0+default-dev (= ${binary:Version})
+Description: Proc macro that emits a compile-time warning - Rust source code
+ Source code for Debianized Rust crate "compile_warning"

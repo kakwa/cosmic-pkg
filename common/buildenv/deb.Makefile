@@ -3,17 +3,21 @@
 
 # Find distribution-specific Debian files
 DEB_CONTENT_DIST := $(filter-out debian/control.dist.$(DIST) \
-  debian/rules.dist.$(DIST), \
-  $(wildcard debian/*.dist.$(DIST)) \
+  debian/rules.dist.$(DIST) \
+  debian/copyright.dist.$(DIST), \
+  $(shell find debian -type f -name '*.dist.$(DIST)' -print) \
 )
 
 # Find base Debian files (excluding distribution-specific ones)
-DEB_CONTENT_BASE := $(filter-out $(wildcard debian/*.dist.*) \
+# Use files, not directories, so edits to files inside e.g. debian/patches/
+# are seen by make and copied into the build tree.
+DEB_CONTENT_BASE := $(filter-out \
+  $(shell find debian -type f -name '*.dist.*' -print) \
   debian/changelog \
   debian/control \
   debian/rules \
   debian/copyright, \
-  $(wildcard debian/*) \
+  $(shell find debian -type f -print) \
 )
 
 # Select files to include in package
@@ -55,6 +59,10 @@ DEB_ARCHIVE := $(BUILD_DIR)/deb.$(DIST)/$(PKGNAME)_$(VERSION).orig.tar.gz
 # Full deb version
 FULL_VERSION_DEB := $(VERSION)-$(RELEASE)~$(PKG_ORG)+$(DIST_CODE)$(DIST_TAG)
 
+# Source package produced for this build. Build exactly this .dsc so stale
+# artifacts from an older source version are never picked up by a wildcard.
+DEB_DSC := $(BUILD_DIR)/deb.$(DIST)/$(PKGNAME)_$(FULL_VERSION_DEB).dsc
+
 # Preparation dependencies
 DEB_PREPARE := $(DEB_ARCHIVE) $(DEB_CONTENT_OUT) \
   $(BUILD_DIR)/deb.$(DIST)/$(PKGNAME)-$(VERSION)/debian/changelog \
@@ -74,12 +82,12 @@ DEB_CHANGELOG := \
 
 # Copy Debian packaging files
 $(DEB_CONTENT_OUT): $(DEB_CONTENT_IN)
-	@mkdir -p $(BUILD_DIR)/deb.$(DIST)/$(PKGNAME)-$(VERSION)/debian/
+	@mkdir -p $(dir $@)
 	@f=$(subst $(BUILD_DIR)/deb.$(DIST)/$(PKGNAME)-$(VERSION)/,,$@); \
 	if [ -e $$f.dist.$(DIST) ]; then \
-		cp -rf $$f.dist.$(DIST) $@; \
+		cp -f $$f.dist.$(DIST) $@; \
 	else \
-		cp -rf $$f $@; \
+		cp -f $$f $@; \
 	fi
 
 # Process control files with variable substitution
@@ -164,7 +172,7 @@ $(BUILD_DIR)/pkg_built_chroot.deb.$(DIST): $(DEB_PREPARE) | $(DIRECTORIES) $(IND
 	$(SUDO) $(BUILDER) --build \
 		--buildresult $(shell pwd)/$(OUT_DIR)/ \
 		$(COWBUILDER_BUILD_ARGS) \
-		$(BUILD_DIR)/deb.$(DIST)/*.dsc; \
+		$(DEB_DSC); \
 	if [ $$? -ne 0 ]; then \
 		touch $(BUILD_DIR)/failure.chroot.$(DIST).$(ARCH); \
 		exit 1; \

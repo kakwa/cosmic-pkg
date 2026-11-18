@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""Remove web-sys features unavailable in Debian from glow's Cargo.toml."""
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+text = path.read_text()
+for feature in (
+    'ImageBitmap',
+    'ImageData',
+    'Element',
+    'HtmlImageElement',
+    'HtmlVideoElement',
+    'VideoFrame',
+    'WebGlActiveInfo',
+    'WebGlBuffer',
+    'WebGlFramebuffer',
+    'WebGlProgram',
+    'WebGlQuery',
+    'WebGlRenderbuffer',
+    'WebGlRenderingContext',
+    'WebGl2RenderingContext',
+    'WebGlSampler',
+    'WebGlShader',
+    'WebGlShaderPrecisionFormat',
+    'WebGlSync',
+    'WebGlTexture',
+    'WebGlTransformFeedback',
+    'WebGlUniformLocation',
+    'WebGlVertexArrayObject',
+    'AngleInstancedArrays',
+    'ExtBlendMinmax',
+    'ExtColorBufferFloat',
+    'ExtColorBufferHalfFloat',
+    'ExtDisjointTimerQuery',
+    'ExtFragDepth',
+    'ExtShaderTextureLod',
+    'ExtSRgb',
+    'ExtTextureFilterAnisotropic',
+    'OesElementIndexUint',
+    'OesStandardDerivatives',
+    'OesTextureFloat',
+    'OesTextureFloatLinear',
+    'OesTextureHalfFloat',
+    'OesTextureHalfFloatLinear',
+    'OesVertexArrayObject',
+    'WebglColorBufferFloat',
+    'WebglCompressedTextureAstc',
+    'WebglCompressedTextureEtc',
+    'WebglCompressedTextureEtc1',
+    'WebglCompressedTexturePvrtc',
+    'WebglCompressedTextureS3tc',
+    'WebglCompressedTextureS3tcSrgb',
+    'WebglDebugRendererInfo',
+    'WebglDebugShaders',
+    'WebglDepthTexture',
+    'WebglDrawBuffers',
+    'WebglLoseContext',
+    'OvrMultiview2',
+):
+    text = text.replace(f'    "{feature}",\n', '')
+path.write_text(text)

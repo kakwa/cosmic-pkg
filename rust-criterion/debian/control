@@ -1,0 +1,109 @@
+Source: rust-criterion-0.7
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.80) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-anes-0.1+default-dev (>= 0.1.4) <!nocheck>,
+ librust-cast-0.3+default-dev <!nocheck>,
+ librust-ciborium-0.2+default-dev <!nocheck>,
+ librust-clap-4+help-dev (>= 4.5) <!nocheck>,
+ librust-clap-4+std-dev (>= 4.5) <!nocheck>,
+ librust-criterion-plot-0.6+default-dev <!nocheck>,
+ librust-itertools-0.13+default-dev <!nocheck>,
+ librust-num-traits-0.2+std-dev <!nocheck>,
+ librust-oorandom-11+default-dev (>= 11.1) <!nocheck>,
+ librust-plotters-0.3+area-series-dev (>= 0.3.2) <!nocheck>,
+ librust-plotters-0.3+line-series-dev (>= 0.3.2) <!nocheck>,
+ librust-plotters-0.3+svg-backend-dev (>= 0.3.2) <!nocheck>,
+ librust-rayon-1+default-dev (>= 1.3) <!nocheck>,
+ librust-regex-1+std-dev (>= 1.5.1) <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.100) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.100) <!nocheck>,
+ librust-serde-json-1+default-dev (>= 1.0.100) <!nocheck>,
+ librust-tinytemplate-1+default-dev (>= 1.1) <!nocheck>,
+ librust-walkdir-2+default-dev (>= 2.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/criterion-0.7]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/criterion-0.7
+Homepage: https://bheisler.github.io/criterion.rs/book/index.html
+X-Cargo-Crate: criterion
+X-Cargo-Crate-Version: 0.7.0
+
+Package: librust-criterion-0.7-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-anes-0.1+default-dev (>= 0.1.4),
+ librust-async-std-1+default-dev (>= 1.13),
+ librust-cast-0.3+default-dev,
+ librust-ciborium-0.2+default-dev,
+ librust-clap-4+help-dev (>= 4.5),
+ librust-clap-4+std-dev (>= 4.5),
+ librust-criterion-plot-0.6+default-dev,
+ librust-csv-1+default-dev (>= 1.1),
+ librust-futures-0.3+executor-dev,
+ librust-itertools-0.13+default-dev,
+ librust-num-traits-0.2+std-dev,
+ librust-oorandom-11+default-dev (>= 11.1),
+ librust-plotters-0.3+area-series-dev (>= 0.3.2),
+ librust-plotters-0.3+line-series-dev (>= 0.3.2),
+ librust-plotters-0.3+svg-backend-dev (>= 0.3.2),
+ librust-rayon-1+default-dev (>= 1.3),
+ librust-regex-1+std-dev (>= 1.5.1),
+ librust-serde-1+default-dev (>= 1.0.100),
+ librust-serde-1+derive-dev (>= 1.0.100),
+ librust-serde-json-1+default-dev (>= 1.0.100),
+ librust-smol-2-dev,
+ librust-tinytemplate-1+default-dev (>= 1.1),
+ librust-tokio-1+rt-dev,
+ librust-walkdir-2+default-dev (>= 2.3)
+Provides:
+ librust-criterion-0-dev (= ${binary:Version}),
+ librust-criterion-0+async-dev (= ${binary:Version}),
+ librust-criterion-0+async-futures-dev (= ${binary:Version}),
+ librust-criterion-0+async-smol-dev (= ${binary:Version}),
+ librust-criterion-0+async-std-dev (= ${binary:Version}),
+ librust-criterion-0+async-tokio-dev (= ${binary:Version}),
+ librust-criterion-0+cargo-bench-support-dev (= ${binary:Version}),
+ librust-criterion-0+csv-output-dev (= ${binary:Version}),
+ librust-criterion-0+default-dev (= ${binary:Version}),
+ librust-criterion-0+html-reports-dev (= ${binary:Version}),
+ librust-criterion-0+plotters-dev (= ${binary:Version}),
+ librust-criterion-0+rayon-dev (= ${binary:Version}),
+ librust-criterion-0+real-blackbox-dev (= ${binary:Version}),
+ librust-criterion-0+stable-dev (= ${binary:Version}),
+ librust-criterion-0.7+async-dev (= ${binary:Version}),
+ librust-criterion-0.7+async-futures-dev (= ${binary:Version}),
+ librust-criterion-0.7+async-smol-dev (= ${binary:Version}),
+ librust-criterion-0.7+async-std-dev (= ${binary:Version}),
+ librust-criterion-0.7+async-tokio-dev (= ${binary:Version}),
+ librust-criterion-0.7+cargo-bench-support-dev (= ${binary:Version}),
+ librust-criterion-0.7+csv-output-dev (= ${binary:Version}),
+ librust-criterion-0.7+default-dev (= ${binary:Version}),
+ librust-criterion-0.7+html-reports-dev (= ${binary:Version}),
+ librust-criterion-0.7+plotters-dev (= ${binary:Version}),
+ librust-criterion-0.7+rayon-dev (= ${binary:Version}),
+ librust-criterion-0.7+real-blackbox-dev (= ${binary:Version}),
+ librust-criterion-0.7+stable-dev (= ${binary:Version}),
+ librust-criterion-0.7.0-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+async-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+async-futures-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+async-smol-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+async-std-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+async-tokio-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+cargo-bench-support-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+csv-output-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+default-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+html-reports-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+plotters-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+rayon-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+real-blackbox-dev (= ${binary:Version}),
+ librust-criterion-0.7.0+stable-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.80~)
+Description: Statistics-driven micro-benchmarking library - Rust source code
+ Source code for Debianized Rust crate "criterion"

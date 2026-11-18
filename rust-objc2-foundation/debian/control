@@ -86,9 +86,9 @@ Depends:
  librust-objc2-core-foundation-0.3+cfstream-dev (>= 0.3.2),
  librust-objc2-core-foundation-0.3+cfurl-dev (>= 0.3.2),
  librust-objc2-core-foundation-0.3+objc2-dev (>= 0.3.2),
- librust-objc2-core-services-0.3+ae-dev (>= 0.3.2),
- librust-objc2-core-services-0.3+aedatamodel-dev (>= 0.3.2),
- librust-objc2-core-services-0.3+objc2-dev (>= 0.3.2)
+ librust-objc2-core-services-0.3+ae-dev (>= 0.3.2) [!linux-any],
+ librust-objc2-core-services-0.3+aedatamodel-dev (>= 0.3.2) [!linux-any],
+ librust-objc2-core-services-0.3+objc2-dev (>= 0.3.2) [!linux-any]
 Provides:
  librust-objc2-foundation+foundationerrors-dev (= ${binary:Version}),
  librust-objc2-foundation+foundationlegacyswiftcompatibility-dev (= ${binary:Version}),

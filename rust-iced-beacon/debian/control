@@ -1,0 +1,68 @@
+Source: rust-iced-beacon
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bincode-1+default-dev (>= 1.3) <!nocheck>,
+ librust-futures-0.3+async-await-dev <!nocheck>,
+ librust-futures-0.3+std-dev <!nocheck>,
+ librust-iced-core-0.14-dev <!nocheck>,
+ librust-iced-core-0.14+serde-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-semver-1+default-dev <!nocheck>,
+ librust-semver-1+serde-dev <!nocheck>,
+ librust-serde-1+default-dev <!nocheck>,
+ librust-serde-1+derive-dev <!nocheck>,
+ librust-thiserror-2+default-dev <!nocheck>,
+ librust-tokio-1+default-dev <!nocheck>,
+ librust-tokio-1+io-util-dev <!nocheck>,
+ librust-tokio-1+macros-dev <!nocheck>,
+ librust-tokio-1+net-dev <!nocheck>,
+ librust-tokio-1+rt-dev <!nocheck>,
+ librust-tokio-1+rt-multi-thread-dev <!nocheck>,
+ librust-tokio-1+sync-dev <!nocheck>,
+ librust-tokio-1+time-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/iced-beacon]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iced-beacon
+Homepage: https://iced.rs
+X-Cargo-Crate: iced_beacon
+X-Cargo-Crate-Version: 0.14.0
+
+Package: librust-iced-beacon-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bincode-1+default-dev (>= 1.3),
+ librust-futures-0.3+async-await-dev,
+ librust-futures-0.3+std-dev,
+ librust-iced-core-0.14-dev,
+ librust-iced-core-0.14+serde-dev,
+ librust-log-0.4+default-dev,
+ librust-semver-1+default-dev,
+ librust-semver-1+serde-dev,
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev,
+ librust-thiserror-2+default-dev,
+ librust-tokio-1+default-dev,
+ librust-tokio-1+io-util-dev,
+ librust-tokio-1+macros-dev,
+ librust-tokio-1+net-dev,
+ librust-tokio-1+rt-dev,
+ librust-tokio-1+rt-multi-thread-dev,
+ librust-tokio-1+sync-dev,
+ librust-tokio-1+time-dev
+Provides:
+ librust-iced-beacon+default-dev (= ${binary:Version}),
+ librust-iced-beacon-0-dev (= ${binary:Version}),
+ librust-iced-beacon-0+default-dev (= ${binary:Version}),
+ librust-iced-beacon-0.14-dev (= ${binary:Version}),
+ librust-iced-beacon-0.14+default-dev (= ${binary:Version}),
+ librust-iced-beacon-0.14.0-dev (= ${binary:Version}),
+ librust-iced-beacon-0.14.0+default-dev (= ${binary:Version})
+Description: Client/server protocol to monitor and supervise iced applications - Rust source code
+ Source code for Debianized Rust crate "iced_beacon"

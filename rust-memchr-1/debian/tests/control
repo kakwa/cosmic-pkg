@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memchr 1.0.2 --all-targets --all-features
+Features: test-name=rust-memchr-1:@
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.4+default-dev (>= 0.4.1), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memchr 1.0.2 --all-targets
+Features: test-name=librust-memchr-1-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.4+default-dev (>= 0.4.1), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memchr 1.0.2 --all-targets --no-default-features --features libc
+Features: test-name=librust-memchr-1-dev:libc
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.4+default-dev (>= 0.4.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memchr 1.0.2 --all-targets --no-default-features --features use_std
+Features: test-name=librust-memchr-1-dev:use_std
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.4+default-dev (>= 0.4.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test memchr 1.0.2 --all-targets --no-default-features
+Features: test-name=librust-memchr-1-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-quickcheck-0.4+default-dev (>= 0.4.1), @
+Restrictions: allow-stderr
+Architecture: !riscv64

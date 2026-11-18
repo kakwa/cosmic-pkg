@@ -1,0 +1,47 @@
+Source: rust-xkbcommon-0.8
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.148) <!nocheck>,
+ librust-memmap2-0.9+default-dev <!nocheck>,
+ librust-xkeysym-0.2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/xkbcommon-0.8]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/xkbcommon-0.8
+Homepage: https://github.com/rust-x-bindings/xkbcommon-rs
+X-Cargo-Crate: xkbcommon
+X-Cargo-Crate-Version: 0.8.0
+
+Package: librust-xkbcommon-0.8-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-as-raw-xcb-connection-1+default-dev,
+ librust-libc-0.2+default-dev (>= 0.2.148),
+ librust-memmap2-0.9+default-dev,
+ librust-xkeysym-0.2+default-dev
+Provides:
+ librust-xkbcommon-0-dev (= ${binary:Version}),
+ librust-xkbcommon-0+as-raw-xcb-connection-dev (= ${binary:Version}),
+ librust-xkbcommon-0+default-dev (= ${binary:Version}),
+ librust-xkbcommon-0+memmap2-dev (= ${binary:Version}),
+ librust-xkbcommon-0+wayland-dev (= ${binary:Version}),
+ librust-xkbcommon-0+x11-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8+as-raw-xcb-connection-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8+default-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8+memmap2-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8+wayland-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8+x11-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0+as-raw-xcb-connection-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0+default-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0+memmap2-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0+wayland-dev (= ${binary:Version}),
+ librust-xkbcommon-0.8.0+x11-dev (= ${binary:Version})
+Description: Rust bindings and wrappers for libxkbcommon - Rust source code
+ Source code for Debianized Rust crate "xkbcommon"

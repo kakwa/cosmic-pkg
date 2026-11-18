@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets --all-features
+Features: test-name=rust-wgpu-core-deps-apple-28:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets --no-default-features --features angle
+Features: test-name=librust-wgpu-core-deps-apple-28-dev:angle
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets
+Features: test-name=librust-wgpu-core-deps-apple-28-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets --no-default-features --features metal
+Features: test-name=librust-wgpu-core-deps-apple-28-dev:metal
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets --no-default-features --features vulkan-portability
+Features: test-name=librust-wgpu-core-deps-apple-28-dev:vulkan-portability
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wgpu-core-deps-apple 28.0.0 --all-targets --no-default-features
+Features: test-name=librust-wgpu-core-deps-apple-28-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.76), @
+Restrictions: allow-stderr
+Architecture: !riscv64

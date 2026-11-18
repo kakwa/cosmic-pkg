@@ -3,7 +3,6 @@ Section: admin
 Priority: optional
 Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
-    cosmic-randr,
     debhelper-compat (=13),
     libinput-dev,
     libudev-dev,

@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --all-features
+Features: test-name=rust-wayland-protocols-experimental-20250721:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --no-default-features --features client
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:client
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --no-default-features --features server
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:server
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --no-default-features --features wayland-client
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:wayland-client
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --no-default-features --features wayland-server
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:wayland-server
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test wayland-protocols-experimental 20250721.0.1 --all-targets --no-default-features
+Features: test-name=librust-wayland-protocols-experimental-20250721-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), @
+Restrictions: allow-stderr
+Architecture: !riscv64

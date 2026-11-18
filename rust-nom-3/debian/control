@@ -1,0 +1,41 @@
+Source: rust-nom-3
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-memchr-1+use-std-dev (>= 1.0.1) <!nocheck>,
+ librust-memchr-1-dev (>= 1.0.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/nom-3]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/nom-3
+Homepage: https://github.com/Geal/nom
+X-Cargo-Crate: nom
+X-Cargo-Crate-Version: 3.2.1
+
+Package: librust-nom-3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-memchr-1+use-std-dev (>= 1.0.1),
+ librust-memchr-1-dev (>= 1.0.1)
+Provides:
+ librust-nom-3+default-dev (= ${binary:Version}),
+ librust-nom-3+std-dev (= ${binary:Version}),
+ librust-nom-3+stream-dev (= ${binary:Version}),
+ librust-nom-3+verbose-errors-dev (= ${binary:Version}),
+ librust-nom-3.2-dev (= ${binary:Version}),
+ librust-nom-3.2+default-dev (= ${binary:Version}),
+ librust-nom-3.2+std-dev (= ${binary:Version}),
+ librust-nom-3.2+stream-dev (= ${binary:Version}),
+ librust-nom-3.2+verbose-errors-dev (= ${binary:Version}),
+ librust-nom-3.2.1-dev (= ${binary:Version}),
+ librust-nom-3.2.1+default-dev (= ${binary:Version}),
+ librust-nom-3.2.1+std-dev (= ${binary:Version}),
+ librust-nom-3.2.1+stream-dev (= ${binary:Version}),
+ librust-nom-3.2.1+verbose-errors-dev (= ${binary:Version})
+Description: Byte-oriented, zero-copy, parser combinators library - Rust source code
+ Source code for Debianized Rust crate "nom"

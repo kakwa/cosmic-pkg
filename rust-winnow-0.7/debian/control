@@ -1,0 +1,55 @@
+Source: rust-winnow-0.7
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.65.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-memchr-2+std-dev (>= 2.7) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/winnow-0.7]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/winnow-0.7
+Homepage: https://github.com/winnow-rs/winnow
+X-Cargo-Crate: winnow
+X-Cargo-Crate-Version: 0.7.15
+
+Package: librust-winnow-0.7-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-anstream-0.6+default-dev (>= 0.6.15),
+ librust-anstyle-1+default-dev (>= 1.0.8),
+ librust-is-terminal-polyfill-1+default-dev (>= 1.48.1),
+ librust-memchr-2+std-dev (>= 2.7),
+ librust-memchr-2-dev (>= 2.7),
+ librust-terminal-size-0.4+default-dev (>= 0.4.3)
+Provides:
+ librust-winnow-0-dev (= ${binary:Version}),
+ librust-winnow-0+alloc-dev (= ${binary:Version}),
+ librust-winnow-0+debug-dev (= ${binary:Version}),
+ librust-winnow-0+default-dev (= ${binary:Version}),
+ librust-winnow-0+simd-dev (= ${binary:Version}),
+ librust-winnow-0+std-dev (= ${binary:Version}),
+ librust-winnow-0+unstable-doc-dev (= ${binary:Version}),
+ librust-winnow-0+unstable-recover-dev (= ${binary:Version}),
+ librust-winnow-0.7+alloc-dev (= ${binary:Version}),
+ librust-winnow-0.7+debug-dev (= ${binary:Version}),
+ librust-winnow-0.7+default-dev (= ${binary:Version}),
+ librust-winnow-0.7+simd-dev (= ${binary:Version}),
+ librust-winnow-0.7+std-dev (= ${binary:Version}),
+ librust-winnow-0.7+unstable-doc-dev (= ${binary:Version}),
+ librust-winnow-0.7+unstable-recover-dev (= ${binary:Version}),
+ librust-winnow-0.7.15-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+alloc-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+debug-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+default-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+simd-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+std-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+unstable-doc-dev (= ${binary:Version}),
+ librust-winnow-0.7.15+unstable-recover-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.65.0~)
+Description: Byte-oriented, zero-copy, parser combinators library - Rust source code
+ Source code for Debianized Rust crate "winnow"

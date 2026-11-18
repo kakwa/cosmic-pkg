@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/defmt-macros
+Matching-Pattern:  .*/crates/defmt-macros/[-_]?(1\.\d[\-+\.:\~\da-zA-Z]*)/download
+Filenamemangle: s/.*\/(.*)\/download/defmt-macros-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

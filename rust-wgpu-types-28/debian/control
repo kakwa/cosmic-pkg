@@ -1,0 +1,77 @@
+Source: rust-wgpu-types-28
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev (>= 2.9) <!nocheck>,
+ librust-bytemuck-1+default-dev (>= 1.22) <!nocheck>,
+ librust-bytemuck-1+derive-dev (>= 1.22) <!nocheck>,
+ librust-bytemuck-1+extern-crate-alloc-dev (>= 1.22) <!nocheck>,
+ librust-bytemuck-1+min-const-generics-dev (>= 1.22) <!nocheck>,
+ librust-js-sys-0.3+std-dev (>= 0.3.77) <!nocheck>,
+ librust-log-0.4+default-dev (>= 0.4.21) <!nocheck>,
+ librust-web-sys-0.3+htmlcanvaselement-dev (>= 0.3.77) <!nocheck>,
+ librust-web-sys-0.3+offscreencanvas-dev (>= 0.3.77) <!nocheck>,
+ librust-web-sys-0.3+std-dev (>= 0.3.77) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wgpu-types-28]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/wgpu-types-28
+Homepage: https://wgpu.rs/
+X-Cargo-Crate: wgpu-types
+X-Cargo-Crate-Version: 28.0.0
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-wgpu-types-28-dev is very long, consider overriding
+
+Package: librust-wgpu-types-28-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev (>= 2.9),
+ librust-bitflags-2+serde-dev (>= 2.9),
+ librust-bytemuck-1+default-dev (>= 1.22),
+ librust-bytemuck-1+derive-dev (>= 1.22),
+ librust-bytemuck-1+extern-crate-alloc-dev (>= 1.22),
+ librust-bytemuck-1+min-const-generics-dev (>= 1.22),
+ librust-js-sys-0.3+std-dev (>= 0.3.77),
+ librust-js-sys-0.3-dev (>= 0.3.77),
+ librust-log-0.4+default-dev (>= 0.4.21),
+ librust-serde-1+alloc-dev (>= 1.0.219),
+ librust-serde-1+derive-dev (>= 1.0.219),
+ librust-web-sys-0.3+htmlcanvaselement-dev (>= 0.3.77),
+ librust-web-sys-0.3+offscreencanvas-dev (>= 0.3.77),
+ librust-web-sys-0.3+std-dev (>= 0.3.77)
+Provides:
+ librust-wgpu-types-28+counters-dev (= ${binary:Version}),
+ librust-wgpu-types-28+default-dev (= ${binary:Version}),
+ librust-wgpu-types-28+fragile-send-sync-non-atomic-wasm-dev (= ${binary:Version}),
+ librust-wgpu-types-28+serde-dev (= ${binary:Version}),
+ librust-wgpu-types-28+std-dev (= ${binary:Version}),
+ librust-wgpu-types-28+strict-asserts-dev (= ${binary:Version}),
+ librust-wgpu-types-28+trace-dev (= ${binary:Version}),
+ librust-wgpu-types-28+web-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+counters-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+default-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+fragile-send-sync-non-atomic-wasm-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+serde-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+std-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+strict-asserts-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+trace-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0+web-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+counters-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+default-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+fragile-send-sync-non-atomic-wasm-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+serde-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+std-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+strict-asserts-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+trace-dev (= ${binary:Version}),
+ librust-wgpu-types-28.0.0+web-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.82.0~)
+Description: Common types and utilities for wgpu, the cross-platform, safe, pure-rust graphics API - Rust source code
+ Source code for Debianized Rust crate "wgpu-types"

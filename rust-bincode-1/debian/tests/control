@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bincode 1.3.3 --all-targets --all-features
+Features: test-name=rust-bincode:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bincode 1.3.3 --all-targets
+Features: test-name=librust-bincode-1-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bincode 1.3.3 --all-targets --no-default-features --features i128
+Features: test-name=librust-bincode-1-dev:i128
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bincode 1.3.3 --all-targets --no-default-features
+Features: test-name=librust-bincode-1-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

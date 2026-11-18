@@ -66,6 +66,7 @@ include buildenv/Makefile.common
 $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@$(WGS) -u $(URL_SRC) -O $(notdir $(URL_SRC))
 	@tar -xf $(CACHE_DIR)/$(notdir $(URL_SRC)) -C $(SOURCE_DIR) --strip-components=1
+	@python3 patch-cargo-toml.py $(SOURCE_DIR)/Cargo.toml
 	@$(SOURCE_TAR_CMD)
 
 # Example of simple recovery, with good upstream

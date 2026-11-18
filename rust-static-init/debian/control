@@ -11,11 +11,11 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-parking-lot-dev <!nocheck>,
  librust-parking-lot-core-dev <!nocheck>,
  librust-static-init-macro-dev (>= 1.0.4) <!nocheck>,
- librust-winapi-dev <!nocheck>,
- librust-winapi-0.3+minwindef-dev <!nocheck>,
- librust-winapi-0.3+synchapi-dev <!nocheck>,
- librust-winapi-0.3+winbase-dev <!nocheck>,
- librust-winapi-0.3+winnt-dev <!nocheck>
+ librust-winapi-dev [!linux-any] <!nocheck>,
+ librust-winapi-0.3+minwindef-dev [!linux-any] <!nocheck>,
+ librust-winapi-0.3+synchapi-dev [!linux-any] <!nocheck>,
+ librust-winapi-0.3+winbase-dev [!linux-any] <!nocheck>,
+ librust-winapi-0.3+winnt-dev [!linux-any] <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/static-init]
@@ -38,11 +38,11 @@ Depends:
  librust-parking-lot-core-dev,
  librust-static-init-macro-1+debug-order-dev (>= 1.0.4),
  librust-static-init-macro-dev (>= 1.0.4),
- librust-winapi-dev,
- librust-winapi-0.3+minwindef-dev,
- librust-winapi-0.3+synchapi-dev,
- librust-winapi-0.3+winbase-dev,
- librust-winapi-0.3+winnt-dev
+ librust-winapi-dev [!linux-any],
+ librust-winapi-0.3+minwindef-dev [!linux-any],
+ librust-winapi-0.3+synchapi-dev [!linux-any],
+ librust-winapi-0.3+winbase-dev [!linux-any],
+ librust-winapi-0.3+winnt-dev [!linux-any]
 Provides:
  librust-static-init+bench-nightly-dev (= ${binary:Version}),
  librust-static-init+debug-order-dev (= ${binary:Version}),

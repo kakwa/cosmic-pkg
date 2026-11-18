@@ -1,0 +1,2409 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --all-features
+Features: test-name=rust-winapi:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features accctrl
+Features: test-name=librust-winapi-dev:accctrl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features aclapi
+Features: test-name=librust-winapi-dev:aclapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features activation
+Features: test-name=librust-winapi-dev:activation
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features adhoc
+Features: test-name=librust-winapi-dev:adhoc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features appmgmt
+Features: test-name=librust-winapi-dev:appmgmt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features audioclient
+Features: test-name=librust-winapi-dev:audioclient
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features audiosessiontypes
+Features: test-name=librust-winapi-dev:audiosessiontypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features avrt
+Features: test-name=librust-winapi-dev:avrt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features basetsd
+Features: test-name=librust-winapi-dev:basetsd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bcrypt
+Features: test-name=librust-winapi-dev:bcrypt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits
+Features: test-name=librust-winapi-dev:bits
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits10_1
+Features: test-name=librust-winapi-dev:bits10_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits1_5
+Features: test-name=librust-winapi-dev:bits1_5
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits2_0
+Features: test-name=librust-winapi-dev:bits2_0
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits2_5
+Features: test-name=librust-winapi-dev:bits2_5
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits3_0
+Features: test-name=librust-winapi-dev:bits3_0
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits4_0
+Features: test-name=librust-winapi-dev:bits4_0
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bits5_0
+Features: test-name=librust-winapi-dev:bits5_0
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bitscfg
+Features: test-name=librust-winapi-dev:bitscfg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bitsmsg
+Features: test-name=librust-winapi-dev:bitsmsg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bluetoothapis
+Features: test-name=librust-winapi-dev:bluetoothapis
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bluetoothleapis
+Features: test-name=librust-winapi-dev:bluetoothleapis
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bthdef
+Features: test-name=librust-winapi-dev:bthdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bthioctl
+Features: test-name=librust-winapi-dev:bthioctl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bthledef
+Features: test-name=librust-winapi-dev:bthledef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bthsdpdef
+Features: test-name=librust-winapi-dev:bthsdpdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features bugcodes
+Features: test-name=librust-winapi-dev:bugcodes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features cderr
+Features: test-name=librust-winapi-dev:cderr
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features cfg
+Features: test-name=librust-winapi-dev:cfg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features cfgmgr32
+Features: test-name=librust-winapi-dev:cfgmgr32
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features cguid
+Features: test-name=librust-winapi-dev:cguid
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features combaseapi
+Features: test-name=librust-winapi-dev:combaseapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features coml2api
+Features: test-name=librust-winapi-dev:coml2api
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features commapi
+Features: test-name=librust-winapi-dev:commapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features commctrl
+Features: test-name=librust-winapi-dev:commctrl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features commdlg
+Features: test-name=librust-winapi-dev:commdlg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features commoncontrols
+Features: test-name=librust-winapi-dev:commoncontrols
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features consoleapi
+Features: test-name=librust-winapi-dev:consoleapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features corecrt
+Features: test-name=librust-winapi-dev:corecrt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features corsym
+Features: test-name=librust-winapi-dev:corsym
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1
+Features: test-name=librust-winapi-dev:d2d1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1_1
+Features: test-name=librust-winapi-dev:d2d1_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1_2
+Features: test-name=librust-winapi-dev:d2d1_2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1_3
+Features: test-name=librust-winapi-dev:d2d1_3
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1effectauthor
+Features: test-name=librust-winapi-dev:d2d1effectauthor
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1effects
+Features: test-name=librust-winapi-dev:d2d1effects
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1effects_1
+Features: test-name=librust-winapi-dev:d2d1effects_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1effects_2
+Features: test-name=librust-winapi-dev:d2d1effects_2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2d1svg
+Features: test-name=librust-winapi-dev:d2d1svg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d2dbasetypes
+Features: test-name=librust-winapi-dev:d2dbasetypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d
+Features: test-name=librust-winapi-dev:d3d
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10
+Features: test-name=librust-winapi-dev:d3d10
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10_1
+Features: test-name=librust-winapi-dev:d3d10_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10_1shader
+Features: test-name=librust-winapi-dev:d3d10_1shader
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10effect
+Features: test-name=librust-winapi-dev:d3d10effect
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10misc
+Features: test-name=librust-winapi-dev:d3d10misc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10sdklayers
+Features: test-name=librust-winapi-dev:d3d10sdklayers
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d10shader
+Features: test-name=librust-winapi-dev:d3d10shader
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11
+Features: test-name=librust-winapi-dev:d3d11
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11_1
+Features: test-name=librust-winapi-dev:d3d11_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11_2
+Features: test-name=librust-winapi-dev:d3d11_2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11_3
+Features: test-name=librust-winapi-dev:d3d11_3
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11_4
+Features: test-name=librust-winapi-dev:d3d11_4
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11on12
+Features: test-name=librust-winapi-dev:d3d11on12
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11sdklayers
+Features: test-name=librust-winapi-dev:d3d11sdklayers
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11shader
+Features: test-name=librust-winapi-dev:d3d11shader
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d11tokenizedprogramformat
+Features: test-name=librust-winapi-dev:d3d11tokenizedprogramformat
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d12
+Features: test-name=librust-winapi-dev:d3d12
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d12sdklayers
+Features: test-name=librust-winapi-dev:d3d12sdklayers
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d12shader
+Features: test-name=librust-winapi-dev:d3d12shader
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d9
+Features: test-name=librust-winapi-dev:d3d9
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d9caps
+Features: test-name=librust-winapi-dev:d3d9caps
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3d9types
+Features: test-name=librust-winapi-dev:d3d9types
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dcommon
+Features: test-name=librust-winapi-dev:d3dcommon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dcompiler
+Features: test-name=librust-winapi-dev:d3dcompiler
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dcsx
+Features: test-name=librust-winapi-dev:d3dcsx
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dkmdt
+Features: test-name=librust-winapi-dev:d3dkmdt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dkmthk
+Features: test-name=librust-winapi-dev:d3dkmthk
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dukmdt
+Features: test-name=librust-winapi-dev:d3dukmdt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dx10core
+Features: test-name=librust-winapi-dev:d3dx10core
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dx10math
+Features: test-name=librust-winapi-dev:d3dx10math
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features d3dx10mesh
+Features: test-name=librust-winapi-dev:d3dx10mesh
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features datetimeapi
+Features: test-name=librust-winapi-dev:datetimeapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features davclnt
+Features: test-name=librust-winapi-dev:davclnt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dbghelp
+Features: test-name=librust-winapi-dev:dbghelp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dbt
+Features: test-name=librust-winapi-dev:dbt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dcommon
+Features: test-name=librust-winapi-dev:dcommon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dcomp
+Features: test-name=librust-winapi-dev:dcomp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dcompanimation
+Features: test-name=librust-winapi-dev:dcompanimation
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dcomptypes
+Features: test-name=librust-winapi-dev:dcomptypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dde
+Features: test-name=librust-winapi-dev:dde
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ddraw
+Features: test-name=librust-winapi-dev:ddraw
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ddrawi
+Features: test-name=librust-winapi-dev:ddrawi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ddrawint
+Features: test-name=librust-winapi-dev:ddrawint
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features debug
+Features: test-name=librust-winapi-dev:debug
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features debugapi
+Features: test-name=librust-winapi-dev:debugapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets
+Features: test-name=librust-winapi-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features devguid
+Features: test-name=librust-winapi-dev:devguid
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features devicetopology
+Features: test-name=librust-winapi-dev:devicetopology
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features devpkey
+Features: test-name=librust-winapi-dev:devpkey
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features devpropdef
+Features: test-name=librust-winapi-dev:devpropdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dinput
+Features: test-name=librust-winapi-dev:dinput
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dinputd
+Features: test-name=librust-winapi-dev:dinputd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dispex
+Features: test-name=librust-winapi-dev:dispex
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dmksctl
+Features: test-name=librust-winapi-dev:dmksctl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dmusicc
+Features: test-name=librust-winapi-dev:dmusicc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features docobj
+Features: test-name=librust-winapi-dev:docobj
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features documenttarget
+Features: test-name=librust-winapi-dev:documenttarget
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dot1x
+Features: test-name=librust-winapi-dev:dot1x
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dpa_dsa
+Features: test-name=librust-winapi-dev:dpa_dsa
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dpapi
+Features: test-name=librust-winapi-dev:dpapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dsgetdc
+Features: test-name=librust-winapi-dev:dsgetdc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dsound
+Features: test-name=librust-winapi-dev:dsound
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dsrole
+Features: test-name=librust-winapi-dev:dsrole
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dvp
+Features: test-name=librust-winapi-dev:dvp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dwmapi
+Features: test-name=librust-winapi-dev:dwmapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dwrite
+Features: test-name=librust-winapi-dev:dwrite
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dwrite_1
+Features: test-name=librust-winapi-dev:dwrite_1
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dwrite_2
+Features: test-name=librust-winapi-dev:dwrite_2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dwrite_3
+Features: test-name=librust-winapi-dev:dwrite_3
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxdiag
+Features: test-name=librust-winapi-dev:dxdiag
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxfile
+Features: test-name=librust-winapi-dev:dxfile
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi
+Features: test-name=librust-winapi-dev:dxgi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi1_2
+Features: test-name=librust-winapi-dev:dxgi1_2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi1_3
+Features: test-name=librust-winapi-dev:dxgi1_3
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi1_4
+Features: test-name=librust-winapi-dev:dxgi1_4
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi1_5
+Features: test-name=librust-winapi-dev:dxgi1_5
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgi1_6
+Features: test-name=librust-winapi-dev:dxgi1_6
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgidebug
+Features: test-name=librust-winapi-dev:dxgidebug
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgiformat
+Features: test-name=librust-winapi-dev:dxgiformat
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxgitype
+Features: test-name=librust-winapi-dev:dxgitype
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxva2api
+Features: test-name=librust-winapi-dev:dxva2api
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features dxvahd
+Features: test-name=librust-winapi-dev:dxvahd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features eaptypes
+Features: test-name=librust-winapi-dev:eaptypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features enclaveapi
+Features: test-name=librust-winapi-dev:enclaveapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features endpointvolume
+Features: test-name=librust-winapi-dev:endpointvolume
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features errhandlingapi
+Features: test-name=librust-winapi-dev:errhandlingapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features everything
+Features: test-name=librust-winapi-dev:everything
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features evntcons
+Features: test-name=librust-winapi-dev:evntcons
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features evntprov
+Features: test-name=librust-winapi-dev:evntprov
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features evntrace
+Features: test-name=librust-winapi-dev:evntrace
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features excpt
+Features: test-name=librust-winapi-dev:excpt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features exdisp
+Features: test-name=librust-winapi-dev:exdisp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features fibersapi
+Features: test-name=librust-winapi-dev:fibersapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features fileapi
+Features: test-name=librust-winapi-dev:fileapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features functiondiscoverykeys_devpkey
+Features: test-name=librust-winapi-dev:functiondiscoverykeys_devpkey
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features gl-gl
+Features: test-name=librust-winapi-dev:gl-gl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features guiddef
+Features: test-name=librust-winapi-dev:guiddef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features handleapi
+Features: test-name=librust-winapi-dev:handleapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features heapapi
+Features: test-name=librust-winapi-dev:heapapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features hidclass
+Features: test-name=librust-winapi-dev:hidclass
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features hidpi
+Features: test-name=librust-winapi-dev:hidpi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features hidsdi
+Features: test-name=librust-winapi-dev:hidsdi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features hidusage
+Features: test-name=librust-winapi-dev:hidusage
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features highlevelmonitorconfigurationapi
+Features: test-name=librust-winapi-dev:highlevelmonitorconfigurationapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features hstring
+Features: test-name=librust-winapi-dev:hstring
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features http
+Features: test-name=librust-winapi-dev:http
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ifdef
+Features: test-name=librust-winapi-dev:ifdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ifmib
+Features: test-name=librust-winapi-dev:ifmib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features imm
+Features: test-name=librust-winapi-dev:imm
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features impl-debug
+Features: test-name=librust-winapi-dev:impl-debug
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features impl-default
+Features: test-name=librust-winapi-dev:impl-default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features in6addr
+Features: test-name=librust-winapi-dev:in6addr
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features inaddr
+Features: test-name=librust-winapi-dev:inaddr
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features inspectable
+Features: test-name=librust-winapi-dev:inspectable
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features interlockedapi
+Features: test-name=librust-winapi-dev:interlockedapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features intsafe
+Features: test-name=librust-winapi-dev:intsafe
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ioapiset
+Features: test-name=librust-winapi-dev:ioapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ipexport
+Features: test-name=librust-winapi-dev:ipexport
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features iphlpapi
+Features: test-name=librust-winapi-dev:iphlpapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ipifcons
+Features: test-name=librust-winapi-dev:ipifcons
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ipmib
+Features: test-name=librust-winapi-dev:ipmib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features iprtrmib
+Features: test-name=librust-winapi-dev:iprtrmib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features iptypes
+Features: test-name=librust-winapi-dev:iptypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features jobapi
+Features: test-name=librust-winapi-dev:jobapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features jobapi2
+Features: test-name=librust-winapi-dev:jobapi2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features knownfolders
+Features: test-name=librust-winapi-dev:knownfolders
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ks
+Features: test-name=librust-winapi-dev:ks
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ksmedia
+Features: test-name=librust-winapi-dev:ksmedia
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ktmtypes
+Features: test-name=librust-winapi-dev:ktmtypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ktmw32
+Features: test-name=librust-winapi-dev:ktmw32
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features l2cmn
+Features: test-name=librust-winapi-dev:l2cmn
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features libloaderapi
+Features: test-name=librust-winapi-dev:libloaderapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features limits
+Features: test-name=librust-winapi-dev:limits
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmaccess
+Features: test-name=librust-winapi-dev:lmaccess
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmalert
+Features: test-name=librust-winapi-dev:lmalert
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmapibuf
+Features: test-name=librust-winapi-dev:lmapibuf
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmat
+Features: test-name=librust-winapi-dev:lmat
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmcons
+Features: test-name=librust-winapi-dev:lmcons
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmdfs
+Features: test-name=librust-winapi-dev:lmdfs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmerrlog
+Features: test-name=librust-winapi-dev:lmerrlog
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmjoin
+Features: test-name=librust-winapi-dev:lmjoin
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmmsg
+Features: test-name=librust-winapi-dev:lmmsg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmremutl
+Features: test-name=librust-winapi-dev:lmremutl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmrepl
+Features: test-name=librust-winapi-dev:lmrepl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmserver
+Features: test-name=librust-winapi-dev:lmserver
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmshare
+Features: test-name=librust-winapi-dev:lmshare
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmstats
+Features: test-name=librust-winapi-dev:lmstats
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmsvc
+Features: test-name=librust-winapi-dev:lmsvc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmuse
+Features: test-name=librust-winapi-dev:lmuse
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lmwksta
+Features: test-name=librust-winapi-dev:lmwksta
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lowlevelmonitorconfigurationapi
+Features: test-name=librust-winapi-dev:lowlevelmonitorconfigurationapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features lsalookup
+Features: test-name=librust-winapi-dev:lsalookup
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features memoryapi
+Features: test-name=librust-winapi-dev:memoryapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features minschannel
+Features: test-name=librust-winapi-dev:minschannel
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features minwinbase
+Features: test-name=librust-winapi-dev:minwinbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features minwindef
+Features: test-name=librust-winapi-dev:minwindef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mmdeviceapi
+Features: test-name=librust-winapi-dev:mmdeviceapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mmeapi
+Features: test-name=librust-winapi-dev:mmeapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mmreg
+Features: test-name=librust-winapi-dev:mmreg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mmsystem
+Features: test-name=librust-winapi-dev:mmsystem
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mprapidef
+Features: test-name=librust-winapi-dev:mprapidef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features msaatext
+Features: test-name=librust-winapi-dev:msaatext
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mscat
+Features: test-name=librust-winapi-dev:mscat
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mschapp
+Features: test-name=librust-winapi-dev:mschapp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mssip
+Features: test-name=librust-winapi-dev:mssip
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mstcpip
+Features: test-name=librust-winapi-dev:mstcpip
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mswsock
+Features: test-name=librust-winapi-dev:mswsock
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features mswsockdef
+Features: test-name=librust-winapi-dev:mswsockdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features namedpipeapi
+Features: test-name=librust-winapi-dev:namedpipeapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features namespaceapi
+Features: test-name=librust-winapi-dev:namespaceapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features nb30
+Features: test-name=librust-winapi-dev:nb30
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ncrypt
+Features: test-name=librust-winapi-dev:ncrypt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features netioapi
+Features: test-name=librust-winapi-dev:netioapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features nldef
+Features: test-name=librust-winapi-dev:nldef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntddndis
+Features: test-name=librust-winapi-dev:ntddndis
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntddscsi
+Features: test-name=librust-winapi-dev:ntddscsi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntddser
+Features: test-name=librust-winapi-dev:ntddser
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntdef
+Features: test-name=librust-winapi-dev:ntdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntlsa
+Features: test-name=librust-winapi-dev:ntlsa
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntsecapi
+Features: test-name=librust-winapi-dev:ntsecapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ntstatus
+Features: test-name=librust-winapi-dev:ntstatus
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features oaidl
+Features: test-name=librust-winapi-dev:oaidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features objbase
+Features: test-name=librust-winapi-dev:objbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features objidl
+Features: test-name=librust-winapi-dev:objidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features objidlbase
+Features: test-name=librust-winapi-dev:objidlbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ocidl
+Features: test-name=librust-winapi-dev:ocidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ole2
+Features: test-name=librust-winapi-dev:ole2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features oleauto
+Features: test-name=librust-winapi-dev:oleauto
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features olectl
+Features: test-name=librust-winapi-dev:olectl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features oleidl
+Features: test-name=librust-winapi-dev:oleidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features opmapi
+Features: test-name=librust-winapi-dev:opmapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features pdh
+Features: test-name=librust-winapi-dev:pdh
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features perflib
+Features: test-name=librust-winapi-dev:perflib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features physicalmonitorenumerationapi
+Features: test-name=librust-winapi-dev:physicalmonitorenumerationapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features playsoundapi
+Features: test-name=librust-winapi-dev:playsoundapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features portabledevice
+Features: test-name=librust-winapi-dev:portabledevice
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features portabledeviceapi
+Features: test-name=librust-winapi-dev:portabledeviceapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features portabledevicetypes
+Features: test-name=librust-winapi-dev:portabledevicetypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features powerbase
+Features: test-name=librust-winapi-dev:powerbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features powersetting
+Features: test-name=librust-winapi-dev:powersetting
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features powrprof
+Features: test-name=librust-winapi-dev:powrprof
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features processenv
+Features: test-name=librust-winapi-dev:processenv
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features processsnapshot
+Features: test-name=librust-winapi-dev:processsnapshot
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features processthreadsapi
+Features: test-name=librust-winapi-dev:processthreadsapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features processtopologyapi
+Features: test-name=librust-winapi-dev:processtopologyapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features profileapi
+Features: test-name=librust-winapi-dev:profileapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features propidl
+Features: test-name=librust-winapi-dev:propidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features propkey
+Features: test-name=librust-winapi-dev:propkey
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features propkeydef
+Features: test-name=librust-winapi-dev:propkeydef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features propsys
+Features: test-name=librust-winapi-dev:propsys
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features prsht
+Features: test-name=librust-winapi-dev:prsht
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features psapi
+Features: test-name=librust-winapi-dev:psapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features qos
+Features: test-name=librust-winapi-dev:qos
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features realtimeapiset
+Features: test-name=librust-winapi-dev:realtimeapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features reason
+Features: test-name=librust-winapi-dev:reason
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features restartmanager
+Features: test-name=librust-winapi-dev:restartmanager
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features restrictederrorinfo
+Features: test-name=librust-winapi-dev:restrictederrorinfo
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features rmxfguid
+Features: test-name=librust-winapi-dev:rmxfguid
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features roapi
+Features: test-name=librust-winapi-dev:roapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features robuffer
+Features: test-name=librust-winapi-dev:robuffer
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features roerrorapi
+Features: test-name=librust-winapi-dev:roerrorapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features rpc
+Features: test-name=librust-winapi-dev:rpc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features rpcdce
+Features: test-name=librust-winapi-dev:rpcdce
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features rpcndr
+Features: test-name=librust-winapi-dev:rpcndr
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features rtinfo
+Features: test-name=librust-winapi-dev:rtinfo
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sapi
+Features: test-name=librust-winapi-dev:sapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sapi51
+Features: test-name=librust-winapi-dev:sapi51
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sapi53
+Features: test-name=librust-winapi-dev:sapi53
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sapiddk
+Features: test-name=librust-winapi-dev:sapiddk
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sapiddk51
+Features: test-name=librust-winapi-dev:sapiddk51
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features schannel
+Features: test-name=librust-winapi-dev:schannel
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sddl
+Features: test-name=librust-winapi-dev:sddl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features securityappcontainer
+Features: test-name=librust-winapi-dev:securityappcontainer
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features securitybaseapi
+Features: test-name=librust-winapi-dev:securitybaseapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features servprov
+Features: test-name=librust-winapi-dev:servprov
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features setupapi
+Features: test-name=librust-winapi-dev:setupapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shellapi
+Features: test-name=librust-winapi-dev:shellapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shellscalingapi
+Features: test-name=librust-winapi-dev:shellscalingapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shlobj
+Features: test-name=librust-winapi-dev:shlobj
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shobjidl
+Features: test-name=librust-winapi-dev:shobjidl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shobjidl_core
+Features: test-name=librust-winapi-dev:shobjidl_core
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features shtypes
+Features: test-name=librust-winapi-dev:shtypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features softpub
+Features: test-name=librust-winapi-dev:softpub
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features spapidef
+Features: test-name=librust-winapi-dev:spapidef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features spellcheck
+Features: test-name=librust-winapi-dev:spellcheck
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sporder
+Features: test-name=librust-winapi-dev:sporder
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sql
+Features: test-name=librust-winapi-dev:sql
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sqlext
+Features: test-name=librust-winapi-dev:sqlext
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sqltypes
+Features: test-name=librust-winapi-dev:sqltypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sqlucode
+Features: test-name=librust-winapi-dev:sqlucode
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sspi
+Features: test-name=librust-winapi-dev:sspi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features std
+Features: test-name=librust-winapi-dev:std
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features stralign
+Features: test-name=librust-winapi-dev:stralign
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features stringapiset
+Features: test-name=librust-winapi-dev:stringapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features strmif
+Features: test-name=librust-winapi-dev:strmif
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features subauth
+Features: test-name=librust-winapi-dev:subauth
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features synchapi
+Features: test-name=librust-winapi-dev:synchapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features sysinfoapi
+Features: test-name=librust-winapi-dev:sysinfoapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features systemtopologyapi
+Features: test-name=librust-winapi-dev:systemtopologyapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features taskschd
+Features: test-name=librust-winapi-dev:taskschd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features tcpestats
+Features: test-name=librust-winapi-dev:tcpestats
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features tcpmib
+Features: test-name=librust-winapi-dev:tcpmib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features textstor
+Features: test-name=librust-winapi-dev:textstor
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features threadpoolapiset
+Features: test-name=librust-winapi-dev:threadpoolapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features threadpoollegacyapiset
+Features: test-name=librust-winapi-dev:threadpoollegacyapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features timeapi
+Features: test-name=librust-winapi-dev:timeapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features timezoneapi
+Features: test-name=librust-winapi-dev:timezoneapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features tlhelp32
+Features: test-name=librust-winapi-dev:tlhelp32
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features transportsettingcommon
+Features: test-name=librust-winapi-dev:transportsettingcommon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features tvout
+Features: test-name=librust-winapi-dev:tvout
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features udpmib
+Features: test-name=librust-winapi-dev:udpmib
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features unknwnbase
+Features: test-name=librust-winapi-dev:unknwnbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features urlhist
+Features: test-name=librust-winapi-dev:urlhist
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features urlmon
+Features: test-name=librust-winapi-dev:urlmon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usb
+Features: test-name=librust-winapi-dev:usb
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usbioctl
+Features: test-name=librust-winapi-dev:usbioctl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usbiodef
+Features: test-name=librust-winapi-dev:usbiodef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usbscan
+Features: test-name=librust-winapi-dev:usbscan
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usbspec
+Features: test-name=librust-winapi-dev:usbspec
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features userenv
+Features: test-name=librust-winapi-dev:userenv
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features usp10
+Features: test-name=librust-winapi-dev:usp10
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features utilapiset
+Features: test-name=librust-winapi-dev:utilapiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features uxtheme
+Features: test-name=librust-winapi-dev:uxtheme
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vadefs
+Features: test-name=librust-winapi-dev:vadefs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vcruntime
+Features: test-name=librust-winapi-dev:vcruntime
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vsbackup
+Features: test-name=librust-winapi-dev:vsbackup
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vss
+Features: test-name=librust-winapi-dev:vss
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vsserror
+Features: test-name=librust-winapi-dev:vsserror
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features vswriter
+Features: test-name=librust-winapi-dev:vswriter
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wbemads
+Features: test-name=librust-winapi-dev:wbemads
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wbemcli
+Features: test-name=librust-winapi-dev:wbemcli
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wbemdisp
+Features: test-name=librust-winapi-dev:wbemdisp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wbemprov
+Features: test-name=librust-winapi-dev:wbemprov
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wbemtran
+Features: test-name=librust-winapi-dev:wbemtran
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wct
+Features: test-name=librust-winapi-dev:wct
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features werapi
+Features: test-name=librust-winapi-dev:werapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winbase
+Features: test-name=librust-winapi-dev:winbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincodec
+Features: test-name=librust-winapi-dev:wincodec
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincodecsdk
+Features: test-name=librust-winapi-dev:wincodecsdk
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincon
+Features: test-name=librust-winapi-dev:wincon
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincontypes
+Features: test-name=librust-winapi-dev:wincontypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincred
+Features: test-name=librust-winapi-dev:wincred
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wincrypt
+Features: test-name=librust-winapi-dev:wincrypt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features windef
+Features: test-name=librust-winapi-dev:windef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features windot11
+Features: test-name=librust-winapi-dev:windot11
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features windowsceip
+Features: test-name=librust-winapi-dev:windowsceip
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features windowsx
+Features: test-name=librust-winapi-dev:windowsx
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winefs
+Features: test-name=librust-winapi-dev:winefs
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winerror
+Features: test-name=librust-winapi-dev:winerror
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winevt
+Features: test-name=librust-winapi-dev:winevt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wingdi
+Features: test-name=librust-winapi-dev:wingdi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winhttp
+Features: test-name=librust-winapi-dev:winhttp
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wininet
+Features: test-name=librust-winapi-dev:wininet
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winineti
+Features: test-name=librust-winapi-dev:winineti
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winioctl
+Features: test-name=librust-winapi-dev:winioctl
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winnetwk
+Features: test-name=librust-winapi-dev:winnetwk
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winnls
+Features: test-name=librust-winapi-dev:winnls
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winnt
+Features: test-name=librust-winapi-dev:winnt
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winreg
+Features: test-name=librust-winapi-dev:winreg
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winsafer
+Features: test-name=librust-winapi-dev:winsafer
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winscard
+Features: test-name=librust-winapi-dev:winscard
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winsmcrd
+Features: test-name=librust-winapi-dev:winsmcrd
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winsock2
+Features: test-name=librust-winapi-dev:winsock2
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winspool
+Features: test-name=librust-winapi-dev:winspool
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winstring
+Features: test-name=librust-winapi-dev:winstring
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winsvc
+Features: test-name=librust-winapi-dev:winsvc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wintrust
+Features: test-name=librust-winapi-dev:wintrust
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winusb
+Features: test-name=librust-winapi-dev:winusb
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winusbio
+Features: test-name=librust-winapi-dev:winusbio
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winuser
+Features: test-name=librust-winapi-dev:winuser
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features winver
+Features: test-name=librust-winapi-dev:winver
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wlanapi
+Features: test-name=librust-winapi-dev:wlanapi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wlanihv
+Features: test-name=librust-winapi-dev:wlanihv
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wlanihvtypes
+Features: test-name=librust-winapi-dev:wlanihvtypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wlantypes
+Features: test-name=librust-winapi-dev:wlantypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wlclient
+Features: test-name=librust-winapi-dev:wlclient
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wmistr
+Features: test-name=librust-winapi-dev:wmistr
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wnnc
+Features: test-name=librust-winapi-dev:wnnc
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wow64apiset
+Features: test-name=librust-winapi-dev:wow64apiset
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wpdmtpextensions
+Features: test-name=librust-winapi-dev:wpdmtpextensions
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ws2bth
+Features: test-name=librust-winapi-dev:ws2bth
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ws2def
+Features: test-name=librust-winapi-dev:ws2def
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ws2ipdef
+Features: test-name=librust-winapi-dev:ws2ipdef
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ws2spi
+Features: test-name=librust-winapi-dev:ws2spi
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features ws2tcpip
+Features: test-name=librust-winapi-dev:ws2tcpip
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wtsapi32
+Features: test-name=librust-winapi-dev:wtsapi32
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wtypes
+Features: test-name=librust-winapi-dev:wtypes
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features wtypesbase
+Features: test-name=librust-winapi-dev:wtypesbase
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features --features xinput
+Features: test-name=librust-winapi-dev:xinput
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winapi 0.3.9 --all-targets --no-default-features
+Features: test-name=librust-winapi-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

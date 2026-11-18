@@ -1,0 +1,117 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --all-features
+Features: test-name=rust-naga-28:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features arbitrary
+Features: test-name=librust-naga-28-dev:arbitrary
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets
+Features: test-name=librust-naga-28-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features deserialize
+Features: test-name=librust-naga-28-dev:deserialize
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features dot-out
+Features: test-name=librust-naga-28-dev:dot-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features fs
+Features: test-name=librust-naga-28-dev:fs
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features glsl-in
+Features: test-name=librust-naga-28-dev:glsl-in
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features glsl-out
+Features: test-name=librust-naga-28-dev:glsl-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features hlsl-out
+Features: test-name=librust-naga-28-dev:hlsl-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features hlsl-out-if-target-windows
+Features: test-name=librust-naga-28-dev:hlsl-out-if-target-windows
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features msl-out
+Features: test-name=librust-naga-28-dev:msl-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features msl-out-if-target-apple
+Features: test-name=librust-naga-28-dev:msl-out-if-target-apple
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features serialize
+Features: test-name=librust-naga-28-dev:serialize
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features spv-in
+Features: test-name=librust-naga-28-dev:spv-in
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features spv-out
+Features: test-name=librust-naga-28-dev:spv-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features stderr
+Features: test-name=librust-naga-28-dev:stderr
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features termcolor
+Features: test-name=librust-naga-28-dev:termcolor
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features wgsl-in
+Features: test-name=librust-naga-28-dev:wgsl-in
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features --features wgsl-out
+Features: test-name=librust-naga-28-dev:wgsl-out
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test naga 28.0.0 --all-targets --no-default-features
+Features: test-name=librust-naga-28-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.82.0), librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev (>= 1.0.219), librust-serde-1+derive-dev (>= 1.0.219), librust-spirv-0.3+default-dev, librust-strum-0.27+derive-dev (>= 0.27.1), librust-walkdir-2+default-dev (>= 2.3), @
+Restrictions: allow-stderr
+Architecture: !riscv64

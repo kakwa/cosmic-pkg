@@ -10,14 +10,14 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-ddc-i2c-dev (>= 0.2.1) <!nocheck>,
  librust-ddc-i2c-0.2+with-linux-dev (>= 0.2.1) <!nocheck>,
  librust-ddc-i2c-0.2+with-linux-enumerate-dev (>= 0.2.1) <!nocheck>,
- librust-ddc-macos-dev <!nocheck>,
- librust-ddc-winapi-dev <!nocheck>,
+ librust-ddc-macos-dev [!linux-any] <!nocheck>,
+ librust-ddc-winapi-dev [!linux-any] <!nocheck>,
  librust-edid-dev <!nocheck>,
  librust-log-dev (>= 0.4.1) <!nocheck>,
  librust-mccs-dev <!nocheck>,
  librust-mccs-caps-dev <!nocheck>,
  librust-mccs-db-dev (>= 0.1.1) <!nocheck>,
- librust-nvapi-0.1+i2c-dev (>= 0.1.2) <!nocheck>
+ librust-nvapi-0.1+i2c-dev (>= 0.1.2) [!linux-any] <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/ddc-hi]
@@ -36,14 +36,14 @@ Depends:
  librust-ddc-i2c-dev (>= 0.2.1),
  librust-ddc-i2c-0.2+with-linux-dev (>= 0.2.1),
  librust-ddc-i2c-0.2+with-linux-enumerate-dev (>= 0.2.1),
- librust-ddc-macos-dev,
- librust-ddc-winapi-dev,
+ librust-ddc-macos-dev [!linux-any],
+ librust-ddc-winapi-dev [!linux-any],
  librust-edid-dev,
  librust-log-dev (>= 0.4.1),
  librust-mccs-dev,
  librust-mccs-caps-dev,
  librust-mccs-db-dev (>= 0.1.1),
- librust-nvapi-0.1+i2c-dev (>= 0.1.2)
+ librust-nvapi-0.1+i2c-dev (>= 0.1.2) [!linux-any]
 Provides:
  librust-ddc-hi+ddc-i2c-dev (= ${binary:Version}),
  librust-ddc-hi+ddc-macos-dev (= ${binary:Version}),

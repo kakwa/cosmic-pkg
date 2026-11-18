@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test atspi-connection 0.13.0 --all-targets --all-features
+Features: test-name=rust-atspi-connection:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.77.2), librust-atspi-common-0.13+wrappers-dev, librust-atspi-common-0.13+zbus-dev, librust-atspi-proxies-dev, librust-enumflags2-dev (>= 0.7.9), librust-futures-lite-2-dev (>= 2.6.0), librust-tokio-test-dev (>= 0.4.2), librust-tracing-dev (>= 0.1.40), librust-zbus-5+async-io-dev (>= 5.5), librust-zbus-5+p2p-dev (>= 5.5), @
+Restrictions: allow-stderr

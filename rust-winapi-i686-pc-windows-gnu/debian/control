@@ -1,0 +1,32 @@
+Source: rust-winapi-i686-pc-windows-gnu
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/winapi-i686-pc-windows-gnu]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/winapi-i686-pc-windows-gnu
+Homepage: https://github.com/retep998/winapi-rs
+X-Cargo-Crate: winapi-i686-pc-windows-gnu
+X-Cargo-Crate-Version: 0.4.0
+
+Package: librust-winapi-i686-pc-windows-gnu-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-winapi-i686-pc-windows-gnu+default-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0+default-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0.4-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0.4+default-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0.4.0-dev (= ${binary:Version}),
+ librust-winapi-i686-pc-windows-gnu-0.4.0+default-dev (= ${binary:Version})
+Description: Import libraries for the i686-pc-windows-gnu target - Rust source code
+ Please don't use this crate directly, depend on winapi instead.
+ .
+ Source code for Debianized Rust crate "winapi-i686-pc-windows-gnu"

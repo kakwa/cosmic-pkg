@@ -1,0 +1,28 @@
+Source: rust-dtoa-0.4
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dtoa-0.4]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dtoa-0.4
+Homepage: https://github.com/dtolnay/dtoa
+X-Cargo-Crate: dtoa
+X-Cargo-Crate-Version: 0.4.8
+
+Package: librust-dtoa-0.4-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-dtoa-0-dev (= ${binary:Version}),
+ librust-dtoa-0+default-dev (= ${binary:Version}),
+ librust-dtoa-0.4+default-dev (= ${binary:Version}),
+ librust-dtoa-0.4.8-dev (= ${binary:Version}),
+ librust-dtoa-0.4.8+default-dev (= ${binary:Version})
+Description: Fast functions for printing floating-point primitives to an io::Write - Rust source code
+ Source code for Debianized Rust crate "dtoa"

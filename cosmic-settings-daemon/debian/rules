@@ -4,10 +4,17 @@
 	dh $@
 
 override_dh_auto_build:
-	cargo build --release
+	tar pxf vendor.tar
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		cargo build --locked --offline --release
 
 override_dh_auto_install:
-	dh_auto_install
+	env HOME="$(CURDIR)/debian/home" \
+		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
+		CARGO_NET_OFFLINE=true \
+		dh_auto_install
 	# Install Rust library crates from the workspace for librust-*-dev packages
 	set -e; \
 	for spec in "cosmic-settings-audio-client:audio-client:librust-cosmic-settings-audio-client-dev" \

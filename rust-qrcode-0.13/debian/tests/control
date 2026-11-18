@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets --all-features
+Features: test-name=rust-qrcode-0.13:@
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets --no-default-features --features bench
+Features: test-name=librust-qrcode-0.13-dev:bench
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets
+Features: test-name=librust-qrcode-0.13-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets --no-default-features --features image
+Features: test-name=librust-qrcode-0.13-dev:image
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets --no-default-features --features svg
+Features: test-name=librust-qrcode-0.13-dev:svg
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test qrcode 0.13.0 --all-targets --no-default-features
+Features: test-name=librust-qrcode-0.13-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-image-0.24+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

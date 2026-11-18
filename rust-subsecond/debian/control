@@ -1,0 +1,56 @@
+Source: rust-subsecond
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-js-sys-0.3+default-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.174) <!nocheck>,
+ librust-libloading-0.8+default-dev (>= 0.8.8) <!nocheck>,
+ librust-memfd-0.6+default-dev (>= 0.6.4) <!nocheck>,
+ librust-memmap2-0.9+default-dev (>= 0.9.5) <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.219) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.219) <!nocheck>,
+ librust-subsecond-types-0.7+default-dev (>= 0.7.2) <!nocheck>,
+ librust-thiserror-2+default-dev (>= 2.0.12) <!nocheck>,
+ librust-wasm-bindgen-0.2+default-dev (>= 0.2.105) <!nocheck>,
+ librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.50) <!nocheck>,
+ librust-web-sys-0.3+console-dev (>= 0.3.77) <!nocheck>,
+ librust-web-sys-0.3+window-dev (>= 0.3.77) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/subsecond]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/subsecond
+Homepage: https://github.com/DioxusLabs/dioxus/
+X-Cargo-Crate: subsecond
+X-Cargo-Crate-Version: 0.7.2
+
+Package: librust-subsecond-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-js-sys-0.3+default-dev,
+ librust-libc-0.2+default-dev (>= 0.2.174),
+ librust-libloading-0.8+default-dev (>= 0.8.8),
+ librust-memfd-0.6+default-dev (>= 0.6.4),
+ librust-memmap2-0.9+default-dev (>= 0.9.5),
+ librust-serde-1+default-dev (>= 1.0.219),
+ librust-serde-1+derive-dev (>= 1.0.219),
+ librust-subsecond-types-0.7+default-dev (>= 0.7.2),
+ librust-thiserror-2+default-dev (>= 2.0.12),
+ librust-wasm-bindgen-0.2+default-dev (>= 0.2.105),
+ librust-wasm-bindgen-futures-0.4+default-dev (>= 0.4.50),
+ librust-web-sys-0.3+console-dev (>= 0.3.77),
+ librust-web-sys-0.3+window-dev (>= 0.3.77)
+Provides:
+ librust-subsecond+default-dev (= ${binary:Version}),
+ librust-subsecond-0-dev (= ${binary:Version}),
+ librust-subsecond-0+default-dev (= ${binary:Version}),
+ librust-subsecond-0.7-dev (= ${binary:Version}),
+ librust-subsecond-0.7+default-dev (= ${binary:Version}),
+ librust-subsecond-0.7.2-dev (= ${binary:Version}),
+ librust-subsecond-0.7.2+default-dev (= ${binary:Version})
+Description: Runtime hotpatching engine for Rust hot-reloading - Rust source code
+ Source code for Debianized Rust crate "subsecond"

@@ -6,7 +6,8 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-mccs-dev <!nocheck>,
- librust-nom-dev <!nocheck>
+ librust-nom-3-dev <!nocheck>,
+ librust-nom-3+verbose-errors-dev <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/mccs-caps]
@@ -21,7 +22,7 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-mccs-dev,
- librust-nom-dev,
+ librust-nom-3-dev,
  librust-nom-3+verbose-errors-dev
 Provides:
  librust-mccs-capsdev (= ${binary:Version}),

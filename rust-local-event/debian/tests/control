@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test local-event 0.1.1 --all-targets --all-features
+Features: test-name=rust-local-event:@
+Depends: dh-cargo (>= 33~), rustc, librust-pollster-0.4+default-dev, librust-pollster-0.4+macro-dev, @
+Restrictions: allow-stderr

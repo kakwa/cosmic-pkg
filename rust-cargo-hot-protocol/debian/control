@@ -1,0 +1,47 @@
+Source: rust-cargo-hot-protocol
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-anyhow-1+default-dev <!nocheck>,
+ librust-bincode-2+default-dev <!nocheck>,
+ librust-bincode-2+serde-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-subsecond-0.7+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-hot-protocol]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cargo-hot-protocol
+Homepage: https://github.com/hecrj/cargo-hot
+X-Cargo-Crate: cargo-hot-protocol
+X-Cargo-Crate-Version: 0.1.1
+
+Package: librust-cargo-hot-protocol-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-anyhow-1+default-dev,
+ librust-bincode-2+default-dev,
+ librust-bincode-2+serde-dev,
+ librust-log-0.4+default-dev,
+ librust-subsecond-0.7+default-dev,
+ librust-tokio-1+default-dev (>= 1.45),
+ librust-tokio-1+io-util-dev (>= 1.45),
+ librust-tokio-1+net-dev (>= 1.45)
+Provides:
+ librust-cargo-hot-protocol+default-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol+server-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0+default-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0+server-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1+default-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1+server-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1.1-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1.1+default-dev (= ${binary:Version}),
+ librust-cargo-hot-protocol-0.1.1+server-dev (= ${binary:Version})
+Description: Protocol for cargo-hot integration - Rust source code
+ Source code for Debianized Rust crate "cargo-hot-protocol"

@@ -1,0 +1,34 @@
+Source: rust-subsecond-types
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-serde-1+default-dev (>= 1.0.219) <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.219) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/subsecond-types]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/subsecond-types
+Homepage: https://github.com/DioxusLabs/dioxus/
+X-Cargo-Crate: subsecond-types
+X-Cargo-Crate-Version: 0.7.2
+
+Package: librust-subsecond-types-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1+default-dev (>= 1.0.219),
+ librust-serde-1+derive-dev (>= 1.0.219)
+Provides:
+ librust-subsecond-types+default-dev (= ${binary:Version}),
+ librust-subsecond-types-0-dev (= ${binary:Version}),
+ librust-subsecond-types-0+default-dev (= ${binary:Version}),
+ librust-subsecond-types-0.7-dev (= ${binary:Version}),
+ librust-subsecond-types-0.7+default-dev (= ${binary:Version}),
+ librust-subsecond-types-0.7.2-dev (= ${binary:Version}),
+ librust-subsecond-types-0.7.2+default-dev (= ${binary:Version})
+Description: Types crate for the Subsecond hotpatch engine - Rust source code
+ Source code for Debianized Rust crate "subsecond-types"

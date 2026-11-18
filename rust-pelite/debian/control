@@ -42,10 +42,10 @@ Depends:
  librust-pelite-macros-dev (>= 0.1.1),
  librust-serde-dev,
  librust-serde-1+derive-dev,
- librust-winapi-dev,
- librust-winapi-0.3+fileapi-dev,
- librust-winapi-0.3+handleapi-dev,
- librust-winapi-0.3+memoryapi-dev
+ librust-winapi-dev [!linux-any],
+ librust-winapi-0.3+fileapi-dev [!linux-any],
+ librust-winapi-0.3+handleapi-dev [!linux-any],
+ librust-winapi-0.3+memoryapi-dev [!linux-any]
 Provides:
  librust-pelite+data-encoding-dev (= ${binary:Version}),
  librust-pelitedev (= ${binary:Version}),

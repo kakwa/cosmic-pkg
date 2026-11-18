@@ -1,0 +1,45 @@
+Source: rust-objc2-proc-macros
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/objc2-proc-macros]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/objc2-proc-macros
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: objc2-proc-macros
+X-Cargo-Crate-Version: 0.2.0
+
+Package: librust-objc2-proc-macros-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-objc2-proc-macrosdev (= ${binary:Version}),
+ librust-objc2-proc-macros-0-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0+gnustep-2-1-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2+gnustep-2-1-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0+gnustep-1-7-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0+gnustep-1-8-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0+gnustep-1-9-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0+gnustep-2-0-dev (= ${binary:Version}),
+ librust-objc2-proc-macros-0.2.0+gnustep-2-1-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Procedural macros for the objc2 project - Rust source code
+ Source code for Debianized Rust crate "objc2-proc-macros"

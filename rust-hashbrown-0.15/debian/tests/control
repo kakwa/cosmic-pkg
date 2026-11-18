@@ -1,0 +1,87 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --all-features
+Features: test-name=rust-hashbrown-0.15:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features alloc
+Features: test-name=librust-hashbrown-0.15-dev:alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features allocator-api2
+Features: test-name=librust-hashbrown-0.15-dev:allocator-api2
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features core
+Features: test-name=librust-hashbrown-0.15-dev:core
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets
+Features: test-name=librust-hashbrown-0.15-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features default-hasher
+Features: test-name=librust-hashbrown-0.15-dev:default-hasher
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features equivalent
+Features: test-name=librust-hashbrown-0.15-dev:equivalent
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features inline-more
+Features: test-name=librust-hashbrown-0.15-dev:inline-more
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features nightly
+Features: test-name=librust-hashbrown-0.15-dev:nightly
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features raw-entry
+Features: test-name=librust-hashbrown-0.15-dev:raw-entry
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features rayon
+Features: test-name=librust-hashbrown-0.15-dev:rayon
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features rustc-dep-of-std
+Features: test-name=librust-hashbrown-0.15-dev:rustc-dep-of-std
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features rustc-internal-api
+Features: test-name=librust-hashbrown-0.15-dev:rustc-internal-api
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features --features serde
+Features: test-name=librust-hashbrown-0.15-dev:serde
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.15.5 --all-targets --no-default-features
+Features: test-name=librust-hashbrown-0.15-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-bumpalo-3+allocator-api2-dev (>= 3.13.0), librust-bumpalo-3+default-dev (>= 3.13.0), librust-doc-comment-0.3+default-dev (>= 0.3.1), librust-fnv-1+default-dev (>= 1.0.7), librust-lazy-static-1+default-dev (>= 1.4), librust-rand-0.9+default-dev, librust-rand-0.9+small-rng-dev, librust-rayon-1+default-dev (>= 1.2), librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

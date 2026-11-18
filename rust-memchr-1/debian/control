@@ -1,0 +1,38 @@
+Source: rust-memchr-1
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+use-std-dev (>= 0.2.18) <!nocheck>,
+ librust-libc-0.2-dev (>= 0.2.18) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/memchr-1]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/memchr-1
+Homepage: https://github.com/BurntSushi/rust-memchr
+X-Cargo-Crate: memchr
+X-Cargo-Crate-Version: 1.0.2
+
+Package: librust-memchr-1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+use-std-dev (>= 0.2.18),
+ librust-libc-0.2-dev (>= 0.2.18)
+Provides:
+ librust-memchr-1+default-dev (= ${binary:Version}),
+ librust-memchr-1+libc-dev (= ${binary:Version}),
+ librust-memchr-1+use-std-dev (= ${binary:Version}),
+ librust-memchr-1.0-dev (= ${binary:Version}),
+ librust-memchr-1.0+default-dev (= ${binary:Version}),
+ librust-memchr-1.0+libc-dev (= ${binary:Version}),
+ librust-memchr-1.0+use-std-dev (= ${binary:Version}),
+ librust-memchr-1.0.2-dev (= ${binary:Version}),
+ librust-memchr-1.0.2+default-dev (= ${binary:Version}),
+ librust-memchr-1.0.2+libc-dev (= ${binary:Version}),
+ librust-memchr-1.0.2+use-std-dev (= ${binary:Version})
+Description: Safe interface to memchr - Rust source code
+ Source code for Debianized Rust crate "memchr"

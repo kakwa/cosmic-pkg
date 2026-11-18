@@ -1,0 +1,36 @@
+Source: rust-serde-yaml-0.7
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-dtoa-0.4+default-dev <!nocheck>,
+ librust-linked-hash-map-0.5+default-dev <!nocheck>,
+ librust-serde-1+default-dev <!nocheck>,
+ librust-yaml-rust-0.4-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-yaml-0.7]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/serde-yaml-0.7
+Homepage: https://github.com/dtolnay/serde-yaml
+X-Cargo-Crate: serde_yaml
+X-Cargo-Crate-Version: 0.7.5
+
+Package: librust-serde-yaml-0.7-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-dtoa-0.4+default-dev,
+ librust-linked-hash-map-0.5+default-dev,
+ librust-serde-1+default-dev,
+ librust-yaml-rust-0.4-dev
+Provides:
+ librust-serde-yaml-0-dev (= ${binary:Version}),
+ librust-serde-yaml-0+default-dev (= ${binary:Version}),
+ librust-serde-yaml-0.7+default-dev (= ${binary:Version}),
+ librust-serde-yaml-0.7.5-dev (= ${binary:Version}),
+ librust-serde-yaml-0.7.5+default-dev (= ${binary:Version})
+Description: YAML support for Serde - Rust source code
+ Source code for Debianized Rust crate "serde_yaml"

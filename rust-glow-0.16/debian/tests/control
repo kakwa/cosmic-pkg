@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets --all-features
+Features: test-name=rust-glow-0.16:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets --no-default-features --features debug_automatic_glGetError
+Features: test-name=librust-glow-0.16-dev:debug_automatic_glGetError
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets --no-default-features --features debug_trace_calls
+Features: test-name=librust-glow-0.16-dev:debug_trace_calls
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets
+Features: test-name=librust-glow-0.16-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets --no-default-features --features log
+Features: test-name=librust-glow-0.16-dev:log
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test glow 0.16.0 --all-targets --no-default-features
+Features: test-name=librust-glow-0.16-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

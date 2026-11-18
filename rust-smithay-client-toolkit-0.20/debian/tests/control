@@ -1,0 +1,45 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --all-features
+Features: test-name=rust-smithay-client-toolkit-0.20:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features --features bytemuck
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:bytemuck
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features --features calloop
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:calloop
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features --features calloop-wayland-source
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:calloop-wayland-source
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features --features pkg-config
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:pkg-config
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features --features xkbcommon
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:xkbcommon
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test smithay-client-toolkit 0.20.0 --all-targets --no-default-features
+Features: test-name=librust-smithay-client-toolkit-0.20-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.65), librust-bytemuck-1+default-dev (>= 1.13.0), librust-drm-fourcc-2+default-dev (>= 2.2.0), librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-pollster-0.3+default-dev, librust-raqote-0.8+default-dev (>= 0.8.2), librust-raw-window-handle-0.6+default-dev, librust-wgpu-0.19+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

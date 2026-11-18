@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets --all-features
+Features: test-name=rust-nom-3:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets
+Features: test-name=librust-nom-3-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets --no-default-features --features std
+Features: test-name=librust-nom-3-dev:std
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets --no-default-features --features stream
+Features: test-name=librust-nom-3-dev:stream
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets --no-default-features --features verbose-errors
+Features: test-name=librust-nom-3-dev:verbose-errors
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nom 3.2.1 --all-targets --no-default-features
+Features: test-name=librust-nom-3-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

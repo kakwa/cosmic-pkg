@@ -1,0 +1,33 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets --all-features
+Features: test-name=rust-spirv-0.3:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets
+Features: test-name=librust-spirv-0.3-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets --no-default-features --features deserialize
+Features: test-name=librust-spirv-0.3-dev:deserialize
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets --no-default-features --features serde
+Features: test-name=librust-spirv-0.3-dev:serde
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets --no-default-features --features serialize
+Features: test-name=librust-spirv-0.3-dev:serialize
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test spirv 0.3.0 --all-targets --no-default-features
+Features: test-name=librust-spirv-0.3-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

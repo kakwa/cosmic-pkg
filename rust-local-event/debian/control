@@ -1,0 +1,30 @@
+Source: rust-local-event
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/local-event]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/local-event
+Homepage: https://github.com/George-Miao/local-event
+X-Cargo-Crate: local-event
+X-Cargo-Crate-Version: 0.1.1
+
+Package: librust-local-event-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-local-event+default-dev (= ${binary:Version}),
+ librust-local-event-0-dev (= ${binary:Version}),
+ librust-local-event-0+default-dev (= ${binary:Version}),
+ librust-local-event-0.1-dev (= ${binary:Version}),
+ librust-local-event-0.1+default-dev (= ${binary:Version}),
+ librust-local-event-0.1.1-dev (= ${binary:Version}),
+ librust-local-event-0.1.1+default-dev (= ${binary:Version})
+Description: Single-threaded version of `event_listener` - Rust source code
+ Source code for Debianized Rust crate "local-event"

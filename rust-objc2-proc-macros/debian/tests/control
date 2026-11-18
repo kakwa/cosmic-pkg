@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-proc-macros 0.2.0 --all-targets --all-features
+Features: test-name=rust-objc2-proc-macros:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), @
+Restrictions: allow-stderr

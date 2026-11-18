@@ -1,0 +1,92 @@
+Source: rust-objc2-io-surface-0.3
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.71) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+std-dev (>= 2.5.0) <!nocheck>,
+ librust-libc-0.2-dev (>= 0.2.80) <!nocheck>,
+ librust-objc2+std-dev (<< 0.8.0) <!nocheck>,
+ librust-objc2+std-dev (>= 0.6.2) <!nocheck>,
+ librust-objc2-core-foundation-0.3+cfdictionary-dev (>= 0.3.2) <!nocheck>,
+ librust-objc2-core-foundation-0.3+objc2-dev (>= 0.3.2) <!nocheck>,
+ librust-objc2-foundation-0.3+alloc-dev (>= 0.3.2) <!nocheck>,
+ librust-objc2-foundation-0.3+nsdictionary-dev (>= 0.3.2) <!nocheck>,
+ librust-objc2-foundation-0.3+nsobject-dev (>= 0.3.2) <!nocheck>,
+ librust-objc2-foundation-0.3+nsstring-dev (>= 0.3.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/objc2-io-surface-0.3]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/objc2-io-surface-0.3
+Homepage: https://github.com/madsmtm/objc2
+X-Cargo-Crate: objc2-io-surface
+X-Cargo-Crate-Version: 0.3.2
+
+Package: librust-objc2-io-surface-0.3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+std-dev (>= 2.5.0),
+ librust-libc-0.2-dev (>= 0.2.80),
+ librust-objc2+std-dev (<< 0.8.0),
+ librust-objc2+std-dev (>= 0.6.2),
+ librust-objc2-core-foundation-0.3+cfdictionary-dev (>= 0.3.2),
+ librust-objc2-core-foundation-0.3+objc2-dev (>= 0.3.2),
+ librust-objc2-foundation-0.3+alloc-dev (>= 0.3.2),
+ librust-objc2-foundation-0.3+nsdictionary-dev (>= 0.3.2),
+ librust-objc2-foundation-0.3+nsobject-dev (>= 0.3.2),
+ librust-objc2-foundation-0.3+nsstring-dev (>= 0.3.2)
+Provides:
+ librust-objc2-io-surface-0-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+iosurface-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+iosurfaceapi-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+iosurfacebase-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+iosurfaceref-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+iosurfacetypes-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+objc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+alloc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+bitflags-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+default-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+libc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+objc2-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+objc2-core-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+objc2-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+std-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0+unstable-darwin-objc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+iosurface-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+iosurfaceapi-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+iosurfacebase-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+iosurfaceref-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+iosurfacetypes-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+objc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+alloc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+bitflags-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+default-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+libc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+objc2-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+objc2-core-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+objc2-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+std-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3+unstable-darwin-objc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+iosurface-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+iosurfaceapi-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+iosurfacebase-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+iosurfaceref-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+iosurfacetypes-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+objc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+alloc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+bitflags-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+default-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+libc-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+objc2-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+objc2-core-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+objc2-foundation-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+std-dev (= ${binary:Version}),
+ librust-objc2-io-surface-0.3.2+unstable-darwin-objc-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.71~)
+Description: Bindings to the IOSurface framework - Rust source code
+ Source code for Debianized Rust crate "objc2-io-surface"

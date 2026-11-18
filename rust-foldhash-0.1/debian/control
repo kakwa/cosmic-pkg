@@ -1,0 +1,31 @@
+Source: rust-foldhash-0.1
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/foldhash-0.1]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/foldhash-0.1
+Homepage: https://github.com/orlp/foldhash
+X-Cargo-Crate: foldhash
+X-Cargo-Crate-Version: 0.1.2
+
+Package: librust-foldhash-0.1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-foldhash-0-dev (= ${binary:Version}),
+ librust-foldhash-0+default-dev (= ${binary:Version}),
+ librust-foldhash-0+std-dev (= ${binary:Version}),
+ librust-foldhash-0.1+default-dev (= ${binary:Version}),
+ librust-foldhash-0.1+std-dev (= ${binary:Version}),
+ librust-foldhash-0.1.2-dev (= ${binary:Version}),
+ librust-foldhash-0.1.2+default-dev (= ${binary:Version}),
+ librust-foldhash-0.1.2+std-dev (= ${binary:Version})
+Description: Fast, non-cryptographic, minimally DoS-resistant hashing algorithm - Rust source code
+ Source code for Debianized Rust crate "foldhash"

@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test dtoa 0.4.8 --all-targets --all-features
+Features: test-name=rust-dtoa-0.4:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr

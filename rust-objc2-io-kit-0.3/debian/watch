@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/objc2-io-kit
+Matching-Pattern:  .*/crates/objc2-io-kit/[-_]?(0.3\.\d[\-+\.:\~\da-zA-Z]*)/download
+Filenamemangle: s/.*\/(.*)\/download/objc2-io-kit-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

@@ -1,0 +1,51 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --all-features
+Features: test-name=rust-winnow-0.7:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features alloc
+Features: test-name=librust-winnow-0.7-dev:alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features debug
+Features: test-name=librust-winnow-0.7-dev:debug
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets
+Features: test-name=librust-winnow-0.7-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features simd
+Features: test-name=librust-winnow-0.7-dev:simd
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features std
+Features: test-name=librust-winnow-0.7-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features unstable-doc
+Features: test-name=librust-winnow-0.7-dev:unstable-doc
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features --features unstable-recover
+Features: test-name=librust-winnow-0.7-dev:unstable-recover
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test winnow 0.7.15 --all-targets --no-default-features
+Features: test-name=librust-winnow-0.7-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.65.0), librust-annotate-snippets-0.11+default-dev (>= 0.11.4), librust-anyhow-1+default-dev (>= 1.0.100), librust-automod-1+default-dev (>= 1.0.15), librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev (>= 0.5.1), librust-lexopt-0.3+default-dev (>= 0.3.1), librust-proptest-1+default-dev (>= 1.6.0), librust-rustc-hash-2+default-dev (>= 2.1.1), librust-snapbox-0.6+default-dev (>= 0.6.21), librust-snapbox-0.6+examples-dev (>= 0.6.21), librust-term-transcript-0.2+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

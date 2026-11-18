@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-parser 1.0.0 --all-targets --all-features
+Features: test-name=rust-defmt-parser-1:@
+Depends: dh-cargo (>= 33~), rustc, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-parser 1.0.0 --all-targets
+Features: test-name=librust-defmt-parser-1-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-parser 1.0.0 --all-targets --no-default-features --features unstable
+Features: test-name=librust-defmt-parser-1-dev:unstable
+Depends: dh-cargo (>= 33~), rustc, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test defmt-parser 1.0.0 --all-targets --no-default-features
+Features: test-name=librust-defmt-parser-1-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-rstest-0.19-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

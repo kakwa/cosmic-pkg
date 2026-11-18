@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nix 0.31.3 --all-targets --all-features
+Features: test-name=librust-nix-0.31-dev:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nix 0.31.3 --all-targets
+Features: test-name=librust-nix-0.31-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test nix 0.31.3 --all-targets --no-default-features
+Features: test-name=librust-nix-0.31-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

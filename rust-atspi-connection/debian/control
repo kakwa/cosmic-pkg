@@ -1,0 +1,56 @@
+Source: rust-atspi-connection
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.77.2) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-atspi-common-0.13+wrappers-dev <!nocheck>,
+ librust-atspi-common-0.13+zbus-dev <!nocheck>,
+ librust-atspi-proxies-dev <!nocheck>,
+ librust-futures-lite-2-dev (>= 2.6.0) <!nocheck>,
+ librust-tracing-dev (>= 0.1.40) <!nocheck>,
+ librust-zbus-5+async-io-dev (>= 5.5) <!nocheck>,
+ librust-zbus-5+p2p-dev (>= 5.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/atspi-connection]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/atspi-connection
+Homepage: https://github.com/odilia-app/atspi
+X-Cargo-Crate: atspi-connection
+X-Cargo-Crate-Version: 0.13.0
+
+Package: librust-atspi-connection-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-atspi-common-0.13+wrappers-dev,
+ librust-atspi-common-0.13+zbus-dev,
+ librust-atspi-proxies-dev,
+ librust-futures-lite-2-dev (>= 2.6.0),
+ librust-tracing-dev (>= 0.1.40),
+ librust-zbus-5+async-io-dev (>= 5.5),
+ librust-zbus-5+p2p-dev (>= 5.5)
+Provides:
+ librust-atspi-connectiondev (= ${binary:Version}),
+ librust-atspi-connection-0-dev (= ${binary:Version}),
+ librust-atspi-connection-dev (= ${binary:Version}),
+ librust-atspi-connection-0+default-dev (= ${binary:Version}),
+ librust-atspi-connection-0+p2p-dev (= ${binary:Version}),
+ librust-atspi-connection-0+tracing-dev (= ${binary:Version}),
+ librust-atspi-connection-0+wrappers-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13+default-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13+p2p-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13+tracing-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13+wrappers-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13.0-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13.0+default-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13.0+p2p-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13.0+tracing-dev (= ${binary:Version}),
+ librust-atspi-connection-0.13.0+wrappers-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.77.2~)
+Description: A method of connecting, querying, sending and receiving over AT-SPI - Rust source code
+ Source code for Debianized Rust crate "atspi-connection"

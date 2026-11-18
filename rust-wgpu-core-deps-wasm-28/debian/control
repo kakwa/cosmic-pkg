@@ -1,0 +1,36 @@
+Source: rust-wgpu-core-deps-wasm-28
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.76) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-wgpu-hal-28+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wgpu-core-deps-wasm-28]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/wgpu-core-deps-wasm-28
+Homepage: https://wgpu.rs/
+X-Cargo-Crate: wgpu-core-deps-wasm
+X-Cargo-Crate-Version: 28.0.0
+
+Package: librust-wgpu-core-deps-wasm-28-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-wgpu-hal-28+default-dev,
+ librust-wgpu-hal-28+gles-dev
+Provides:
+ librust-wgpu-core-deps-wasm-28+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28+webgl-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0+webgl-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0.0-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0.0+default-dev (= ${binary:Version}),
+ librust-wgpu-core-deps-wasm-28.0.0+webgl-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.76~)
+Description: Feature unification helper crate for the WebAssembly platform - Rust source code
+ Source code for Debianized Rust crate "wgpu-core-deps-wasm"

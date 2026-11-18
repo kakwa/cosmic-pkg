@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test foldhash 0.1.2 --all-targets --all-features
+Features: test-name=rust-foldhash-0.1:@
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev, librust-chrono-0.4+default-dev, librust-criterion-0.5+default-dev, librust-fxhash-0.2+default-dev, librust-hashbrown-0.14+default-dev, librust-rand-0.8+default-dev, librust-uuid-1+default-dev (>= 1.8), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test foldhash 0.1.2 --all-targets
+Features: test-name=librust-foldhash-0.1-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev, librust-chrono-0.4+default-dev, librust-criterion-0.5+default-dev, librust-fxhash-0.2+default-dev, librust-hashbrown-0.14+default-dev, librust-rand-0.8+default-dev, librust-uuid-1+default-dev (>= 1.8), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test foldhash 0.1.2 --all-targets --no-default-features --features std
+Features: test-name=librust-foldhash-0.1-dev:std
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev, librust-chrono-0.4+default-dev, librust-criterion-0.5+default-dev, librust-fxhash-0.2+default-dev, librust-hashbrown-0.14+default-dev, librust-rand-0.8+default-dev, librust-uuid-1+default-dev (>= 1.8), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test foldhash 0.1.2 --all-targets --no-default-features
+Features: test-name=librust-foldhash-0.1-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-ahash-0.8+default-dev, librust-chrono-0.4+default-dev, librust-criterion-0.5+default-dev, librust-fxhash-0.2+default-dev, librust-hashbrown-0.14+default-dev, librust-rand-0.8+default-dev, librust-uuid-1+default-dev (>= 1.8), @
+Restrictions: allow-stderr
+Architecture: !riscv64

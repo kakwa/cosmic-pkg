@@ -205,11 +205,17 @@ deb_chroot_ordered:
 	@while read -r pkg; do \
 		[ -z "$$pkg" ] && continue; \
 		[ -d "$$pkg" ] || continue; \
+		marker="$$pkg/$(BUILD_DIR)/pkg_built_chroot.deb.$(DIST)"; \
+		before=$$(stat -c %Y "$$marker" 2>/dev/null || echo 0); \
 		echo  $(MAKE) -C $$pkg deb_chroot; \
 		$(MAKE) -C $$pkg deb_chroot \
 			UPDATE_REPO=false \
 			COW_NAME=$(COW_NAME) \
 			SKIP_COWBUILDER_SETUP=true || exit 1; \
+		after=$$(stat -c %Y "$$marker" 2>/dev/null || echo 0); \
+		if [ "$$after" = "$$before" ]; then \
+			continue; \
+		fi; \
 		cd $(LOCAL_REPO_PATH) && dpkg-scanpackages . /dev/null > Packages || exit 1; cd - > /dev/null; \
 		export TMPDIR=/tmp/; \
 		$(SUDO) $(BUILDER) --update $(COWBUILDER_UPDATE_ARGS); \

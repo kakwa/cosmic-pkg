@@ -1,0 +1,27 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test itertools 0.13.0 --all-targets --all-features
+Features: test-name=rust-itertools-0.13:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.43.1), librust-criterion-0.4+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-0.9-dev, librust-rand-0.7+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test itertools 0.13.0 --all-targets
+Features: test-name=librust-itertools-0.13-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.43.1), librust-criterion-0.4+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-0.9-dev, librust-rand-0.7+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test itertools 0.13.0 --all-targets --no-default-features --features use_alloc
+Features: test-name=librust-itertools-0.13-dev:use_alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.43.1), librust-criterion-0.4+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-0.9-dev, librust-rand-0.7+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test itertools 0.13.0 --all-targets --no-default-features --features use_std
+Features: test-name=librust-itertools-0.13-dev:use_std
+Depends: dh-cargo (>= 33~), rustc (>= 1.43.1), librust-criterion-0.4+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-0.9-dev, librust-rand-0.7+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test itertools 0.13.0 --all-targets --no-default-features
+Features: test-name=librust-itertools-0.13-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.43.1), librust-criterion-0.4+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-0.9-dev, librust-rand-0.7+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

@@ -27,18 +27,30 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-iced-core-dev,
+ librust-iced-core+advanced-dev,
  librust-iced-debug-dev,
  librust-iced-futures-dev,
  librust-iced-renderer-dev,
  librust-iced-runtime-dev,
  librust-iced-widget-dev,
+ librust-iced-widget+advanced-dev,
+ librust-iced-widget+image-dev,
+ librust-iced-widget+wgpu-dev,
+ librust-iced-wgpu-dev,
  librust-iced-winit-dev,
+ librust-image-dev,
  librust-thiserror-dev
 Provides:
  librust-iceddev (= ${binary:Version}),
+ librust-iced+advanced-dev (= ${binary:Version}),
+ librust-iced+image-dev (= ${binary:Version}),
+ librust-iced+wgpu-dev (= ${binary:Version}),
  librust-iced-0-dev (= ${binary:Version}),
  librust-iced-dev (= ${binary:Version}),
  librust-iced-0.14-dev (= ${binary:Version}),
+ librust-iced-0.14+advanced-dev (= ${binary:Version}),
+ librust-iced-0.14+image-dev (= ${binary:Version}),
+ librust-iced-0.14+wgpu-dev (= ${binary:Version}),
  librust-iced-0.14.0-dev (= ${binary:Version})
 Description: A flexible Rust GUI toolkit for native-feeling applications - Rust source code
  Source code for Debianized Rust crate "iced"

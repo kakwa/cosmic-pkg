@@ -1,0 +1,37 @@
+Source: rust-fixedbitset-0.5
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.56) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/fixedbitset-0.5]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/fixedbitset-0.5
+Homepage: https://github.com/petgraph/fixedbitset
+X-Cargo-Crate: fixedbitset
+X-Cargo-Crate-Version: 0.5.7
+
+Package: librust-fixedbitset-0.5-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1+default-dev
+Provides:
+ librust-fixedbitset-0-dev (= ${binary:Version}),
+ librust-fixedbitset-0+default-dev (= ${binary:Version}),
+ librust-fixedbitset-0+serde-dev (= ${binary:Version}),
+ librust-fixedbitset-0+std-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5+default-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5+serde-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5+std-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5.7-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5.7+default-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5.7+serde-dev (= ${binary:Version}),
+ librust-fixedbitset-0.5.7+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.56~)
+Description: Simple bitset collection - Rust source code
+ Source code for Debianized Rust crate "fixedbitset"

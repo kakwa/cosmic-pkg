@@ -21,12 +21,12 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-presser-0.3+std-dev <!nocheck>,
  librust-presser-0.3-dev <!nocheck>,
  librust-thiserror-2-dev <!nocheck>,
- librust-windowsdev (<< 0.63) <!nocheck>,
- librust-windowsdev (>= 0.53) <!nocheck>,
- librust-windows+win32-graphics-direct3d12-dev (<< 0.63) <!nocheck>,
- librust-windows+win32-graphics-direct3d12-dev (>= 0.53) <!nocheck>,
- librust-windows+win32-graphics-dxgi-common-dev (<< 0.63) <!nocheck>,
- librust-windows+win32-graphics-dxgi-common-dev (>= 0.53) <!nocheck>
+ librust-windowsdev (<< 0.63) [!linux-any] <!nocheck>,
+ librust-windowsdev (>= 0.53) [!linux-any] <!nocheck>,
+ librust-windows+win32-graphics-direct3d12-dev (<< 0.63) [!linux-any] <!nocheck>,
+ librust-windows+win32-graphics-direct3d12-dev (>= 0.53) [!linux-any] <!nocheck>,
+ librust-windows+win32-graphics-dxgi-common-dev (<< 0.63) [!linux-any] <!nocheck>,
+ librust-windows+win32-graphics-dxgi-common-dev (>= 0.53) [!linux-any] <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/gpu-allocator]
@@ -41,10 +41,6 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-ash-0.38+debug-dev,
- librust-egui-dev (<< 0.28),
- librust-egui-dev (>= 0.24),
- librust-egui-extras-dev (<< 0.28),
- librust-egui-extras-dev (>= 0.24),
  librust-hashbrown-dev,
  librust-log-0.4-dev,
  librust-objc2-0.6-dev,
@@ -61,19 +57,18 @@ Depends:
  librust-presser-0.3+std-dev,
  librust-presser-0.3-dev,
  librust-thiserror-2-dev,
- librust-windowsdev (<< 0.63),
- librust-windowsdev (>= 0.53),
- librust-windows+win32-graphics-direct3d12-dev (<< 0.63),
- librust-windows+win32-graphics-direct3d12-dev (>= 0.53),
- librust-windows+win32-graphics-dxgi-common-dev (<< 0.63),
- librust-windows+win32-graphics-dxgi-common-dev (>= 0.53)
+ librust-windowsdev (<< 0.63) [!linux-any],
+ librust-windowsdev (>= 0.53) [!linux-any],
+ librust-windows+win32-graphics-direct3d12-dev (<< 0.63) [!linux-any],
+ librust-windows+win32-graphics-direct3d12-dev (>= 0.53) [!linux-any],
+ librust-windows+win32-graphics-dxgi-common-dev (<< 0.63) [!linux-any],
+ librust-windows+win32-graphics-dxgi-common-dev (>= 0.53) [!linux-any]
 Provides:
  librust-gpu-allocator+d3d12-dev (= ${binary:Version}),
  librust-gpu-allocatordev (= ${binary:Version}),
  librust-gpu-allocator+hashbrown-dev (= ${binary:Version}),
  librust-gpu-allocator+metal-dev (= ${binary:Version}),
  librust-gpu-allocator+std-dev (= ${binary:Version}),
- librust-gpu-allocator+visualizer-dev (= ${binary:Version}),
  librust-gpu-allocator+vulkan-dev (= ${binary:Version}),
  librust-gpu-allocator-0-dev (= ${binary:Version}),
  librust-gpu-allocator-0+d3d12-dev (= ${binary:Version}),
@@ -81,7 +76,6 @@ Provides:
  librust-gpu-allocator-0+hashbrown-dev (= ${binary:Version}),
  librust-gpu-allocator-0+metal-dev (= ${binary:Version}),
  librust-gpu-allocator-0+std-dev (= ${binary:Version}),
- librust-gpu-allocator-0+visualizer-dev (= ${binary:Version}),
  librust-gpu-allocator-0+vulkan-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28+d3d12-dev (= ${binary:Version}),
@@ -89,7 +83,6 @@ Provides:
  librust-gpu-allocator-0.28+hashbrown-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28+metal-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28+std-dev (= ${binary:Version}),
- librust-gpu-allocator-0.28+visualizer-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28+vulkan-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28.0-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28.0+d3d12-dev (= ${binary:Version}),
@@ -97,7 +90,6 @@ Provides:
  librust-gpu-allocator-0.28.0+hashbrown-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28.0+metal-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28.0+std-dev (= ${binary:Version}),
- librust-gpu-allocator-0.28.0+visualizer-dev (= ${binary:Version}),
  librust-gpu-allocator-0.28.0+vulkan-dev (= ${binary:Version})
 Breaks:
  rustc (<< 1.71~)

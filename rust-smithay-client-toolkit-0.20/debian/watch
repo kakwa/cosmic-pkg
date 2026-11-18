@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/smithay-client-toolkit
+Matching-Pattern:  .*/crates/smithay-client-toolkit/[-_]?(0.20\.\d[\-+\.:\~\da-zA-Z]*)/download
+Filenamemangle: s/.*\/(.*)\/download/smithay-client-toolkit-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

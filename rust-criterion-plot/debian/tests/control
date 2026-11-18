@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion-plot 0.6.0 --all-targets --all-features
+Features: test-name=rust-criterion-plot-0.6:@
+Depends: dh-cargo (>= 33~), rustc, librust-itertools-num-0.1+default-dev, librust-num-complex-0.4+std-dev, librust-rand-0.8+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion-plot 0.6.0 --all-targets
+Features: test-name=librust-criterion-plot-0.6-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-itertools-num-0.1+default-dev, librust-num-complex-0.4+std-dev, librust-rand-0.8+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test criterion-plot 0.6.0 --all-targets --no-default-features
+Features: test-name=librust-criterion-plot-0.6-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-itertools-num-0.1+default-dev, librust-num-complex-0.4+std-dev, librust-rand-0.8+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

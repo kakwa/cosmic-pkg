@@ -10,7 +10,7 @@ Last-Update: 2026-11-17
 ---
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -7,13 +7,13 @@
+@@ -7,15 +7,14 @@
  default = ["wayland-rs"]
  wayland-rs = ["wayland-protocols-wlr", "xdg-shell-wrapper-config", "sctk"]
  [dependencies]

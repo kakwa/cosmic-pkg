@@ -1,0 +1,4 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test objc2-exception-helper 0.1.1 --all-targets --all-features
+Features: test-name=rust-objc2-exception-helper:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.71), librust-cc-dev (>= 1.0.80), @
+Restrictions: allow-stderr

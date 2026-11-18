@@ -1,0 +1,39 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --all-features
+Features: test-name=rust-xkbcommon-0.8:@
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --no-default-features --features as-raw-xcb-connection
+Features: test-name=librust-xkbcommon-0.8-dev:as-raw-xcb-connection
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets
+Features: test-name=librust-xkbcommon-0.8-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --no-default-features --features memmap2
+Features: test-name=librust-xkbcommon-0.8-dev:memmap2
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --no-default-features --features wayland
+Features: test-name=librust-xkbcommon-0.8-dev:wayland
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --no-default-features --features x11
+Features: test-name=librust-xkbcommon-0.8-dev:x11
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test xkbcommon 0.8.0 --all-targets --no-default-features
+Features: test-name=librust-xkbcommon-0.8-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-evdev-0.11+default-dev (>= 0.11.4), @
+Restrictions: allow-stderr
+Architecture: !riscv64

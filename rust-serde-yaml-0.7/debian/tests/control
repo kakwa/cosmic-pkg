@@ -1,0 +1,15 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_yaml 0.7.5 --all-targets --all-features
+Features: test-name=rust-serde-yaml-0.7:@
+Depends: dh-cargo (>= 33~), rustc, librust-serde-derive-1+default-dev, librust-unindent-0.1+default-dev, librust-version-sync-0.5+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_yaml 0.7.5 --all-targets
+Features: test-name=librust-serde-yaml-0.7-dev:default
+Depends: dh-cargo (>= 33~), rustc, librust-serde-derive-1+default-dev, librust-unindent-0.1+default-dev, librust-version-sync-0.5+default-dev, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_yaml 0.7.5 --all-targets --no-default-features
+Features: test-name=librust-serde-yaml-0.7-dev:
+Depends: dh-cargo (>= 33~), rustc, librust-serde-derive-1+default-dev, librust-unindent-0.1+default-dev, librust-version-sync-0.5+default-dev, @
+Restrictions: allow-stderr
+Architecture: !riscv64

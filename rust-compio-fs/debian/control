@@ -15,12 +15,12 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-os-pipe-dev (>= 1.1.4) <!nocheck>,
  librust-pin-project-lite-dev (>= 0.2.16) <!nocheck>,
  librust-widestring-dev (>= 1.0.2) <!nocheck>,
- librust-windows-sys-dev <!nocheck>,
- librust-windows-sys-0.61+win32-foundation-dev <!nocheck>,
- librust-windows-sys-0.61+win32-security-dev <!nocheck>,
- librust-windows-sys-0.61+win32-storage-filesystem-dev <!nocheck>,
- librust-windows-sys-0.61+win32-system-pipes-dev <!nocheck>,
- librust-windows-sys-0.61+win32-system-systemservices-dev <!nocheck>
+ librust-windows-sys-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-foundation-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-security-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-storage-filesystem-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-system-pipes-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-system-systemservices-dev [!linux-any] <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compio-fs]
@@ -46,12 +46,12 @@ Depends:
  librust-os-pipe-dev (>= 1.1.4),
  librust-pin-project-lite-dev (>= 0.2.16),
  librust-widestring-dev (>= 1.0.2),
- librust-windows-sys-dev,
- librust-windows-sys-0.61+win32-foundation-dev,
- librust-windows-sys-0.61+win32-security-dev,
- librust-windows-sys-0.61+win32-storage-filesystem-dev,
- librust-windows-sys-0.61+win32-system-pipes-dev,
- librust-windows-sys-0.61+win32-system-systemservices-dev
+ librust-windows-sys-dev [!linux-any],
+ librust-windows-sys-0.61+win32-foundation-dev [!linux-any],
+ librust-windows-sys-0.61+win32-security-dev [!linux-any],
+ librust-windows-sys-0.61+win32-storage-filesystem-dev [!linux-any],
+ librust-windows-sys-0.61+win32-system-pipes-dev [!linux-any],
+ librust-windows-sys-0.61+win32-system-systemservices-dev [!linux-any]
 Provides:
  librust-compio-fsdev (= ${binary:Version}),
  librust-compio-fs+nightly-dev (= ${binary:Version}),

@@ -27,7 +27,7 @@ Depends:
  librust-etagere-dev,
  librust-lru-0.16-dev,
  librust-rustc-hash-dev,
- librust-wgpu-27+wgsl-dev
+ librust-wgpu-28+wgsl-dev
 Provides:
  librust-cryoglyphdev (= ${binary:Version}),
  librust-cryoglyph-0-dev (= ${binary:Version}),

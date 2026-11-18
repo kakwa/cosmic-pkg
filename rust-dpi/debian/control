@@ -1,0 +1,47 @@
+Source: rust-dpi
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.73) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/dpi]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/dpi
+Homepage: https://github.com/rust-windowing/winit
+X-Cargo-Crate: dpi
+X-Cargo-Crate-Version: 0.1.2
+
+Package: librust-dpi-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-mint-0.5+default-dev (>= 0.5.6),
+ librust-serde-1+default-dev,
+ librust-serde-1+serde-derive-dev
+Provides:
+ librust-dpi+default-dev (= ${binary:Version}),
+ librust-dpi+mint-dev (= ${binary:Version}),
+ librust-dpi+serde-dev (= ${binary:Version}),
+ librust-dpi+std-dev (= ${binary:Version}),
+ librust-dpi-0-dev (= ${binary:Version}),
+ librust-dpi-0+default-dev (= ${binary:Version}),
+ librust-dpi-0+mint-dev (= ${binary:Version}),
+ librust-dpi-0+serde-dev (= ${binary:Version}),
+ librust-dpi-0+std-dev (= ${binary:Version}),
+ librust-dpi-0.1-dev (= ${binary:Version}),
+ librust-dpi-0.1+default-dev (= ${binary:Version}),
+ librust-dpi-0.1+mint-dev (= ${binary:Version}),
+ librust-dpi-0.1+serde-dev (= ${binary:Version}),
+ librust-dpi-0.1+std-dev (= ${binary:Version}),
+ librust-dpi-0.1.2-dev (= ${binary:Version}),
+ librust-dpi-0.1.2+default-dev (= ${binary:Version}),
+ librust-dpi-0.1.2+mint-dev (= ${binary:Version}),
+ librust-dpi-0.1.2+serde-dev (= ${binary:Version}),
+ librust-dpi-0.1.2+std-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.73~)
+Description: Types for handling UI scaling - Rust source code
+ Source code for Debianized Rust crate "dpi"

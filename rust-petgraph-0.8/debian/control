@@ -1,0 +1,80 @@
+Source: rust-petgraph-0.8
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.64) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-fixedbitset-0.5-dev (>= 0.5.7) <!nocheck>,
+ librust-hashbrown-0.15+default-dev <!nocheck>,
+ librust-indexmap-2+std-dev (>= 2.5.0) <!nocheck>,
+ librust-indexmap-2-dev (>= 2.5.0) <!nocheck>,
+ librust-serde-1+alloc-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/petgraph-0.8]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/petgraph-0.8
+Homepage: https://github.com/petgraph/petgraph
+X-Cargo-Crate: petgraph
+X-Cargo-Crate-Version: 0.8.2
+
+Package: librust-petgraph-0.8-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-fixedbitset-0.5-dev (>= 0.5.7),
+ librust-hashbrown-0.15+default-dev,
+ librust-hashbrown-0.15+rayon-dev,
+ librust-indexmap-2+rayon-dev (>= 2.5.0),
+ librust-indexmap-2+std-dev (>= 2.5.0),
+ librust-indexmap-2-dev (>= 2.5.0),
+ librust-rayon-1+default-dev (>= 1.5.3),
+ librust-serde-1+alloc-dev,
+ librust-serde-1-dev,
+ librust-serde-derive-1-dev
+Provides:
+ librust-petgraph-0-dev (= ${binary:Version}),
+ librust-petgraph-0+all-dev (= ${binary:Version}),
+ librust-petgraph-0+default-dev (= ${binary:Version}),
+ librust-petgraph-0+generate-dev (= ${binary:Version}),
+ librust-petgraph-0+graphmap-dev (= ${binary:Version}),
+ librust-petgraph-0+matrix-graph-dev (= ${binary:Version}),
+ librust-petgraph-0+rayon-dev (= ${binary:Version}),
+ librust-petgraph-0+serde-dev (= ${binary:Version}),
+ librust-petgraph-0+serde-1-dev (= ${binary:Version}),
+ librust-petgraph-0+serde-derive-dev (= ${binary:Version}),
+ librust-petgraph-0+stable-graph-dev (= ${binary:Version}),
+ librust-petgraph-0+std-dev (= ${binary:Version}),
+ librust-petgraph-0+unstable-dev (= ${binary:Version}),
+ librust-petgraph-0.8+all-dev (= ${binary:Version}),
+ librust-petgraph-0.8+default-dev (= ${binary:Version}),
+ librust-petgraph-0.8+generate-dev (= ${binary:Version}),
+ librust-petgraph-0.8+graphmap-dev (= ${binary:Version}),
+ librust-petgraph-0.8+matrix-graph-dev (= ${binary:Version}),
+ librust-petgraph-0.8+rayon-dev (= ${binary:Version}),
+ librust-petgraph-0.8+serde-dev (= ${binary:Version}),
+ librust-petgraph-0.8+serde-1-dev (= ${binary:Version}),
+ librust-petgraph-0.8+serde-derive-dev (= ${binary:Version}),
+ librust-petgraph-0.8+stable-graph-dev (= ${binary:Version}),
+ librust-petgraph-0.8+std-dev (= ${binary:Version}),
+ librust-petgraph-0.8+unstable-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+all-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+default-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+generate-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+graphmap-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+matrix-graph-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+rayon-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+serde-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+serde-1-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+serde-derive-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+stable-graph-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+std-dev (= ${binary:Version}),
+ librust-petgraph-0.8.2+unstable-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.64~)
+Description: Graph data structure library - Rust source code
+ Provides graph types and graph algorithms.
+ .
+ Source code for Debianized Rust crate "petgraph"

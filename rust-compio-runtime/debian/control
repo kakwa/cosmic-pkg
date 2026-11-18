@@ -18,8 +18,8 @@ Build-Depends-Arch: cargo:native <!nocheck>,
  librust-scoped-tls-dev (>= 1.0.1) <!nocheck>,
  librust-slab-dev (>= 0.4.9) <!nocheck>,
  librust-socket2-dev <!nocheck>,
- librust-windows-sys-dev <!nocheck>,
- librust-windows-sys-0.61+win32-system-io-dev <!nocheck>
+ librust-windows-sys-dev [!linux-any] <!nocheck>,
+ librust-windows-sys-0.61+win32-system-io-dev [!linux-any] <!nocheck>
 Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
 Standards-Version: 4.7.4
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/compio-runtime]
@@ -49,8 +49,8 @@ Depends:
  librust-scoped-tls-dev (>= 1.0.1),
  librust-slab-dev (>= 0.4.9),
  librust-socket2-dev,
- librust-windows-sys-dev,
- librust-windows-sys-0.61+win32-system-io-dev
+ librust-windows-sys-dev [!linux-any],
+ librust-windows-sys-0.61+win32-system-io-dev [!linux-any]
 Provides:
  librust-compio-runtime+criterion-dev (= ${binary:Version}),
  librust-compio-runtime+current-thread-id-dev (= ${binary:Version}),

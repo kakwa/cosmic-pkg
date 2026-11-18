@@ -1,0 +1,21 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cargo_hot_protocol 0.1.1 --all-targets --all-features
+Features: test-name=rust-cargo-hot-protocol:@
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cargo_hot_protocol 0.1.1 --all-targets
+Features: test-name=librust-cargo-hot-protocol-dev:default
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cargo_hot_protocol 0.1.1 --all-targets --no-default-features --features server
+Features: test-name=librust-cargo-hot-protocol-dev:server
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test cargo_hot_protocol 0.1.1 --all-targets --no-default-features
+Features: test-name=librust-cargo-hot-protocol-dev:
+Depends: dh-cargo (>= 33~), rustc, @
+Restrictions: allow-stderr
+Architecture: !riscv64

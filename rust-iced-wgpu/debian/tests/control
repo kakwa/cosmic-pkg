@@ -26,20 +26,8 @@ Depends: dh-cargo (>= 33~), rustc, @
 Restrictions: allow-stderr
 Architecture: !riscv64
 
-Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features resvg
-Features: test-name=librust-iced-wgpu-dev:resvg
-Depends: dh-cargo (>= 33~), rustc, @
-Restrictions: allow-stderr
-Architecture: !riscv64
-
 Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features strict-assertions
 Features: test-name=librust-iced-wgpu-dev:strict-assertions
-Depends: dh-cargo (>= 33~), rustc, @
-Restrictions: allow-stderr
-Architecture: !riscv64
-
-Test-Command: /usr/share/cargo/bin/cargo-auto-test iced_wgpu 0.14.0 --all-targets --no-default-features --features svg
-Features: test-name=librust-iced-wgpu-dev:svg
 Depends: dh-cargo (>= 33~), rustc, @
 Restrictions: allow-stderr
 Architecture: !riscv64

@@ -41,18 +41,18 @@ $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@tar -xzf $(CACHE_DIR)/build-helpers-0.14.0.tar.gz -C $(SOURCE_DIR)/.crate_extract
 	@cp -a $(SOURCE_DIR)/.crate_extract/*/build_helpers/. $(SOURCE_DIR)/
 	@rm -rf $(SOURCE_DIR)/.crate_extract
-	@cat > $(SOURCE_DIR)/Cargo.toml <<'EOF'
-[package]
-name = "build_helpers"
-version = "0.14.0"
-edition = "2024"
-license = "MIT"
-description = "Helper macros and functions for iced's build system"
-homepage = "https://github.com/pop-os/iced"
-repository = "https://github.com/pop-os/iced"
-rust-version = "1.92"
-
-[dependencies]
-cfg_aliases = { version = "0.2.1" }
-EOF
+	@printf '%s\n' \
+		'[package]' \
+		'name = "build_helpers"' \
+		'version = "0.14.0"' \
+		'edition = "2024"' \
+		'license = "MIT"' \
+		"description = \"Helper macros and functions for iced's build system\"" \
+		'homepage = "https://github.com/pop-os/iced"' \
+		'repository = "https://github.com/pop-os/iced"' \
+		'rust-version = "1.92"' \
+		'' \
+		'[dependencies]' \
+		'cfg_aliases = { version = "0.2.1" }' \
+		> $(SOURCE_DIR)/Cargo.toml
 	@$(SOURCE_TAR_CMD)

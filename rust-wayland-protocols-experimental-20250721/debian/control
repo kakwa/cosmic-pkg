@@ -1,0 +1,56 @@
+Source: rust-wayland-protocols-experimental-20250721
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.65) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev <!nocheck>,
+ librust-wayland-backend-0.3+default-dev (>= 0.3.11) <!nocheck>,
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-protocols-0.32+unstable-dev (>= 0.32.9) <!nocheck>,
+ librust-wayland-scanner-0.31+default-dev (>= 0.31.7) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-protocols-experimental-20250721]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/wayland-protocols-experimental-20250721
+Homepage: https://github.com/smithay/wayland-rs
+X-Cargo-Crate: wayland-protocols-experimental
+X-Cargo-Crate-Version: 20250721.0.1
+
+Package: librust-wayland-protocols-experimental-20250721-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bitflags-2+default-dev,
+ librust-wayland-backend-0.3+default-dev (>= 0.3.11),
+ librust-wayland-client-0.31+default-dev (>= 0.31.11),
+ librust-wayland-protocols-0.32+client-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+default-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+server-dev (>= 0.32.9),
+ librust-wayland-protocols-0.32+unstable-dev (>= 0.32.9),
+ librust-wayland-scanner-0.31+default-dev (>= 0.31.7),
+ librust-wayland-server-0.31+default-dev (>= 0.31.10)
+Provides:
+ librust-wayland-protocols-experimental-20250721+client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721+default-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721+server-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721+wayland-client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721+wayland-server-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0+client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0+default-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0+server-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0+wayland-client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0+wayland-server-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1+client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1+default-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1+server-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1+wayland-client-dev (= ${binary:Version}),
+ librust-wayland-protocols-experimental-20250721.0.1+wayland-server-dev (= ${binary:Version})
+Breaks:
+ rustc (<< 1.65~)
+Description: Generated API for experimental wayland protocol extensions - Rust source code
+ Source code for Debianized Rust crate "wayland-protocols-experimental"
