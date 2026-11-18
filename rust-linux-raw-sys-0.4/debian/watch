@@ -1,0 +1,8 @@
+Version: 5
+
+Source: https://qa.debian.org/cgi-bin/fakeupstream.cgi?upstream=crates.io/linux-raw-sys
+Matching-Pattern:  .*/crates/linux-raw-sys/[-_]?(0.4\.\d[\-+\.:\~\da-zA-Z]*)/download
+Filenamemangle: s/.*\/(.*)\/download/linux-raw-sys-$1\.tar\.gz/g
+Uversionmangle: s/(\d)[_\.\-\+]?((RC|rc|pre|dev|beta|alpha)\.?\d*)$/$1~$2/
+Dversionmangle: s/@DEB_EXT@//g
+Compression: gzip

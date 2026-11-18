@@ -1,0 +1,110 @@
+Source: rust-linux-raw-sys-0.4
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.63) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/linux-raw-sys-0.4]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/linux-raw-sys-0.4
+Homepage: https://github.com/sunfishcode/linux-raw-sys
+X-Cargo-Crate: linux-raw-sys
+X-Cargo-Crate-Version: 0.4.15
+
+Package: librust-linux-raw-sys-0.4-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-compiler-builtins-0.1+default-dev (>= 0.1.49),
+ librust-rustc-std-workspace-core-1+default-dev
+Provides:
+ librust-linux-raw-sys-0-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+bootparam-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+btrfs-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+compiler-builtins-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+core-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+default-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+elf-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+elf-uapi-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+errno-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+general-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+if-arp-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+if-ether-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+if-packet-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+io-uring-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+ioctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+landlock-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+loop-device-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+mempolicy-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+net-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+netlink-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+no-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+prctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+ptrace-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+system-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0+xdp-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+bootparam-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+btrfs-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+compiler-builtins-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+core-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+default-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+elf-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+elf-uapi-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+errno-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+general-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+if-arp-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+if-ether-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+if-packet-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+io-uring-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+ioctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+landlock-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+loop-device-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+mempolicy-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+net-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+netlink-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+no-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+prctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+ptrace-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+system-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4+xdp-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+bootparam-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+btrfs-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+compiler-builtins-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+core-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+default-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+elf-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+elf-uapi-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+errno-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+general-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+if-arp-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+if-ether-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+if-packet-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+io-uring-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+ioctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+landlock-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+loop-device-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+mempolicy-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+net-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+netlink-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+no-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+prctl-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+ptrace-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+std-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+system-dev (= ${binary:Version}),
+ librust-linux-raw-sys-0.4.15+xdp-dev (= ${binary:Version})
+Replaces:
+ librust-linux-raw-sys-dev (<< 0.4.16~)
+Breaks:
+ librust-linux-raw-sys-dev (<< 0.4.16~),
+ rustc (<< 1.63~)
+Description: Generated bindings for Linux's userspace API - Rust source code
+ Source code for Debianized Rust crate "linux-raw-sys"

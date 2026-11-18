@@ -1,0 +1,165 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --all-features
+Features: test-name=rust-linux-raw-sys-0.4:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features bootparam
+Features: test-name=librust-linux-raw-sys-0.4-dev:bootparam
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features btrfs
+Features: test-name=librust-linux-raw-sys-0.4-dev:btrfs
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features compiler_builtins
+Features: test-name=librust-linux-raw-sys-0.4-dev:compiler_builtins
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features core
+Features: test-name=librust-linux-raw-sys-0.4-dev:core
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets
+Features: test-name=librust-linux-raw-sys-0.4-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features elf
+Features: test-name=librust-linux-raw-sys-0.4-dev:elf
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features elf_uapi
+Features: test-name=librust-linux-raw-sys-0.4-dev:elf_uapi
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features errno
+Features: test-name=librust-linux-raw-sys-0.4-dev:errno
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features general
+Features: test-name=librust-linux-raw-sys-0.4-dev:general
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features if_arp
+Features: test-name=librust-linux-raw-sys-0.4-dev:if_arp
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features if_ether
+Features: test-name=librust-linux-raw-sys-0.4-dev:if_ether
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features if_packet
+Features: test-name=librust-linux-raw-sys-0.4-dev:if_packet
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features io_uring
+Features: test-name=librust-linux-raw-sys-0.4-dev:io_uring
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features ioctl
+Features: test-name=librust-linux-raw-sys-0.4-dev:ioctl
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features landlock
+Features: test-name=librust-linux-raw-sys-0.4-dev:landlock
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features loop_device
+Features: test-name=librust-linux-raw-sys-0.4-dev:loop_device
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features mempolicy
+Features: test-name=librust-linux-raw-sys-0.4-dev:mempolicy
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features net
+Features: test-name=librust-linux-raw-sys-0.4-dev:net
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features netlink
+Features: test-name=librust-linux-raw-sys-0.4-dev:netlink
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features no_std
+Features: test-name=librust-linux-raw-sys-0.4-dev:no_std
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features prctl
+Features: test-name=librust-linux-raw-sys-0.4-dev:prctl
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features ptrace
+Features: test-name=librust-linux-raw-sys-0.4-dev:ptrace
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features rustc-dep-of-std
+Features: test-name=librust-linux-raw-sys-0.4-dev:rustc-dep-of-std
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features std
+Features: test-name=librust-linux-raw-sys-0.4-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features system
+Features: test-name=librust-linux-raw-sys-0.4-dev:system
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features --features xdp
+Features: test-name=librust-linux-raw-sys-0.4-dev:xdp
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test linux-raw-sys 0.4.15 --all-targets --no-default-features
+Features: test-name=librust-linux-raw-sys-0.4-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-libc-0.2+default-dev (>= 0.2.100), librust-static-assertions-1+default-dev (>= 1.1.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64

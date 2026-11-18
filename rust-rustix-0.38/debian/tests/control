@@ -1,0 +1,243 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --all-features
+Features: test-name=rust-rustix-0.38:@
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features all-apis
+Features: test-name=librust-rustix-0.38-dev:all-apis
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features alloc
+Features: test-name=librust-rustix-0.38-dev:alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features cc
+Features: test-name=librust-rustix-0.38-dev:cc
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features compiler_builtins
+Features: test-name=librust-rustix-0.38-dev:compiler_builtins
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features core
+Features: test-name=librust-rustix-0.38-dev:core
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets
+Features: test-name=librust-rustix-0.38-dev:default
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features event
+Features: test-name=librust-rustix-0.38-dev:event
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features fs
+Features: test-name=librust-rustix-0.38-dev:fs
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features io_uring
+Features: test-name=librust-rustix-0.38-dev:io_uring
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features itoa
+Features: test-name=librust-rustix-0.38-dev:itoa
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features libc
+Features: test-name=librust-rustix-0.38-dev:libc
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features libc-extra-traits
+Features: test-name=librust-rustix-0.38-dev:libc-extra-traits
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features libc_errno
+Features: test-name=librust-rustix-0.38-dev:libc_errno
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features linux_4_11
+Features: test-name=librust-rustix-0.38-dev:linux_4_11
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features linux_latest
+Features: test-name=librust-rustix-0.38-dev:linux_latest
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features mm
+Features: test-name=librust-rustix-0.38-dev:mm
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features mount
+Features: test-name=librust-rustix-0.38-dev:mount
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features net
+Features: test-name=librust-rustix-0.38-dev:net
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features once_cell
+Features: test-name=librust-rustix-0.38-dev:once_cell
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features param
+Features: test-name=librust-rustix-0.38-dev:param
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features pipe
+Features: test-name=librust-rustix-0.38-dev:pipe
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features process
+Features: test-name=librust-rustix-0.38-dev:process
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features procfs
+Features: test-name=librust-rustix-0.38-dev:procfs
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features pty
+Features: test-name=librust-rustix-0.38-dev:pty
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features rand
+Features: test-name=librust-rustix-0.38-dev:rand
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features runtime
+Features: test-name=librust-rustix-0.38-dev:runtime
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features rustc-dep-of-std
+Features: test-name=librust-rustix-0.38-dev:rustc-dep-of-std
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features rustc-std-workspace-alloc
+Features: test-name=librust-rustix-0.38-dev:rustc-std-workspace-alloc
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features shm
+Features: test-name=librust-rustix-0.38-dev:shm
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features std
+Features: test-name=librust-rustix-0.38-dev:std
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features stdio
+Features: test-name=librust-rustix-0.38-dev:stdio
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features system
+Features: test-name=librust-rustix-0.38-dev:system
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features termios
+Features: test-name=librust-rustix-0.38-dev:termios
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features thread
+Features: test-name=librust-rustix-0.38-dev:thread
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features time
+Features: test-name=librust-rustix-0.38-dev:time
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features try_close
+Features: test-name=librust-rustix-0.38-dev:try_close
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features use-explicitly-provided-auxv
+Features: test-name=librust-rustix-0.38-dev:use-explicitly-provided-auxv
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features use-libc
+Features: test-name=librust-rustix-0.38-dev:use-libc
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features --features use-libc-auxv
+Features: test-name=librust-rustix-0.38-dev:use-libc-auxv
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test rustix 0.38.44 --all-targets --no-default-features
+Features: test-name=librust-rustix-0.38-dev:
+Depends: dh-cargo (>= 33~), rustc (>= 1.63), librust-criterion-0.4+default-dev, librust-errno-0.3-dev (>= 0.3.10), librust-flate2-1+default-dev, librust-libc-0.2+default-dev (>= 0.2.161), librust-memoffset-0.9+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev (>= 1.1.0), librust-tempfile-3+default-dev (>= 3.5.0), @
+Restrictions: allow-stderr
+Architecture: !riscv64
