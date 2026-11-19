@@ -215,6 +215,7 @@ rust-cosmic-freedesktop-icons
 rust-cosmic-comp-config
 rust-cosmic-dbus-a11y
 rust-cosmic-protocols
+rust-rustix-0.38
 rust-drm-0.14
 cosmic-settings
 cosmic-settings-daemon

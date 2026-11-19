@@ -41,5 +41,8 @@ $(SOURCE_ARCHIVE): $(SOURCE_DIR) $(CACHE) Makefile MANIFEST
 	@$(WGS) -u $(URL_SRC) -O $(NAME)-$(VERSION).tar.gz
 	@tar -xf $(CACHE_DIR)/$(NAME)-$(VERSION).tar.gz -C $(SOURCE_DIR) --strip-components=1
 	@rm -rf -- $(SOURCE_DIR)/debian
-	@cd $(SOURCE_DIR) && just vendor
+	@cd $(SOURCE_DIR) && mkdir -p .cargo && \
+	  cargo vendor --locked | head -n -1 > .cargo/config.toml && \
+	  echo 'directory = "vendor"' >> .cargo/config.toml && \
+	  tar pcf vendor.tar vendor && rm -rf vendor
 	@$(SOURCE_TAR_CMD)

@@ -4,10 +4,44 @@ Priority: optional
 Maintainer: kakwa <carpentier.pf@gmail.com>
 Build-Depends:
     debhelper-compat (=13),
+    dh-sequence-cargo,
+    python3:native,
     libwayland-dev,
     libxkbcommon-dev,
     pkg-config,
-    rust-all,
+    librust-cosmic-config-dev,
+    librust-libcosmic-dev,
+    librust-cosmic-panel-config-dev,
+    librust-serde-dev,
+    librust-serde-derive-dev,
+    librust-tracing-dev,
+    librust-zbus-dev,
+    librust-tl-dev,
+    librust-url-dev,
+    librust-fast-image-resize-dev,
+    librust-rustix-1-dev,
+    librust-tokio-dev,
+    librust-enumflags2-dev,
+    librust-async-broadcast-dev,
+    librust-async-channel-dev,
+    librust-async-recursion-dev,
+    librust-futures-dev,
+    librust-futures-util-dev,
+    librust-iced-dev,
+    librust-libc-dev,
+    librust-log-dev,
+    librust-once-cell-dev,
+    librust-parking-lot-dev,
+    librust-paste-dev,
+    librust-regex-dev,
+    librust-serde-fmt-dev,
+    librust-smallvec-dev,
+    librust-strum-dev,
+    librust-strum-macros-dev,
+    librust-thiserror-dev,
+    librust-unicode-segmentation-dev,
+    librust-version-compare-dev,
+    librust-zbus-names-dev,
 Standards-Version: 4.6.2
 Homepage: https://github.com/pop-os/cosmic-notifications
 
@@ -18,29 +52,4 @@ Provides: notification-daemon
 Description: COSMIC notification daemon
  Notification daemon for the COSMIC desktop environment.
 
-Package: librust-cosmic-notifications-config-dev
-Section: rust
-Architecture: any
-Multi-Arch: same
-Depends:
-    ${misc:Depends},
-    librust-cosmic-config-dev,
-    librust-serde-dev,
-Description: COSMIC notifications config - Rust source code
- Source code for the Debianized Rust crate "cosmic-notifications-config".
 
-Package: librust-cosmic-notifications-util-dev
-Section: rust
-Architecture: any
-Multi-Arch: same
-Depends:
-    ${misc:Depends},
-    librust-fast-image-resize-dev,
-    librust-libcosmic-dev,
-    librust-serde-dev,
-    librust-tl-dev,
-    librust-tracing-dev,
-    librust-url-dev,
-    librust-zbus-dev,
-Description: COSMIC notifications utilities - Rust source code
- Source code for the Debianized Rust crate "cosmic-notifications-util".

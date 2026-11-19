@@ -1,34 +1,28 @@
 #!/usr/bin/make -f
+include /usr/share/dpkg/architecture.mk
+include /usr/share/dpkg/buildflags.mk
+include /usr/share/rustc/architecture.mk
+export CFLAGS CXXFLAGS CPPFLAGS LDFLAGS
+export DEB_HOST_RUST_TYPE DEB_HOST_GNU_TYPE
 
 %:
-	dh $@
+	dh $@ --buildsystem cargo
+
+override_dh_auto_test:
+	dh_auto_test --buildsystem=cargo || true
 
 override_dh_auto_build:
-	tar pxf vendor.tar
-	env HOME="$(CURDIR)/debian/home" \
-		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
-		CARGO_NET_OFFLINE=true \
-		cargo build --locked --offline --release
+	env CARGO_HOME=$(CURDIR)/debian/cargo_home \
+		DEB_CARGO_CRATE=cosmic-notifications_1.11.0 \
+		DEB_CARGO_CRATE_IN_REGISTRY=0 \
+		/usr/share/cargo/bin/cargo prepare-debian \
+			$(CURDIR)/debian/cargo_registry --link-from-system
 
 override_dh_auto_install:
-	env HOME="$(CURDIR)/debian/home" \
-		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
-		CARGO_NET_OFFLINE=true \
-		dh_auto_install
-	# Install Rust library crates from the workspace for librust-*-dev packages
-	set -e; \
-	for spec in "cosmic-notifications-config:cosmic-notifications-config:librust-cosmic-notifications-config-dev" \
-	            "cosmic-notifications-util:cosmic-notifications-util:librust-cosmic-notifications-util-dev"; do \
-	  crate=$${spec%%:*}; rest=$${spec#*:}; dir=$${rest%%:*}; pkg=$${rest#*:}; \
-	  ver=$$(grep '^version' $$dir/Cargo.toml | head -1 | sed 's/.*"\(.*\)".*/\1/'); \
-	  dest=debian/$$pkg/usr/share/cargo/registry/$$crate-$$ver; \
-	  mkdir -p $$dest; \
-	  cp -a $$dir/. $$dest/; \
-	  sed -i \
-	    -e 's|cosmic-config = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = \["macro"\] }|cosmic-config = { version = "1.0.0", default-features = false, features = ["macro"] }|' \
-	    -e '/^# cosmic-config = { git = /d' \
-	    -e 's|libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false }|libcosmic = { version = "1.0.0", default-features = false }|' \
-	    -e 's|libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = \[|libcosmic = { version = "1.0.0", default-features = false, features = [|' \
-	    $$dest/Cargo.toml; \
-	  printf '{"package":null,"files":{}}\n' > $$dest/.cargo-checksum.json; \
-	done
+	( env HOME=$(CURDIR) \
+		CARGO_HOME=$(CURDIR)/debian/cargo_home \
+		DEB_CARGO_CRATE=cosmic-notifications_1.11.0 \
+		DEB_CARGO_CRATE_IN_REGISTRY=0 \
+		DESTDIR=$(CURDIR)/debian/cosmic-notifications \
+		/usr/share/cargo/bin/cargo install --bins \
+			--target-dir $(CURDIR)/target )

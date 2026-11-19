@@ -4,16 +4,13 @@
 	dh $@
 
 override_dh_auto_build:
-	tar pxf vendor.tar
 	env HOME="$(CURDIR)/debian/home" \
 		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
-		CARGO_NET_OFFLINE=true \
-		cargo build --locked --offline --release
+		cargo build --locked --release
 
 override_dh_auto_install:
 	env HOME="$(CURDIR)/debian/home" \
 		CARGO_HOME="$(CURDIR)/debian/cargo_home" \
-		CARGO_NET_OFFLINE=true \
 		dh_auto_install
 	# Install Rust library crates from the workspace for librust-*-dev packages
 	set -e; \

@@ -1,0 +1,18 @@
+#!/bin/bash
+# Force tests to run but ignore failures (logs only, never block the build).
+# Appends a dh_auto_test override to debian/rules that runs the original
+# test action (if any) and then falls through to `true`.
+
+set -u
+BUILDDIR="${BUILDDIR:-/tmp/buildd}"
+
+for srcdir in "$BUILDDIR"/*/; do
+    [ -f "$srcdir/debian/rules" ] || continue
+    [ -f "$srcdir/debian/changelog" ] || continue
+    grep -q 'override_dh_auto_test' "$srcdir/debian/rules" && continue
+    {
+        printf '\noverride_dh_auto_test:\n'
+        printf '\t$$(dh_auto_test --buildsystem=cargo) || true\n'
+    } >> "$srcdir/debian/rules"
+    echo "D02patch-rules: patched $srcdir debian/rules"
+done

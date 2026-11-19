@@ -18,8 +18,6 @@ Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
- librust-compiler-builtins-0.1+default-dev (>= 0.1.49),
- librust-rustc-std-workspace-core-1+default-dev
 Provides:
  librust-linux-raw-sys-0-dev (= ${binary:Version}),
  librust-linux-raw-sys-0+bootparam-dev (= ${binary:Version}),
